@@ -218,6 +218,8 @@ border-right: 1px solid #00000036;
 padding: 5px;
 
 margin: 4px;
+
+text-align: center;
 }
 .profile h1{
 
@@ -297,7 +299,7 @@ margin: 0;
 
 text-align: center;
 
-margin: 5px 0px;
+margin: 10px 0px;
 
 border-radius: 5px;
 
@@ -360,13 +362,10 @@ filter: drop-shadow(7px 3px 3px #da6f836e);
 
 filter: drop-shadow(5px 3px 3px #0000004d);
 }
-.game_icon a h4{
-    
-font-size: 12px;
-    
-margin: 0;
-    
-margin-top: 5px;
+.game_icon a h4{        
+    font-size: 12px;        
+    margin: 0;        
+    margin-top: 5px;
 }
 .game_part .col-4{
 
@@ -385,3 +384,26 @@ padding: 10px 10px 0px 0px;
     transform: scale(1.1);
 }
 /* gaming part end here  */
+
+
+/* footer part start here  */
+
+footer{
+    background: #ffffff;
+    z-index: 99999;
+    box-shadow: 1px 0px 3px #00000024;
+}
+footer a {
+    text-decoration: none;
+    color: #0000008a;
+    font-size: 12px;
+}
+footer a{
+    margin: 0;
+    margin-top: 5px;
+}
+footer a img {
+    width: 25px;
+    margin-top: 10px;
+    filter: drop-shadow(5px 3px 3px #0000004d);
+}
