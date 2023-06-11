@@ -270,9 +270,11 @@ margin: 0;
     background: #7b48cc1f;
     padding: 2px;
 }
-.option img{    
-    font-size: 30px;        
+.option img{
+    font-size: 30px;
     width: 25px;
+    filter: drop-shadow(2px 5px 4px #febd554f);
+    filter: drop-shadow(5px 3px 3px #0000004d);
 }
 .option h3{            
     font-size: 8px;            
@@ -308,6 +310,8 @@ box-shadow: 0px 2px 3px #d0cdd5;
 .cat img{
 
 width: 30px;
+
+filter: drop-shadow(5px 3px 2px #0000004d);
 }
 .cat h4{
     
@@ -349,7 +353,12 @@ text-transform: capitalize;
 .game_icon a img{
 
 width: 50px;
+
 transition: .4s all ease-in-out;
+
+filter: drop-shadow(7px 3px 3px #da6f836e);
+
+filter: drop-shadow(5px 3px 3px #0000004d);
 }
 .game_icon a h4{
     
@@ -370,15 +379,7 @@ padding: 10px 10px 0px 0px;
 .btn {
     border: none !important;
 }
-.game_icon:hover{
-    
-    /* transition: .4s all ease-in-out;
-    background: rgb(239,229,253);
-    background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
-    background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
-    background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe5fd', endColorstr='#c3a9f3',GradientType=0 ); */
-}
+
 .game_icon:hover img{
     color: #fff;
     transform: scale(1.1);
