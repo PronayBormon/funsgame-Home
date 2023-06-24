@@ -2,9 +2,19 @@
     margin: 0px;
     padding: 0px;
 }
+:-webkit-scrollbar {
+    width: 0px;
+    height: 10px;
+    }
 body{
     scrollbar-width: 0;
+    scrollbar-shadow-color: transparent;
+    overflow-y: hidden;
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 /* navbar start here  */
 .nav-link {
@@ -349,28 +359,69 @@ footer a img {
     overflow: auto;
     flex-direction: column;
     scroll-snap-type: y mandatory;
-  }
-  
-  .video-wrapper {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.video-wrapper {
     height: 90vh;
     width: 100%;
     scroll-snap-align: start;
-  }
-  .video-container::-webkit-scrollbar{
+    position: relative;
+    
+}
+.video-container::-webkit-scrollbar,.video-wrapper::-webkit-scrollbar,.video-item::-webkit-scrollbar{
     display: none;
-  }
-  .video-item {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.video-item {
     width: 100%;
-    height: 99vh;
+    height: 90vh;
     margin-top: 5px;
     object-fit: contain;
-  }
-  @media screen and (max-width: 576px){
+}
+
+.buttons{    
+    position: absolute;        
+    right: 0px;        
+    bottom: 0px;
+}
+.buttons ul{    
+    list-style: none;        
+    padding: 0;
+}
+.buttons ul li{
+    list-style: none;
+}
+.buttons ul li a{
+
+}
+.buttons ul li a i{
+    font-size: 18px;
+    background: #d4d2d285;
+    color: #000000;
+    border-radius: 50px;
+    padding: 10px;
+    transition: .4s all ease-in-out;
+}
+.buttons ul li a:active i,.buttons ul li a:focus i,.buttons ul li a:hover i{
+    color: #fe2c55;
+}
+@media screen and (max-width: 912px){
+    .buttons{          
+        bottom: 5%;
+    }
+}
+@media screen and (max-width: 576px){
     .video-item {
         width: 100vw !important;
-        height: 99vh;
+        height: 90vh;
         margin-top: 5px;
         object-fit: cover !important;
-      }
+    }
+    .buttons ul li a i{
+        background: #fff;
+    }
 }
   
