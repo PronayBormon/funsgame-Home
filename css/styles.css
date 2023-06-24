@@ -361,6 +361,16 @@ footer a img {
   }
   .video-item {
     width: 100%;
-    height: 99%;
+    height: 99vh;
     margin-top: 5px;
+    object-fit: contain;
   }
+  @media screen and (max-width: 576px){
+    .video-item {
+        width: 100vw !important;
+        height: 99vh;
+        margin-top: 5px;
+        object-fit: cover !important;
+      }
+}
+  
