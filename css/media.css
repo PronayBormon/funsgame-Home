@@ -1,0 +1,30 @@
+@media screen and (max-width: 280px){
+    .profile h1 {
+        font-size: 8px;
+    }
+    .profile p {
+        font-size: 7px;
+    }
+    .option img {
+        width: 16px;
+    }
+    .option {
+        height: 32px;
+        width: 32px;
+    }
+    .option h3{
+        font-size: 6px;
+        margin-top: -2px;
+    }
+    .cat h4 {
+        font-size: 8px;        
+        margin-top: 2px;
+    }
+    .cat img {
+        width: 25px;
+    }
+    .cat img {
+        width: 25px;
+    }
+}
+

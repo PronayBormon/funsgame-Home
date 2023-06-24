@@ -124,17 +124,17 @@ body{
     align-items: center;
     margin: auto;
 }
-.sound p marquee{       
-    margin: 0;        
-    padding: 0;        
-    width: 91%;        
-    right: 0%;        
-    top: 50%;        
-    position: absolute;        
-    transform: translate(0%,-50%);        
-    font-size: 12px;        
-    color: #7e7575;        
-    font-weight: 600;
+.sound p marquee{
+    margin: 0;
+    padding: 0;
+    width: 91%;
+    right: 0%;
+    top: 50%;
+    position: absolute;
+    transform: translate(0%,-50%);
+    font-size: 12px;
+    color: #7e7575;
+    font-weight: 300;
 }
 /* sound part end here  */
 
@@ -149,15 +149,15 @@ body{
     -webkit-transform:rotate(180deg);
     transform:rotate(180deg);
 }
-.profile_func{    
-    box-shadow: 1px 1px 2px #0000001c;        
-    margin-top: 10px;        
-    border-radius: 10px;        
-    padding: 5px;  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ece2fb+0,ffffff+100 */        
-    background: rgb(236,226,251); /* Old browsers */        
-    background: -moz-linear-gradient(left,  rgba(236,226,251,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */        
-    background: -webkit-linear-gradient(left,  rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */        
-    background: linear-gradient(to right,  rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */        
+.profile_func{
+    box-shadow: 3px 3px 5px #0000001c;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ece2fb+0,ffffff+100 */
+    background: rgb(236,226,251); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(236,226,251,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece2fb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
 }
 .profile_func .col-8{ 
@@ -200,24 +200,31 @@ body{
 .option{
     text-align: center;
     color: #fff;
-    height: 43px;
-    width: 38px;
+    height: 45px;
+    width: 45px;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px 1px #00000012;
-    background: #7b48cc1f;
+    /* box-shadow: 3px 4px 7px 0px #00000024; */
+    /* background: #7b48cc1f; */
     padding: 2px;
+    filter: drop-shadow(3px 3px 2px #0000004d);
+    background: rgb(239,229,253);
+    background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+    /* background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%); */
+    /* background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%); */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe5fd', endColorstr='#c3a9f3',GradientType=0 );
 }
 .option img{
     font-size: 30px;
     width: 25px;
-    filter: drop-shadow(2px 5px 4px #febd554f);
+    /* filter: drop-shadow(2px 5px 4px #febd554f); */
     filter: drop-shadow(5px 3px 3px #0000004d);
 }
-.option h3{            
-    font-size: 8px;            
-    color: #000;            
-    margin: 0px;            
+.option h3{
+    font-size: 8px;
+    color: #000;
+    margin: 0px;
     margin-top: 2px;
+    filter: drop-shadow(3px 3px 2px #0000004d);
 }
 .s_width{
     width: 25%;
@@ -236,7 +243,8 @@ body{
     border-radius: 5px;
     padding: 3px;
     background: #f5f2fb;
-    box-shadow: 0px 2px 3px #d0cdd5;
+    /* box-shadow: 0px 2px 3px #d0cdd5; */
+    filter: drop-shadow(3px 3px 2px #0000004d);
 }
 .cat img{
     width: 30px;
@@ -262,11 +270,13 @@ body{
 }
 /* game part  */
 .game_icon{
-    box-shadow: 0px 0px 3px 0px #0000001c;
+    box-shadow: 3px 3px 5px 3px #0000001c;
     margin: 0px 0px;
     text-align: center;
     border-radius: 10px;
     transition: .4s all ease-in-out;
+    /* filter: drop-shadow(3px 3px 2px #0000004d); */
+    min-height: 100%;
 }
 .game_icon a{
     padding: 5px;
@@ -280,6 +290,8 @@ body{
     filter: drop-shadow(7px 3px 3px #da6f836e);
     filter: drop-shadow(5px 3px 3px #0000004d);
 }
+
+img {}
 .game_icon a h4{        
     font-size: 12px;        
     margin: 0;        
@@ -326,3 +338,29 @@ footer a img {
     filter: drop-shadow(5px 3px 3px #0000004d);
 }
 /* footer end  */
+
+
+/* ========================================= Reels page start here ============================== */
+
+.video-container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .video-wrapper {
+    height: 90vh;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  .video-container::-webkit-scrollbar{
+    display: none;
+  }
+  .video-item {
+    width: 100%;
+    height: 99%;
+    margin-top: 2px;
+  }
