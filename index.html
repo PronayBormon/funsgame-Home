@@ -41,51 +41,44 @@
                                     <a href="#" class="btn "><i class="fa-solid fa-thumbs-down"></i></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn "><i class="fa-regular fa-comment-dots"></i></a>
+                                    <a href="#" class="btn "  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-comment-dots"></i></a>
+                                    <!-- modals start here  -->
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                            ...
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                      <!-- modal end  -->
                                 </li>
                                 <li>
                                     <a href="#" class="btn "><i class="fa-solid fa-share"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn "><i class="fa-solid fa-gift"></i></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="video-wrapper">
                         <video id="george" class="video-item" src="videos/videoplayback.mp4"   mute></video>
-                        <div class="buttons">
-                            <ul>
-                                <li>
-                                    <a href="#" active class="btn "><i class="fa-solid fa-thumbs-up"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-thumbs-down"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn "><i class="fa-regular fa-comment-dots"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-share"></i></a>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                     <div class="video-wrapper">
                         <video id="george" class="video-item" src="videos/videoplsayback.mp4"   mute></video>
-                        <div class="buttons">
-                            <ul>
-                                <li>
-                                    <a href="#" active class="btn "><i class="fa-solid fa-thumbs-up"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-thumbs-down"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn "><i class="fa-regular fa-comment-dots"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-share"></i></a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -126,6 +119,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/scrollToPlayVideo.js" ></script>
+    <script src="js/modaljs.js"></script>
     
 
 

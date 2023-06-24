@@ -408,6 +408,30 @@ footer a img {
 .buttons ul li a:active i,.buttons ul li a:focus i,.buttons ul li a:hover i{
     color: #fe2c55;
 }
+/* modals  */
+.modal.fade .modal-dialog {
+    transition: transform .3s ease-out;
+    transform: translate(0,50px);
+}
+.modal-dialog {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0% !important;
+  right: 0% !important;
+  margin-bottom: 0 !important;
+      
+} 
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+.modal-content {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  
+}
+/* modal end  */
 @media screen and (max-width: 912px){
     .buttons{          
         bottom: 5%;
