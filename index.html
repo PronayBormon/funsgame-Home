@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- styles css  -->
+    <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media.css">
 
@@ -23,7 +24,7 @@
 
 
   </head>
-  <body style="min-height: 100vh;">
+  <body style="max-height:200vh;">
    
     <!-- reels part start here  -->
     <div class="container-fluid p-0">
@@ -35,43 +36,186 @@
                         <div class="buttons">
                             <ul>
                                 <li>
-                                    <a href="#" active class="btn "><i class="fa-solid fa-thumbs-up"></i></a>
+                                    <a href="#" active class="btn "><i class="fa-solid fa-thumbs-up"></i><h3>30k</h3></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-thumbs-down"></i></a>
+                                    <a href="#" class="btn "><i class="fa-solid fa-thumbs-down"></i><h3>30k</h3></a>
                                 </li>
-                                <li>
-                                    <a href="#" class="btn "  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-comment-dots"></i></a>
-                                    <!-- modals start here  -->
+                                <li class="pcview">
+                                    <a href="#" class="btn " onclick="myFunction()"><i class="fa-regular fa-comment-dots"></i><h3>30k</h3></a>
                                     
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                </li>
+                                <li>
+                                    <a href="#" class="btn "><i class="fa-solid fa-share"></i><h3>30k</h3></a>
+                                </li>
+                                <li class="mobileview">
+                                    <!-- Button trigger modal -->
+                                    <a href="#" class="btn mobileview " data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-regular fa-comment-dots"></i><h3>30k</h3></a>
+                                    <!-- Modal mobile view -->
+                                    <div class="modal mobile_modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <h2>Comments <span>396</span></h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
-                                            ...
+                                            <div class="modal-body modal-dialog modal-dialog-scrollable">
+                                            <div class="input_section ">
+                                                <div><img src="images/profile.png" alt=""></div>
+                                                <div style="width: 100%;">
+                                                    <form action="">
+                                                        <div class="d-flex">
+                                                            <div style="width: 90%;"><input type="text" class="form-control" placeholder="add a comment"></div>
+                                                            <div><button type="submit" class="btn btn_comment" >Comment</button></div>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <div class="comment_section">
+                                                <ul>
+                                                    <li>
+                                                        <div><img src="images/profile.png" alt=""></div>
+                                                        <div>
+                                                            <h2>Pronay</h2>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div><img src="images/profile.png" alt=""></div>
+                                                        <div>
+                                                            <h2>Pronay</h2>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div><img src="images/profile.png" alt=""></div>
+                                                        <div>
+                                                            <h2>Pronay</h2>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div><img src="images/profile.png" alt=""></div>
+                                                        <div>
+                                                            <h2>Pronay</h2>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div><img src="images/profile.png" alt=""></div>
+                                                        <div>
+                                                            <h2>Pronay</h2>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div><img src="images/profile.png" alt=""></div>
+                                                        <div>
+                                                            <h2>Pronay</h2>
+                                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
+                                            </div>
+                                            
                                         </div>
                                         </div>
                                     </div>
-                                      <!-- modal end  -->
+                                    <!-- modal  -->
                                 </li>
                                 <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-share"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-gift"></i></a>
+                                    <a href="#" class="btn "><i class="fa-solid fa-gift"></i> <h3>30k</h3></a>
                                 </li>
                             </ul>
                         </div>
+                        <!-- modals start here  -->
+                        <!-- pc view start here  -->
+                        <div id="comments" class="comments pcview">
+                            <div class="card">
+                                <div class="card-header d-flex">
+                                    <div><h2>Comments <span>396</span></h2></div>
+                                    <div class="ms-auto"><button onclick="myFunction()"><i class="fa-solid fa-x"></i></button></div>
+                                </div>
+                                <div class="card-body">
+                                    <ul>
+                                        <!-- main contents  -->
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div><img src="images/profile.png" alt=""></div>
+                                            <div>
+                                                <h2>Pronay</h2>
+                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, laborum!</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- card footer  -->
+                                <div class="card-footer d-flex">
+                                    <div><img src="images/profile.png" alt=""></div>
+                                    <div style="width: 100%;">
+                                        <form action="">
+                                            <div class="d-flex">
+                                                <div style="width: 90%;"><input type="text" class="form-control" placeholder="add a comment"></div>
+                                                <div><button type="submit" class="btn btn-secondary" >Comment</button></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal end  -->
+                        <!-- pc view part end here  -->
+
+                        
                     </div>
                     <div class="video-wrapper">
                         <video id="george" class="video-item" src="videos/videoplayback.mp4"   mute></video>
@@ -80,6 +224,9 @@
                     <div class="video-wrapper">
                         <video id="george" class="video-item" src="videos/videoplsayback.mp4"   mute></video>
                     </div>
+                    
+                      
+                      
                 </div>
             </div>
         </div>
@@ -87,8 +234,6 @@
     <!-- reels part end here  -->
 
 
-
-   
 
     <!-- -=========footer start ========-  -->
     <footer>
@@ -119,7 +264,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/scrollToPlayVideo.js" ></script>
-    <script src="js/modaljs.js"></script>
+    <script src="js/commets.js"></script>
     
 
 
