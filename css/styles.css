@@ -833,7 +833,7 @@ color: #fff !important;
 @media screen and (max-width: 576px){
     .video-item {
         width: 100vw !important;
-        height: 100%;
+        height: 90% !important;
         margin-top: 5px;
         object-fit: cover !important;
     }
