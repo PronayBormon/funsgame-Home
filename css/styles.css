@@ -328,7 +328,7 @@ padding: 10px 10px 0px 0px;
 
 footer{
     background: #ffffff;
-    z-index: 99999;
+    /* z-index: 99999; */
     box-shadow: 1px 0px 3px #00000024;
 }
 footer a {
@@ -692,6 +692,11 @@ margin-top: 14px;
 }
 .modal.fade .modal-dialog::-webkit-scrollbar{
     display: none;
+}
+.input_section input:focus{
+    outline: 0;
+    box-shadow: none;
+    background-color: transparent;
 }
 /* modal mobile view end  */
 .gift_modal{
