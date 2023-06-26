@@ -1,0 +1,43 @@
+.popup {
+    position: absolute;
+    border: 1px solid green;
+    background: transparent;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+.popup img{
+
+height: 100%;
+
+width: 100%;
+}
+.popup a{
+
+color: #fff;
+
+background: #6e54ab;
+
+height: 30px;
+
+width: 30px;
+
+text-align: center;
+
+padding: 5px;
+
+border-radius: 50px;
+
+font-size: 14px;
+}
