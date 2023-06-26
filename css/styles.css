@@ -833,7 +833,7 @@ color: #fff !important;
 @media screen and (max-width: 576px){
     .video-item {
         width: 100vw !important;
-        height: 90% !important;
+        height: 80vh;
         margin-top: 5px;
         object-fit: cover !important;
     }
@@ -888,6 +888,15 @@ color: #fff !important;
     }
     .mobileview{
         display: block;
+    }
+    footer {
+        position: fixed;
+        background: #ffffff;
+        z-index: 99999;
+        box-shadow: 1px 0px 3px #00000024;
+        width: 100%;
+        left: 0;
+        bottom: 8%;
     }
 }
   
