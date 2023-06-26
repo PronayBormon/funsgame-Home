@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Selection</title>
+  <style>
+    .selected {
+      background-color: yellow;
+    }
+    #output {
+      border: 1px solid black;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function selectButton(button) {
+      button.classList.toggle('selected');
+    }
+  
+    function showSelectedButtons() {
+      var buttons = document.getElementsByClassName('selected');
+      var output = document.getElementById('output');
+      output.innerHTML = '';
+  
+      for (var i = 0; i < buttons.length; i++) {
+        var button = buttons[i];
+        var buttonName = button.innerHTML;
+  
+        var div = document.createElement('div');
+        div.innerHTML = buttonName;
+        output.appendChild(div);
+      }
+  
+      setTimeout(function() {
+        output.innerHTML = '';
+      }, 10000); // Clear the output after 10 seconds
+    }
+  </script>
+</head>
+<body>
+  <button onclick="selectButton(this)"><img src="images/rose.png" alt=""></button>
+  <button onclick="selectButton(this)">Pen</button>
+  <button onclick="selectButton(this)">Butterfly</button>
+  <button onclick="selectButton(this)">User</button>
+  
+  <br><br>
+  
+  <button onclick="showSelectedButtons()">Enter</button>
+  
+  <div id="output"></div>
+</body>
+</html>

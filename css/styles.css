@@ -655,13 +655,15 @@ margin-top: 14px;
 }
 /* modal mobile view end  */
 .gift_modal{
-    top: 75%;
+    top: 60%;
 }
 .gift_itms{
 
 display: flex;
 
 justify-content: space-around;
+
+margin-bottom: 5px;
 }
 .btn_gift{
 
@@ -684,9 +686,16 @@ margin: 0px !important;
     box-shadow: none;
 }
 .gift_itms a img{
-    height: 45px;
-    width: 45px;
+    height: 50px;
+    width: 50px;
     filter: drop-shadow(5px 3px 3px #0000004d);
+    padding: 5px;
+}
+.gift_itms a input{
+    color: #000;
+}
+.gift_itms a input{
+    background-color: red;
 }
 .gift_itms h6{
     
@@ -696,16 +705,69 @@ text-align: center;
     
 margin: 0;
     
-margin-top: 5px;
+margin: 5px 0px;
 }
 .hhight{
     height: 40px;
 }
-.hhight h6{
+.hhight a h6{
     
 font-size: 12px;
     
 margin-top: 10px;
+}
+/* .gift_itms a:hover,.selected{
+    box-shadow: 2px 3px 5px 3px #5250501a;
+    padding: 5px;
+    background: transparent;
+} */
+/* .selected {
+    background-color: transparent;
+  } */
+  /* #output {
+    padding: 10px;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  .gift_btn_send{
+
+  }
+.btn_buyD{
+
+    padding: 5px 20px;
+
+    border-radius: 50px;
+
+    width: 100%;
+
+    background: #da2a47;
+
+    color: #fff;
+
+    box-shadow: 2px 3px 5px 3px #77727263;
+    transition: .4s all ease-in-out;
+
+}
+.btn_send_gift{
+    margin-bottom: 5px;
+        
+    padding: 5px 20px;
+        
+    border-radius: 50px;
+        
+    width: 100%;
+        
+    background: #ebce21;
+        
+    color: #fff;
+        
+    box-shadow: 2px 3px 5px 3px #77727263;
+    transition: .4s all ease-in-out;
 }
 /* modal end  */
 @media screen and (max-width: 912px){
@@ -742,17 +804,21 @@ margin-top: 10px;
         z-index: 999;
     }
     .gift_itms a img {
-        height: 25px;
-        width: 25px;
+        height: 40px;
+        width: 40px;
     }
     .modal-body {
         padding: 0px;
     }
     .gift_modal {
-        top: 82%;
+        top: 70%;
     }
     .gift_itms h6 {
         font-size: 8px;
+    }
+    .btn_send_gift,.btn_buyD{
+        margin-bottom: 10px;
+        font-size: 12px;
     }
 }
 
