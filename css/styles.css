@@ -1404,5 +1404,8 @@ z-index: -1;
     .btn_withdraw {
         font-size: 10px;
     }
+    .slot_frame img {
+        top: -12px;
+    }
 }
 /*============================ slot game css end here ============================== */
