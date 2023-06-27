@@ -1,13 +1,16 @@
 body{
-    background: #ffff !important;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dcc1f8+0,f5ecfd+50,dcc1f8+100 */
+    background: #dcc1f8; /* Old browsers */
+    background: -moz-linear-gradient(left,  #dcc1f8 0%, #f5ecfd 50%, #dcc1f8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcc1f8', endColorstr='#dcc1f8',GradientType=1 ); /* IE6-9 */
   }
 
-  .slot_machine{
-    background: rgb(185,164,241);
-    background: -moz-linear-gradient(left, rgba(185,164,241,1) 0%, rgba(107,92,243,1) 100%);
-    background: -webkit-linear-gradient(left, rgba(185,164,241,1) 0%,rgba(107,92,243,1) 100%);
-    background: linear-gradient(to right, rgba(185,164,241,1) 0%,rgba(107,92,243,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9a4f1', endColorstr='#6b5cf3',GradientType=1 );
+.slot_machine{
+    position: relative;
+    background-color: transparent;
+
 }
   
   
@@ -15,7 +18,7 @@ body{
   
   #slot{
 	box-sizing: content-box;
-	border: 35px solid #6b5cf3;
+	/* border: 35px solid #fdde3f; */
 	border-radius: 65px;
 }
 
@@ -74,14 +77,151 @@ div.modal-footer, div.modal-body, div.modal-header{
 }
 .slt_game{
 
+padding: 20px 0px;
 }
 /* tittle text part start here  */
 
 .slot_title{
 
+position: relative;
+
+margin: 50px 0px;
 }
 .slot_title h3{
+
+font-size: 70px;
+
+font-family: 'Lilita One', cursive;
+
+color: #8a2ee6;
+
+filter: drop-shadow(2px 4px 6px #ba9cd8);
+
+text-shadow: -2px 3px 3px #ba9cd8, -5px 5px 1px #ba9cd8;
+}
+.slot_frame{
+
+}
+.slot_frame img{
+    position: absolute;
+    left: 57%;
+    transform: translate(-57%, 0px);
+    top: -20px;
+    height: 115%;
+    width: 62%;
+}
+.current_win{
+
+}
+.input-group-prepend span{
+    background-color: #8a2ee6;
+    color: #fff;
+}   
+.current_win input{
+
+background: transparent;
+
+border: 1px solid #a970e180;
+
+color: #8a2ee6;
+}
+.btn_withdraw{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c38328+0,fcef8a+50,fdf8cf+100 */
+    background: #c38328; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #c38328 0%, #fcef8a 50%, #fdf8cf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c38328', endColorstr='#fdf8cf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.btn_default{
+    background: #8a2ee6;
+    color: #fff;
+}
+.btn_withdraw:hover{
+
+}
+.input-group-append span{
+    border: 1px solid #a970e180;
+}
+.input-group input{
+
+}
+.input-group input:focus{
+    box-shadow: none;
+    outline: none;
+}
+.seven_top{
+
+position: absolute;
+
+top: -55%;
+
+width: 20%;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+z-index: -1;
+}
+.seven_left{
+
+position: absolute;
+
+left: 30%;
+
+width: 25%;
+
+top: 0px;
+
+transform: translateX(-30%);
+
+z-index: -1;
+}
+.bigwin{
+    
+position: absolute;
+    
+right: 16%;
+    
+top: -84px;
+    
+width: 25%;
+    
+transform: translateX(-16%);
+    
+z-index: -1;
+}
+/* slot title part end here  */
+@media (max-width: 992px) {
+    .slot_title {
+        position: relative;
+        margin: 30px 0px;
+    }
+    #slot {
+        width: 280px;
+        height: 120px;
+        border-radius: 20px;
+    }
+    .slot_title h3 {
+        font-size: 40px;
+    }
+    .bigwin {
+        top: -35px;
+    }
     
 }
-
-/* slot title part end here  */
+@media (max-width: 576px){
+    #slot {
+        width: 182px;
+        height: 95px;
+        border-radius: 30px;
+    }
+    .slot_frame img {
+        left: 58%;
+        height: 118%;
+    }
+    #slot img{
+        width: 0px !important;
+    }
+}
