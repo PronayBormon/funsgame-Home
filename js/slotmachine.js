@@ -560,7 +560,7 @@ let conf = {
 	imgMap:  ['BAR', '2xBAR', '3xBAR', '7', 'Cherry'],
 	imgStartPts: [...range(-2, 2)],
 	player: {
-		money: 10
+		money: 1000
 	},
 	imgDot: null,
 	autoModeDelay: 3000,
