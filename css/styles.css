@@ -1291,6 +1291,10 @@ color: #8a2ee6;
 }
 .input-group-append span{
     border: 1px solid #a970e180;
+    height: 100%;
+    border-radius: 0;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
 }
 .input-group input{
 
