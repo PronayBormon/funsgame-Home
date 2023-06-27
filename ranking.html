@@ -69,15 +69,18 @@
                               </div>
                           </div>                        
                           <div class="row justify-content-center mb-3">
-                              <div class="col col-auto">
-                                  <button class="btn btn-danger px-5" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
-                                  <button class="btn btn-secondary px-5" id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
+                              <div class="col-6 ms-auto text-end">
+                                  <button class="btn btn-danger " style="font-size: 10px;" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
+                              </div>
+                              <div class="col-6 me-auto text-start">
+                                
+                                <button class="btn btn-secondary" style="font-size: 10px;" id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
                               </div>
                           </div>
                           <div class="row justify-content-center mb-3">
                               <div class="col col-auto">
                                   <div class="input-group">
-                                          <div class="input-group-prepend">
+                                      <div class="input-group-prepend">
                                           <span class="input-group-text">Avlb </span>
                                       </div>
                                       <input class="form-control" disabled type="number" id="balance" min="1" max="5000">
@@ -116,12 +119,12 @@
                           <div class="row justify-content-center my-3">
                               <div class="col col-auto">
                                   <button class="btn btn_withdraw w-auto" type="button" id="checkout"><i class="fas fa-money-bill-alt"></i> Withdraw</button>
-                                  <button class="btn btn-primary w-auto" type="button" data-toggle="modal" data-target="#payTable" ><i class="fas fa-money-bill-alt"></i> Pay Table</button>
+                                  <button class="btn btn_withdraw btn-primary w-auto" type="button" data-bs-toggle="modal" data-bs-target="#payTable" ><i class="fas fa-money-bill-alt"></i> Pay Table</button>
                               </div>
                           </div>
                           <div>
                               <!-- Paytable modal -->
-                              <div class="modal fade" id="payTable" tabindex="-1" role="dialog" aria-labelledby="payTableTitle" aria-hidden="true">
+                              <div class="modal fade" id="payTable" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                   <div class="modal-dialog" role="document">
                                   <div class="modal-content">
                                       <div class="modal-header">

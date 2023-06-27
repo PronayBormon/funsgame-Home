@@ -1238,6 +1238,8 @@ color: #8a2ee6;
 filter: drop-shadow(2px 4px 6px #ba9cd8);
 
 text-shadow: -2px 3px 3px #ba9cd8, -5px 5px 1px #ba9cd8;
+
+font-weight: 600;
 }
 .slot_frame{
 
@@ -1280,7 +1282,7 @@ color: #8a2ee6;
     background: linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c38328', endColorstr='#fdf8cf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-.btn_default{
+.btn_default,.btn_default:hover,.btn_default:focus{
     background: #8a2ee6;
     color: #fff;
 }
@@ -1366,6 +1368,16 @@ z-index: -1;
     }
     
 }
+@media(max-width: 768px){
+    #slot {
+        width: 182px;
+        height: 94px;
+    }
+    .slot_frame img {
+        top: -17px;
+    }
+}
+
 @media (max-width: 576px){
     #slot {
         width: 182px;
@@ -1378,6 +1390,19 @@ z-index: -1;
     }
     #slot img{
         width: 0px !important;
+    }
+}
+@media (max-width: 425px){
+    #slot {
+        width: 93px;
+        height: 64px;
+        border-radius: 15px;
+    }
+    .btn_default {
+        font-size: 6px;
+    }
+    .btn_withdraw {
+        font-size: 10px;
     }
 }
 /*============================ slot game css end here ============================== */
