@@ -1,79 +1,76 @@
 body{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dcc1f8+0,f5ecfd+50,dcc1f8+100 */
-    background: #dcc1f8; /* Old browsers */
-    background: -moz-linear-gradient(left,  #dcc1f8 0%, #f5ecfd 50%, #dcc1f8 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcc1f8', endColorstr='#dcc1f8',GradientType=1 ); /* IE6-9 */
-  }
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dcc1f8+0,f5ecfd+50,dcc1f8+100 */
+  background: #dcc1f8; /* Old browsers */
+  background: -moz-linear-gradient(left,  #dcc1f8 0%, #f5ecfd 50%, #dcc1f8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcc1f8', endColorstr='#dcc1f8',GradientType=1 ); /* IE6-9 */
+}
 
 .slot_machine{
-    position: relative;
-    background-color: transparent;
+  position: relative;
+  background-color: transparent;
 
 }
-  
-  
-  
-  
-  #slot{
-	box-sizing: content-box;
-	/* border: 35px solid #fdde3f; */
-	border-radius: 65px;
+
+
+
+
+#slot{
+box-sizing: content-box;
+/* border: 35px solid #fdde3f; */
+border-radius: 65px;
 }
 
 .blink {
-  animation: blink 0.4s infinite alternate;
-  -webkit-animation: blink 0.4s infinite alternate;
+animation: blink 0.4s infinite alternate;
+-webkit-animation: blink 0.4s infinite alternate;
 }
 @keyframes blink {
-  to {
-    background: #c3ad00;
-  }
+to {
+  background: #c3ad00;
+}
 }
 @-webkit-keyframes blink {
-  to {
-    background: #c3ad00;
-  }
+to {
+  background: #c3ad00;
+}
 }
 
 
 .gold{
-  color: gold !important;
+color: gold !important;
 }
 .green{
-  color: green;
+color: green;
 }
 
 .v-align{
-  vertical-align: inherit !important;
+vertical-align: inherit !important;
 }
 
-div.modal-footer, div.modal-body, div.modal-header{
-  background-color: #d9d9d9de;
-  color: white;
-}
+div.modal-footer, div.modal-body, div.modal-header{background-color: #d9d9d9de;color: white;width: 100%;}
 
 .preview{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top:0;
-  background: rgb(255, 255, 255) !important;
-  margin: auto;
-  z-index:999999;
-  width:480px;
-  text-align: center;
+position: absolute;
+left: 0;
+right: 0;
+top:0;
+background: rgb(255, 255, 255) !important;
+margin: auto;
+z-index:999999;
+width:480px;
+text-align: center;
 }
 
 .preview img{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top:0;
-  background: rgb(255, 255, 255) !important;
-  margin: auto;
-  z-index:999999999;
+position: absolute;
+left: 0;
+right: 0;
+top:0;
+background: rgb(255, 255, 255) !important;
+margin: auto;
+z-index:999999999;
 }
 .slt_game{
 
@@ -89,11 +86,11 @@ margin: 50px 0px;
 }
 .slot_title h3{
 
-font-size: 70px;
+font-size: 80px;
 
 font-family: 'Lilita One', cursive;
 
-color: #8a2ee6;
+color: #001eff87;
 
 filter: drop-shadow(2px 4px 6px #ba9cd8);
 
@@ -103,19 +100,19 @@ text-shadow: -2px 3px 3px #ba9cd8, -5px 5px 1px #ba9cd8;
 
 }
 .slot_frame img{
-    position: absolute;
-    left: 57%;
-    transform: translate(-57%, 0px);
-    top: -20px;
-    height: 115%;
-    width: 62%;
+  position: absolute;
+  left: 57%;
+  transform: translate(-57%, 0px);
+  top: -20px;
+  height: 120%;
+  width: 62%;
 }
 .current_win{
 
 }
 .input-group-prepend span{
-    background-color: #8a2ee6;
-    color: #fff;
+  background-color: #8a2ee6;
+  color: #fff;
 }   
 .current_win input{
 
@@ -126,29 +123,29 @@ border: 1px solid #a970e180;
 color: #8a2ee6;
 }
 .btn_withdraw{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c38328+0,fcef8a+50,fdf8cf+100 */
-    background: #c38328; /* Old browsers */
-    background: -moz-linear-gradient(45deg,  #c38328 0%, #fcef8a 50%, #fdf8cf 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c38328', endColorstr='#fdf8cf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c38328+0,fcef8a+50,fdf8cf+100 */
+  background: #c38328; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #c38328 0%, #fcef8a 50%, #fdf8cf 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c38328', endColorstr='#fdf8cf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .btn_default{
-    background: #8a2ee6;
-    color: #fff;
+  background: #8a2ee6;
+  color: #fff;
 }
 .btn_withdraw:hover{
 
 }
 .input-group-append span{
-    border: 1px solid #a970e180;
+  border: 1px solid #a970e180;
 }
 .input-group input{
 
 }
 .input-group input:focus{
-    box-shadow: none;
-    outline: none;
+  box-shadow: none;
+  outline: none;
 }
 .seven_top{
 
@@ -168,7 +165,7 @@ z-index: -1;
 
 position: absolute;
 
-left: 30%;
+left: 20%;
 
 width: 25%;
 
@@ -179,49 +176,154 @@ transform: translateX(-30%);
 z-index: -1;
 }
 .bigwin{
-    
+  
 position: absolute;
-    
-right: 16%;
-    
+  
+right: 10%;
+  
 top: -84px;
-    
+  
 width: 25%;
-    
+  
 transform: translateX(-16%);
-    
+  
 z-index: -1;
+}
+.balance_btns{
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+padding: 0px 5px;
+
+margin: 10px 0px;
+}
+.balance_btns label{
+
+font-size: 12px;
+
+width: 115%;
+
+background: #8e37e5;
+
+color: #fff;
+
+height: 100%;
+
+margin: 0px;
+
+border-top-left-radius: 5px;
+
+border-bottom-left-radius: 5px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+font-weight: 600;
+
+padding: 1px;
+}
+.balance_btns input{
+  background: transparent !important;
+  border: 2px solid #916bb878;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #48058b;
+}
+.balance_btns input:focus{
+  box-shadow: none;
+}
+.help_btn{
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #5859ed !important;
+  padding: 3px 10px;
+  color: #595bed;
+}
+.win_history{
+
+margin-bottom: 50px;
+
+/* overflow: auto; */
+
+scrollbar-width: none;
+}
+.win_history ul li img {
+  
+}
+.win_history ul li p{
+
+font-size: 12px;
+
+margin: 0;
+
+color: #8e37e5;
+}
+.win_history ul li{
+
+list-style: none;
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+border-bottom: 1px solid #8e37e545;
+
+padding: 0;
+
+margin-bottom: 5px;
+}
+.win_history ul{
+  
+padding: 0;
+  
+height: 200px;
+  
+overflow: auto;
+  
+scrollbar-width: none;
+}
+.win_history ul::-webkit-scrollbar{
+  display: none;
 }
 /* slot title part end here  */
 @media (max-width: 992px) {
-    .slot_title {
-        position: relative;
-        margin: 30px 0px;
-    }
-    #slot {
-        width: 280px;
-        height: 120px;
-        border-radius: 20px;
-    }
-    .slot_title h3 {
-        font-size: 40px;
-    }
-    .bigwin {
-        top: -35px;
-    }
-    
+  .slot_title {
+      position: relative;
+      margin: 30px 0px;
+  }
+  #slot {
+      width: 280px;
+      height: 170px;
+      border-radius: 20px;
+  }
+  .slot_title h3 {
+      font-size: 40px;
+  }
+  .bigwin {
+      top: -35px;
+  }
+  
 }
+@media (max-width: 768px){
+  .slot_frame img {
+    left: 62%;
+    width: 95%;
+  }
+}
+
 @media (max-width: 576px){
-    #slot {
-        width: 182px;
-        height: 95px;
-        border-radius: 30px;
-    }
-    .slot_frame img {
-        left: 58%;
-        height: 118%;
-    }
-    #slot img{
-        width: 0px !important;
-    }
+  #slot {
+    width: 270px;
+    height: 165px;
+    border-radius: 20px;
+  }
 }

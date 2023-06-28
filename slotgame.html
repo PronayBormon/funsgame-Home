@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
 
     <!-- fontawesome  -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- style link css  -->
     <link rel="stylesheet" href="css/styles.css">
@@ -29,218 +29,315 @@
     
 </head>
 <body>
-
-    <div class="slot_machine py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="slot_title text-center">
-                        <h3>Lucky <br> Number </h3>
-                        <img src="images/777top.png" class="img-fluid seven_top" alt="">
-                        <img src="images/777.png" class="seven_left" alt="">
-                        <img src="images/bigwin.png" class="bigwin" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-4">
+                <div class="ms-auto">
+                    <button class="btn help_btn" type="button" data-toggle="modal" data-target="#payTable" ><i class="fa-solid fa-question"></i></button>
+                    <div>
+                        <!-- Paytable modal -->
+                        <div class="modal fade"  id="payTable" tabindex="-1" role="dialog" aria-labelledby="payTableTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="payTableTitle">Pay Table</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                <table class="table table-dark table-hover table-responsive" style="overflow:hidden">
+                                    <thead>
+                                        <tr>
+                                            <td>Reel1</td>
+                                            <td>Reel2</td>
+                                            <td>Reel3</td>
+                                            <td>TOP</td>
+                                            <td>MIDDLE</td>
+                                            <td>BOTTOM</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
+                                            <td class="v-align">2000xBET</td>
+                                            <td class="v-align">1000xBET</td>
+                                            <td class="v-align">4000xBET</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
+                                            <td class="v-align">150xBET</td>
+                                            <td class="v-align">150xBET</td>
+                                            <td class="v-align">150xBET</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
+                                            </td>
+                                            <td>
+                                                <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
+                                            </td>
+                                            <td>
+                                                <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
+                                            </td>
+                                            <td class="v-align">75xBET</td>
+                                            <td class="v-align">75xBET</td>
+                                            <td class="v-align">75xBET</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
+                                            <td class="v-align">50xBET</td>
+                                            <td class="v-align">50xBET</td>
+                                            <td class="v-align">50xBET</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
+                                            <td class="v-align">20xBET</td>
+                                            <td class="v-align">20xBET</td>
+                                            <td class="v-align">20xBET</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
+                                            <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
+                                            <td class="v-align">10xBET</td>
+                                            <td class="v-align">10xBET</td>
+                                            <td class="v-align">10xBET</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
+                                            </td>
+                                            <td>
+                                                <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
+                                            </td>
+                                            <td>
+                                                <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
+                                                <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
+                                            </td>
+                                            <td class="v-align">5xBET</td>
+                                            <td class="v-align">5xBET</td>
+                                            <td class="v-align">5xBET</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- paytable end here  -->
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="slt_game">
-                        <!-- slot game part start here  -->
-                        <div class="container">
-                        <div class="preview">
-                            
-                        </div>
-                        <div class="row justify-content-center mb-3">
-                            <div class="col col-auto">
-                                <div class="input-group mb-3 w-75 m-auto current_win">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">Current WIN</span>
-                                    </div>
-                                    <input type="text" disabled class="form-control w-auto" id="cwin" value="0">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row justify-content-center mb-3" style="position: relative;">
-                            <div class="col col-auto" >
-                                <canvas id="slot" width="440" height="240"></canvas>
-                                
-                            </div>
-                            <div class="slot_frame">
-                                <img src="images/slot-machine-frame.png" alt="">
-                            </div>
-                        </div>                        
-                        <div class="row justify-content-center mb-3">
-                            <div class="col col-auto">
-                                <button class="btn btn-danger px-5" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
-                                <button class="btn btn-secondary px-5" id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center mb-3">
-                            <div class="col col-auto">
-                                <div class="input-group">
-                                        <div class="input-group-prepend">
-                                        <span class="input-group-text">Avlb </span>
-                                    </div>
-                                    <input class="form-control" disabled type="number" id="balance" min="1" max="5000">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><img src="images/dimond.png" width="20px" alt=""></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col-auto">
-                                <div class="input-group ">                                        
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text">BETx</span>
-                                    </div>
-                                    <input class="form-control" type="number" id="bet" min="1" value="1" max="3">
-                                    <div class="input-group-append">
-                                        <span class="input-group-text"><i class="fas fa-coins gold"></i></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col col-auto">
-                                <select id="mode" class="btn btn_default">
-                                    <option value="random">Random</option>
-                                    <option value="fixed">Fixed</option>
-                                </select>
-                                <select id="where" class="btn btn_default">
-                                    <option value="top">top</option>
-                                    <option value="middle">middle</option>
-                                    <option value="bottom">bottom</option>
-                                </select>
-                                <select id="what" class="btn btn_default">
-                                </select>
-                            </div>
-                        </div>	
-                        <div class="row justify-content-center my-3">
-                            <div class="col col-auto">
-                                <button class="btn btn_withdraw w-auto" type="button" id="checkout"><i class="fas fa-money-bill-alt"></i> Withdraw</button>
-                                <button class="btn btn-primary w-auto" type="button" data-toggle="modal" data-target="#payTable" ><i class="fas fa-money-bill-alt"></i> Pay Table</button>
-                            </div>
-                        </div>
-                        <div>
-                            <!-- Paytable modal -->
-                            <div class="modal fade" id="payTable" tabindex="-1" role="dialog" aria-labelledby="payTableTitle" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="payTableTitle">Pay Table</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                    <table class="table table-dark table-hover table-responsive" style="overflow:hidden">
-                                        <thead>
-                                            <tr>
-                                                <td>Reel1</td>
-                                                <td>Reel2</td>
-                                                <td>Reel3</td>
-                                                <td>TOP</td>
-                                                <td>MIDDLE</td>
-                                                <td>BOTTOM</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
-                                                <td class="v-align">2000xBET</td>
-                                                <td class="v-align">1000xBET</td>
-                                                <td class="v-align">4000xBET</td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
-                                                <td class="v-align">150xBET</td>
-                                                <td class="v-align">150xBET</td>
-                                                <td class="v-align">150xBET</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
-                                                </td>
-                                                <td>
-                                                    <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
-                                                </td>
-                                                <td>
-                                                    <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
-                                                </td>
-                                                <td class="v-align">75xBET</td>
-                                                <td class="v-align">75xBET</td>
-                                                <td class="v-align">75xBET</td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
-                                                <td class="v-align">50xBET</td>
-                                                <td class="v-align">50xBET</td>
-                                                <td class="v-align">50xBET</td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
-                                                <td class="v-align">20xBET</td>
-                                                <td class="v-align">20xBET</td>
-                                                <td class="v-align">20xBET</td>
-                                            </tr>
-                                            <tr>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
-                                                <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
-                                                <td class="v-align">10xBET</td>
-                                                <td class="v-align">10xBET</td>
-                                                <td class="v-align">10xBET</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
-                                                </td>
-                                                <td>
-                                                    <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
-                                                </td>
-                                                <td>
-                                                    <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
-                                                    <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
-                                                </td>
-                                                <td class="v-align">5xBET</td>
-                                                <td class="v-align">5xBET</td>
-                                                <td class="v-align">5xBET</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <!-- paytable end here  -->
+        </div>
+
+        <div class="slot_machine ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slot_title text-center">
+                            <h3>Lucky <br> Spin </h3>
+                            <!-- <img src="images/777top.png" class="img-fluid seven_top" alt=""> -->
+                            <img src="images/777.png" class="seven_left" alt="">
+                            <img src="images/bigwin.png" class="bigwin" alt="">
                         </div>
                     </div>
-                    <!-- slot game part end here payTable  -->
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slt_game">
+                            <!-- slot game part start here  -->
+                            <div class="container">
+                            <div class="preview">                            
+                            </div>
+                            
+                            <!-- game section  -->
+                            <div class="row justify-content-center mb-3" style="position: relative;">
+                                <div class="col col-auto" >
+                                    <canvas id="slot" width="440" height="240"></canvas>                                
+                                </div> 
+                                <div class="slot_frame">
+                                    <img src="images/slot-machine-frame.png" alt="">
+                                </div>
+                            </div>   
+                            <!-- game section  -->
+    
+                            <div class="row">
+                                <div class="col-md-6 m-auto" >
+                                    <div class="row">
+                                        <!-- crurent win here  -->
+                                        <div class="col-4 balance_btns">
+                                            <label for="cwin"> Win</label>
+                                            <input type="text" disabled class=" border-none form-control w-auto" id="cwin" value="0">                                
+                                        </div>
+                                        <!-- available balance  -->
+                                        <div class="col-4 balance_btns">
+                                            <label for="balance"><img src="images/dimond.png" width="20px" alt=""></label>
+                                            <input class="form-control" disabled type="text" id="balance">
+                                        </div>
+                                        <!-- BETx  -->
+                                        <div class="col-4 balance_btns">
+                                            <label for="bet">BETx</label>
+                                            <input class="form-control" type="number" id="bet" min="1" value="1" max="3">
+                                        </div>
+                                        
+                                    </div> 
+                                    <!-- spin button  -->
+                                    <div class="row my-2">
+                                        <div class="col-12">
+                                            <button class="btn btn-danger " style="width: 100%;" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                            
+                            <div class="row justify-content-center mb-3">
+                                <div class="col col-auto">
+                                    <button class="btn btn-secondary px-5" hidden id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
+                                </div>
+                            </div>
+                        
+                            <!-- hidden part start here  -->
+                            <div class="row justify-content-center">
+                                <div class="col col-auto">
+                                    <select id="mode" hidden class="btn btn_default">
+                                        <option value="random">Random</option>
+                                        <option value="fixed">Fixed</option>
+                                    </select>
+                                    <select id="where" hidden class="btn btn_default">
+                                        <option value="top">top</option>
+                                        <option value="middle">middle</option>
+                                        <option value="bottom">bottom</option>
+                                    </select>
+                                    <select id="what" hidden class="btn btn_default">
+                                    </select>
+                                </div>
+                            </div>	
+                            <!-- hidden part end here  -->
+                            
+                            <div class="row justify-content-center my-3">
+                                <div class="col col-auto">
+                                    <button class="btn btn_withdraw w-auto " hidden type="button" id="checkout"><i class="fas fa-money-bill-alt"></i> Withdraw</button>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!-- slot game part end here payTable  -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container mb-5">
+        <div class="row mb-4">
+            <div class="col-sm-6 m-auto">
+                <div class="win_history text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <p><b>name</b></p>
+                                </div>
+                                <div>
+                                    <p><b>Win</b> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   <ul>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                        <li>
+                            <div><p>@user2323l</p></div>
+                            <div><p><img src="images/dimond.png" width="20px" alt=""> 12545</p></div>
+                        </li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
   <!-- -=========footer start ========-  -->
   <footer>
     <div class="container-fluid">
