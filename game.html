@@ -1,0 +1,513 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="description" content="Simple Slot Game">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Harry (Bitchiko) Kodua">
+	<meta name="theme-color" content="#000000">
+	<meta name="viewport" content="width=480,initial-scale=1, maximum-scale=1">
+	<title>SlotMachine</title>
+	<link rel="icon" href="https://n1md7.github.io/slot-game/img/BAR.png">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!-- bootstrap 4  -->
+	<link href="bootstrap5.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- fontawesome  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- style link css  -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/slotmachine.css"> -->
+
+
+    
+</head>
+<body>
+    <div class="container-fluid p-0 m-0">
+        <div class="game_bannar">
+            <img src="images/slot_topbg.png" class="bg_game" alt="">
+            <div class="container-fluid px-0">
+                <div class="row">
+                    <div class="col-12 text-center"><img src="images/slot_topbg.png" class="img-fluid img_game" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 pt-4">
+                        <div class="ms-auto">
+                            <button class="btn help_btn" type="button"  data-bs-toggle="modal" data-bs-target="#payTable" ><i class="fa-solid fa-question"></i></button>
+                            <div>
+                                <!-- Paytable modal -->
+                                <div class="modal fade"  id="payTable" tabindex="-1" role="dialog" aria-labelledby="payTableTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h5 class="modal-title" id="payTableTitle">Pay Table</h5>
+                                        <button type="button" class="btn close btn-secondary" data-bs-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                        <div class="modal-body">
+                                        <table class="table table-dark table-hover table-responsive" style="overflow:hidden">
+                                            <thead>
+                                                <tr>
+                                                    <td>Reel1</td>
+                                                    <td>Reel2</td>
+                                                    <td>Reel3</td>
+                                                    <td>TOP</td>
+                                                    <td>MIDDLE</td>
+                                                    <td>BOTTOM</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
+                                                    <td class="v-align">2000xBET</td>
+                                                    <td class="v-align">1000xBET</td>
+                                                    <td class="v-align">4000xBET</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
+                                                    <td class="v-align">150xBET</td>
+                                                    <td class="v-align">150xBET</td>
+                                                    <td class="v-align">150xBET</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
+                                                    </td>
+                                                    <td class="v-align">75xBET</td>
+                                                    <td class="v-align">75xBET</td>
+                                                    <td class="v-align">75xBET</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
+                                                    <td class="v-align">50xBET</td>
+                                                    <td class="v-align">50xBET</td>
+                                                    <td class="v-align">50xBET</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
+                                                    <td class="v-align">20xBET</td>
+                                                    <td class="v-align">20xBET</td>
+                                                    <td class="v-align">20xBET</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
+                                                    <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
+                                                    <td class="v-align">10xBET</td>
+                                                    <td class="v-align">10xBET</td>
+                                                    <td class="v-align">10xBET</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
+                                                        <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
+                                                    </td>
+                                                    <td class="v-align">5xBET</td>
+                                                    <td class="v-align">5xBET</td>
+                                                    <td class="v-align">5xBET</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <!-- paytable end here  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slot_machine ">
+                    <div class="container">
+                       
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="slt_game">
+                                    <!-- slot game part start here  -->
+                                    <div class="container">
+                                    <div class="preview">                            
+                                    </div>
+                                    
+                                    <!-- game section  -->
+                                    <div class="row justify-content-center mb-3" >
+                                        <div class="col-12 m-auto text-center" style="position: relative;">
+                                            <canvas id="slot"  width="440" height="240" ></canvas>               
+                                            <div class="slot_frame ">
+                                                <img src="images/machine-frame.png" class="img-fluid" alt="">
+                                            </div>                 
+                                         </div>
+                                        
+                                    </div>   
+                                    <!-- game section  -->
+            
+                                    <div class="row">
+                                        <div class="col-md-6 m-auto" >
+                                            <div class="row">
+                                                <!-- crurent win here  -->
+                                                <div class="col-4 balance_btns">
+                                                    <label for="cwin"> Win</label>
+                                                    <input type="text" disabled class="form-control " id="cwin" value="0">                                
+                                                </div>
+                                                <!-- available balance  -->
+                                                <div class="col-4 balance_btns">
+                                                    <label for="balance"><img src="images/dimond.png" width="20px" alt=""></label>
+                                                    <input class="form-control" disabled type="text" id="balance">
+                                                </div>
+                                                <!-- BETx  -->
+                                                <div class="col-4 balance_btns">
+                                                    <label for="bet">BETx</label>
+                                                    <input class="form-control" type="number" id="bet" min="1" value="1" max="3">
+                                                </div>
+                                                
+                                            </div> 
+                                            <!-- spin button  -->
+                                            <div class="row my-2">
+                                                <div class="col-12">
+                                                    <button class="btn btn_spin " style="width: 100%;" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    
+                                    
+                                    <div class="row justify-content-center mb-3">
+                                        <div class="col col-auto">
+                                            <button class="btn btn-secondary px-5" hidden id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
+                                        </div>
+                                    </div>
+                                
+                                    <!-- hidden part start here  -->
+                                    <div class="row justify-content-center">
+                                        <div class="col col-auto">
+                                            <select id="mode" hidden class="btn btn_default">
+                                                <option value="random">Random</option>
+                                                <option value="fixed">Fixed</option>
+                                            </select>
+                                            <select id="where" hidden class="btn btn_default">
+                                                <option value="top">top</option>
+                                                <option value="middle">middle</option>
+                                                <option value="bottom">bottom</option>
+                                            </select>
+                                            <select id="what" hidden class="btn btn_default">
+                                            </select>
+                                        </div>
+                                    </div>	
+                                    <!-- hidden part end here  -->
+                                    
+                                    <div class="row justify-content-center my-3">
+                                        <div class="col col-auto">
+                                            <button class="btn btn_withdraw w-auto " hidden type="button" id="checkout"><i class="fas fa-money-bill-alt"></i> Withdraw</button>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!-- slot game part end here payTable  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- history and current win section start here  -->
+                <div class="container mb-5">
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="history_section mb-5">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link active btn_spin" style="
+                                    border-radius: 50px;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-top" type="button" role="tab" aria-controls="pills-top" aria-selected="true">Top 10</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    <button class="nav-link btn_spin" style="
+                                    border-radius: 50px;" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">History</button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-top" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <div class="top_ten">
+                                            <ul>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <img src="images/first.png" class="img-fluid" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center ">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <img src="images/second.png" class="img-fluid" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <img src="images/third.png" class="img-fluid" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <h2>4th</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <h2>5th</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <h2>6th</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <h2>7th</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <h2>8th</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <h2>9th</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        <div class="col-2">
+                                                            <div class="serial">
+                                                                <h2>10th</h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <div><h5>@username</h5></div>
+                                                            <div><p>929292</p></div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <h3>1234567</h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <div class="history">
+                                            <div class="row ms-4">
+                                                <div class="col-6">
+                                                    <h3>Bet Id</h3>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h3 class="text-end me-4">current Win</h3>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        
+                                                        <div class="col-6">
+                                                            <p>92929211111111</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h4 class="incrase">+$120.00</h4>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="row align-items-center">
+                                                        
+                                                        <div class="col-6">
+                                                            <p>92929211111111</p>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <h4 class="decrase">$120.00</h4>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- history and current win section end here  -->
+            </div>
+        </div>
+    </div>
+
+    
+<!-- -=========footer start ========-  -->
+  <footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 d-flex">
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="#" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="#" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="#" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="#" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="#" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end  -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="bootstrap5.3/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="js/slotmachine.js"></script>
+</body>
+</html>
