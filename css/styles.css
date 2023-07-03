@@ -1219,6 +1219,7 @@ filter: drop-shadow(2px 4px 6px #894ad6a8);
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+    min-width: 100vw;
 }
 .bg_game{
     position: absolute;
