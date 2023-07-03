@@ -1502,3 +1502,113 @@ color: #fff;
     }
 }
 /* top 10 part end here  */
+/* slider css part start here  */
+
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  @-webkit-keyframes scrollTwo {
+    0% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes scrollTwo {
+    0% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  .slider,.sliders {
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    background: transparent;
+  }
+  .slider::before,
+  .slider::after,.sliders::before,
+  .sliders::after {
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after,.sliders::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+  .slide-track .slide h3 {
+    text-align: center;
+    background-color: #00000054;
+    color: #fff !important;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* left: 0px; */
+  }
+  .slider::before,.sliders::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 30s linear infinite;
+    animation-iteration-count: infinite;
+    display: flex;
+    width: calc(250px * 14);
+    /* width: 82%; */
+  }
+  .sliders .slider-track {
+    -webkit-animation: scrollTwo 40s linear infinite;
+    animation: scrollTwo 40s linear infinite;
+    animation-iteration-count: infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide,.sliders .slide {
+    /* width: 82%; */
+    background: transparent;
+    margin: auto;
+  }
+  .win_slider{
+    position: absolute;
+    top: 10%;
+
+  }
+  .win_slidertwo{
+    position: absolute;
+    top: 15%;
+    
+  }
+  
+  /* slider css part end herer  */
