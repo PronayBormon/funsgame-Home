@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: #202124; */
+}
+
+/* topbar part start here */
+.top_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.top_bar button{
+    background-color: transparent;
+    border: none;
+}
+.top_bar button i{
+
+color: #a09c9c;
+}
+.top_bar h5{
+    color: #000000cf;
+    font-size: 20px;
+}
+/* topbar part end here  */
+
+/* title  */
+.title{
+    text-align: center;
+    margin: 20px 0px;
+    border-bottom: 1px solid #827b7b3d;
+}
+.title h2{
+    color: #000000cf;
+    margin-top: 0px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+/* title  */
+
+/* crypto part start here  */
+.coins{
+    text-align: center;
+    padding: 18px 0px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 10px 0px;
+    min-height: 88%;
+    box-shadow: 3px 3px 5px 3px #a39d9d1c;
+    transition: .5s all ease-in-out;
+}
+.coins a{
+    text-decoration: none;
+    transition: .4s all ease-in-out;
+}
+.coins:hover{
+    color: #fff;
+    cursor: pointer;
+    background: rgb(239,229,253);
+    background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+    background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe5fd', endColorstr='#c3a9f3',GradientType=0 );
+}
+
+.coins:hover h5{
+    color: #fff;
+}
+.coins img{
+    width: 50px;
+}
+.coins h5{
+    color: #000000cf;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: .4s all ease-in-out;
+}
+/* crytopart end here  */
+
+/* bank part start here  */
+.bank_part{
+
+border-radius: 10px;
+
+background: rgb(236,226,251);
+
+background: -moz-linear-gradient(left, rgba(236,226,251,1) 0%, rgba(255,255,255,1) 100%);
+
+background: -webkit-linear-gradient(left, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%);
+
+background: linear-gradient(to right, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece2fb', endColorstr='#ffffff',GradientType=1 );
+}
+.bank_part form {
+    padding: 20px 12px;
+}
+.bank_part form select{
+    border-radius: 0;
+    background: #fff;
+    color: #000000cf;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 3px #d0c9c930;
+}
+.bank_part form select option{
+    background: #fff;
+    color: #000000cf;
+}
+option:hover {
+    background-color: yellow;
+  }
+.bank_part form select:focus{
+    color: #000000cf;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: none;
+    border: 1px solid #000000cf;
+}
+/* bank part end here  */
+
+/* tabs part start here  */
+.tab_names{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    box-shadow: 3px 3px 5px #0000001c;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ece2fb+0,ffffff+100 */
+    background: rgb(236,226,251); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(236,226,251,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece2fb', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
+.tab_names li{
+    width: 100%;
+    box-shadow: 2px 3px 5px 3px #847e7e24;
+    margin: 5px;
+    border: none;
+}
+.tab_names li button{
+    border: none !important;
+    padding: 20px 10px;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    width: 100%;
+    transition: .4s all ease-in-out;
+    border: none;
+    background: #fff;
+    height: 100%;
+}
+.tab_names li button:focus{
+    outline: 0;
+    border: none;
+}
+.tab_names li button i{
+    
+    margin-right: 10px;
+}
+.tab_names .nav-link{
+    transition: .4s all ease-in-out;
+}
+.tab_names .nav-link.active,.tab_names .nav-link:hover {
+    background: rgb(239,229,253);
+    background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+    background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+    border: none !important;
+    border-radius: 0;
+    margin: 0;
+    color: #fff;
+    background: #d190ff80;
+}
+.tab-content>.active {
+    display: block;
+    background: rgb(236,226,251);
+    background: -moz-linear-gradient(left, rgba(236,226,251,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ece2fb', endColorstr='#ffffff',GradientType=1 );
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tab_names .radius_top,.tab_names .radius_top,.tab_names .radius_top.active,.tab_names .radius_top:hover{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.tab_names .radius_right,.tab_names .radius_right,.tab_names .radius_right.active,.tab_names .radius_right:hover{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* tabs part end here  */
+@media(max-width:768px){
+    .tab_names li button {
+        border: none !important;
+        padding: 20px 10px;
+        text-align: center;
+        margin: auto;
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 426px){
+    .coins h5 {
+        font-size: 12px;
+    }
+    .title h2 {
+        color: #fff;
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    .coins img {
+    width: 30px;
+    }
+    .coins{
+        padding: 10px 0px;
+    }
+
+    .tab_names li button {
+        font-size: 14px;
+    }
+}
+
+/* ====================== deposite to bank =====================  */
+
+
+
+
+
+/* qr code part start here  */
+.qr_box{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 160px;
+    border: 1px solid #e9ddfb;
+}
+.bank_box{
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+}
+.box_text{
+    
+}
+.box_text p{
+
+color: #000c;
+
+padding: 20px 40px;
+
+text-align: center;
+
+font-size: 12px;
+}
+/* qr part end here  */
+
+/* deposite form part start here  */
+.deposite_form{
+
+}
+.deposite_form form{
+
+}
+.deposite_form h3{
+
+color: #000c;
+
+font-size: 14px;
+
+margin-top: 20px;
+
+margin-bottom: 10px;
+}
+.deposite_form input{
+    background: transparent;
+    color: #000c;
+}
+.deposite_form input:focus{
+    background-color: transparent;
+    color: #000c;
+    box-shadow: none;
+    border-color: #ddcdf9;
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1);
+}
+.deposite_form input::placeholder{
+    color: #a09c9c;
+}
+.deposite_form h2{
+
+font-size: 14px;
+
+color: #000c;
+
+font-weight: 400;
+}
+.deposite_form button {
+
+background: transparent;
+
+border: none;
+
+color: #000c;
+
+background: rgb(239,229,253);
+
+background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+
+background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+
+background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+
+border: none !important;
+
+background: transparent;
+}
+.deposite_form button i{
+    
+color: #000c;
+}
+.btn_ammount{
+    
+border: 1px solid #000c!important;
+    
+width: 100%;
+    
+margin-top: 10px;
+    
+font-size: 14px;
+    
+transition: .4s all ease-in-out;
+    
+color: #000000c2!important;
+    
+box-shadow: -6px -6px 14px rgb(237 228 251), -6px -6px 10px rgba(255, 255, 255, .5), 6px 6px 8px rgba(255, 255, 255, .075), 6px 6px 10px rgba(0, 0, 0, .15);
+    
+/* background: rgb(239,229,253); */
+    
+background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+    
+/* background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%); */
+    
+/* background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%) !important; */
+    
+background: #d9c6f896 !important;
+    
+color: #444!important;
+    
+outline: none;
+    
+font-weight: 700;
+    
+border: 1px solid #e3d1ff !important;
+    
+z-index: 1;
+}
+/* information part start here  */
+.form_information{
+
+padding: 20px;
+
+border-radius: 10px;
+
+margin: 20px 0px;
+
+background: rgb(239,229,253);
+
+background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+
+background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+
+background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+
+box-shadow: 2px 3px 5px 3px #6a66661f;
+}
+.form_information h4{
+
+color: #fff;
+
+margin: 0;
+
+font-size: 16px;
+}
+.form_information p{
+    
+color: #fff;
+    
+margin: 0;
+    
+font-size: 14px;
+    
+text-align: end;
+}
+/* inpformation part end here  */
+.btn_confirm{
+    
+margin-top: 10px;
+    
+font-size: 18px !important;
+    
+padding: 10px 20px !important;
+    
+color: #fff !important;
+    
+background: rgb(239,229,253) !important;
+    
+background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+    
+background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%) !important;
+    
+background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%) !important;
+    
+box-shadow: -6px -6px 14px rgb(237 228 251 / 19%), -6px -6px 10px rgba(255, 255, 255, .5), 6px 6px 8px rgb(174 171 171 / 8%), 6px 6px 10px rgba(0, 0, 0, .15);
+    
+transition: .4s all ease-in-out;
+    
+border: none;
+    
+border-radius: 5px;
+}
+.btn_confirm:hover{
+    box-shadow: -2px -2px 6px rgb(237 228 251), -2px -2px 4px rgb(237 228 251 / 95%), 2px 2px 2px rgb(237 228 251), 2px 2px 4px rgb(237 228 251);
+}
+.btn_ammount:hover{
+    color: #fff;
+    background: #e2bdfe;
+    /* border: 1px solid #fff !important; */
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px #0000001a;
+}
+.deposite_form input:hover {
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1);
+}
+/* deposite form part end here  */
+@media only screen and (max-width: 993px){
+    .deposite_form button {
+        background: transparent;
+        border: none;
+        color: #fff;
+        padding: 0px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 426px){
+    .deposite_form button {
+        background: transparent;
+        border: none;
+        color: #fff;
+        padding: 0px;
+        font-size: 12px;
+    }
+}
+
+/* deposite to bank end  */
+
+/* ======================= card page start here ======================  */
+.card_payment{
+
+}
+.card_payment .card .card-header h3{
+    color: #000000a7;
+}
+.card_payment .card .card-body form input{
+
+box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 3px 3px 5px rgba(55, 84, 170, .15), inset -3px -3px 5px rgba(255, 255, 255, .5), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+
+background: #ede4fb30;
+}
+.card_payment .card .card-body form input:focus{
+
+border: 1px solid #bca7dc70;
+}
+.card_payment .card .card-body form input::placeholder{
+    color: #bca7dca1;
+}
+.card_payment .card .card-body form input[type=radio]{
+
+height: 15px;
+
+width: 15px;
+
+border-radius: 50%;
+
+overflow: hidden;
+
+margin-top: 5px;
+}
+.card_payment .card .card-body form input[type=radio]:hover{
+    background-color: red;
+}
+.card_payment .card .card-body form  label{
+
+font-size: 16px;
+
+font-weight: 500;
+}
+.card_payment .card .card-body form{
+
+}
+.card_payment .card .card-body{
+
+}
+.card_payment .card .card-body p{
+
+color: #00000087;
+}
+.card_payment .card{
+
+background: #d7c4f775;
+
+box-shadow: 7px 7px 10px rgb(222 205 249 / 79%), -7px -7px 20px rgb(207 185 245 / 40%), 0px 0px 4px rgb(222 206 249 / 63%) !important;
+
+border: none;
+}
+@media (max-width: 992px){
+    .btn_ammount {
+        font-size: 10px;
+    }
+}
+@media (max-width: 576px){
+    .col-2{
+        padding: 5px;
+    }
+    .btn_ammount {
+        font-size: 8px;
+        padding: 5px;
+    }
+    .card_payment .card .card-body p {
+        font-size: 12px;
+    }
+    .card_payment .card .card-body form label,.card_payment .card .card-body form input::placeholder,.btn_confirm  {
+        font-size: 12px !important;
+    }
+
+}
+/* ============================ card page end here ======================== */
+
+/* ================ withdrawal page start here =============== */
+.withdraw_page{
+    
+height: 100vh;
+    
+
+}
+.card_design{
+
+height: 300px;
+
+width: 600px;
+
+background: #e3d5fb;
+
+margin: auto;
+
+border-radius: 20px;
+
+padding: 30px;
+
+/* overflow: hidden !important; */
+
+z-index: 1;
+
+box-shadow: 3px 3px 5px 3px #2021242b;
+
+overflow: hidden;
+
+position: relative;
+}
+.ring{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    /* background-color: #ff000024; */
+    border-radius: 50%;
+    border: 30px solid #fff;
+    /* display: none; */
+    margin-left: 300px;
+    opacity: .5;
+    z-index: -1;
+    overflow: hidden;
+}
+.ring::after{
+    content: "";
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    /* background-color: red; */
+    border: 30px solid #fff;
+    margin-left: 50px;
+    margin-top: 30px;
+    opacity: .5;
+    z-index: -2;
+}
+.card_design h3{
+
+font-family: "Josefin Sans", sans-serif;
+
+letter-spacing: 4px;
+
+font-size: 30px !important;
+
+color: #fff;
+
+text-shadow: -1px 1px 15px #d6d2db;
+}
+.card_design h4{
+
+text-align: end;
+
+font-family: "Josefin Sans", sans-serif;
+
+filter: drop-shadow(2px 4px 6px #c5a8f0);
+
+color: #c5a8f0;
+}
+.card_design ul li i {
+
+font-size: 40px;
+
+margin-right: 10px;
+
+color: #fff;
+
+filter: drop-shadow(2px 4px 6px #0000001a);
+}
+.card_design ul li{}
+.card_design ul{
+
+padding: 0;
+
+list-style: none;
+
+display: flex;
+
+justify-content: start;
+
+align-items: center;
+
+margin-top: 60px;
+}
+.card_name p{
+
+text-transform: uppercase;
+
+font-weight: 600;
+
+font-family: "Josefin Sans", sans-serif;
+
+color: #c5a8f0;
+
+filter: drop-shadow(2px 4px 6px #c5a8f0);
+}
+.card_date{
+
+display: flex;
+
+justify-content: space-between;
+}
+.card_date p{
+
+}
+.ball{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: .3;
+}
+.withdraw_page h3{
+
+font-size: 20px;
+
+margin-top: 30px;
+
+/* font-family: "Josefin Sans", sans-serif; */
+}
+.withdraw_page input{
+    box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 3px 3px 5px rgba(55, 84, 170, .15), inset -3px -3px 5px rgba(255, 255, 255, .5), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border: 1px solid #e3d5fb;
+}
+.withdraw_page input:focus{
+    border: 1px solid #e3d5fb;
+}
+.withdraw_page input::placeholder{
+    color: #e3d5fb;
+}
+.charges{
+
+margin: 20px 0px;
+}
+.charges p{
+    
+margin: 0;
+    
+filter: drop-shadow(2px 4px 6px #c5a8f0);
+    
+color: #a473edc2;
+    
+font-family: "Josefin Sans", sans-serif;
+}
+@media(max-width:426px){
+    .card_design h3 {
+        font-size: 20px !important;
+    }
+    .card_name p {
+        font-size: 14px;
+    }
+    .card_design {
+        height: 230px;
+    }
+    .card_design ul {
+        margin-top: 18px;
+    }
+    .ball{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+    }
+    .ring {
+        margin-left: 120px;
+    }
+    
+}
+@media(max-width:375px){
+    .ball {
+        height: 100px;
+        width: 100px;
+    }
+    .card_design h3 {
+        font-size: 15px !important;
+        margin-top: 20px;
+    }
+    .card_design {
+        height: 170px;
+        padding: 20px;
+    }
+    .card_design ul {
+        margin-top: 0;
+    }
+    .card_name p {
+        font-size: 10px;
+    }
+    .card_design h4 {
+        font-size: 16px;
+    }
+    .ring {
+        margin-left: 30px;
+    }
+    .charges p {
+        font-size: 9px;
+    }
+
+}
+/* ============= withdrawal page end here ==================== */

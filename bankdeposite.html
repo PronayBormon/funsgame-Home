@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title  -->
+    <title> Bank</title>
+
+    <!-- bootstrap 5.3    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- fontawsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+     <!-- style css  -->
+     <link rel="stylesheet" href="css/deposite.css">
+
+  </head>
+  <body>  
+
+    <div class="container">
+
+      <!-- topbar part start here  -->
+      <div class="row">
+        <div class="col-12">
+          <div class="top_bar">
+            <div>
+              <button><i class="fa-solid fa-chevron-left"></i></button>
+            </div>
+            <div>
+              <h5>  Deposite to Bank</h5>
+            </div>
+            <div>
+              <button><i class="fa-solid fa-clock-rotate-left"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- topbar part end here -->
+
+      <!-- qr code part start here  -->
+      <div class="row">
+        <div class="col-md-6 m-auto ">
+          <div class="bank_box">
+            <img src="images/bd.png" class="img-fluid" alt="">            
+          </div>
+          <div class="box_text">
+            <p>
+              Send only INR to this account. This account does not support deposit of other currency.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          
+        </div>
+      </div>
+      <!-- Qr code part end here  -->
+
+      <!-- deposit form part start here  -->
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <div class="deposite_form">
+            <form action="">
+              <div class="">
+                <div>
+                  <h3>Deposite Ammount</h3>
+                  <input type="text " class="form-control" placeholder="00.00">
+                  <div class="row">
+                    <div class="col-2">
+                      <button class="btn btn_ammount">50</button>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn_ammount">100</button>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn_ammount">300</button>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn_ammount">500</button>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn_ammount">1000</button>
+                    </div>
+                    <div class="col-2">
+                      <button class="btn btn_ammount">2000</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              <div class="d-flex justify-content-between align-items-end">
+                <div>
+                  <h3>Bank Name  </h3>
+                  <h2>ABC BANK</h2>
+                </div>
+                <div>
+                  <button><i class="fa-solid fa-copy"></i></button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-end">
+                <div>
+                  <h3>Account Name </h3>
+                  <h2>ABC DEF</h2>
+                </div>
+                <div>
+                  <button><i class="fa-solid fa-copy"></i></button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-end">
+                <div>
+                  <h3>Account Num </h3>
+                  <h2>123456789</h2>
+                </div>
+                <div>
+                  <button><i class="fa-solid fa-copy"></i></button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-end">
+                <div>
+                  <h3>Branch/IFIC Code </h3>
+                  <h2>abc123</h2>
+                </div>
+                <div>
+                  <button><i class="fa-solid fa-copy"></i></button>
+                </div>
+              </div>
+              <div class="form_information">
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div><h4>Minimum deposit</h4></div>
+                  <div><p>1000 INR</p></div>
+                </div>  
+                <div class="d-flex justify-content-between align-items-center my-2">
+                  <div><h4>Maximum deposit</h4></div>
+                  <div><p>100,000 INR</p></div>
+                </div>              
+                
+
+
+
+              </div>
+              <div class="mb-2">
+                <img src="images/screencapture test.png" width="60xp" alt="">
+                <h3>Please Upload Your Deposite ScreenShort Here</h3>
+                <input type="file" class="form-control">
+              </div>
+              <div class="mb-2">
+                <button class="btn btn-success form-control btn_confirm">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- deposite form part end here  -->
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
