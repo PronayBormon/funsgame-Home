@@ -724,7 +724,7 @@ margin-top: 14px;
 }
 /* modal mobile view end  */
 .gift_modal{
-    top: 60%;
+    top: 50%;
 }
 .gift_itms{
 
@@ -907,7 +907,7 @@ color: #fff !important;
         padding: 0px;
     }
     .gift_modal {
-        top: 70%;
+        top: 60%;
     }
     .gift_itms h6 {
         font-size: 8px;
