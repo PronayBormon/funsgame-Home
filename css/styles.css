@@ -1033,6 +1033,7 @@ margin-bottom: 50px;
 .rank_list ul li img{
     width: 36px;
     margin-right: 10px;
+    border-radius: 50px;
 }
 .rank_list ul li h4{
     font-size: 16px;
@@ -1069,7 +1070,7 @@ margin-bottom: 50px;
     display: none;
 }
 .top_nav {
-    position: absolute;
+    /* position: absolute; */
     left: 0px;
     left: 0px;
     width: 100%;
