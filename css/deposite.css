@@ -15,11 +15,11 @@ body{
     padding: 10px;
     margin-top: 10px;
 }
-.top_bar button{
+.top_bar a{
     background-color: transparent;
     border: none;
 }
-.top_bar button i{
+.top_bar a i{
 
 color: #a09c9c;
 }
@@ -475,6 +475,8 @@ border-radius: 5px;
 box-shadow: inset 0px 0px 4px rgba(255, 255, 255, 0), inset 3px 3px 5px rgba(55, 84, 170, .15), inset -3px -3px 5px rgba(255, 255, 255, .5), 0px 0px 4px rgba(255, 255, 255, .2) !important;
 
 background: #ede4fb30;
+
+background: #fff;
 }
 .card_payment .card .card-body form input:focus{
 
@@ -546,11 +548,8 @@ border: none;
 /* ============================ card page end here ======================== */
 
 /* ================ withdrawal page start here =============== */
-.withdraw_page{
-    
-height: 100vh;
-    
-
+.withdraw_page{    
+    height: 100vh;
 }
 .card_design{
 
@@ -767,3 +766,6 @@ font-family: "Josefin Sans", sans-serif;
 
 }
 /* ============= withdrawal page end here ==================== */
+
+
+

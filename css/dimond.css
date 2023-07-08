@@ -102,6 +102,8 @@ margin-left: 30px;
 border-radius: 20px;
 
 box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important;
+
+margin-bottom: 20px;
 }
 .account_balance h3{
 
@@ -128,6 +130,8 @@ font-family: 'Noto Serif', serif;
 color: #5b50b3;
     
 font-weight: 600;
+    
+margin: 0;
 }
 /* bannar part end here  */
 
@@ -255,3 +259,9 @@ text-transform: capitalize;
 }
 
 /* list part end here  */
+@media(max-width: 426px){
+    .account_balance {
+        margin-top: 10px;
+        padding: 20px;
+    }
+}
