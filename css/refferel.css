@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+}
+/* topbar part start here */
+.top_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    margin-top: 10px;
+}
+.top_bar a{
+    background-color: transparent;
+    border: none;
+}
+.top_bar a i{
+    color: #a09c9c;
+}
+.top_bar h5{
+    color: #000000cf;
+    font-size: 20px;
+}
+/* topbar part end here  */
+.refferel_contents{
+
+background: rgb(236,226,251);
+
+background: -moz-linear-gradient(left, rgba(236,226,251,1) 0%, rgba(255,255,255,1) 100%);
+
+background: -webkit-linear-gradient(left, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%);
+
+background: linear-gradient(to right, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%);
+
+box-shadow: 7px 7px 15px rgb(108 129 193 / 34%), -7px -7px 20px rgb(211 206 252 / 26%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0) !important;
+
+min-height: 100vh;
+
+border-radius: 10px;
+
+position: relative;
+
+z-index: 0;
+
+padding: 10px;
+
+background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+}
+.refferel_code{
+    margin: auto;    
+    text-align: center;
+}
+.refferel_code img{
+    box-shadow: 7px 7px 15px #0000002e, -7px -7px 20px #e1ceff8a, 0px 0px 4px #847def2e !important;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 10px;
+}
+.code_part ul li p{
+    margin: 0;
+    font-size: 14px;
+}
+.code_part ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+.code_part ul li a i{
+    color: #877dee;
+    margin-left: 10px;
+}
+.code_part ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    /* border: 1px solid #8581f0; */
+    border-radius: 20px;
+    margin: 10px 0px;
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    /* overflow: hidden; */
+    background: #fff;
+}
+.code_part ul{
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+.circle_one{
+    height: 300px;
+    width: 300px;
+    border: 20px solid #b7aff959;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    z-index: -1;
+}
+.circle_two{    
+    height: 300px;        
+    width: 300px;        
+    border: 20px solid #dbd2fa6b;        
+    border-radius: 20px;        
+    position: absolute;        
+    right: 130px;        
+    top: 99px;        
+    z-index: -1;
+}
+.btn_share{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    box-shadow: 2px 3px 5px 3px #c9c2c296, -19px -19px 18px #ebe7f11a;
+    background: #ffffff8f;
+    margin-bottom: 30px;
+    transition: .4s all ease-in-out;
+    /* background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61); */
+}
+.btn_share:active{
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+.btn_share img{
+    width: 20px;
+    margin-right: 5px;
+}
+.bonus_bannar{
+
+}
+.bonus_bannar img{
+    border-radius: 10px;
+}
+@media(max-width:426px){
+    .circle_one {
+        height: 200px;
+        width: 200px;
+        left: 0px;
+    }
+    .circle_two {
+        height: 200px;
+        width: 200px;
+        border: 20px solid #dbd2fa6b;
+        border-radius: 20px;
+        position: absolute;
+        right: 0px;
+        top: 79px;
+        z-index: -1;
+    }
+    .code_part ul li p {
+        font-size: 10px;
+    }
+    .code_part ul li a {
+        font-size: 10px;
+    }
+    .btn_share {
+        font-size: 12px;
+        margin: 0px;
+    }
+    .bonus_bannar img {
+        margin-top: 20px;
+    }
+}

@@ -28,7 +28,7 @@ body::-webkit-scrollbar{
     display: flex;
     align-items: center;
 }
-.nav_profile  button{
+.nav_profile  a{
         
 color: #fff !important;
         
@@ -570,6 +570,7 @@ transform: translate(-44%, -14%);
 .nf_content h3{
     font-size: 14px;
     font-weight: 600;
+    color: #000;
 }
 .nf_content h3 span{
     border-radius: 50%;
@@ -753,5 +754,139 @@ color: #2f2f82;
     .option h3{
         font-size: 6px;
         margin-top: -2px;
+    }
+}
+
+/* .notification modal part start here  */
+
+.notification .modal{
+
+}
+.notification .modal-content{
+
+}
+.notification .modal-header{
+
+}
+.notification .modal-header h1{
+
+}
+.notification .nav-pills .nav-link{
+    color: #fff;
+    background: transparent;
+    transition: .4s all ease-in-out;
+    border: 0 !important;
+    background-image: linear-gradient(45deg, #c0a8ed, transparent);
+    border-radius: 0;
+    box-shadow: 4px 5px 1px #d6c7f2;
+    padding: 8px 16px;
+    margin: 3px;
+    transition: .4s all ease-in-out;
+}
+.notification .nav-pills .nav-link.active{
+    color: #ab8de4 !important;
+    background: #fff;
+    transition: .4s all ease-in-out;
+    margin: 5px;
+    border: 1px solid #cbb3f5 !important;
+    color: #ffffff;
+    border-radius: 0;
+    box-shadow: 4px 5px 1px #d6c7f2;
+}
+.notification .modal.show .modal-dialog {
+    margin-top: 50px;
+}
+.modal-body{
+    height: 100vh;    
+    overflow: auto;
+    scrollbar-width: none;
+}
+.modal-body::-webkit-scrollbar{
+    display: none;
+}
+.modal-body ul li button{
+
+}
+.modal-body ul li{
+
+}
+.modal-body ul{
+
+}
+.acc_information{
+
+}
+.acc_information label{
+
+}
+.acc_information input,.acc_information select{
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+.acc_information input::placeholder,.acc_information select::placeholder{
+    font-size: 14px;
+}
+.acc_information button{
+    border: none !important;
+    transition: .4s all ease-in-out;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #cab3f5, transparent);
+    transition: .4s all ease-in-out;
+    box-shadow: -4px -4px 10px rgb(207 198 198 / 60%), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px #0000001a;
+}
+.acc_information button:active{
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+.acc_information button:hover{
+    color: #fff;
+    /* background: #e2bdfe; */
+    /* border: 1px solid #fff !important; */
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6), -2px -2px 4px rgba(255, 255, 255, .4), 2px 2px 2px rgba(255, 255, 255, .05), 2px 2px 4px #0000001a;
+}
+.nf_content img{
+
+width: 60px;
+}
+.nf_content h5{
+    
+margin: 0;
+    
+margin-top: 10px;
+    
+font-size: 14px;
+    
+color: #000000d1;
+}
+.chat-message{
+    display: flex;
+    flex-shrink: 0;
+    margin-right: auto;
+}
+.chat-message p,.chat-message .small{
+    font-size: 16px;
+}
+
+@media(max-width:426px){
+    .notification .nav-pills .nav-link {
+        font-size: 12px;
+    }
+    .acc_information button {
+        font-size: 10px;
+    }
+    .nf_content img {
+        width: 35px;
+    }
+    .nf_content h5 {
+        font-weight: 400;
+    }
+    .list_content ul li a h3 img {
+        margin-right: 10px;
+    }
+    .chat-message p,.chat-message .small{
+        font-size: 12px;
     }
 }

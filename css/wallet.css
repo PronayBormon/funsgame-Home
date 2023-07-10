@@ -4,6 +4,13 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b5acf8+0,cfcafb+53,e9e6fd+100 */
+    background: #b5acf8; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #b5acf8 0%, #cfcafb 53%, #e9e6fd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #b5acf8 0%,#cfcafb 53%,#e9e6fd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #b5acf8 0%,#cfcafb 53%,#e9e6fd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5acf8', endColorstr='#e9e6fd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    min-height: 100vh;
 }
 
 /* topbar part start here */
@@ -303,7 +310,7 @@ border-radius: 10px;
 
 padding: 10px;
 
-box-shadow: 5px 5px 10px #bebebe75, -5px -5px 10px #ffffff;
+box-shadow: 5px 5px 10px #bebebe75, -5px -5px 10px #e3d5fb54;
 
 background: #e3d5fb;
 

@@ -103,7 +103,7 @@ border-radius: 20px;
 
 box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important;
 
-margin-bottom: 20px;
+margin-bottom: 20px !important;
 }
 .account_balance h3{
 
@@ -257,11 +257,54 @@ font-family: 'Playfair Display', serif;
     
 text-transform: capitalize;
 }
-
+.balance_img{
+    
+width: 25px;
+}
 /* list part end here  */
 @media(max-width: 426px){
     .account_balance {
         margin-top: 10px;
-        padding: 20px;
+        padding: 10px;
+        width: 100%;
+        height: 85%;
     }
+    .account_balance h3 {
+        font-size: 10px;
+        margin: 0px;
+    }
+    .account_balance h4 {
+        font-size: 18px;
+    }
+    .d_pricelist ul li p {
+        font-size: 14px;
+        margin: 0;
+    }
+    .d_pricelist ul li button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+    .d_ribbon h5 {
+        font-size: 12px;
+    }
+    .d_pricelist ul li p img {
+        width: 25px;
+    }
+    .d_pricelist ul li p span {
+        font-size: 12px;
+    }
+    .balance_img {
+        width: 20px;
+        margin: 2px !important;
+    }
+    .account_balance h3 i {
+        margin-right: 5px;
+    }
+    .dimond_bannar a {
+        font-size: 10px;
+    }
+    .d_pricelist ul {
+        padding: 10px;
+    }
+    
 }

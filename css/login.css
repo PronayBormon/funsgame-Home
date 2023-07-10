@@ -278,14 +278,26 @@ transition: .4s all ease-in-out;
 .login .signin_btn:active{
     box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
 }
+.profile_img {
+    position: relative;
+}
+.camera_icon{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    background-color: #000000b5;
+    font-size: 12px;
+    border-radius: 50px;
+    color: #fff;
+    padding: 2px 5px;
+}
+.camera_icon i{
+
+}
 @media(max-width:426px){
     .log_title h1 {
         font-size: 18px;
     }
 }
 /* =========== login page end here =========================  */
-
-/* ============================= forgetpass page start here ================================ */
-
-
-/* ============================= fogetpass page end here ================================== */
