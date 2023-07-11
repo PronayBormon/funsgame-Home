@@ -1,233 +1,42 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- title  -->
-    <title>Wallet</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Player</title>
+    <style>
+        .video {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video class="video" controls>
+        <source src="videos/How to Deadlift_ 5 Simple Steps.mp4" type="video/mp4">
+    </video>
 
-    <!-- bootstrap 5.3    -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <video class="video" controls>
+        <source src="videos/v (1).mp4" type="video/mp4">
+    </video>
 
-    <!-- google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- fontawsome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-     <!-- style css  -->
-     <link rel="stylesheet" href="css/wallet.css">
+    <video class="video" controls>
+        <source src="videos/videoplsayback.mp4" type="video/mp4">
+    </video>
 
-  </head>
-  <body>  
+    <script>
+        var videos = document.querySelectorAll('.video');
 
-    <div class="container ">
-        <!-- top nav  -->
-      <div class="row">
-        <div class="col-12">
-          <div class="top_bar">
-            <div>
-              <button><i class="fa-solid fa-chevron-left"></i></button>
-            </div>
-            <div>
-              <h5>Wallet</h5>
-            </div>
-            <div>
-              <!-- <button><i class="fa-solid fa-file-lines"></i></button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- nav end  -->
-        <div class="row">            
-            <div class="col-md-4 col-sm-6  ">
-                <div class="notice">
-                    <h3>Announcement</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis corrupti voluptatum pariatur veniam amet earum neque optio maiores facere voluptas!</p>
-                    <a href="deposite.html">Get it <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <div class="col-md-8 col-sm-6  ">
-                <div class="acc_details">
-                    <div class="row">
-                        <div class="col-6">                        
-                            <div class="user_name">
-                                <h2>Jone Due</h2>
-                                <p>@userName</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="avlb_fund">
-                                <div class="col d-flex " ><img src="images/dollar.png" alt=""><h2>10000.00</h2></div>
-                                <div class="col d-flex"><img src="images/dimond.png" alt=""><h2>10000.00</h2></div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <a href="#" class="btn btn_wallet"> <img src="images/gift-box.png" width="30px" class="me-2" alt="">Gift</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- card section start here  -->
-        <div class="card_button">
-            <div class="row my-3 align-items-center" >
-                
-                <div class="col-lg-4 col-md-7 col-sm-10  ms-auto d-flex justify-content-center align-items-center " >
-                    <a href="#" style="text-decoration: none;">
-                        <div class="card_design">
-                            <div class="ball"></div>
-                            <div class="ring"></div>
-                            <h4>Bank</h4>
-                            <div class="row align-items-end">
-                                <div class="col-12">
-                                    
-                                    <!-- <a href="#" style="text-decoration: none;"> -->
-                                        <h3>1234 2345 8765 2345</h3>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="card_name">
-                                                    <p>Pronay kumar Bormon</p>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="col-6">
-                                                <div class="card_date">
-                                                    <div>
-                                                        <p>Expiry Date</p>
-                                                        <p> 12/2029</p>
-                                                    </div>
-                                                    <div>
-                                                        <p>CVV</p>
-                                                        <p> 45451</p>
-                                                    </div>
-                                                </div>
-                                            </div>                                 -->
-                                        </div>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-8 col-md-5 col-sm-12">
-                    
-                    <div class="row">
-                        <div class="col-6 text-center">
-                            <div class="withdraw_deposite">
-                                <a href="withdraw.html" class="btn btn_wallet"><img src="images/moneybag.png" class="me-2" width="30px" alt="">withdraw</a>
-                            </div>
-                        </div>
-                        <div class="col-6 text-center">
-                            <div class="withdraw_deposite">
-                                <a href="deposite.html" class="btn btn_wallet"><img src="images/wallet.png" class="me-2" width="30px" alt="">Deposite</a>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            </div>
-        </div>
-        <!-- card section end here  -->
+        function playPauseVideos(clickedVideo) {
+            videos.forEach(function (video) {
+                if (video !== clickedVideo) {
+                    video.pause();
+                }
+            });
+        }
 
-        <!-- trasnsection history part start here  -->
-        <div class="row">
-            <div class="co-md-6 col-sm-12 col-12">
-                <!-- dimond purches history -->
-                <div class="trasnsection_history">
-                    <div class="history_title">
-                        <div><h1>Trasnsection history</h1></div>
-                        <div> <a href="#"><i class="fa-solid fa-file-lines"></i></a></div>
-                    </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Category</th>
-                                <th>Network</th>
-                                <th>Ammount</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>today</td>
-                                <td>withdraw</td>
-                                <td>Bank</td>
-                                <td class="text-danger">-$1000</td>
-                                <td class="badge text-bg-warning">Pending</td>
-                            </tr>
-                            <tr>
-                                <td>06/07/23</td>
-                                <td>Deposite</td>
-                                <td>Card</td>
-                                <td class="text-success">$1000</td>
-                                <td class="badge text-bg-success">Success</td>
-                            </tr><tr>
-                                <td>today</td>
-                                <td>withdraw</td>
-                                <td>Bank</td>
-                                <td class="text-danger">-$1000</td>
-                                <td class="badge text-bg-warning">Pending</td>
-                            </tr>
-                            <tr>
-                                <td>06/07/23</td>
-                                <td>Deposite</td>
-                                <td>Card</td>
-                                <td class="text-success">$1000</td>
-                                <td class="badge text-bg-success">Success</td>
-                            </tr><tr>
-                                <td>today</td>
-                                <td>withdraw</td>
-                                <td>Bank</td>
-                                <td class="text-danger">-$1000</td>
-                                <td class="badge text-bg-warning">Pending</td>
-                            </tr>
-                            <tr>
-                                <td>06/07/23</td>
-                                <td>Deposite</td>
-                                <td>Card</td>
-                                <td class="text-success">$1000</td>
-                                <td class="badge text-bg-success">Success</td>
-                            </tr><tr>
-                                <td>today</td>
-                                <td>withdraw</td>
-                                <td>Bank</td>
-                                <td class="text-danger">-$1000</td>
-                                <td class="badge text-bg-warning">Pending</td>
-                            </tr>
-                            <tr>
-                                <td>06/07/23</td>
-                                <td>Deposite</td>
-                                <td>Card</td>
-                                <td class="text-success">$1000</td>
-                                <td class="badge text-bg-success">Success</td>
-                            </tr><tr>
-                                <td>today</td>
-                                <td>withdraw</td>
-                                <td>Bank</td>
-                                <td class="text-danger">-$1000</td>
-                                <td class="badge text-bg-warning">Pending</td>
-                            </tr>
-                            <tr>
-                                <td>06/07/23</td>
-                                <td>Deposite</td>
-                                <td>Card</td>
-                                <td class="text-success">$1000</td>
-                                <td class="badge text-bg-success">Success</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- dimond purches history end here  -->
-            </div>
-        </div>
-        <!-- trasnsection history part end here  -->
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  </body>
+        videos.forEach(function (video) {
+            video.addEventListener('play', function () {
+                playPauseVideos(video);
+            });
+        });
+    </script>
+</body>
 </html>

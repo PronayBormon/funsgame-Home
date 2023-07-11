@@ -148,15 +148,15 @@ body{
     color: #fff;
 }
 .contents {
-    margin: 10px 0px;
+    margin: 8px 0px;
 }
 /* tab section part end here  */
 
 /* model list section start here  */
 .model_sec{
     position: relative;
-    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important;
-    padding: 10px;
+    /* box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important; */
+    /* padding: 10px; */
     border-radius: 10px;
     margin: 10px 0px;
     height: 240px;
@@ -207,16 +207,48 @@ body{
 }
 /* model list section end here  */
 
+/* reels part start here  */
+.reel_section{
+
+display: flex;
+
+overflow: auto;
+}
+.video_section{
+    position: relative;
+    margin: 10px 5px;
+    height: 345px;
+    /* background: #d9d5fb; */
+    /* box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important; */
+    overflow: hidden;
+}
+.video_section video{
+    
+width: 100%;
+}
+.video_section h2{
+    position: absolute;
+    bottom: 5%;
+    left: 10px;
+    font-size: 14px;
+    color: #fff;
+    filter: drop-shadow(2px 4px 6px black);
+}
+/* reels part end here  */
+
 @media(max-width:1441px){
     .model_sec {
         height: 220px;
         width: 220px;
     }
 }
-@media (max-width: 1441px){
+@media (max-width: 1200px){
     .model_sec {
         height: 200px;
         width: 200px;
+    }
+    .video_section {
+        height: auto;
     }
 }
 @media (max-width: 992px){
@@ -259,14 +291,14 @@ body{
 }
 @media(max-width: 426px){
     .model_sec {
-        height: 200px;
-        width: 200px;
+        height: 190px;
+        width: 190px;
     }
 }
 @media(max-width: 376px){
     .model_sec {
-        height: 170px;
-        width: 170px;
+        height: 160px;
+        width: 160px;
     }
 }
 @media(max-width: 321px){
