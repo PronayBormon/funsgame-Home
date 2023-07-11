@@ -228,7 +228,7 @@ overflow: auto;
 .video_section{
     position: relative;
     margin: 10px 5px;
-    height: 345px;
+    height: 390px;
     /* background: #d9d5fb; */
     /* box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important; */
     overflow: hidden;
@@ -318,12 +318,28 @@ padding: 0px 5px;
     padding: 3px 20px;
     border-radius: 50px;
 }
+.model_section{
+
+}
+.model_section .col-lg-3,.model_section  .col-md-3,.model_section .col-sm-4,.model_section .col-6{
+    padding: 0 !important;
+    margin: 0 !important;
+    padding: 5px !important;
+}
 /* ============================= differnt view part end here ================================  */
 /* filter section end here  */
 @media(max-width:1441px){
     .model_sec {
         /* height: 220px; */
         /* width: 220px; */
+    }
+    .video_section {
+        height: 290px;
+    }
+}
+@media(max-width: 1300px){
+    .video_section {
+        height: 260px;
     }
 }
 @media (max-width: 1200px){
@@ -344,7 +360,7 @@ padding: 0px 5px;
 @media (max-width: 992px){
     .model_sec {
         height: 115px;
-        width: 175px;
+        width: 155px;
     }
     .host_name h2 {
         font-size: 12px;
@@ -376,8 +392,8 @@ padding: 0px 5px;
         margin: 20px 10px;
     }
     .model_sec {
-        height: 85px;
-        width: 120px;
+        height: 100px;
+        width: 150px;
     }
     .categories button {
         padding: 5px 6px;
@@ -400,6 +416,7 @@ padding: 0px 5px;
         height: 170px;
         width: 260px;
     }
+    
 }
 @media(max-width: 540px){
     .model_sec {
