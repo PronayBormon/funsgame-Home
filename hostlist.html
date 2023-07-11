@@ -51,17 +51,13 @@
 
 
         <!-- search part start here  -->
-        <div class="search_option">
-            <div class="row">
-                <div class="col-md-6 m-auto">
-                    <form action="">
-                        <input type="text " placeholder="Search ">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <button>Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <!-- <div class="search_option">
+            <form action="">
+                <input type="text " placeholder="Search ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button>Search</button>
+            </form>
+        </div> -->
         
         <!-- search part end here  -->
 
@@ -75,32 +71,138 @@
                 <div class="tab_buttons">
                     <div class="row">
                         <div class="col-10">
+                            
                             <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                                <div class="filter mobile_view">
+                                        <a class="btn  " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="fa-solid fa-sliders"></i>
+                                        </a>
+                                        <!-- categories mobile view start here  -->
+                                        <div class="modal top fade"
+                                            id="exampleModal"
+                                            tabindex="-1"
+                                            aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true"
+                                            data-mdb-backdrop="true"
+                                            data-mdb-keyboard="true">
+                                            <div class="modal-dialog modal-fullscreen">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button class="btn_check"><i class="fa-solid fa-check"></i></button>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="filter_desktop ">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="categories">
+                                                                    <h2>Categories</h2>
+                                                                    <div class="row">
+                                                                        <div class="col-auto">
+                                                                            <button class="active">cat twoyenty one </button>
+                                                                        </div>   
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat o five </button>
+                                                                        </div>                                                  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="categories">
+                                                                    <h2>Country</h2>
+                                                                    <div class="row">
+                                                                        <div class="col-auto">
+                                                                            <button>cat twoyenty one </button>
+                                                                        </div>   
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat o five </button>
+                                                                        </div>                                                  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                        <div class="col-auto">
+                                                                            <button>cat one </button>
+                                                                        </div>  
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- category mobile view end here  -->
+                                      
+                                        
+                                </div>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><img src="images/fire.png" alt="">Hot</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><img src="images/new.png" alt="">New</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="images/favorite-60 (1).png" alt="">Favorite</button>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-2">
                             <div class="filter">
-                                <div class="dropdown">
-                                    <a class="btn  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-sliders"></i>
+                                <p>
+                                    <a class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">                                  
+                                        <i class="fa-solid fa-magnifying-glass"></i>
                                     </a>
-                                  
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">By Country</a></li>
-                                      <li><a class="dropdown-item" href="#">By Caterory </a></li>
-                                    </ul>
-                                  </div>
+                                </p>
                             </div>
+                              
                         </div>
+                    </div>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="collapse" id="collapseExample">
+                            <div class="search_option">
+                                <form action="">
+                                    <input type="text " placeholder="Search ">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <button>Search</button>
+                                </form>
+                            </div>
+                          </div>
                     </div>
                 </div>
                 <!-- tabs button part end here  -->
@@ -108,359 +210,169 @@
 
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="row ">
-                            <div class="col-lg-3  col-md-3 col-sm-3 col-6 contents ">
-                                <!-- <a href="hostprofile.html"> -->
-                                    <div class="model_sec">                                    
-                                        <img src="images/001.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
+                        <div class="row">
+                            <div class="col-3 desktop_view">
+                                <!-- category desktop view start here -->
+                                <div class="filter_desktop ">
+                                    <div class="row">
+                                        <div class="col">
+                                           <div class="categories">
+                                                <h2>Categories</h2>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <button class="active">cat twoyenty one </button>
+                                                    </div>   
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat o five </button>
+                                                    </div>                                                  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                <!-- </a> -->
-                            </div>
-                            <div class="col-lg-3  col-md-3 col-sm-3 col-6 contents">
-                                    <div class="model_sec">      
-                                        <a href="hostprofile.html">                              
-                                            <img src="images/002.png" class="img-fluid" alt="">
-                                            <div class="host_name">
-                                                <h2>Rose Gilbert, 23 <span></span></h2>
-                                                <p>London Escort</p>
+                                    <div class="row">
+                                        <div class="col">
+                                           <div class="categories">
+                                                <h2>Country</h2>
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <button>cat twoyenty one </button>
+                                                    </div>   
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat o five </button>
+                                                    </div>                                                  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                    <div class="col-auto">
+                                                        <button>cat one </button>
+                                                    </div>  
+                                                </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div>
+                                </div>
+                                <!-- category desktop view end here  -->
+
+
                             </div>
-                            <div class="col-lg-3  col-md-3 col-sm-3 col-6 contents">
-                                    <div class="model_sec">   
-                                        <a href="hostprofile.html">                                 
-                                            <img src="images/003.png" class="img-fluid" alt="">
-                                            <div class="host_name">
-                                                <h2>Rose Gilbert, 23 <span></span></h2>
-                                                <p>London Escort</p>
+                            <div class="col-md-9 col-sm-8 col-12">
+                                <div class="row ">
+                                    <div class="col-lg-3  col-md-3 col-sm-4 col-6 contents ">
+                                            <div class="model_sec">
+                                                <a href="hostprofile.html">                                    
+                                                    <img src="images/001.png" class="img-fluid" alt="">
+                                                    <div class="host_name">
+                                                        <h2>Rose Gilbert, 23 <span></span></h2>
+                                                        <p>London Escort</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
                                     </div>
-                            </div>
-                            <div class="col-lg-3  col-md-3 col-sm-3 col-6 contents">
-                                    <div class="model_sec">  
-                                        <a href="hostprofile.html">                                  
-                                            <img src="images/004.png" class="img-fluid" alt="">
-                                            <div class="host_name">
-                                                <h2>Rose Gilbert, 23 <span></span></h2>
-                                                <p>London Escort</p>
+                                    <div class="col-lg-3  col-md-3 col-sm-4 col-6 contents">
+                                            <div class="model_sec">      
+                                                <a href="hostprofile.html">                              
+                                                    <img src="images/002.png" class="img-fluid" alt="">
+                                                    <div class="host_name">
+                                                        <h2>Rose Gilbert, 23 <span></span></h2>
+                                                        <p>London Escort</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
                                     </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 contents">
-                                    <div class="model_sec">                       
-                                        <a href="hostprofile.html">             
-                                            <img src="images/005.png" class="img-fluid" alt="">
-                                            <div class="host_name">
-                                                <h2>Rose Gilbert, 23 <span></span></h2>
-                                                <p>London Escort</p>
+                                    <div class="col-lg-3  col-md-3 col-sm-4 col-6 contents">
+                                            <div class="model_sec">   
+                                                <a href="hostprofile.html">                                 
+                                                    <img src="images/003.png" class="img-fluid" alt="">
+                                                    <div class="host_name">
+                                                        <h2>Rose Gilbert, 23 <span></span></h2>
+                                                        <p>London Escort</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
                                     </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-6 contents">
-                                    <div class="model_sec">  
-                                        <a href="hostprofile.html">                                  
-                                            <img src="images/006.png" class="img-fluid" alt="">
-                                            <div class="host_name">
-                                                <h2>Rose Gilbert, 23 <span></span></h2>
-                                                <p>London Escort</p>
+                                    <div class="col-lg-3  col-md-3 col-sm-4 col-6 contents">
+                                            <div class="model_sec">  
+                                                <a href="hostprofile.html">                                  
+                                                    <img src="images/004.png" class="img-fluid" alt="">
+                                                    <div class="host_name">
+                                                        <h2>Rose Gilbert, 23 <span></span></h2>
+                                                        <p>London Escort</p>
+                                                    </div>
+                                                </a>
                                             </div>
-                                        </a>
                                     </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-4 col-6 contents">
+                                            <div class="model_sec">                       
+                                                <a href="hostprofile.html">             
+                                                    <img src="images/005.png" class="img-fluid" alt="">
+                                                    <div class="host_name">
+                                                        <h2>Rose Gilbert, 23 <span></span></h2>
+                                                        <p>London Escort</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-3 col-sm-4 col-6 contents">
+                                            <div class="model_sec">  
+                                                <a href="hostprofile.html">                                  
+                                                    <img src="images/006.png" class="img-fluid" alt="">
+                                                    <div class="host_name">
+                                                        <h2>Rose Gilbert, 23 <span></span></h2>
+                                                        <p>London Escort</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                    </div>
+                                    
+                                    
+                                
+                                </div>
                             </div>
-                            
-                            
-                        
                         </div>
                         
                     </div>
                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="row ">
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        
-                        </div>
+                        ............
                     </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="row ">
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        
-                        </div>
+                        ..........hh 
                     </div>
                 </div>
             </div>
         </div>
         <!-- main content part start here  -->
     </div>
-    
+
 
 
     
