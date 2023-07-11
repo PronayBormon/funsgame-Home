@@ -170,7 +170,7 @@ width: 14px;
     /* box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important; */
     /* padding: 10px; */
     /* border-radius: 10px; */
-    margin: 10px 0px;
+    /* margin: 10px 0px; */
     /* height: 220px; */
     /* width: 398px; */
     overflow: hidden;
@@ -180,13 +180,14 @@ width: 14px;
     /* transform: scale(1.03); */
 }
 .model_sec img{
-    width: 100%;
+    /* width: 100%; */
     /* max-height: 422px; */
-    height: 100%;
+    /* height: 100%; */
     -o-object-fit: cover;
-    object-fit: cover;
-    transition: .4s all ease-in-out;
+    /* object-fit: cover; */
+    /* transition: .4s all ease-in-out; */
     /* border-radius: 10px; */
+    border-radius: 10px;
 }
 .host_name{
     position: absolute;
@@ -195,17 +196,18 @@ width: 14px;
 }
 .host_name h2{
     color: #fff;
-    font-size: 18px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     transition: .4s all ease-in-out;
     filter: drop-shadow(2px 4px 6px black);
+    margin: 0px;
 }
 .host_name h2 span{
     display: block;
     height: 10px;
     width: 10px;
-    background: #68e233;
+    /* background: #68e233; */
     margin-left: 10px;
     border-radius: 50px;
     filter: drop-shadow(2px 4px 6px black);
@@ -214,6 +216,7 @@ width: 14px;
     color: #ffffffc9;
     filter: drop-shadow(2px 4px 6px #000);
     transition: .4s all ease-in-out;
+    font-size: 10px;
 }
 .filter a:focus,.filter a:active{
     outline: 0;
@@ -230,18 +233,26 @@ overflow: auto;
 }
 .video_section{
     position: relative;
-    margin: 0px 5px;
+    /* margin: 0px 5px; */
     height: 390px;
     /* background: #d9d5fb; */
     /* box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important; */
     overflow: hidden;
-    margin-top: 3px;
+    /* margin-top: 3px; */
+    /* border-radius: 15px; */
+    width: 100%;
 }
 .video_section video{
     
 width: 100%;
     
 height: 100%;
+    
+object-fit: cover;
+    
+padding: 0px 3px;
+    
+border-radius: 10px;
 }
 .video_section h2{
     position: absolute;
@@ -330,14 +341,56 @@ padding: 0px 5px;
 padding: 0px 5px;
 }
 .model_section .col-lg-3,.model_section  .col-md-3,.model_section .col-sm-4,.model_section .col-6{
-    padding: 0 !important;
-    margin: 0 !important;
-    padding: 0px 0px !important;
---bs-gutter-x: 0px;
-    padding-bottom: 8px !important;
+    padding-left: 3px !important;
+    margin: 0px !important;
+    padding-right: 3px !important;
+    /* padding: 0px 0px !important; */
+    /* --bs-gutter-x: 0px; */
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
+    margin: 3px 0px !important;
 }
 /* ============================= differnt view part end here ================================  */
 /* filter section end here  */
+
+/* ======================== carousel nav part start here ================== */
+.owl-game{
+    position: relative;
+}
+.owl-game .owl-dots.disabled, .owl-game .owl-nav.disabled {
+    display: block;
+}
+.owl-game .owl-nav button.owl-prev{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+}
+.owl-game .owl-nav button.owl-prev span,.owl-game .owl-nav button.owl-next span{
+    font-size: 30px;
+    background-color: #afa6f6a8;
+    height: 50px;
+    display: block;
+    width: 50px;
+    border-radius: 50px;
+}
+.owl-game .owl-nav button.owl-next{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background-color: #afa6f6; */
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+    /* background-color: #afa6f6; */
+}
+/* ======================== carousel nav part end here  ======================  */
 @media(min-width:1700px){
     .model_sec {
         height: 200px;
@@ -346,8 +399,8 @@ padding: 0px 5px;
 }
 @media(max-width:1441px){
     .model_sec {
-        height: 135px;
-        width: 255px;
+        /* height: 135px; */
+        /* width: 255px; */
     }
     .video_section {
         height: 290px;
@@ -360,8 +413,8 @@ padding: 0px 5px;
 }
 @media (max-width: 1200px){
     .model_sec {
-        height: 135px;
-        width: 210px;
+        /* height: 135px; */
+        /* width: 210px; */
     }
     .video_section {
         height: auto;
@@ -369,14 +422,14 @@ padding: 0px 5px;
 }
 @media (max-width: 1026px){
     .model_sec {
-        height: 135px;
-        width: 180px;
+        /* height: 135px; */
+        /* width: 180px; */
     }
 }
 @media (max-width: 992px){
     .model_sec {
-        height: 115px;
-        width: 155px;
+        /* height: 115px; */
+        /* width: 155px; */
     }
     .host_name h2 {
         font-size: 12px;
@@ -388,8 +441,8 @@ padding: 0px 5px;
 }
 @media (max-width: 820px){
     .model_sec {
-        height: 100px;
-        width: 130px;
+        /* height: 100px; */
+        /* width: 130px; */
     }
     .host_name {
         padding: 5px;
@@ -398,8 +451,8 @@ padding: 0px 5px;
 }
 @media(max-width: 770px){
     .model_sec {
-        height: 170px;
-        width: 260px;
+        /* height: 170px; */
+        /* width: 260px; */
     }
     
 }
@@ -408,8 +461,8 @@ padding: 0px 5px;
         margin: 20px 10px;
     }
     .model_sec {
-        height: 100px;
-        width: 155px;
+        /* height: 100px; */
+        /* width: 155px; */
     }
     .categories button {
         padding: 5px 6px;
@@ -429,28 +482,36 @@ padding: 0px 5px;
         font-size: 14px;
     }
     .model_sec {
-        height: 170px;
-        width: 260px;
+        /* height: 170px; */
+        /* width: 260px; */
     }
     
 }
 @media(max-width: 540px){
     .model_sec {
-        height: 170px;
-        width: 245px;
+        /* height: 170px; */
+        /* width: 245px; */
     }
 }
 @media(max-width: 426px){
     .model_sec {
-        height: 130px;
-        width: 195px;
+        /* height: 130px; */
+        /* width: 195px; */
         /* border: 1px solid; */
+    }
+    .owl-game .owl-nav button.owl-next {
+        right: -20px;
+    }
+    .owl-game .owl-nav button.owl-prev span, .owl-game .owl-nav button.owl-next span {
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
     }
 }
 @media(max-width: 376px){
     .model_sec {
-        height: 110px;
-        width: 170px;
+        /* height: 110px; */
+        /* width: 160px; */
     }
 }
 @media(max-width: 321px){
@@ -459,8 +520,8 @@ padding: 0px 5px;
         font-size: 12px;
     }
     .model_sec {
-        height: 100px;
-        width: 142px;
+        /* height: 100px; */
+        /* width: 142px; */
     }
     .host_name {
         padding: 5px;
