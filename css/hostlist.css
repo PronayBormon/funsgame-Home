@@ -489,13 +489,14 @@ padding: 0px 5px;
 }
 .owl-game .owl-nav button.owl-prev{
     position: absolute;
-    left: 12px;
+    /* left: 12px; */
     top: 50%;
     transform: translateY(-50%);
     height: 60px;
     width: 60px;
     text-align: center;
     color: #fff;
+    margin-right: auto;
 }
 .owl-game .owl-nav button.owl-prev span,.owl-game .owl-nav button.owl-next span{
     font-size: 30px;
@@ -581,6 +582,9 @@ margin-right: 5px;
     height: 100%;
     object-fit: fill;
     border-radius: 10px;
+}
+.owl-game .owl-nav button.owl-next span {
+    margin-left: auto;
 }
 @media(min-width:1700px){
     .model_sec {
@@ -708,7 +712,7 @@ margin-right: 5px;
         /* border: 1px solid; */
     }
     .owl-game .owl-nav button.owl-next {
-        right: -20px;
+        /* right: -20px; */
     }
     .owl-game .owl-nav button.owl-prev span, .owl-game .owl-nav button.owl-next span {
         height: 30px;
