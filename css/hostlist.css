@@ -78,7 +78,7 @@ body{
     color: #76696b70;
     top: 10px;
 }
-.search_option i{
+.categories .search_option i{
    position: unset;
    color: #00000069 !important;
 }
@@ -106,7 +106,7 @@ body{
     box-shadow: 5px 5px 5px #8a8a9045, -5px -5px 5px #e1defd3b;
     color: #4636cc;
 }
-.search_option button{
+.categories .search_option button{
     background: transparent !important;
     box-shadow: none;
 }
@@ -541,8 +541,8 @@ padding: 0px 5px;
         /* width: 155px; */
     }
     .categories button {
-        padding: 0px;
-        font-size: 12px;
+        /* padding: 0px; */
+        /* font-size: 12px; */
     }
 }
 
