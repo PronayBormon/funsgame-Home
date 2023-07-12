@@ -132,7 +132,7 @@ body{
 }
 .tab_buttons img{
 
-width: 14px;
+width: 30px;
 }
 .search_option button:active{
     box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
@@ -158,6 +158,7 @@ width: 14px;
 .tab_buttons ul li button:hover{
     /* box-shadow: 7px 7px 15px #8177d141, -7px -7px 20px #ff000000, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important; */
     color: #fff;
+    /* font-size: 12px; */
 }
 .tab_buttons ul li{
 
@@ -173,7 +174,7 @@ width: 14px;
 }
 .filter i{
     color: #ffffff;
-    font-size: 12px;
+    font-size: 14px;
 }
 .contents {
     margin: 8px 0px;
@@ -329,9 +330,9 @@ padding: 0;
 .categories .btn_cat{
     background: #fff;
     border-radius: 50px !important;
-    padding: 5px 5px;
+    padding: 0px 5px;
     border: initial;
-    margin: 5px 0px;
+    /* margin: 5px 0px; */
     background: #e6e3fd;
     color: #0000008c;
     transition: .4s all ease-in-out !important;
@@ -392,7 +393,7 @@ padding: 0px 5px;
 .tab-content{
     margin-top: 10px;
 }
-.modal-body{padding: 10px;}
+.modal-body{padding: 10px;overflow: hidden !important;}
 .modal.show .modal-dialog {
     transform: none;
     padding: 0px;
@@ -412,7 +413,7 @@ margin: 5px;
 }
 .categories table tbody tr{
 
-display: flex;
+/* display: flex; */
 
 width: 100%;
 
@@ -429,12 +430,14 @@ background: transparent;
 border: none;
 
 padding: 0px;
+
+margin: 3px 0px;
 }
 .categories table tbody tr td p{
 
 font-size: 14px;
 
-text-align: center;
+/* text-align: center; */
 }
 .categories table tbody tr td a img{
 
@@ -667,7 +670,7 @@ margin-right: 5px;
     }
     .tab_buttons ul li button {
         margin: 0px 5px;
-        font-size: 14px;
+        font-size: 13px;
     }
     .model_sec {
         /* height: 170px; */
@@ -712,6 +715,9 @@ margin-right: 5px;
         width: 30px;
         font-size: 18px;
     }
+    .tab_buttons img {
+        width: 25px;
+    }
 }
 @media(max-width: 376px){
     .model_sec {
@@ -721,8 +727,8 @@ margin-right: 5px;
 }
 @media(max-width: 321px){
     .tab_buttons ul li button{
-        padding: 5px;
-        font-size: 12px;
+        padding: 2px;
+        font-size: 14px;
     }
     .model_sec {
         /* height: 100px; */
@@ -737,11 +743,20 @@ margin-right: 5px;
     .host_name p{
         font-size: 9px;
     }
+    .tab_buttons img {
+        width: 14px;
+    }
+    .btn {
+        padding: 0;
+    }
     
 }
 @media(max-width: 281px){
     .model_sec {
         height: 85px;
         width: 120px;
+    }
+    .tab_buttons img {
+        width: 13px;
     }
 }
