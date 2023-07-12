@@ -28,7 +28,7 @@ body{
         /* box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important; */
         border-radius: 10px;
         margin: 5px 0px;
-        height: 150px;
+        height: 300px;
     }
     
     .owl-bannar .owl-dots{
@@ -131,7 +131,7 @@ width: 14px;
 .tab_buttons ul li button{
     border-radius: 0px !important;
     margin: 0px 10px;
-    /* box-shadow: 7px 7px 15px #8277d1ad, -7px -7px 20px #ff000000, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important; */
+    box-shadow: 7px 7px 15px #c6c5c93d, -7px -7px 20px #ccc7c700, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important;
     transition: .4s all ease-in-out;
     /* background: #c7bcffb0; */
     color: #ffffffa1;
@@ -140,7 +140,7 @@ width: 14px;
     color: #00000063;
 }
 .tab_buttons ul li button:hover{
-    /* box-shadow: 7px 7px 15px #8177d141, -7px -7px 20px #ff000000, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important; */
+    box-shadow: 7px 7px 15px #8177d141, -7px -7px 20px #ff000000, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important;
     color: #fff;
 }
 .tab_buttons ul li{
@@ -200,7 +200,7 @@ width: 14px;
     display: flex;
     align-items: center;
     transition: .4s all ease-in-out;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(2px 4px 6px #000e);
     margin: 0px;
 }
 .host_name h2 span{
@@ -273,27 +273,79 @@ border-radius: 10px;
     font-size: 20px;
     text-align: start;
 }
-.categories button{
+.categories ul li p{
+
+margin-left: 5px;
+
+/* border: 1px solid #b4a3ee; */
+
+padding: 0px 3px;
+
+color: #6e5fe8;
+}
+.categories ul li a{
+
+    margin: 2px;
+    transition: .4s all ease-in-out;
+}
+.categories ul li a:hover{
+    transform: scale(1.1);
+}
+.categories ul li a img{
+    width: 25px;
+    height: 90%;
+}
+.categories ul li{
+
+display: flex;
+
+justify-content: start;
+
+align-items: center;
+
+list-style: none;
+}
+.categories ul{
+    
+padding: 0;
+}
+.categories .btn_cat{
     background: #fff;
-    border-radius: 50px;
+    border-radius: 50px !important;
     padding: 5px 20px;
     border: initial;
     margin: 5px 0px;
     background: #e6e3fd;
     color: #0000008c;
-    transition: .4s all ease-in-out;
+    transition: .4s all ease-in-out !important;
 }
-.categories button:hover{
+.categories .btn_cat:hover{
     color: #fff;
     box-shadow: 2px 3px 10px #d5d0fb, -2px -3px 5px #b3aaf8;
     background-image: linear-gradient(45deg, #ff3d002b, #a095f7,#b2a8f8);
 }
-.categories button.active,.categories button:active{
+.categories .btn_cat.active,.categories .btn_cat:active{
     background-image: linear-gradient(45deg, #b2a8f8,#ff3d002b, #a095f7);
     box-shadow: 2px 3px 13px 11px #d6d1fc;
     color: #fff;
     font-weight: 600;
     transition: .4s all ease-in-out;
+}
+.btn_flug{
+    border: none;
+    background: transparent;
+    transition: .4s all ease-in-out;
+}
+.btn_flug img{
+    width: 30px;
+    filter: drop-shadow(2px 4px 6px #a198ee);
+    color: #a198ee;
+}
+.btn_flug.active{
+
+}
+.btn_flug:hover{
+    transform: scale(1.1);
 }
 .categories{
 
@@ -465,7 +517,7 @@ padding: 0px 5px;
         /* width: 155px; */
     }
     .categories button {
-        padding: 5px 6px;
+        padding: 0px;
         font-size: 12px;
     }
 }
@@ -484,6 +536,17 @@ padding: 0px 5px;
     .model_sec {
         /* height: 170px; */
         /* width: 260px; */
+    }
+    .owl-bannar img{
+        height: 150px;
+    }
+    .categories .btn_cat {
+        padding: 2px 5px;
+        margin: 3px 0px;
+        font-size: 12px;
+    }
+    .categories ul li p {
+        font-size: 12px;
     }
     
 }
