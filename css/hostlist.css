@@ -71,11 +71,16 @@ body{
 .search_option input{
 
 }
+
 .search_option i{
     position: absolute;
     left: 10px;
     color: #76696b70;
     top: 10px;
+}
+.search_option i{
+   position: unset;
+   color: #00000069 !important;
 }
 .search_option input{
     border: none;
@@ -100,6 +105,10 @@ body{
     background: linear-gradient(145deg, #ffffff, #dfe1e2);
     box-shadow: 5px 5px 5px #8a8a9045, -5px -5px 5px #e1defd3b;
     color: #4636cc;
+}
+.search_option button{
+    background: transparent !important;
+    box-shadow: none;
 }
 .search_option button:hover{
 
@@ -156,7 +165,7 @@ width: 14px;
     height: 100%;
 }
 .filter i{
-    color: #fff;
+    color: #ffffff;
     font-size: 12px;
 }
 .contents {
@@ -318,13 +327,14 @@ padding: 0;
     background: #e6e3fd;
     color: #0000008c;
     transition: .4s all ease-in-out !important;
+    font-weight: 600;
 }
 .categories .btn_cat:hover{
     color: #fff;
     box-shadow: 2px 3px 10px #d5d0fb, -2px -3px 5px #b3aaf8;
     background-image: linear-gradient(45deg, #ff3d002b, #a095f7,#b2a8f8);
 }
-.categories .btn_cat.active,.categories .btn_cat:active{
+.categories .btn_cat.active,.categories .btn_cat:active, .categories .btn_cat:focus{
     background-image: linear-gradient(45deg, #b2a8f8,#ff3d002b, #a095f7);
     box-shadow: 2px 3px 13px 11px #d6d1fc;
     color: #fff;
@@ -335,11 +345,25 @@ padding: 0;
     border: none;
     background: transparent;
     transition: .4s all ease-in-out;
+    padding: 0px 5px;
+    color: #00000070;
+}
+.btn_flug.active,.btn_flug:active, .btn_flug:focus{
+    /* background: #958de354;
+    border-radius: 10px;
+    padding: 5px; */
+    color: #7565f3;
+    transform: scale(1.2);
+    filter: drop-shadow(2px 4px 6px #8f86e4);
 }
 .btn_flug img{
     width: 30px;
     filter: drop-shadow(2px 4px 6px #a198ee);
     color: #a198ee;
+}
+.btn_flug p{
+
+font-size: 12px;
 }
 .btn_flug.active{
 
