@@ -15,6 +15,7 @@ body::-webkit-scrollbar{
     position: relative;
 }
 
+
 /* navbar start  */
 .nav_bar{
     position: fixed;
@@ -30,41 +31,43 @@ body::-webkit-scrollbar{
 }
 .nav_profile  a{
         
-color: #fff !important;
+/* color: #fff !important; */
         
-border: none;
+/* border: none; */
         
-font-size: 24px;
+/* font-size: 24px; */
         
-height: 30px !important;
+/* height: 30px !important; */
         
-width: 30px;
+/* width: 30px; */
         
-display: flex;
+/* display: flex; */
         
 justify-content: center;
         
 align-items: center;
         
-border-radius: 20px;
+/* border-radius: 20px; */
         
-border-top-right-radius: 20px !important;
+/* border-top-right-radius: 20px !important; */
         
-border-bottom-right-radius: 20px !important;
+/* border-bottom-right-radius: 20px !important; */
         
-background: rgb(246,178,219);
+/* background: rgb(246,178,219); */
         
 background: -moz-linear-gradient(top, rgba(246,178,219,1) 0%, rgba(251,88,155,1) 99%);
         
-background: -webkit-linear-gradient(top, rgba(246,178,219,1) 0%,rgba(251,88,155,1) 99%);
+/* background: -webkit-linear-gradient(top, rgba(246,178,219,1) 0%,rgba(251,88,155,1) 99%); */
         
-background: linear-gradient(to bottom, rgba(246,178,219,1) 0%,rgba(251,88,155,1) 99%);
+/* background: linear-gradient(to bottom, rgba(246,178,219,1) 0%,rgba(251,88,155,1) 99%); */
         
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6b2db', endColorstr='#fb589b',GradientType=0 );
         
-font-size: 12px;
+/* font-size: 12px; */
         
-margin-top: 10px;
+background: transparent;
+        
+/* color: #000; */
 } 
 .nav_profile .dropstart ul{
     margin-top: 20px !important;
@@ -90,7 +93,25 @@ margin-top: 10px;
     font-size: 14px;
     margin-right: 9px;
 }
+.grid_dots{
 
+/* margin-top: 10px; */
+}
+.grid_dots .dots{
+    display: flex;
+}
+.dots span{
+    display: block;
+    height: 5px;
+    width: 5px;
+    background-color: #602be1;
+    border-radius: 50%;
+    margin: 1px;
+    transition: .4s all ease-in-out;
+}
+.nav_profile  a:hover .dots span{
+    background-color: #000;
+}
 /* footer  */
 footer{
     position: fixed;
@@ -111,7 +132,11 @@ footer a {
     color: #0000008a;
     font-size: 12px;
 }
-
+footer a img{
+    width: 25px;
+    margin-top: 10px;
+    filter: drop-shadow(5px 5px 2px #0000004d);
+}
 /* content start here  ================================ */
 
 /* profile part  */
@@ -726,11 +751,7 @@ transform: translate(-44%, -14%);
 .nav_bars h1{
     
 }
-footer a img{
-    width: 25px;
-    margin-top: 10px;
-    filter: drop-shadow(5px 5px 2px #0000004d);
-}
+
 .nf_content h3 i{
     
 font-size: 37px;
