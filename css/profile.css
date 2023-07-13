@@ -10,13 +10,9 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
-/* main div  */
-.footer_nav{
-    position: relative;
-}
 
 
-/* navbar start  */
+/*====================== navbar start=========================  */
 .nav_bar{
     position: fixed;
     top: 0px;
@@ -28,46 +24,16 @@ body::-webkit-scrollbar{
 .nav_profile{
     display: flex;
     align-items: center;
+    height: 50px;
+    /* background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61); */
+    padding: 0px 10px;
 }
-.nav_profile  a{
-        
-/* color: #fff !important; */
-        
-/* border: none; */
-        
-/* font-size: 24px; */
-        
-/* height: 30px !important; */
-        
-/* width: 30px; */
-        
-/* display: flex; */
-        
-justify-content: center;
-        
-align-items: center;
-        
-/* border-radius: 20px; */
-        
-/* border-top-right-radius: 20px !important; */
-        
-/* border-bottom-right-radius: 20px !important; */
-        
-/* background: rgb(246,178,219); */
-        
-background: -moz-linear-gradient(top, rgba(246,178,219,1) 0%, rgba(251,88,155,1) 99%);
-        
-/* background: -webkit-linear-gradient(top, rgba(246,178,219,1) 0%,rgba(251,88,155,1) 99%); */
-        
-/* background: linear-gradient(to bottom, rgba(246,178,219,1) 0%,rgba(251,88,155,1) 99%); */
-        
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6b2db', endColorstr='#fb589b',GradientType=0 );
-        
-/* font-size: 12px; */
-        
-background: transparent;
-        
-/* color: #000; */
+.nav_profile  a{        
+    justify-content: center;        
+    align-items: center;        
+    background: -moz-linear-gradient(top, rgba(246,178,219,1) 0%, rgba(251,88,155,1) 99%);        
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6b2db', endColorstr='#fb589b',GradientType=0 );
+    background: transparent;
 } 
 .nav_profile .dropstart ul{
     margin-top: 20px !important;
@@ -93,6 +59,23 @@ background: transparent;
     font-size: 14px;
     margin-right: 9px;
 }
+.nav_bar.scrolled {
+    /* background-color: #fff !important; */
+    transition: background-color 200ms linear;
+    box-shadow: 1px 0px 2px #00000030;
+    background-image: linear-gradient(45deg, #7665f3,#cfcafb, #c4bdfa);
+}
+.nav_bars.scrolled {
+    display: block;
+    font-size: 14px;
+}
+.nav_bars{
+    /* display: none; */
+    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+}
+.nav_bars h1{
+    
+}
 .grid_dots{
 
 /* margin-top: 10px; */
@@ -112,7 +95,61 @@ background: transparent;
 .nav_profile  a:hover .dots span{
     background-color: #000;
 }
-/* footer  */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* background-color: #d9cbf9; */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 999999;
+    background-image: linear-gradient(45deg, #a097e5,#d6d0ff, #c4bdfae3);
+  }
+ 
+  .sidenav a {
+    padding: 4px 8px 4px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #9681EB;
+    display: block;
+    transition: 0.3s;
+    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfab3);
+    margin: 5px 0px;
+    box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important;
+    transition: .4s all ease-in-out;
+    filter: drop-shadow(2px 4px 6px #fff);
+  }
+  .sidenav a img{    
+    width: 30px;        
+    margin-bottom: 8px;        
+    margin-right: 5px;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-image: none;
+    box-shadow: none !important;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* ========================== navbar end here ==================== */
+
+
+/* ================== footer start here ================================  */
 footer{
     position: fixed;
     left: 0px;
@@ -122,6 +159,7 @@ footer{
     background: #ffffff;
     z-index: 99999;
     box-shadow: 1px 0px 3px #00000024;
+    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
 }
 footer i{
     font-size: 20px;
@@ -137,21 +175,25 @@ footer a img{
     margin-top: 10px;
     filter: drop-shadow(5px 5px 2px #0000004d);
 }
-/* content start here  ================================ */
-
-/* profile part  */
-/* .profile_pcview{
-    box-shadow: 0px 0px 8px #00000029;
-    margin: 20px 0px;
-    padding: 20px 10px;
-    border-radius: 10px;
+.desktop_view{
+    display: block;    
 }
-.profile_show{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 2px solid #0000001f;
-} */
+.mobile_view{
+    display: none;
+}
+@media (max-width: 1200px){
+    .desktop_view{
+        display: none;    
+    }
+    .mobile_view{
+        display: block;
+    }
+}
+/* =======================footer end herere =============== */
+
+
+/*===================== content start here  ================================ */
+
 .p_img{
     width: 200px;
     height: 200px;
@@ -736,21 +778,7 @@ transform: translate(-44%, -14%);
     display: none;
 
 }
-.nav_bar.scrolled {
-    background-color: #fff !important;
-    transition: background-color 200ms linear;
-    box-shadow: 1px 0px 2px #00000030;
-}
-.nav_bars.scrolled {
-    display: block;
-    font-size: 14px;
-}
-.nav_bars{
-    display: none;
-}
-.nav_bars h1{
-    
-}
+
 
 .nf_content h3 i{
     
@@ -890,6 +918,7 @@ color: #000000d1;
 .chat-message p,.chat-message .small{
     font-size: 16px;
 }
+/* ============================ mobile and desktop view ==================  */
 
 @media(max-width:426px){
     .notification .nav-pills .nav-link {
