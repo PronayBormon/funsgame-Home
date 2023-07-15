@@ -535,7 +535,7 @@ background: transparent;
         height: 42vh;
     }
     .game_box {
-        height: 200px;
+        height: 110px;
     }
     .game_part iframe {
         height: 42vh;
@@ -544,12 +544,12 @@ background: transparent;
 }
 @media(max-width: 768px){
     .game_box {
-        height: 170px;
+        height: 90px;
     }
 }
 @media(max-width: 600px){
     .game_box {
-        height: 130px;
+        height: 75px;
         padding: 3px;
     }
     .ads {
@@ -558,27 +558,37 @@ background: transparent;
 }
 @media(max-width: 576px){
     .game_box {
-        height: 130px;
+        height: 60px;
     }
 }
 @media(max-width: 426px){
+    .video-js {
+        height: 38vh;
+    }
     .game_box {
-        height: 110px;
+        height: 55px;
     }
     .ads {
         height: 110px;
     }
+
 }
 @media(max-width:376px){
     .game_box {
-        height: 100px;
+        height: 50px;
+    }
+    .video-js {
+        height: 34vh;
     }
 }
 @media(max-width: 321px){
     .game_box {
-        height: 80px;
+        height: 40px;
     }
     .ads {
         height: 90px;
+    }
+    .video-js {
+        height: 30vh;
     }
 }
