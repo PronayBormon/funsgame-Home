@@ -456,6 +456,7 @@
   word-break: initial;
   width: 100%;
   height: 428px;
+  margin-bottom: 5px;
 }
 .video-js:-moz-full-screen {
   position: absolute;
