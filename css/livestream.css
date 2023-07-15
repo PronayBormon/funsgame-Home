@@ -522,7 +522,9 @@ background: transparent;
 .model_section .col-6{
     padding: 0px 3px;
 }
-
+.player_game .col{
+    padding: 0px 3px;
+}
 /* responsive part start here  */
 @media(max-width: 1200px){
     .video-js {
