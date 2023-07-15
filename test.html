@@ -1,761 +1,100 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- title  -->
-    <title>Host List </title>
+<!DOCTYPE html>
+<html>
+<head>
 
-    <!-- bootstrap 5.3    -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+  <div class="main2" id="main1" style="display: block;">
+    <h1>main1</h1>
+    <button onclick="fncOne(); ">funOne</button>
+    <button onclick="fncTwo()">fncTwo</button>
+    <button onclick="fncThree(); ">fncThree</button>
+    <button onclick="fncFour()">fncFour</button>
+  </div>
+  
 
-    <!-- google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- owl-carousel css  -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    
-    <!-- fontawsome cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-     <!-- style css  -->
-     <link rel="stylesheet" href="css/hostlist.css">
+  <div class="div1" id="div1" style="display: none;">
+    <h1>div1</h1>
+    <button onclick="fncOne();">funOne</button>
+  </div>
+  <div class="div2" id="div2" style="display: none;">
+    <h1>div2</h1>
+    <button onclick="fncTwo()">funTwo</button>
+  </div>
+  <div class="div3" id="div3" style="display: none;">
+    <h1>div3</h1>
+    <button onclick="fncThree()">fncThree</button>
+  </div>
+  <div class="div4" id="div4" style="display: none;">
+    <h1>div4</h1>
+    <button onclick="fncFour()">fncFour</button>
+  </div>
+  <div class="main2" id="main2" style="display: none;">
+    <h1>main2</h1>
+  </div>
+  <!-- Add more divs as needed -->
 
-  </head>
-  <body>  
-    
-    <div class="container-fluid">
-        <!-- bannar part start here  -->
-        <div class="bannar">
-            <div class="row">
-                <div class="owl-carousel owl-bannar">
-                    <div class="bannar">
-                        <img src="images/bannar.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="bannar">
-                        <img src="images/bannar.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="bannar">
-                        <img src="images/bannar.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="bannar">
-                        <img src="images/bannar.jpg" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- banar part end here  -->
-
-
-        <!-- search part start here  -->
-        <div class="search_option">
-            <div class="row">
-                <div class="col-md-6 m-auto">
-                    <form action="">
-                        <input type="text " placeholder="Search ">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <button>Search</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-        <!-- search part end here  -->
-
-
-
-
-        <!-- main content part start here  -->
-        <div class="row">
-            <div class="col-12">
-                <!-- tabs buttons part start here  -->
-                <div class="tab_buttons">
-                    <div class="row">
-                        <div class="col-10">
-                            <ul class="nav nav-pills " id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-2">
-                            <div class="filter">
-                                <div class="dropdown">
-                                    <a class="btn  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-sliders"></i>
-                                    </a>
-                                  
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">By Country</a></li>
-                                      <li><a class="dropdown-item" href="#">By Caterory </a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- tabs button part end here  -->
-
-
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                        <div class="row ">
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        
-                        </div>
-                        <!-- reels slides  -->
-                        <div class="row">
-                            <div class=" owl-carousel owl-game">
-                                <div class="video_section">
-                                    <a href="#">
-                                        <video class="video" >
-                                            <source src="videos/How to Deadlift_ 5 Simple Steps.mp4" type="video/mp4">
-                                        </video>
-                                        <h2>32k Views</h2>
-                                    </a>
-                                </div>
-                                <div class="video_section">
-                                    <a href="#">
-                                        <video class="video" >
-                                            <source src="videos/v (1).mp4" type="video/mp4">
-                                        </video>
-                                        <h2>32k Views</h2>
-                                    </a>
-                                </div>
-                                <div class="video_section">
-                                    <a href="#">
-                                        <video class="video" >
-                                            <source src="videos/v (2).mp4" type="video/mp4">
-                                        </video>
-                                        <h2>32k Views</h2>
-                                    </a>
-                                </div>
-                                <div class="video_section">
-                                    <a href="#">
-                                        <video class="video" >
-                                            <source src="videos/videoplayback.mp4" type="video/mp4">
-                                        </video>
-                                        <h2>32k Views</h2>
-                                    </a>
-                                </div>
-                                <div class="video_section">
-                                    <a href="#">
-                                        <video class="video" >
-                                            <source src="videos/videoplsayback.mp4" type="video/mp4">
-                                        </video>
-                                        <h2>32k Views</h2>
-                                    </a>
-                                </div>
-
-                                
-                            </div>
-                        </div>
-                        <!-- reels slider end  -->
-                        <div class="row ">
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                        <div class="row ">
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                        <div class="row ">
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/screencapture-127-0-0-1-5500-hostlist-html-2023-07-10-14_37_50.png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/pexels-pixabay-268533.jpg" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (1).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-6 contents">
-                                <a href="hostprofile.html">
-                                    <div class="model_sec">                                    
-                                        <img src="images/model (2).png" class="img-fluid" alt="">
-                                        <div class="host_name">
-                                            <h2>Rose Gilbert, 23 <span></span></h2>
-                                            <p>London Escort</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- main content part start here  -->
-    </div>
-    
-
+  <script>
+    var main1 = document.getElementById('main1');
+    var main2 = document.getElementById('main2');
 
     
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- <script src="js/scrollToPlayVideo.js"></script> -->
-    <!-- owl carousel -->
-    <script>
-        $(document).ready(function(){
-            $(".owl-bannar").owlCarousel({
-                items:1,
-                dots:true,
-                loop:true,
-                autoplay:true,
-                autoplayTimeout:2000,
-                autoplayHoverPause:true
-            });
-        });
-        $(document).ready(function(){
-            $(".owl-game").owlCarousel({
-                items:1,
-                // loop:true,
-                // margin:10,
-                dots:false,
-                responsiveClass:true,
-                responsive:{
-                    0:{
-                        items:2
-                    },
-                    376:{
-                        items:3
-                    },
-                    576:{
-                        items:3
-                    },
-                    768:{
-                        items:4
-                    },
-                    992:{
-                        items:5
-                    },
-                    1000:{
-                        items:6
-                    }
-                }
-            });
-        });
-    </script>
-   
-  </body>
+    var div1 = document.getElementById('div1');
+    var div2 = document.getElementById('div2');
+    var div3 = document.getElementById('div3');
+    var div4 = document.getElementById('div4');
+
+    function fncOne(){
+      if(main1.style.display == "block"){
+        main1.style.display = "none";
+        main2.style.display = "none";
+        div1.style.display = "block";
+      }
+      else{
+        main1.style.display= "block";
+        main2.style.display = "block";
+        div1.style.display= "none";
+      }
+    }
+
+    function fncTwo(){
+      if(main1.style.display == "block"){
+        main1.style.display = "none";
+        main2.style.display = "none";
+        div2.style.display = "block";
+      }
+      else{
+        main1.style.display= "block";
+        main2.style.display = "block";
+        div2.style.display= "none";
+      }
+    }
+
+    function fncThree(){
+      if(main1.style.display == "block"){
+        main1.style.display = "none";
+        main2.style.display = "none";
+        div3.style.display = "block";
+      }
+      else{
+        main1.style.display= "block";
+        main2.style.display = "block";
+        div3.style.display= "none";
+      }
+    }
+    function fncFour(){
+      if(main1.style.display == "block"){
+        main1.style.display = "none";
+        main2.style.display = "none";
+        div4.style.display = "block";
+      }
+      else{
+        main1.style.display= "block";
+        main2.style.display = "block";
+        div4.style.display= "none";
+      }
+    }
+
+  </script>
+</body>
 </html>

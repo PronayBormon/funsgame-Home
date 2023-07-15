@@ -13,8 +13,12 @@ body{
     min-height: 100vh;
     scrollbar-width: none;
 }
-
-
+.border{
+    border: 1px solid #ffffff6b !important;
+}
+.reels_col .col-12{
+    padding: 3px;
+}
 /*====================== navbar start=========================  */
 .nav_bar{
     position: fixed;
@@ -178,7 +182,7 @@ footer a img{
     margin-top: 10px;
     filter: drop-shadow(5px 5px 2px #0000004d);
 }
-/* =======================footer end herere =============== */
+/* =======================footer end here =============== */
 
 /* bannar part start here  */
 .bannar{
@@ -347,7 +351,9 @@ width: 30px;
     margin: 8px 0px;
 }
 /* tab section part end here  */
-
+.footer_space{
+    height: 65px;
+}
 /* model list section start here  */
 .model_sec{
     position: relative;
@@ -709,6 +715,8 @@ padding: 0px 5px;
 .filter_desktop .nav-link{
     color: #000000a6;
     border-radius: 50px !important;
+    background: #e1defb;
+    margin: 3px 3px;
 }
 .reel_short{
 

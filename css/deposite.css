@@ -7,6 +7,9 @@ body{
 }
 
 /* topbar part start here */
+.footer_space{
+    height: 65px;
+}
 .top_bar{
     display: flex;
     justify-content: space-between;

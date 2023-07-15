@@ -295,6 +295,9 @@ transition: .4s all ease-in-out;
 .camera_icon i{
 
 }
+.footer_space{
+    height: 65px;
+}
 @media(max-width:426px){
     .log_title h1 {
         font-size: 18px;

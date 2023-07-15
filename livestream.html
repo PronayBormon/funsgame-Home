@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title  -->
+    <title>Host List </title>
+
+    <!-- bootstrap 5.3    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- owl-carousel css  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    
+    <!-- fontawsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+     <!-- style css  -->
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/preloader.css">
+     <link rel="stylesheet" href="css/player.css">
+     <link rel="stylesheet" href="css/livestream.css">
+
+  </head>
+  <body>  
+    <div class="loader" id="preloader">
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+    </div>
+    
+    <div class="container-fluid">
+
+        
+         <!-- navbar  start here   -->
+         <div class="row desktop_view">
+            <div class="nav_bar" style="z-index: 9999;" >
+                <div class="row">
+                    <div class="col-12">
+                        <!-- nav for desktop view  -->
+                        <div id="mySidenav" class="sidenav">
+                            <div class="head d-flex align-items-center">
+                                <div class="row">
+                                    <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
+                                    <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                </div>
+                            </div>
+
+                            <div class="body">
+                                <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                                <a href=""><img src="images/live-streaming.png" alt="">Stream</a>
+                                <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
+                                <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
+                                <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
+                                <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                                <a href="login.html"><img src="images/user.png" alt="">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class=" nav_profile">           
+                             <div class="me-auto">
+                                <a href="#back" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                             </div>                 
+                            <!-- settings button  -->
+                            <div class="ms-auto text-end ">
+                                
+                                <a class="nav-link"   onclick="openNav()">
+                                    <div class="grid_dots">
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div><div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>   
+                                        </div>                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <!-- space  -->
+        <div class="desktop_view" style="height: 54px;"></div>
+        <!-- navbar end here  -->
+
+        <div class="row ">
+            <div class="col-xl-6">
+                <!-- press play! -->                
+                <div class="row">
+                    <div class="col">
+                        <div class="players">
+                            <video
+                                id="my-video"
+                                class="video-js"
+                                controls
+                                preload="auto"
+                                width="640"
+                                height="264"
+                                data-setup="{}" >
+                                <source src="videos/Aviator 859x! The one that got away.mp4" type="video/mp4" />                        
+                            </video>
+                            <div class="gift_button wow bounceInUp">
+                                <div class="gt_icon">
+                                    <img src="images/gift-box.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="gifts">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="btn "><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+                
+            </div>
+            
+            <div class="col-xl-6" id="main1" >
+                <div class="row gaming_section wow fadeInDown">
+                    <div class="col-xl-6 col-3">                        
+                        <button onclick="fncOne(); ">
+                            <div class="game_box">
+                                <img src="images/testIcon/limbo.png" class="img-fluid" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-xl-6 col-3" >
+                        <button onclick="fncTwo()">
+                            <div class="game_box">
+                                <img src="images/testIcon/dice.png" class="img-fluid" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-xl-6 col-3">
+                        <button onclick="fncThree()">
+                            <div class="game_box">
+                                <img src="images/testIcon/aviatorgame.png" class="img-fluid" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-xl-6 col-3">
+                        <button  onclick="fncFour()">
+                            <div class="game_box">
+                                <img src="images/testIcon/spin.png" class="img-fluid" alt="">
+                            </div>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="div1" class="hidden col-xl-6 col-lg-12 col-md-12 col-12">
+                <div class="game_part">
+                    <div class="row">
+                        <div class="back_btn">
+                            <div class="col-4 me-auto">
+                                <div class=" text-start">                            
+                                    <button onclick="fncOne()"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <iframe class="" src="https://previews.customer.envatousercontent.com/files/311306711/index.html" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+              <div id="div2" class="hidden col-xl-6 col-lg-12 col-md-12 col-12">
+                <div class="game_part">
+                    <div class="row">
+                        <div class="back_btn">
+                            <div class="col-4 me-auto">
+                                <div class=" text-start">                            
+                                    <button onclick="fncTwo()"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <iframe class="" src="https://previews.customer.envatousercontent.com/files/338961299/index.html" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+               
+              </div>
+            
+              <div id="div3" class="hidden col-xl-6 col-lg-12 col-md-12 col-12">
+                <div class="game_part">
+                    <div class="row">
+                        <div class="back_btn">
+                            <div class="col-4 me-auto">
+                                <div class=" text-start">                            
+                                    <button onclick="fncThree()"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <iframe class="" src="https://previews.customer.envatousercontent.com/files/338961299/index.html" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            
+              <div id="div4" class="hidden col-xl-6 col-lg-12 col-md-12 col-12">
+                <div class="game_part">
+                    <div class="row">
+                        <div class="back_btn">
+                            <div class="col-4 me-auto">
+                                <div class=" text-start">                            
+                                    <button onclick="fncFour()"><i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <iframe class="" src="https://previews.customer.envatousercontent.com/files/338961299/index.html" name="preview-frame" frameborder="0" noresize="noresize" data-view="fullScreenPreview" allow="geolocation 'self'; autoplay 'self'">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            <div >
+        </div>
+        <!-- models mobie view  -->
+        <div class="mobile_view scroll" id="main2">
+            <div class="row model_section mb-2 ">
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents ">
+                        <div class="model_sec">
+                            <a href="hostprofile.html">                                    
+                                <img src="images/001.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">      
+                            <a href="hostprofile.html">                              
+                                <img src="images/002.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class=" col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">   
+                            <a href="hostprofile.html">                                 
+                                <img src="images/003.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class=" col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">  
+                            <a href="hostprofile.html">                                  
+                                <img src="images/004.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>  
+                <!-- ads part start here  -->
+                <div class="col-12" style="padding: 0px 3px;">
+                    <div class="ads">
+                        <img src="images/adsbannar.webp" alt="">
+                    </div>
+                </div>
+                <!-- ads part end here  -->
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents ">
+                    <div class="model_sec">
+                        <a href="hostprofile.html">                                    
+                            <img src="images/001.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">      
+                            <a href="hostprofile.html">                              
+                                <img src="images/002.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class=" col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">   
+                            <a href="hostprofile.html">                                 
+                                <img src="images/003.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class=" col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">  
+                            <a href="hostprofile.html">                                  
+                                <img src="images/004.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents ">
+                    <div class="model_sec">
+                        <a href="hostprofile.html">                                    
+                            <img src="images/001.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">      
+                            <a href="hostprofile.html">                              
+                                <img src="images/002.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class=" col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">   
+                            <a href="hostprofile.html">                                 
+                                <img src="images/003.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class=" col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">  
+                            <a href="hostprofile.html">                                  
+                                <img src="images/004.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- models desktop view suggestion part start here  -->
+        <div class="desktop_view " id="mainDiv">
+            <div class="row model_section mb-2 scroll">
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents ">
+                    <div class="model_sec">
+                        <a href="hostprofile.html">                                    
+                            <img src="images/001.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                    <div class="model_sec">      
+                        <a href="hostprofile.html">                              
+                            <img src="images/002.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">   
+                            <a href="hostprofile.html">                                 
+                                <img src="images/003.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">  
+                            <a href="hostprofile.html">                                  
+                                <img src="images/004.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div> 
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents ">
+                    <div class="model_sec">
+                        <a href="hostprofile.html">                                    
+                            <img src="images/001.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                    <div class="model_sec">      
+                        <a href="hostprofile.html">                              
+                            <img src="images/002.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- ads part start here  -->
+                <div class="col-12" style="padding: 0px 3px;">
+                    <div class="ads">
+                        <img src="images/adsbannar.webp" alt="">
+                    </div>
+                </div>
+                <!-- ads part end here  -->
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">   
+                            <a href="hostprofile.html">                                 
+                                <img src="images/003.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">  
+                            <a href="hostprofile.html">                                  
+                                <img src="images/004.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents ">
+                    <div class="model_sec">
+                        <a href="hostprofile.html">                                    
+                            <img src="images/001.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                    <div class="model_sec">      
+                        <a href="hostprofile.html">                              
+                            <img src="images/002.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">   
+                            <a href="hostprofile.html">                                 
+                                <img src="images/003.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">  
+                            <a href="hostprofile.html">                                  
+                                <img src="images/004.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents ">
+                    <div class="model_sec">
+                        <a href="hostprofile.html">                                    
+                            <img src="images/001.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                    <div class="model_sec">      
+                        <a href="hostprofile.html">                              
+                            <img src="images/002.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">   
+                            <a href="hostprofile.html">                                 
+                                <img src="images/003.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                        <div class="model_sec">  
+                            <a href="hostprofile.html">                                  
+                                <img src="images/004.png" class="img-fluid" alt="">
+                                <div class="host_name">
+                                    <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                    <p>London Escort</p>
+                                </div>
+                            </a>
+                        </div>
+                </div> 
+                <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                    <div class="model_sec">   
+                        <a href="hostprofile.html">                                 
+                            <img src="images/003.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-success"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="col-xl-2 col-lg-3  col-md-3 col-sm-3 col-6 contents">
+                    <div class="model_sec">  
+                        <a href="hostprofile.html">                                  
+                            <img src="images/004.png" class="img-fluid" alt="">
+                            <div class="host_name">
+                                <h2>Rose Gilbert, 23 <span class="bg-danger"></span></h2>
+                                <p>London Escort</p>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+         <!-- -=========footer start ========-  -->
+         <div class="row mobile_view">
+            <div class="col-12">
+                <div class="footer_space">
+                </div>
+            </div>
+         </div>
+         <footer class="mobile_view">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 d-flex">
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="#" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="profileinfo.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer part end here  -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+     <!-- anination wow js plugin  -->    
+     <script src="js/wow.min.js"></script>
+     <script>
+         new WOW().init();
+     </script>
+    <script src="js/navjs.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/livestreamButton.showhide.js"> </script>
+
+   
+
+   
+  </body>
+</html>

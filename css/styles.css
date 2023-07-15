@@ -13,7 +13,9 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
-
+.footer_space{
+    height: 65px;
+}
 
 /*====================== navbar start=========================  */
 .nav_bar{

@@ -13,7 +13,9 @@ html {
   line-height: 1.5;
   color: #444;
 }
-
+.footer_space{
+  height: 65px;
+}
 
 
 .hide {
