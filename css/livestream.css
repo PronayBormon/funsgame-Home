@@ -277,6 +277,7 @@ background: transparent;
     padding-left: 10px;
     color: #f6f6f6d6;
     transition: .4s all ease-in-out;
+    padding: 0px 10px;
 }
 .back_btn button:hover{
     color: #fff;
@@ -531,13 +532,13 @@ background: transparent;
 /* responsive part start here  */
 @media(max-width: 1200px){
     .video-js {
-        height: 45vh;
+        height: 42vh;
     }
     .game_box {
         height: 200px;
     }
     .game_part iframe {
-        height: 43vh;
+        height: 42vh;
         /* width: 100vw; */
     }
 }
