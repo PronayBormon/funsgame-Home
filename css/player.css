@@ -1833,3 +1833,8 @@ video::-webkit-media-text-track-display {
 .video-js *:focus:not(:focus-visible) {
   outline: none;
 }
+@media(max-width: 1200px){
+  .video-js{
+    margin-bottom: 0px;
+  }
+}

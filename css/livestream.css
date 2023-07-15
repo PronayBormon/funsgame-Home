@@ -525,6 +525,9 @@ background: transparent;
 .player_game .col{
     padding: 0px 3px;
 }
+#div1, #div2, #div3, #div4{
+    padding: 0px 3px;
+}
 /* responsive part start here  */
 @media(max-width: 1200px){
     .video-js {
