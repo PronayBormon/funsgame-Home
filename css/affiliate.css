@@ -248,7 +248,7 @@ border-radius: 10px;
 
 background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
 
-box-shadow: 2px 3px 4px #bfb8f9, -2px -3px 5px #bfb8f9;
+box-shadow: 2px 3px 20px #bfb8f9, -2px -3px 5px #bfb8f9;
 
 position: relative;
 
@@ -556,51 +556,33 @@ font-size: 22px;
     --bs-tooltip-bg: #4a1ac8;
   }
 .chart_massage{
-
-position: absolute;
-
-top: 50%;
-
-transform: translateY(-50%);
-
-left: 16px;
-
-/* background: #fff; */
-
-width: 35%;
-
-height: 80%;
-
-border-radius: 10px;
-
-/* margin-top: 8px; */
-
-box-shadow: 2px 3px 15px #8c80e657;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+    /* background: #fff; */
+    width: 35%;
+    height: 80%;
+    border-radius: 10px;
+    /* margin-top: 8px; */
+    box-shadow: 2px 3px 15px #8c80e657;
 }
 .chart_massage ul li a{
-
-font-size: 14px;
-
-margin-left: 8px;
-
-text-decoration: none;
-
-color: #000;
-
-font-family: 'Lumanosimo', cursive;
+    font-size: 14px;
+    margin-left: 8px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Lumanosimo', cursive;
 }
-.chart_massage ul li{margin: 0 !important;}
+.chart_massage ul li{
+    margin: 0 !important;
+}
 .chart_massage ul{
-
-display: block;
-
-/* background: #fff; */
-
-list-style: none;
-
-padding: 0;
-
-position: absolute;
+    display: block;
+    /* background: #fff; */
+    list-style: none;
+    padding: 0;
+    position: absolute;
 }
 @media(max-width: 425px){
     .rand_card h1 {
