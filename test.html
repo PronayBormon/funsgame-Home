@@ -1,100 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <title>Button Icon Animation</title>
+  <style>
+   
+  </style>
 </head>
 <body>
-  <div class="main2" id="main1" style="display: block;">
-    <h1>main1</h1>
-    <button onclick="fncOne(); ">funOne</button>
-    <button onclick="fncTwo()">fncTwo</button>
-    <button onclick="fncThree(); ">fncThree</button>
-    <button onclick="fncFour()">fncFour</button>
-  </div>
-  
-
-  <div class="div1" id="div1" style="display: none;">
-    <h1>div1</h1>
-    <button onclick="fncOne();">funOne</button>
-  </div>
-  <div class="div2" id="div2" style="display: none;">
-    <h1>div2</h1>
-    <button onclick="fncTwo()">funTwo</button>
-  </div>
-  <div class="div3" id="div3" style="display: none;">
-    <h1>div3</h1>
-    <button onclick="fncThree()">fncThree</button>
-  </div>
-  <div class="div4" id="div4" style="display: none;">
-    <h1>div4</h1>
-    <button onclick="fncFour()">fncFour</button>
-  </div>
-  <div class="main2" id="main2" style="display: none;">
-    <h1>main2</h1>
-  </div>
-  <!-- Add more divs as needed -->
-
+  <ul class="reactionWrapper">
+    <li><button  class="rose"><img src="images/rose.png" alt=""></button>
+      
+    </li>
+    <li><button  class="gift"><img src="images/gift-box.png" alt=""></button>
+    </li>
+    <li><button  class="rose"><img src="images/rose.png" alt=""></button>
+      
+    </li>
+    <li><button  class="gift"><img src="images/gift-box.png" alt=""></button>
+    </li>
+  </ul>
   <script>
-    var main1 = document.getElementById('main1');
-    var main2 = document.getElementById('main2');
+    let reactionWrapper = document.querySelector(".reactionWrapper");
 
-    
-    var div1 = document.getElementById('div1');
-    var div2 = document.getElementById('div2');
-    var div3 = document.getElementById('div3');
-    var div4 = document.getElementById('div4');
+    let rose = document.querySelector(".rose");
+    let gift = document.querySelector(".gift");
 
-    function fncOne(){
-      if(main1.style.display == "block"){
-        main1.style.display = "none";
-        main2.style.display = "none";
-        div1.style.display = "block";
-      }
-      else{
-        main1.style.display= "block";
-        main2.style.display = "block";
-        div1.style.display= "none";
-      }
-    }
+    rose.addEventListener("click", ()=>{
+      let createEmoji = document.createElement("img");      
+      createEmoji.setAttribute("src", "images/rose.png");
+      reactionWrapper.appendChild(createEmoji);
+      createEmoji.classList.add("emoji");
+      setTimeout(() => {
+        createEmoji.remove();
+      }, 1000);
+    });
 
-    function fncTwo(){
-      if(main1.style.display == "block"){
-        main1.style.display = "none";
-        main2.style.display = "none";
-        div2.style.display = "block";
-      }
-      else{
-        main1.style.display= "block";
-        main2.style.display = "block";
-        div2.style.display= "none";
-      }
-    }
-
-    function fncThree(){
-      if(main1.style.display == "block"){
-        main1.style.display = "none";
-        main2.style.display = "none";
-        div3.style.display = "block";
-      }
-      else{
-        main1.style.display= "block";
-        main2.style.display = "block";
-        div3.style.display= "none";
-      }
-    }
-    function fncFour(){
-      if(main1.style.display == "block"){
-        main1.style.display = "none";
-        main2.style.display = "none";
-        div4.style.display = "block";
-      }
-      else{
-        main1.style.display= "block";
-        main2.style.display = "block";
-        div4.style.display= "none";
-      }
-    }
-
+    gift.addEventListener("click", ()=>{
+      let createEmoji = document.createElement("img");      
+      createEmoji.setAttribute("src", "images/gift-box.png");
+      reactionWrapper.appendChild(createEmoji);
+      createEmoji.classList.add("emoji");
+      setTimeout(() => {
+        createEmoji.remove();
+      }, 1000);
+    });
   </script>
 </body>
 </html>

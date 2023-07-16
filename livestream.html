@@ -124,35 +124,29 @@
                                     <img src="images/gift-box.png" class="img-fluid" alt="">
                                 </div>
                                 <div class="gifts">
-                                    <ul>
+                                    <ul class="reactionWrapper">
                                         <li>
-                                            <a href="#" class="btn "><img src="images/rose.png" alt=""></a>
+                                            <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button>
                                         </li>
                                         <li>
-                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
+                                            <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>
                                         </li>
-                                        <li>
-                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="btn"><img src="images/rose.png" alt=""></a>
-                                        </li>
-                                        
                                     </ul>
                                 </div>
                             </div>
+                            <!-- <div class="row">
+                                <div class="col-12">
+                                    <div class="win_slider">
+                                        <div class="slider">
+                                            <div class="slide-track">
+                                              <div class="slide">
+                                                <h3>Send <div id="icon-display"></div>from @user123</h3>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div> -->
                         </div> 
                     </div>
                 </div> 
@@ -776,6 +770,33 @@
     <script src="js/preloader.js"></script>
     <script src="js/player.js"></script>
     <script src="js/livestreamButton.showhide.js"> </script>
+    
+      <script>
+        let reactionWrapper = document.querySelector(".reactionWrapper");
+    
+        let rose = document.querySelector(".rose");
+        let gift = document.querySelector(".gift");
+    
+        rose.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/rose.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
+        });
+    
+        gift.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/gift-box.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+        //   setTimeout(() => {
+        //     createEmoji.remove();
+        //   }, 1000);
+        });
+      </script>
 
    
 
