@@ -221,9 +221,55 @@
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 ">
                 <div class="rand_card">
+                    <div class="row">
+                        <div class="col-8 text-start">
+                            <h1> Total Num Of Members: 400</h1>
+                        </div>
+                        <div class="col-4 text-end">
+                            <img src="images/rank_icon/vip4.png" class="img-fluid" alt="">
+                            <!-- <h1>VIP 1</h1> -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex">
+                                <div class="text-start d-flex"><i class="fa-solid fa-info" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="This top tooltip is themed via CSS variables."></i><h2>Rules</h2> </div>
+                                <div class="ms-auto"><h2><i class="fa-solid fa-sitemap border-0"></i>70/100</h2></div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-end">
+                        <h1> <span>Min. deposite: <strong>$100</strong> to <strong>$499</strong></span></h1>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                <div class="rand_card">
                     <canvas id="myChart" style=""></canvas>
                     <div class="row">
-                        <div class="col-8 ms-auto"><p class="text-center"><a href="#" class="text-decoration-none text-secondary">Total Downline</a></p></div>
+                        <div class="col ms-auto"><p class="t_link"><a href="#" class="text-decoration-none text-secondary">Total Downline</a></p></div>
+                    </div>
+                    <div class="chart_massage">
+                        <ul>
+                            <li><a href="#">Level-1 = 455</a></li>
+                            <li><a href="#">Level-2 = 121</a></li>
+                            <li><a href="#">Level-3 = 12</a></li>
+                            <li><a href="#">Level-4 = 105</a></li>
+                            <li><a href="#">Level-5 = 121</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
+                <div class="rand_card">
+                    <canvas id="chartId" aria-label="chart" ></canvas>
+                    <div class="row">
+                        <div class="col ms-auto"><p class="t_link"><a href="#" class="text-decoration-none text-secondary">Total Downline</a></p></div>
                     </div>
                     <div class="chart_massage">
                         <ul>
@@ -354,31 +400,7 @@
     <script src="js/preloader.js"></script>
     <!-- pie chat  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <script>
-        var xValues = ["level 1", "level 2", "level 3"];
-        var yValues = [20, 30, 50];
-        var barColors = [
-          "#8c80e6",
-          "#6528F7",
-          "#A076F9"
-        ];
-        
-        new Chart("myChart", {
-          type: "pie",
-          data: {
-            labels: xValues,
-            datasets: [{
-              backgroundColor: barColors,
-              data: yValues
-            }]
-          },
-          options: {
-            legend: {
-                display: false //This will do the task
-            }
-        }
-        });
-    </script>
+    
 
     <!-- owl carousel  plugin -->
     <script>
@@ -419,6 +441,58 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
-    
+    <!-- pie chart  -->
+    <script>
+        var xValues = ["level 1", "level 2", "level 3"];
+        var yValues = [20, 30, 50, 40, 50];
+        var barColors = [
+          "#8c80e6",
+          "#6528F7",
+          "#A076F9",
+          "#D7BBF5",
+          "#75C2F6"
+        ];
+        
+        new Chart("myChart", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {
+                display: false //This will do the task
+            }
+        }
+        });
+    </script>
+    <!-- line chart  -->
+    <script>
+        var chrt = document.getElementById("chartId").getContext("2d");
+        var chartId = new Chart(chrt, {
+           type: 'line',
+           data: {
+              labels: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5"],
+              datasets: [{
+                //  label: "online tutorial subjects",
+                 data: [20, 40, 30, 35, 30, 50],
+                 backgroundColor: ['#8c80e6', '#6528F7', '#A076F9', '#D7BBF5', '#75C2F6'  ],
+                 borderColor: ['#000c'],
+                //  backgroundColor: ['red'],
+                 borderWidth: 5,
+                 pointRadius: 10,
+              }],
+           },
+           options: {
+              responsive: true,
+              legend: {
+                display: false //This will do the task
+            }
+           },
+        });
+     </script>
   </body>
 </html>

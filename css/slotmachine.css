@@ -1,12 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dcc1f8+0,f5ecfd+50,dcc1f8+100 */
-  background: #dcc1f8; /* Old browsers */
-  background: -moz-linear-gradient(left,  #dcc1f8 0%, #f5ecfd 50%, #dcc1f8 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  #dcc1f8 0%,#f5ecfd 50%,#dcc1f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcc1f8', endColorstr='#dcc1f8',GradientType=1 ); /* IE6-9 */
+  /* background-color: #000; */
+  font-family: 'Poppins', sans-serif;
+  scrollbar-width: 0px;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.footer_space{
+  height: 65px;
 }
 
+/*====================== navbar start=========================  */
+.nav_bar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  background: #b4b4b41a;
+}
+.nav_profile{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  /* background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61); */
+  padding: 0px 10px;
+}
+.nav_profile  a{        
+  justify-content: center;        
+  align-items: center;        
+  background: -moz-linear-gradient(top, rgba(246,178,219,1) 0%, rgba(251,88,155,1) 99%);        
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6b2db', endColorstr='#fb589b',GradientType=0 );
+  background: transparent;
+} 
+.nav_profile .dropstart ul{
+  margin-top: 20px !important;
+  padding: 10px !important;
+  width: 185px;
+}
+.nav_profile .dropstart ul li{
+  list-style: none;
+  padding: 3px;
+  margin: 2px;
+  box-shadow: 1px 1px 6px 2px #b4b3b34f;
+  transition: .4s all ease-in-out;
+}
+.nav_profile .dropstart ul li:hover{        
+  transform: scale(1.1);
+}
+.nav_profile .dropstart ul li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+.nav_profile .dropstart ul li a i{
+  font-size: 14px;
+  margin-right: 9px;
+}
+.nav_bar.scrolled {
+  /* background-color: #fff !important; */
+  transition: background-color 200ms linear;
+  box-shadow: 1px 0px 2px #00000030;
+  background-image: linear-gradient(45deg, #7665f3,#cfcafb, #c4bdfa);
+}
+.nav_bars.scrolled {
+  display: block;
+  font-size: 14px;
+}
+.nav_bars{
+  /* display: none; */
+  background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+}
+.nav_bars h1{
+  
+}
+.grid_dots{
+
+/* margin-top: 10px; */
+}
+.grid_dots .dots{
+  display: flex;
+}
+.dots span{
+  display: block;
+  height: 5px;
+  width: 5px;
+  background-color: #602be1;
+  border-radius: 50%;
+  margin: 1px;
+  transition: .4s all ease-in-out;
+}
+.nav_profile  a:hover .dots span{
+  background-color: #000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: #d9cbf9; */
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 999999;
+  background-image: linear-gradient(45deg, #a097e5,#d6d0ff, #c4bdfae3);
+}
+
+.sidenav a {
+  padding: 4px 8px 4px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #9681EB;
+  display: block;
+  transition: 0.3s;
+  background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfab3);
+  margin: 5px 0px;
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important;
+  transition: .4s all ease-in-out;
+  filter: drop-shadow(2px 4px 6px #fff);
+}
+.sidenav a img{    
+  width: 30px;        
+  margin-bottom: 8px;        
+  margin-right: 5px;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}  
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-image: none;
+  box-shadow: none !important;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ========================== navbar end here ==================== */
+
+
+/* ================== footer start here ================================  */
+footer{
+  position: fixed;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background: #ffffff;
+  z-index: 99999;
+  box-shadow: 1px 0px 3px #00000024;
+  background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+}
+footer i{
+  font-size: 20px;
+  margin-top: 14px;
+}
+footer a {
+  text-decoration: none;
+  color: #0000008a;
+  font-size: 12px;
+}
+footer a img{
+  width: 25px;
+  margin-top: 10px;
+  filter: drop-shadow(5px 5px 2px #0000004d);
+}
+.desktop_view{
+  display: block;    
+}
+.mobile_view{
+  display: none;
+}
+@media (max-width: 1200px){
+  .desktop_view{
+      display: none;    
+  }
+  .mobile_view{
+      display: block;
+  }
+}
+/* =======================footer end herere =============== */
+
+
+
+/* =====================================slot game csss start here  ===========================*/
 .slot_machine{
   position: relative;
   background-color: transparent;
@@ -20,6 +209,9 @@ body{
 box-sizing: content-box;
 /* border: 35px solid #fdde3f; */
 border-radius: 65px;
+height: 200px;
+width: 48%;
+text-align: center;
 }
 
 .blink {
@@ -74,121 +266,61 @@ z-index:999999999;
 }
 .slt_game{
 
-padding: 20px 0px;
+/* padding: 20px 0px; */
 }
-/* tittle text part start here  */
 
-.slot_title{
 
-position: relative;
 
-margin: 50px 0px;
+
+
+
+.game_bannar{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  min-width: 100vw;
 }
-.slot_title h3{
-
-font-size: 80px;
-
-font-family: 'Lilita One', cursive;
-
-color: #001eff87;
-
-filter: drop-shadow(2px 4px 6px #ba9cd8);
-
-text-shadow: -2px 3px 3px #ba9cd8, -5px 5px 1px #ba9cd8;
+.bg_game{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-1%);
+  top: 1%;
+  width: 200%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.img_game{
+  opacity: .7;
+}
+.game_bannar::after{
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #1a004dab;
+  z-index: -1;
 }
 .slot_frame{
 
 }
 .slot_frame img{
   position: absolute;
-  left: 57%;
-  transform: translate(-57%, 0px);
-  top: -20px;
-  height: 120%;
-  width: 62%;
+  left: 54%;
+  top: -70px;
+  width: 65%;
+  height: 136%;
+  transform: translateX(-50%);
 }
-.current_win{
 
-}
-.input-group-prepend span{
-  background-color: #8a2ee6;
-  color: #fff;
-}   
-.current_win input{
 
-background: transparent;
 
-border: 1px solid #a970e180;
 
-color: #8a2ee6;
-}
-.btn_withdraw{
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c38328+0,fcef8a+50,fdf8cf+100 */
-  background: #c38328; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #c38328 0%, #fcef8a 50%, #fdf8cf 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg,  #c38328 0%,#fcef8a 50%,#fdf8cf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c38328', endColorstr='#fdf8cf',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-.btn_default{
-  background: #8a2ee6;
-  color: #fff;
-}
-.btn_withdraw:hover{
 
-}
-.input-group-append span{
-  border: 1px solid #a970e180;
-}
-.input-group input{
 
-}
-.input-group input:focus{
-  box-shadow: none;
-  outline: none;
-}
-.seven_top{
 
-position: absolute;
-
-top: -55%;
-
-width: 20%;
-
-left: 50%;
-
-transform: translateX(-50%);
-
-z-index: -1;
-}
-.seven_left{
-
-position: absolute;
-
-left: 20%;
-
-width: 25%;
-
-top: 0px;
-
-transform: translateX(-30%);
-
-z-index: -1;
-}
-.bigwin{
-  
-position: absolute;
-  
-right: 10%;
-  
-top: -84px;
-  
-width: 25%;
-  
-transform: translateX(-16%);
-  
-z-index: -1;
-}
 .balance_btns{
 
 display: flex;
@@ -230,21 +362,25 @@ font-weight: 600;
 padding: 1px;
 }
 .balance_btns input{
-  background: transparent !important;
-  border: 2px solid #916bb878;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  color: #48058b;
+background: transparent;
+border: 2px solid #916bb878;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+color: #a9213c;
+background: #fff;
 }
 .balance_btns input:focus{
-  box-shadow: none;
+box-shadow: none;
 }
 .help_btn{
-  background: transparent;
-  border-radius: 50%;
-  border: 1px solid #5859ed !important;
-  padding: 3px 10px;
-  color: #595bed;
+background: transparent;
+border-radius: 50%;
+/* border: 1px solid #5859ed !important; */
+padding: 3px 10px;
+color: #fff;
+position: absolute;
+top: 5%;
+right: 10%;
 }
 .win_history{
 
@@ -255,7 +391,7 @@ margin-bottom: 50px;
 scrollbar-width: none;
 }
 .win_history ul li img {
-  
+
 }
 .win_history ul li p{
 
@@ -282,109 +418,278 @@ padding: 0;
 margin-bottom: 5px;
 }
 .win_history ul{
-  
+
 padding: 0;
-  
+
 height: 200px;
-  
+
 overflow: auto;
-  
+
 scrollbar-width: none;
 }
 .win_history ul::-webkit-scrollbar{
-  display: none;
+display: none;
 }
 /* slot title part end here  */
-@media (max-width: 992px) {
-  .slot_title {
-      position: relative;
-      margin: 30px 0px;
-  }
+.btn_spin,.btn_spin:active,.btn_spin:focus,.btn_spin:hover{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f95a78+0,940b27+99 */
+  background: #f95a78; /* Old browsers */
+  background: -moz-linear-gradient(45deg,  #f95a78 0%, #940b27 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  #f95a78 0%,#940b27 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  #f95a78 0%,#940b27 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f95a78', endColorstr='#940b27',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: #fff !important;
+}
+
+/*============================ slot game css end here ============================== */
+
+/* top 10 part start here  */
+.history_section{
+  background-color: #55046d;
+  border-radius: 10px;
+  padding: 10px;
+  height: 450px;
+}
+.history_section ul{
+
+}
+.history_section ul li{
+
+margin: 0px 10px;
+}
+.history_section ul li button{
+
+}
+.top_ten,.history{
+  overflow: auto;
+  height: 375px;
+  scrollbar-width: none;
+}
+.top_ten::-webkit-scrollbar, .history::-webkit-scrollbar{
+  display: none;
+}
+.serial img{
+
+width: 35px;
+}
+.serial{
+
+}
+.serial h2{
+
+color: #fff;
+
+font-size: 18px;
+
+border-radius: 50px;
+
+height: 30px;
+
+width: 30px;
+
+/* background: red; */
+
+padding: 3px;
+}
+.top_ten ul li h5 {
+
+color: #fff;
+
+font-size: 18px;
+}
+.top_ten ul li p{
+
+color: #fff;
+
+font-size: 16px;
+
+margin: 0;
+}
+.top_ten ul li h3{
+
+color: #fff;
+
+text-align: end;
+
+font-size: 18px;
+}
+.top_ten ul li,.history ul li{
+
+list-style: none;
+
+padding: 0;
+
+padding: 5px;
+
+margin: 10px 0px;
+
+box-shadow: 2px 3px 5px 3px #00000014;
+}
+.top_ten ul,.history ul{
+  
+padding: 0;
+  
+padding: 20px;
+}
+.history h3{
+
+font-size: 16px;
+
+color: #fff;
+}
+.history p{
+
+margin: 0;
+
+color: #fff;
+}
+.history h4{
+  text-align: end;
+  margin: 0;
+  margin: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.incrase{
+  color: #28ee92;
+}
+.decrase{
+  color: #ee860e;
+}
+@media (max-width:426px){
   #slot {
-      width: 280px;
-      height: 170px;
-      border-radius: 20px;
+      width: 210px;
   }
-  .slot_title h3 {
-      font-size: 40px;
+}
+/* top 10 part end here  */
+
+
+
+/* slider css part start here  */
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
-  .bigwin {
-      top: -35px;
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
   }
+}
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+}
+@-webkit-keyframes scrollTwo {
+  0% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes scrollTwo {
+  0% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.slider,.sliders {
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+}
+.slider::before,
+.slider::after,.sliders::before,
+.sliders::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after,.sliders::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
+}
+.slide-track .slide h3 {
+  text-align: center;
+  background-color: #00000054;
+  color: #fff !important;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px;
+  /* position: absolute; */
+  /* top: 0px; */
+  /* left: 0px; */
+}
+.slider::before,.sliders::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 30s linear infinite;
+  animation-iteration-count: infinite;
+  display: flex;
+  width: calc(250px * 14);
+  /* width: 82%; */
+}
+.sliders .slider-track {
+  -webkit-animation: scrollTwo 40s linear infinite;
+  animation: scrollTwo 40s linear infinite;
+  animation-iteration-count: infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide,.sliders .slide {
+  /* width: 82%; */
+  background: transparent;
+  margin: auto;
+}
+.win_slider{
+  position: absolute;
+  top: 10%;
+
+}
+.win_slidertwo{
+  position: absolute;
+  top: 15%;
   
 }
-@media (max-width: 768px){
-  .slot_frame img {
-    left: 62%;
-    width: 95%;
-  }
-}
 
-@media (max-width: 576px){
-  #slot {
-    width: 270px;
-    height: 165px;
-    border-radius: 20px;
-  }
-}
-#slot{
-	border: solid;
-	box-sizing: content-box; 
-}
+/* slider css part end herer  */
 
-.blink {
-  animation: blink 0.4s infinite alternate;
-  -webkit-animation: blink 0.4s infinite alternate;
+.scroll{
+  height: 60vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
-@keyframes blink {
-  to {
-    background: #c3ad00;
-  }
-}
-@-webkit-keyframes blink {
-  to {
-    background: #c3ad00;
-  }
-}
-
-body{
-  /* background: black !important; */
-}
-
-.gold{
-  color: gold !important;
-}
-.green{
-  color: green;
-}
-
-.v-align{
-  vertical-align: inherit !important;
-}
-
-div.modal-footer, div.modal-body, div.modal-header{
-  background-color: #000000de;
-  color: white;
-}
-
-.preview{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top:0;
-  background: black !important;
-  margin: auto;
-  z-index:999999;
-  width:480px;
-  text-align: center;
-}
-
-.preview img{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top:0;
-  background: black !important;
-  margin: auto;
-  z-index:999999999;
+/* .scrollTwo{
+  height: 90vh;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+} */
+.scroll::-webkit-scrollbar,.scrollTwo::-webkit-scrollbar{
+  display: none;
+  scrollbar-width: 0;
+  scroll-behavior: smooth;
 }
