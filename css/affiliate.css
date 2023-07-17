@@ -701,7 +701,7 @@ font-size: 22px;
 }
 @media(max-width: 375px){
     .rand_card img {
-        width: 30px;
+        /* width: 30px; */
     }
     .rand_card i {
         padding: 3px 7px;
