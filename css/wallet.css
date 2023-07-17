@@ -547,6 +547,9 @@ box-shadow: 5px 5px 10px #bebebe73, -5px -5px 10px #ffffff;
     box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
     margin: 0;
 }
+.filter input::placeholder{
+    color: #00000093;
+}
 .filter{
     margin: 10px 0px;
 }
@@ -566,9 +569,7 @@ margin: 0;
     
 margin-top: 8px;
 }
-.filter input::placeholder{
-    color: #00000093;
-}
+
 .search{
     position: relative;
 }

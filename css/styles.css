@@ -537,7 +537,7 @@ padding: 10px 10px 0px 0px;
 .video-item {
     width: 100%;
     height: 90vh;
-    margin-top: 5px;
+    margin-top: 3px;
     object-fit: contain;
 }
 
@@ -1764,4 +1764,7 @@ color: #fff;
     display: none;
     scrollbar-width: 0;
     scroll-behavior: smooth;
+}
+.footer_space{
+    height: 65px;
 }
