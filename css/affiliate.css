@@ -277,9 +277,9 @@ margin-bottom: 15px;
 }
 .rand_card img{
 
-width: 90px;
+/* width: 90px; */
 
-margin-bottom: 10px;
+margin-bottom: 30px;
 }
 .rand_card h2{
 
@@ -503,7 +503,7 @@ border: none;
     color: #fff;
     box-shadow: 2px 3px 24px #64616142;
 }
-.tbl_col .col-12{
+.tbl_col .col-xl-6 ,.tbl_col .col-lg-6 ,.tbl_col .col-md-6 ,.tbl_col .col-sm-6{
     padding: 5px 8px;
 }
 strong{
@@ -588,6 +588,20 @@ font-size: 22px;
     transform: translate(-82%, 0px);
     text-align: center;
 }
+.btn_filter{
+    border: none;
+    padding: 9px;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: inset 6px 6px 10px #dfd2f7, inset -6px -6px 10px #e3d5fb4f !important;
+    box-shadow: 6px 6px 10px #c5abf170, -6px -6px 10px #cbb3f561 !important;
+    background: transparent;
+    text-decoration: none;
+    color: #000000b0 !important;
+}
+.btn_filter:active{
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
 @media(max-width: 1200px){
     .t_link {
         margin-left: 75%;
@@ -661,7 +675,7 @@ font-size: 22px;
         font-size: 16px;
     }
     .rand_card img {
-        width: 45px;
+        /* width: 45px; */
     }
     .rand_card h2 {
         font-size: 12px;
