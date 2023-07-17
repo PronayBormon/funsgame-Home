@@ -583,9 +583,9 @@ font-size: 22px;
     position: absolute;
 }
 .t_link{
-    margin-left: 80%;
+    margin-left: 82%;
     margin-top: 5px;
-    transform: translate(-80%, 0px);
+    transform: translate(-82%, 0px);
     text-align: center;
 }
 @media(max-width: 1200px){
