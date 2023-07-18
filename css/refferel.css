@@ -104,8 +104,11 @@ body{
     padding-top: 60px;
     z-index: 999999;
     background-image: linear-gradient(45deg, #a097e5,#d6d0ff, #c4bdfae3);
-  }
- 
+    scrollbar-width: none;
+    }
+    .sidenav::-webkit-scrollbar{
+    display: none;
+    }
   .sidenav a {
     padding: 4px 8px 4px 10px;
     text-decoration: none;
