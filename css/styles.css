@@ -1254,7 +1254,7 @@ scrollbar-width: none;
     width: 50px;
     border-radius: 20px;
 }
-.game_footing_button button{
+.game_footing_button a{
     
 border-radius: 10px;
     
@@ -1264,7 +1264,7 @@ background: transparent;
     
 filter: drop-shadow(2px 4px 6px #894ad6a8);
 }
-.game_footing_button button img {
+.game_footing_button a img {
 
 }
 @media(max-width: 426px){
