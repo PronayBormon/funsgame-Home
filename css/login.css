@@ -3,15 +3,12 @@
     padding: 0;
 }
 body{
-
-min-height: 100vh;
-
-display: flex;
-
-justify-content: center;
-
-align-items: center;
-font-family: 'Open Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
 }
 /* chapcha css start here  */
 
@@ -181,13 +178,13 @@ body{
 /* =================== login page start here ============================= */
 .login{
 
-background: #6b08ff33;
+/* background: #6b08ff33; */
 
 padding: 20px;
 
 border-radius: 10px;
 
-box-shadow: 7px 7px 15px #0000002e, -7px -7px 20px #e1ceff8a, 0px 0px 4px #ffffff33 !important;
+/* box-shadow: 7px 7px 15px #0000002e, -7px -7px 20px #e1ceff8a, 0px 0px 4px #ffffff33 !important; */
 
 margin: 20px 0px;
 }
@@ -234,6 +231,8 @@ margin-left: 5px;
 margin-bottom: 10px;
     
 box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+    
+border-radius: 50px;
 }
 .login form input::placeholder{
     color: #00000047;
@@ -248,7 +247,9 @@ font-weight: 500;
      
 text-transform: capitalize;
      
-margin-top: 10px;
+/* margin-top: 10px; */
+     
+font-size: 14px;
 }
 .login .signin_btn{
     
@@ -270,9 +271,10 @@ margin-top: 20px;
     
 box-shadow: 2px 3px 5px 3px #c9c2c296, -19px -19px 5px #ebe7f163;
     
-background: #ffffff8f;
+background: #b7aef878;
     
 margin-bottom: 30px;
+    
 transition: .4s all ease-in-out;
 }
 .login .signin_btn:active{

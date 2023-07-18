@@ -1,3 +1,20 @@
+
+@media(max-width: 768px){
+    .rank_bannar {
+        min-height: 45vh;
+    }
+    .rank_list {
+        height: 48vh;
+    }
+}
+@media(max-width:376px){
+    .rank_bannar {
+        min-height: 40vh;
+    }
+    .rank_list {
+        height: 52vh;
+    }
+}
 @media screen and (max-width: 280px){
     .profile h1 {
         font-size: 8px;

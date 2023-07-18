@@ -52,23 +52,33 @@
                         <div class="col-12">
                             <!-- nav for desktop view  -->
                             <div id="mySidenav" class="sidenav">
-                                <div class="head d-flex align-items-center">
+                                <div class="head  align-items-center">
+                                    <div class="row">
+                                        <a href="profileinfo.html" class="text-secondary text-decoration-none">
+                                            <div class="text-start d-flex align-items-center ms-2 "><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
+                                        </a>
+                                        <div>
+                                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
                                         <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
                                     </div>
-                                    <div>
-                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                                    </div>
+                                    
                                 </div>
 
                                 <div class="body">
                                     <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
-                                    <a href=""><img src="images/live-streaming.png" alt="">Stream</a>
+                                    <a href="livestream.html"><img src="images/live-streaming.png" alt="">Stream</a>
                                     <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
                                     <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
                                     <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
                                     <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                                    <a href="referal.html"><img src="images/affiliate-60.png" alt="">Affiliate</a>
+                                    <a href="deposite.html"><img src="images/money-bag-green60.png" alt="">Deposite</a>                                    
+                                    <a href="withdraw.html"><img src="images/cash_in.png" alt="">withdraw</a>
+                                    <!-- <a href="profile.html"><img src="images/user.png" alt="">Profile</a> -->
                                     <a href="login.html"><img src="images/user.png" alt="">Login</a>
                                 </div>
                             </div>
@@ -110,22 +120,18 @@
 
 
             <!-- ===================== main content start ===========================  -->
-            <div class="desktop_view" style="height: 54px;"></div>
             <!-- bannar part start here  -->
             <div class="bannar">
                 <div class="row">
                     <div class="owl-carousel owl-bannar">
                         <div class="bannar">
-                            <img src="images/bannar.jpg" class="img-fluid" alt="">
+                            <a href="#"><img src="images/slideOne.jpg" class="img-fluid" alt=""></a>
                         </div>
                         <div class="bannar">
-                            <img src="images/bannar.jpg" class="img-fluid" alt="">
+                            <a href="#"><img src="images/slideTwo.jpg" class="img-fluid" alt=""></a>
                         </div>
                         <div class="bannar">
-                            <img src="images/bannar.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="bannar">
-                            <img src="images/bannar.jpg" class="img-fluid" alt="">
+                            <a href="#"><img src="images/sliderThree.png" class="img-fluid" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -201,7 +207,7 @@
                                 <div class="s_width">
                                     <a href="deposite.html"  style="text-decoration: none;">
                                         <div class="option op_withdraw">
-                                            <img src="images/wallet.png" alt="">
+                                            <img src="images/money-bag-green60.png" alt="">
                                             <h3>Deposite</h3>
                                         </div>
                                     </a>
@@ -209,7 +215,7 @@
                                 <div class="s_width">
                                     <a href="withdraw.html" style="text-decoration: none;">
                                         <div class="option op_reward">                                
-                                            <img src="images/moneybag.png" alt="">
+                                            <img src="images/cash_in.png" alt="">
                                             <h3>width</h3>
                                         </div> 
                                     </a>                       
@@ -250,14 +256,6 @@
                             <h2>No information yet</h2>
                         </div>
                     </a>
-                    <!-- with information  -->
-                    <!-- <a href="# " data-bs-toggle="modal" data-bs-target="#account_information" style="text-decoration: none;">
-                        <div class="nf_content text-center">
-                            <img src="images/bANK.png" alt="">
-                            <h5>241......4446</h5>
-                        </div>
-                    </a> -->
-                    <!-- Button trigger modal -->
 
                     <!-- Card input -->
                     <div class="modal fade" id="account_information" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -491,7 +489,7 @@
                             
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="profileinfo.html">
                                         <div class="row justify-content-space align-items-center">
                                             <div class="col-10">
                                                 <h3><img src="images/personal-information-60.png" class="game_i" alt=""> Personal information </h3>
@@ -504,7 +502,7 @@
                                 </li>
                             
                                 <li>
-                                    <a href="#">
+                                    <a href="changepass.html">
                                         <div class="row justify-content-space align-items-center">
                                             <div class="col-10">
                                                 <h3><img src="images/change-password-100.png" class="about_i" alt=""> Change Password </h3>
@@ -520,6 +518,30 @@
                                         <div class="row justify-content-space align-items-center">
                                             <div class="col-10">
                                                 <h3><img src="images/document-60.png" class="doc_i" alt=""> Transection history </h3>
+                                            </div>
+                                            <div class="col-2 text-end list_arrow">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="affiliate.html">
+                                        <div class="row justify-content-space align-items-center">
+                                            <div class="col-10">
+                                                <h3><img src="images/affiliate-60.png" class="game_i" alt=""> Affiliate </h3>
+                                            </div>
+                                            <div class="col-2 text-end list_arrow">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="referal.html">
+                                        <div class="row justify-content-space align-items-center">
+                                            <div class="col-10">
+                                                <h3><img src="images/gift-box.png" class="headset_i" alt=""> Refer a friend </h3>
                                             </div>
                                             <div class="col-2 text-end list_arrow">
                                                 <i class="fa-solid fa-chevron-right"></i>
@@ -565,7 +587,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="profileinfo.html">
+                                    <a href="#">
                                         <div class="row justify-content-space align-items-center">
                                             <div class="col-10">
                                                 <h3><img src="images/Ssettings-60.png" class="doc_i" alt=""> Settings </h3>

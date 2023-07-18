@@ -1,49 +1,611 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Button Icon Animation</title>
-  <style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- title  -->
+    <title>Slot Games  </title>
+
+    <!-- bootstrap 5.3    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- fontawsome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+     <!-- style css  -->
+     <link rel="stylesheet" href="css/preloader.css">
+     <link rel="stylesheet" href="css/slotmachine.css">
+     <link rel="stylesheet" href="css/media.css">
+
+  </head>
+  <body>  
+    <div class="loader" id="preloader">
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+        <div class="loader__circle"></div>
+    </div>
+    
+    <div class="container-fluid">
+
+        
+         <!-- navbar  start here   -->
+         <div class="row desktop_view">
+            <div class="nav_bar" style="z-index: 9999;" >
+                <div class="row">
+                    <div class="col-12">
+                        <!-- nav for desktop view  -->
+                        <div id="mySidenav" class="sidenav">
+                            <div class="head d-flex align-items-center">
+                                <div class="row">
+                                    <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
+                                    <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                </div>
+                            </div>
+
+                            <div class="body">
+                                <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                                <a href=""><img src="images/live-streaming.png" alt="">Stream</a>
+                                <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
+                                <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
+                                <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
+                                <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                                <a href="login.html"><img src="images/user.png" alt="">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class=" nav_profile">           
+                             <div class="me-auto">
+                                <a href="#back" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                             </div>                 
+                            <!-- settings button  -->
+                            <div class="ms-auto text-end ">
+                                
+                                <a class="nav-link"   onclick="openNav()">
+                                    <div class="grid_dots">
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div><div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>   
+                                        </div>                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <!-- space  -->
+        <div class="desktop_view" style="height: 54px;"></div>
+        <!-- navbar end here  -->
+
+
+
+
+
+        <div class="container-fluid">
+            <!-- machine part  -->
+            <div class="slot_machine ">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slt_game">
+                                <!-- slot game part start here  -->
+                                <div class="container">
+                                <div class="preview">                            
+                                </div>
+                                
+                                <!-- game section  -->
+                                <div class="row justify-content-center" >
+                                    <div class="col-12 m-auto text-center" style=" ">            
+                                        <div class="slot_frame ">                                            
+                                            <canvas id="slot"  width="440" height="240" ></canvas>   
+                                            <img src="images/machine-frame.png" class="img-fluid" alt="">
+                                        </div>                 
+                                        </div>
+                                    
+                                </div>   
+                                <!-- game section  -->
+        
+                                <div class="row">
+                                    <div class="col-md-6 m-auto" >
+                                        <div class="row">
+                                            <!-- crurent win here  -->
+                                            <div class="col-4 balance_btns">
+                                                <label for="cwin"> Win</label>
+                                                <input type="text" disabled class="form-control " id="cwin" value="0">                                
+                                            </div>
+                                            <!-- available balance  -->
+                                            <div class="col-4 balance_btns">
+                                                <label for="balance"><img src="images/dimond.png" width="20px" alt=""></label>
+                                                <input class="form-control" disabled type="text" id="balance">
+                                            </div>
+                                            <!-- BETx  -->
+                                            <div class="col-4 balance_btns">
+                                                <label for="bet">BETx</label>
+                                                <input class="form-control" type="number" id="bet" min="1" value="1" max="3">
+                                            </div>
+                                            
+                                        </div> 
+                                        <!-- spin button  -->
+                                        <div class="row my-2">
+                                            <div class="col-12">
+                                                <button class="btn btn_spin " style="width: 100%;" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                
+                                
+                                <div class="row justify-content-center ">
+                                    <div class="col col-auto">
+                                        <button class="btn btn-secondary px-5" hidden id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
+                                    </div>
+                                </div>
+                            
+                                <!-- hidden part start here  -->
+                                <div class="row justify-content-center">
+                                    <div class="col col-auto">
+                                        <select id="mode" hidden class="btn btn_default">
+                                            <option value="random">Random</option>
+                                            <option value="fixed">Fixed</option>
+                                        </select>
+                                        <select id="where" hidden class="btn btn_default">
+                                            <option value="top">top</option>
+                                            <option value="middle">middle</option>
+                                            <option value="bottom">bottom</option>
+                                        </select>
+                                        <select id="what" hidden class="btn btn_default">
+                                        </select>
+                                    </div>
+                                </div>	
+                                <!-- hidden part end here  -->
+                                
+                                <div class="row justify-content-center ">
+                                    <div class="col col-auto">
+                                        <button class="btn btn_withdraw w-auto " hidden type="button" id="checkout"><i class="fas fa-money-bill-alt"></i> Withdraw</button>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- slot game part end here payTable  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- machine part end here  -->
+        </div>
+       
+        <!-- history and current win section start here  -->
+            <div class="row ">
+                <div class="col-12">
+                    <div class="history_section ">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active btn_spin" style="
+                            border-radius: 50px;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-top" type="button" role="tab" aria-controls="pills-top" aria-selected="true">Top 10</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link btn_spin" style="
+                            border-radius: 50px;" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">History</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-top" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="top_ten">
+                                    <!-- <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">SL.</th>
+                                                <th class="text-center">User Name</th>
+                                                <th class="text-end"><h3>current Win</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"><div class="serial">
+                                                    <img src="images/first.png" class="img-fluid" alt="">
+                                                </td>
+                                                <td class="text-center">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>    
+                                                </td>
+                                                <td class="text-end">
+                                                    <h3>1234567</h3>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"><div class="serial">
+                                                    <img src="images/second.png" class="img-fluid" alt="">
+                                                </td>
+                                                <td class="text-center">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>    
+                                                </td>
+                                                <td class="text-end">
+                                                    <h3>1234567</h3>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"><div class="serial">
+                                                    <img src="images/third.png" class="img-fluid" alt="">
+                                                </td>
+                                                <td class="text-center">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>    
+                                                </td>
+                                                <td class="text-end">
+                                                    <h3>1234567</h3>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table> -->
+                                    <ul>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <img src="images/first.png" class="img-fluid" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center ">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <img src="images/second.png" class="img-fluid" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <img src="images/third.png" class="img-fluid" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>4th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>5th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>6th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>7th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>8th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>9th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>10th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="history">
+                                    
+                                    <ul>
+                                        <div class="row ">
+                                            <div class="col-6">
+                                                <h3>Bet Id</h3>
+                                            </div>
+                                            <div class="col-6">
+                                                <h3 class="text-end ">current Win</h3>
+                                            </div>
+                                        </div>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- history and current win section end here  -->
+
+
+
+         <!-- footer start -->
+         <div class="row mobile_view">
+            <div class="col-12">
+                <div class="footer_space">
+                </div>
+            </div>
+         </div>
+         <footer class="mobile_view">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 d-flex">
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="#" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                            <a href="profileinfo.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer part end here  -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/navjs.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/slotmachine.js"></script>
+
+
    
-  </style>
-</head>
-<body>
-  <ul class="reactionWrapper">
-    <li><button  class="rose"><img src="images/rose.png" alt=""></button>
-      
-    </li>
-    <li><button  class="gift"><img src="images/gift-box.png" alt=""></button>
-    </li>
-    <li><button  class="rose"><img src="images/rose.png" alt=""></button>
-      
-    </li>
-    <li><button  class="gift"><img src="images/gift-box.png" alt=""></button>
-    </li>
-  </ul>
-  <script>
-    let reactionWrapper = document.querySelector(".reactionWrapper");
 
-    let rose = document.querySelector(".rose");
-    let gift = document.querySelector(".gift");
-
-    rose.addEventListener("click", ()=>{
-      let createEmoji = document.createElement("img");      
-      createEmoji.setAttribute("src", "images/rose.png");
-      reactionWrapper.appendChild(createEmoji);
-      createEmoji.classList.add("emoji");
-      setTimeout(() => {
-        createEmoji.remove();
-      }, 1000);
-    });
-
-    gift.addEventListener("click", ()=>{
-      let createEmoji = document.createElement("img");      
-      createEmoji.setAttribute("src", "images/gift-box.png");
-      reactionWrapper.appendChild(createEmoji);
-      createEmoji.classList.add("emoji");
-      setTimeout(() => {
-        createEmoji.remove();
-      }, 1000);
-    });
-  </script>
-</body>
+   
+  </body>
 </html>

@@ -20,6 +20,7 @@
      <!-- style css  -->
      <link rel="stylesheet" href="css/preloader.css">
      <link rel="stylesheet" href="css/slotmachine.css">
+     <link rel="stylesheet" href="css/media.css">
 
   </head>
   <body>  
@@ -97,6 +98,10 @@
         <div class="desktop_view" style="height: 54px;"></div>
         <!-- navbar end here  -->
 
+
+
+
+
         <div class="container-fluid">
             <!-- machine part  -->
             <div class="slot_machine ">
@@ -111,7 +116,7 @@
                                 </div>
                                 
                                 <!-- game section  -->
-                                <div class="row justify-content-center mb-3" >
+                                <div class="row justify-content-center" >
                                     <div class="col-12 m-auto text-center" style=" ">            
                                         <div class="slot_frame ">                                            
                                             <canvas id="slot"  width="440" height="240" ></canvas>   
@@ -152,7 +157,7 @@
                                 </div>  
                                 
                                 
-                                <div class="row justify-content-center mb-3">
+                                <div class="row justify-content-center ">
                                     <div class="col col-auto">
                                         <button class="btn btn-secondary px-5" hidden id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
                                     </div>
@@ -176,7 +181,7 @@
                                 </div>	
                                 <!-- hidden part end here  -->
                                 
-                                <div class="row justify-content-center my-3">
+                                <div class="row justify-content-center ">
                                     <div class="col col-auto">
                                         <button class="btn btn_withdraw w-auto " hidden type="button" id="checkout"><i class="fas fa-money-bill-alt"></i> Withdraw</button>
                                         
@@ -192,323 +197,373 @@
             </div>
             <!-- machine part end here  -->
         </div>
+       
+        <!-- history and current win section start here  -->
+            <div class="row ">
+                <div class="col-12">
+                    <div class="history_section ">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link active btn_spin" style="
+                            border-radius: 50px;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-top" type="button" role="tab" aria-controls="pills-top" aria-selected="true">Top 10</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <button class="nav-link btn_spin" style="
+                            border-radius: 50px;" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">History</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-top" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="top_ten">
+                                    <!-- <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">SL.</th>
+                                                <th class="text-center">User Name</th>
+                                                <th class="text-end"><h3>current Win</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"><div class="serial">
+                                                    <img src="images/first.png" class="img-fluid" alt="">
+                                                </td>
+                                                <td class="text-center">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>    
+                                                </td>
+                                                <td class="text-end">
+                                                    <h3>1234567</h3>
+                                                </td>
 
-        <div class="container-fluid">            
-            <!-- history and current win section start here  -->
-            <div class="container mb-2">
-                <div class="row ">
-                    <div class="col-12">
-                        <div class="history_section ">
-                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                <button class="nav-link active btn_spin" style="
-                                border-radius: 50px;" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-top" type="button" role="tab" aria-controls="pills-top" aria-selected="true">Top 10</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                <button class="nav-link btn_spin" style="
-                                border-radius: 50px;" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">History</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-top" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <div class="top_ten">
-                                        <ul>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <img src="images/first.png" class="img-fluid" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center ">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <img src="images/second.png" class="img-fluid" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"><div class="serial">
+                                                    <img src="images/second.png" class="img-fluid" alt="">
+                                                </td>
+                                                <td class="text-center">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>    
+                                                </td>
+                                                <td class="text-end">
+                                                    <h3>1234567</h3>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"><div class="serial">
+                                                    <img src="images/third.png" class="img-fluid" alt="">
+                                                </td>
+                                                <td class="text-center">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>    
+                                                </td>
+                                                <td class="text-end">
+                                                    <h3>1234567</h3>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table> -->
+                                    <ul>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <img src="images/first.png" class="img-fluid" alt="">
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <img src="images/third.png" class="img-fluid" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center ">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <img src="images/second.png" class="img-fluid" alt="">
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <h2>4th</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <img src="images/third.png" class="img-fluid" alt="">
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <h2>5th</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>4th</h2>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <h2>6th</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>5th</h2>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <h2>7th</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>6th</h2>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <h2>8th</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>7th</h2>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <h2>9th</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>8th</h2>
                                                     </div>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    <div class="col-2">
-                                                        <div class="serial">
-                                                            <h2>10th</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <div><h5>@username</h5></div>
-                                                        <div><p>929292</p></div>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <h3>1234567</h3>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>9th</h2>
                                                     </div>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <div class="serial">
+                                                        <h2>10th</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div><h5>@username</h5></div>
+                                                    <div><p>929292</p></div>
+                                                </div>
+                                                <div class="col-5">
+                                                    <h3>1234567</h3>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    <div class="history">
-                                        <div class="row ms-4">
+                            </div>
+                            <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="history">
+                                    
+                                    <ul>
+                                        <div class="row ">
                                             <div class="col-6">
                                                 <h3>Bet Id</h3>
                                             </div>
                                             <div class="col-6">
-                                                <h3 class="text-end me-4">current Win</h3>
+                                                <h3 class="text-end ">current Win</h3>
                                             </div>
                                         </div>
-                                        <ul>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="incrase">+$120.00</h4>
-                                                    </div>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="decrase">$120.00</h4>
-                                                    </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="incrase">+$120.00</h4>
-                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="decrase">$120.00</h4>
-                                                    </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="incrase">+$120.00</h4>
-                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="decrase">$120.00</h4>
-                                                    </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="incrase">+$120.00</h4>
-                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="decrase">$120.00</h4>
-                                                    </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="incrase">+$120.00</h4>
-                                                    </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="row align-items-center">
-                                                    
-                                                    <div class="col-6">
-                                                        <p>92929211111111</p>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <h4 class="decrase">$120.00</h4>
-                                                    </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
                                                 </div>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="incrase">+$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row align-items-center">
+                                                
+                                                <div class="col-6">
+                                                    <p>92929211111111</p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h4 class="decrase">$120.00</h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                
                             </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- history and current win section end here  -->
-        </div>
-         <!-- -=========footer start ========-  -->
+        <!-- history and current win section end here  -->
+
+
+
+         <!-- footer start -->
          <div class="row mobile_view">
             <div class="col-12">
                 <div class="footer_space">

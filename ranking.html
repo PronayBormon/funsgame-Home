@@ -27,7 +27,8 @@
 
   </head>
   <body >
-      <!-- preloader here  -->
+
+    <!-- preloader  -->
     <div class="loader" id="preloader">
       <div class="loader__circle"></div>
       <div class="loader__circle"></div>
@@ -35,533 +36,372 @@
       <div class="loader__circle"></div>
       <div class="loader__circle"></div>
     </div>
-    
-      
-    <div class="collapse game_collapse" id="slot_game">
-      <div class="card card-body ">
-        <!-- game start here  -->
-        <div class="d-flex justify-content-between align-items-center">
-          <button class="btn help_btn me-auto" type="button" data-bs-toggle="modal" data-bs-target="#payTable"><i class="fa-solid fa-question"></i></button>
-        <a href="game.html" class="btn ms-auto"><i class="fa-solid fa-expand"></i></a>
-        </div>
-        <div class="row">
-            <div class="col-md-12 pt-4">                    
-              <!-- Paytable modal -->
-              <div class="modal fade"  id="payTable" tabindex="-1" role="dialog" aria-labelledby="payTableTitle" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                      <h5 class="modal-title" id="payTableTitle">Pay Table</h5>
-                      <button type="button" class="btn-close color-light" data-bs-dismiss="modal" aria-label="Close">
+    <!-- preloader end  -->
+
+
+    <div class="container-fluid">
+          <!-- navbar  start here   -->
+    <div class="row desktop_view">
+      <div class="nav_bar" style="z-index: 9999;" >
+          <div class="row">
+              <div class="col-12">
+                  <!-- nav for desktop view  -->
+                  <div id="mySidenav" class="sidenav">
+                      <div class="head d-flex align-items-center">
+                          <div class="row">
+                              <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
+                              <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                          </div>
+                          <div>
+                              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                          </div>
+                      </div>
+
+                      <div class="body">
+                          <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                          <a href=""><img src="images/live-streaming.png" alt="">Stream</a>
+                          <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
+                          <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
+                          <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
+                          <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                          <a href="login.html"><img src="images/user.png" alt="">Login</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 col-sm-12">
+                  <div class=" nav_profile">           
+                          <div class="me-auto">
+                          <a href="#back" style="text-decoration: none;"  class="text-dark bg-transparent">
+                              <i class="fa-solid fa-chevron-left"></i>
+                          </a>
+                          </div>                 
+                      <!-- settings button  -->
+                      <div class="ms-auto text-end ">
                           
-                      </button>
+                          <a class="nav-link"   onclick="openNav()">
+                              <div class="grid_dots">
+                                  <div class="dots">
+                                      <span></span><span></span><span></span>
+                                  </div><div class="dots">
+                                      <span></span><span></span><span></span>
+                                  </div>
+                                  <div class="dots">
+                                      <span></span><span></span><span></span>   
+                                  </div>                                        
+                              </div>
+                          </a>
                       </div>
-                      <div class="modal-body">
-                      <table class="table table-dark table-hover table-responsive" style="overflow:hidden">
-                          <thead>
-                              <tr>
-                                  <td>Reel1</td>
-                                  <td>Reel2</td>
-                                  <td>Reel3</td>
-                                  <td>TOP</td>
-                                  <td>MIDDLE</td>
-                                  <td>BOTTOM</td>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40"></td>
-                                  <td class="v-align">2000xBET</td>
-                                  <td class="v-align">1000xBET</td>
-                                  <td class="v-align">4000xBET</td>
-                              </tr>
-                              <tr>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/7.png" width="40"></td>
-                                  <td class="v-align">150xBET</td>
-                                  <td class="v-align">150xBET</td>
-                                  <td class="v-align">150xBET</td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
-                                  </td>
-                                  <td>
-                                      <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
-                                  </td>
-                                  <td>
-                                      <img src="https://n1md7.github.io/slot-game/img/7.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/Cherry.png" width="40">
-                                  </td>
-                                  <td class="v-align">75xBET</td>
-                                  <td class="v-align">75xBET</td>
-                                  <td class="v-align">75xBET</td>
-                              </tr>
-                              <tr>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40"></td>
-                                  <td class="v-align">50xBET</td>
-                                  <td class="v-align">50xBET</td>
-                                  <td class="v-align">50xBET</td>
-                              </tr>
-                              <tr>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40"></td>
-                                  <td class="v-align">20xBET</td>
-                                  <td class="v-align">20xBET</td>
-                                  <td class="v-align">20xBET</td>
-                              </tr>
-                              <tr>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
-                                  <td><img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40"></td>
-                                  <td class="v-align">10xBET</td>
-                                  <td class="v-align">10xBET</td>
-                                  <td class="v-align">10xBET</td>
-                              </tr>
-                              <tr>
-                                  <td>
-                                      <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
-                                  </td>
-                                  <td>
-                                      <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
-                                  </td>
-                                  <td>
-                                      <img src="https://n1md7.github.io/slot-game/img/BAR.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/2xBAR.png" width="40">
-                                      <img src="https://n1md7.github.io/slot-game/img/3xBAR.png" width="40">
-                                  </td>
-                                  <td class="v-align">5xBET</td>
-                                  <td class="v-align">5xBET</td>
-                                  <td class="v-align">5xBET</td>
-                              </tr>
-                              
-                          </tbody>
-                      </table>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      </div>
-                  </div>
                   </div>
               </div>
-              <!-- paytable end here  -->   
-            </div>
-        </div>
-
-        <div class="slot_machine ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="slot_title text-center">
-                            <h3>Lucky <br> Spin </h3>
-                            <!-- <img src="images/777top.png" class="img-fluid seven_top" alt=""> -->
-                            <img src="images/777.png" class="seven_left" alt="">
-                            <img src="images/bigwin.png" class="bigwin" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="slt_game">
-                            <!-- slot game part start here  -->
-                            <div class="container">
-                            <div class="preview">                            
-                            </div>
-                            
-                            <!-- game section  -->
-                            <div class="row justify-content-center mb-3" style="position: relative;">
-                                <div class="col col-auto" >
-                                    <canvas id="slot" width="440" height="240"></canvas>                                
-                                </div> 
-                                <div class="slot_frame">
-                                    <img src="images/slot-machine-frame.png" alt="">
-                                </div>
-                            </div>   
-                            <!-- game section  -->
-    
-                            <div class="row">
-                                <div class="col-md-6 m-auto" >
-                                    <div class="row">
-                                        <!-- crurent win here  -->
-                                        <div class="col-4 balance_btns">
-                                            <label for="cwin"> Win</label>
-                                            <input type="text" disabled class="form-control " id="cwin" value="0">                                
-                                        </div>
-                                        <!-- available balance  -->
-                                        <div class="col-4 balance_btns">
-                                            <label for="balance"><img src="images/dimond.png" width="20px" alt=""></label>
-                                            <input class="form-control" disabled type="text" id="balance">
-                                        </div>
-                                        <!-- BETx  -->
-                                        <div class="col-4 balance_btns">
-                                            <label for="bet">BETx</label>
-                                            <input class="form-control" type="number" id="bet" min="1" value="1" max="3">
-                                        </div>
-                                        
-                                    </div> 
-                                    <!-- spin button  -->
-                                    <div class="row my-2">
-                                        <div class="col-12">
-                                            <button class="btn btn-danger " style="width: 100%;" id="spin"><i class="fas fa-sync-alt"></i> SPIN</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                            
-                            
-                            <div class="row justify-content-center mb-3">
-                                <div class="col col-auto">
-                                    <button class="btn btn-secondary px-5" hidden id="auto"><i class="fab fa-android"></i> AUTO (OFF)</button>
-                                </div>
-                            </div>
-                        
-                            <!-- hidden part start here  -->
-                            <div class="row justify-content-center">
-                                <div class="col col-auto">
-                                    <select id="mode" hidden class="btn btn_default">
-                                        <option value="random">Random</option>
-                                        <option value="fixed">Fixed</option>
-                                    </select>
-                                    <select id="where" hidden class="btn btn_default">
-                                        <option value="top">top</option>
-                                        <option value="middle">middle</option>
-                                        <option value="bottom">bottom</option>
-                                    </select>
-                                    <select id="what" hidden class="btn btn_default">
-                                    </select>
-                                </div>
-                            </div>	
-                            <!-- hidden part end here  -->
-                            
-                            <div class="row justify-content-center my-3">
-                                <div class="col col-auto">
-                                    <button class="btn btn_withdraw w-auto " hidden type="button" id="checkout"><i class="fas fa-money-bill-alt"></i> Withdraw</button>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <!-- slot game part end here payTable  -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- game end here  -->
+          </div>
       </div>
+  </div>        
+  <!-- space  -->
+  <div class="desktop_view" style="height: 54px;"></div>
+  <!-- navbar end here  -->
     </div>
+    
     <div style="position: relative;">
-   <!-- navbar part start here  -->
-      <div class="top_nav  " style="position: absolute;">
-        <div class="container">
-          <div class="row my-3">
-            <div class="col-md-12">
-                <a href="index.html" class="me-auto text-light "><i class="fa-solid fa-chevron-left"></i></a>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-sm-12 text-center">
-              <div class="d-flex justify-content-center align-items-center">
-                <nav>
-                  <div class="nav " id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Hot</button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Rich</button>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  <!-- navbar part end here  -->
-  <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-      <!-- rank bannar part start here  -->
-      <div class="rank_bannar">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 ms-auto">
-              <div class="row">
-                <div class="col-4">
-                  <div class="rank mt-5">
-                    <img src="images/crown (2).png" class="rank_crown" alt="">
-                    <img src="images/frame.png" class="img-fluid rank_frame" alt="">
-                    <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">
-                    <p><img src="images/dimond.png" alt=""> 45454445</p>   
-                    <h4>P****Y</h4>             
-
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="rank">
-                    <img src="images/crown king.png" class="rank_crown" alt="">
-                    <img src="images/frame.png" class="img-fluid rank_frame" alt="">
-                    <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
-                    <p><img src="images/dimond.png" alt=""> 45454445</p>   
-                    <h4>P****Y</h4>                           
-                  </div>
-                </div>
-                <div class="col-4 d-flex justify-content-center align-items-center">
-                  <div class="rank mt-5">
-                    <img src="images/crown (1).png" class="rank_crown" alt="">
-                    <img src="images/frame.png" class="img-fluid rank_frame" alt="">
-                    <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
-                    <p><img src="images/dimond.png" alt=""> 45454445</p>   
-                    <h4>P****Y</h4>                           
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- rank bannar end here  -->
-
-      <!-- hot list  -->
-      <div class="container">      
+      <div class="container-fluid " style="position: absolute; z-index: 9999;">
         <div class="row">
-          <div class="col-md-12">
-            <div class="rank_list">
-              <ul>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dimond.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>3</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dimond.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>4</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dimond.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>5</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dimond.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>6</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dimond.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>7</h3>
-                  </div>
-                </li>
-                
-              </ul>
-            </div>
+  
+          <!-- tabs button part start here  -->
+          <div class="col-md-6 col-sm-12 col-12 m-auto">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Hot</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Rich</button>
+              </li>
+             
+            </ul>
           </div>
+          <!-- tabs button end here  -->
         </div>
       </div>
-      <!-- hot list  -->
-    </div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-      <div class="rank_bannar">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 ms-auto">
+      
+   
+        
+  
+  
+  
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+          <!-- rank bannar part start here  -->
+          <div class="rank_bannar">
+            <div class="container ">
+              
               <div class="row">
-                <div class="col-4">
-                  <div class="rank mt-5">
-                    <img src="images/crown (2).png" class="rank_crown" alt="">
-                    <img src="images/frame.png" class="img-fluid rank_frame" alt="">
-                    <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">
-                    <p><img src="images/dollar.png" alt=""> 45454445</p>   
-                    <h4>P****Y</h4>             
-
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="rank">
-                    <img src="images/crown king.png" class="rank_crown" alt="">
-                    <img src="images/frame.png" class="img-fluid rank_frame" alt="">
-                    <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
-                    <p><img src="images/dollar.png" alt=""> 45454445</p>   
-                    <h4>P****Y</h4>                           
-                  </div>
-                </div>
-                <div class="col-4 d-flex justify-content-center align-items-center">
-                  <div class="rank mt-5">
-                    <img src="images/crown (1).png" class="rank_crown" alt="">
-                    <img src="images/frame.png" class="img-fluid rank_frame" alt="">
-                    <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
-                    <p><img src="images/dollar.png" alt=""> 45454445</p>   
-                    <h4>P****Y</h4>                           
+                <div class="col-lg-8 col-12 m-auto">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="rank mt-5">
+                        <img src="images/crown_up (2).png" class="rank_crown" alt="" style="left: 20%;">
+                        <img src="images/frame.png" class="img-fluid rank_frame" alt="">
+                        <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">
+                        <p><img src="images/dimond.png" alt=""> 45454445</p>   
+                        <h4>P****Y</h4>             
+  
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="rank">
+                        <img src="images//crown_up (1).png" class="rank_crown" alt="">
+                        <img src="images/frame.png" class="img-fluid rank_frame" alt="">
+                        <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
+                        <p><img src="images/dimond.png" alt=""> 45454445</p>   
+                        <h4>P****Y</h4>                           
+                      </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                      <div class="rank mt-5">
+                        <img src="images/crown_up (3).png" class="rank_crown" alt="" " style="right: 20%;">
+                        <img src="images/frame.png" class="img-fluid rank_frame" alt="">
+                        <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
+                        <p><img src="images/dimond.png" alt=""> 45454445</p>   
+                        <h4>P****Y</h4>                           
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- rank bannar end here  -->
-
-      <!-- rich list  -->
-      <div class="container">      
-        <div class="row">
-          <div class="col-md-12">
-            <div class="rank_list">
-              <ul>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dollar.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>3</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dollar.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>4</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dollar.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>5</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dollar.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>6</h3>
-                  </div>
-                </li>
-                <li>                  
-                  <div class="d-flex">
-                    <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
-                    <div class="d-fle">
-                      <div><h4>P*****n</h4></div>
-                      <div><p><img src="images/dollar.png" alt="">3333333</p></div>
-                    </div>
-                  </div>
-                  <div>
-                    <h3>7</h3>
-                  </div>
-                </li>
-                
-              </ul>
+          <!-- rank bannar end here  -->
+  
+          <!-- hot list  -->
+          <div class="container">      
+            <div class="row">
+              <div class="col-md-12">
+                <div class="rank_list">
+                  <ul>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dimond.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>3</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dimond.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>4</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dimond.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>5</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dimond.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>6</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dimond.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>7</h3>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
+          <!-- hot list  -->
         </div>
+        <div  class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+          <div class="rank_bannar">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 m-auto">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="rank mt-5">
+                        <img src="images/crown (2).png" class="rank_crown" alt="">
+                        <img src="images/frame.png" class="img-fluid rank_frame" alt="">
+                        <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">
+                        <p><img src="images/dollar.png" alt=""> 45454445</p>   
+                        <h4>P****Y</h4>             
+  
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="rank">
+                        <img src="images/crown king.png" class="rank_crown" alt="">
+                        <img src="images/frame.png" class="img-fluid rank_frame" alt="">
+                        <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
+                        <p><img src="images/dollar.png" alt=""> 45454445</p>   
+                        <h4>P****Y</h4>                           
+                      </div>
+                    </div>
+                    <div class="col-4 d-flex justify-content-center align-items-center">
+                      <div class="rank mt-5">
+                        <img src="images/crown (1).png" class="rank_crown" alt="">
+                        <img src="images/frame.png" class="img-fluid rank_frame" alt="">
+                        <img src="images/profile-female.jpg" class="img-fluid rank_img" alt="">  
+                        <p><img src="images/dollar.png" alt=""> 45454445</p>   
+                        <h4>P****Y</h4>                           
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- rank bannar end here  -->
+  
+          <!-- rich list  -->
+          <div class="container">      
+            <div class="row">
+              <div class="col-md-12">
+                <div class="rank_list">
+                  <ul>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dollar.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>3</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dollar.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>4</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dollar.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>5</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dollar.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>6</h3>
+                      </div>
+                    </li>
+                    <li>                  
+                      <div class="d-flex">
+                        <div><img src="images/profile-female.jpg" class="img-fluid" alt=""></div>
+                        <div class="d-fle">
+                          <div><h4>P*****n</h4></div>
+                          <div><p><img src="images/dollar.png" alt="">3333333</p></div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>7</h3>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- rich list  -->
+        </div>
+  
+      </div>  
+      
+  
+      <div class="game_footing_button">
+      <button href="game.html" type="button" data-bs-toggle="collapse" data-bs-target="#slot_games" aria-expanded="false" aria-controls="collapseExample"><img src="images/FG_Slot_icon.png" class="img-fluid" alt=""></button>
       </div>
-      <!-- rich list  -->
+  
+      <!-- -=========footer start ========-  -->
+      <footer class="mobile_view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 d-flex">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="#" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+      </footer>
+      <!-- footer part end here  -->
     </div>
-  </div>  
-    
 
-<div class="game_footing_button">
-  <button href="game.html" type="button" data-bs-toggle="collapse" data-bs-target="#slot_games" aria-expanded="false" aria-controls="collapseExample"><img src="images/FG_Slot_icon.png" class="img-fluid" alt=""></button>
-</div>
-
-     <!-- -=========footer start ========-  -->
-     <div class="row mobile_view">
-      <div class="col-12">
-          <div class="footer_space">
-          </div>
-      </div>
-   </div>
-     <footer>
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-sm-12 d-flex">
-                  <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                      <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                      <a href="#" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                      <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                      <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
-                  </div>
-                  <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                      <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
-                  </div>
-                  
-              </div>
-          </div>
-      </div>
-  </footer>
-  <!-- footer part end here  -->
-  </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/slotmachine.js"></script>
     <script src="js/preloader.js"></script>
+    <script src="js/navjs.js"></script>
 
 
   </body>

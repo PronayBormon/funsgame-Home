@@ -9,7 +9,7 @@
 body{
     scrollbar-width: 0;    
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+    /* background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61); */
 }
 body::-webkit-scrollbar{
     display: none;
@@ -1816,6 +1816,29 @@ color: #fff;
     display: flex;
     justify-content: center;
     margin-top: 5px !important;
+}
+@media(min-width: 992px){
+    .bannar{
+        height: 200px;
+    }
+    .bannar img{
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    
+    }
+}
+@media(max-width: 992px){
+    .bannar{
+        height: 150px;
+
+    }
+    .bannar img{
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    
+    }
 }
 @media(max-width: 768px){
     .rank_crown {

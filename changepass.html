@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- title  -->
-    <title>Update Your Password</title>
+    <title>Change Your Password</title>
 
 
     <!-- bootstrap5.3 -->
@@ -44,20 +44,16 @@
                 <div class="login">
                     <div class="row my-3">
                         <div class="col-md-12">
-                            <a href="index.html" class="me-auto text-secondary "><i class="fa-solid fa-chevron-left"></i></a>
+                            <a href="profile.html" class="me-auto text-secondary "><i class="fa-solid fa-chevron-left"></i></a>
                         </div>
                     </div>
-                    <div class="log_title">
-                        <h1>Create New Password</h1>
-                    </div>
-                    <!-- <div class="card bg-transparent">
-                        <div class="card-body">
-                            <p class="text-success m-0">Successfully change</p>
-                        </div>
-                    </div> -->
                     <div>
                         <form action="">
-                            
+                            <div>
+                                <label for="">Current Password</label>
+                                <input type="password" placeholder="Password" id="myInput" class="form-control">
+                                
+                            </div>
                             <div>
                                 <label for="">New Password</label>
                                 <input type="password" placeholder="Password" id="myInput" class="form-control">
@@ -67,7 +63,10 @@
                                 <label for="">Retype Password</label>
                                 <input type="password" placeholder="Retype password" id="myInput" class="form-control">
                             </div>
-                            <button type="button" class="signin_btn " data-bs-toggle="modal" data-bs-target="#varification">Update </button>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="forgetpass.html">Forget current Password?</a>
+                            </div>
+                            <button type="button" class="signin_btn " data-bs-toggle="modal" data-bs-target="#varification">Change </button>
                         </form>
                     </div>
                 </div>
