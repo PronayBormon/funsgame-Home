@@ -1,0 +1,19 @@
+
+ 
+
+#preview{
+    position:absolute;
+    /* border:1px solid #ccc; */
+    background:#333;padding:5px;
+    display:none;
+    color:#fff;
+    z-index: 99999;
+    width: 100px !important;
+    border: none;
+}
+
+#preview img{
+    width: 100% !important;
+    height: auto;
+    border: none !important;
+}

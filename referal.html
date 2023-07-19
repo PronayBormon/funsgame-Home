@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
      <!-- style css  -->
+     <link rel="stylesheet" href="css/preloader.css">
      <link rel="stylesheet" href="css/refferel.css">
 
   </head>
@@ -30,6 +31,79 @@
       
 
     <div class="container ">
+
+        <!-- navbar  start here   -->
+        <div class="row desktop_view" style="z-index: 9999999;">
+            <div class="nav_bar" style="z-index: 9999;">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- nav for desktop view  -->
+                        <div id="mySidenav" class="sidenav">
+                            <div class="head  align-items-center">
+                                <div class="row">
+                                    <a href="profileinfo.html" class="text-secondary text-decoration-none">
+                                        <div class="text-start d-flex align-items-center ms-2 "><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
+                                    </a>
+                                    <div>
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
+                                    <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="body">
+                                <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                                <a href="livestream.html"><img src="images/live-streaming.png" alt="">Stream</a>
+                                <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
+                                <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
+                                <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
+                                <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                                <a href="referal.html"><img src="images/affiliate-60.png" alt="">Affiliate</a>
+                                <a href="deposite.html"><img src="images/money-bag-green60.png" alt="">Deposite</a>                                    
+                                <a href="withdraw.html"><img src="images/cash_in.png" alt="">withdraw</a>
+                                <!-- <a href="profile.html"><img src="images/user.png" alt="">Profile</a> -->
+                                <a href="login.html"><img src="images/user.png" alt="">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class=" nav_profile">           
+                                <div class="me-auto">
+                                <a href="#back" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                    <!-- <i class="fa-solid fa-chevron-left"></i> -->
+                                </a>
+                                </div>                 
+                            <!-- settings button  -->
+                            <div class="ms-auto text-end ">
+                                
+                                <a class="nav-link"   onclick="openNav()">
+                                    <div class="grid_dots">
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div><div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>   
+                                        </div>                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- space  -->
+        <div class="desktop_view" style="height: 54px;"></div>
+        <!-- navbar end here  -->
         
         <div class="row">
             <div class="col-md-6 m-auto">
@@ -64,17 +138,20 @@
                     <div class="row">
                         <div class="col-lg-8 col-sm-12 m-auto">
                             <div class="code_part">
+                                
+                                <span class="tooltiptext "  id="myTooltips"></span>
                                 <ul>
                                     <li>
-                                        <p>Referral ID</p>
-                                        <a href="#">Udne3er4Ore12<i class="fa-regular fa-copy"></i></a>
+                                        <p class="text-start">Referral ID</p>
+                                        <a type="button" onclick="copyfunction()"><input type="text" class="text-end bg-transparent" style="border: none;" disabled id="myInput" value="Udne3er4Ore12"><i class="fa-regular fa-copy"></i></a>
                                     </li>
                                     <li>
                                         <p>Refferl link </p>
-                                        <a href="#">https//game.me/Udne3er4Ore12<i class="fa-regular fa-copy"></i></a>
+                                        <a type="button" onclick="accountName()" ><input type="text" class="text-end bg-transparent" style="border: none;" disabled id="myInputOne" value="https//game.me/Udne3er4Ore12"><i class="fa-regular fa-copy"></i></a>
                                     </li>
                                 </ul>                                
-                                <a href="#" class="btn btn_share"> <img src="images/gift-box.png" alt="">Share</a>
+                                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn_share "> <img src="images/gift-box.png" alt="">Share</a>
+
 
                             </div>
                         </div>
@@ -90,9 +167,123 @@
             </div>
         </div>
 
+          
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+              <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content " style="z-index: 9999999999;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Share Referral link</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="content">
+                <p>Share this link via</p>
+                <ul class="icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                </ul>
+                <p>Or copy link</p>
+                <div class="field">
+                  <i class="url-icon uil uil-link"></i>
+                  <input type="text" id="url" readonly value="https://link.me/uerdsd">
+                  <button type="button" onclick="copyFunc()" id="copied">Copy</button>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+        </div>
+    </div>
+</div>
+
+    <!-- footer part start here  -->
+    <div class="col-md-12" style="min-height: 70px;"></div>
+    <footer class="mobile_view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 d-flex">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="hostlist.html" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end here  -->
         
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/navjs.js"></script>
+    <script>
+        
+      let massage = document.getElementById("myTooltips");
+        // bank name 
+        function copyfunction() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+            massage.innerHTML = "Copied";
+            setTimeout(() => {
+                massage.innerHTML ="";
+            }, 2000);
+        }
+
+        // account name 
+        function accountName() {
+            var copyText = document.getElementById("myInputOne");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+            massage.innerHTML = "Copied";
+            setTimeout(() => {
+                massage.innerHTML ="";
+            }, 2000);
+        }
+
+
+    </script>
+
+    <!-- copy in share button  -->
+    <script>
+        
+      let copy = document.getElementById("copied");
+        function copyFunc() {
+            var copyText = document.getElementById("url");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(copyText.value);
+            copy.innerHTML = "Copied";
+            setTimeout(() => {
+                copy.innerHTML ="Copy";
+            }, 2000);
+        }
+    </script>
   </body>
 </html>

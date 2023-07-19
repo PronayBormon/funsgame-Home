@@ -7,14 +7,23 @@
         height: 48vh;
     }
 }
-@media(max-width:376px){
+@media(max-width: 394px){
+    .rank_bannar {
+        min-height: 30vh;
+    }
+    .rank_list {
+        height: 60vh;
+    }
+}
+/* @media(max-width:376px){
     .rank_bannar {
         min-height: 40vh;
     }
     .rank_list {
         height: 52vh;
     }
-}
+   
+} */
 @media screen and (max-width: 280px){
     .profile h1 {
         font-size: 8px;

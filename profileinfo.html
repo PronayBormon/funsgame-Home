@@ -35,10 +35,83 @@
         <div class="loader__circle"></div>
         <div class="loader__circle"></div>
         <div class="loader__circle"></div>
-      </div>
+    </div>
       
       
     <div class="container ">
+            <!-- navbar  start here   -->
+    <div class="row desktop_view">
+        <div class="nav_bar" style="z-index: 9999;">
+            <div class="row">
+                <div class="col-12">
+                    <!-- nav for desktop view  -->
+                    <div id="mySidenav" class="sidenav">
+                        <div class="head  align-items-center">
+                            <div class="row">
+                                <a href="profileinfo.html" class="text-secondary text-decoration-none">
+                                    <div class="text-start d-flex align-items-center ms-2 "><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
+                                </a>
+                                <div>
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
+                                <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="body">
+                            <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                            <a href="livestream.html"><img src="images/live-streaming.png" alt="">Stream</a>
+                            <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
+                            <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
+                            <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
+                            <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                            <a href="referal.html"><img src="images/affiliate-60.png" alt="">Affiliate</a>
+                            <a href="deposite.html"><img src="images/money-bag-green60.png" alt="">Deposite</a>                                    
+                            <a href="withdraw.html"><img src="images/cash_in.png" alt="">withdraw</a>
+                            <!-- <a href="profile.html"><img src="images/user.png" alt="">Profile</a> -->
+                            <a href="login.html"><img src="images/user.png" alt="">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class=" nav_profile">           
+                            <div class="me-auto">
+                            <a href="#back" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                            </div>                 
+                        <!-- settings button  -->
+                        <div class="ms-auto text-end ">
+                            
+                            <a class="nav-link"   onclick="openNav()">
+                                <div class="grid_dots">
+                                    <div class="dots">
+                                        <span></span><span></span><span></span>
+                                    </div><div class="dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <div class="dots">
+                                        <span></span><span></span><span></span>   
+                                    </div>                                        
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- space  -->
+    <div class="desktop_view" style="height: 54px;"></div>
+    <!-- navbar end here  -->
+        
         <div class="row">
             <div class="col-lg-4 col-md-6 m-auto col-sm-12">
                 <div class="register login">
@@ -46,7 +119,8 @@
                         <div class="log_title">
                             <div class="profile_img">                                
                                 <img src="images/profile-female.jpg" class="img_fluid" alt="">
-                                <button class="camera_icon"><i class="fa-solid fa-camera"></i></button>
+                                <label for="profile" style="cursor: pointer;" class="camera_icon"><i class="fa-solid fa-camera"></i></label>
+                                <input id="profile" type="file" style="display: none;">
                             </div>
                             <h1  class="mb-2">Profile Info </h1>
                         </div>
@@ -55,41 +129,56 @@
                             <input type="file" class="form-control" placeholder="">
                         </div> -->
                         <div>
-                            <label for="">Email Address</label>
-                            <input type="email" class="form-control" placeholder="Email Address">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" autocomplete="off" placeholder="Email Address">
                         </div>
                         <div>
-                            <label for="">User name</label>
-                            <input type="password" disabled placeholder="@user123"  class="form-control">
+                            <label for="user_name">User name</label>
+                            <input type="text" id="user_name" autocomplete="off" disabled placeholder="@user123"  class="form-control">
                         </div>
                         
                         <div class="row">
                             <div class="col">
-                                <label for="">First name</label>
-                                <input type="text" class="form-control" placeholder="First Name">
+                                <label  for="f_name">First name</label>
+                                <input type="text" id="f_name" autocomplete="off" class="form-control" placeholder="First Name">
                             </div>
                             <div class="col">
-                                <label for="">Last name</label>
-                                <input type="text" class="form-control" placeholder="Last Name">
+                                <label for="l_name">Last name</label>
+                                <input type="text" id="l_name" autocomplete="off" class="form-control" placeholder="Last Name">
                             </div>
                         </div>
                         
                         <div>                            
-                            <label for="">Phone</label>
-                            <input type="" class="form-control" placeholder="Phone">
+                            <label for="phone">Phone</label>
+                            <input type="" id="phone" autocomplete="off" class="form-control" placeholder="Phone">
                         </div>
                         <div>                            
-                            <label for="">Address</label>
-                            <input type="" class="form-control" placeholder="Address">
+                            <label for="address">Address</label>
+                            <input type="" id="address" autocomplete="off" class="form-control" placeholder="Address">
                         </div>
                         <div class="row">
+                            
                             <div class="col">
-                                <label for="">City</label>
-                                <input type="text" class="form-control" placeholder="City">
+                                <label for="Country">Country</label>
+                                <select name="Country" class="form-control" autocomplete="off" id="Country">
+                                    <option value="" disabled selected>Select Country</option>
+                                    <option value="">USA</option>
+                                    <option value="">UK</option>
+                                    <option value="">BanglaDesh</option>
+                                    <option value="">India</option>
+                                    <option value="">Pakistan</option>
+                                    <option value="">Barishal</option>
+                                </select>
                             </div>
                             <div class="col">
-                                <label for="">Country</label>
-                                <input type="text" class="form-control" placeholder="Country">
+                                <label for="city">City</label>
+                                <select name="city" autocomplete="off" class="form-control" id="city">
+                                    <option value="" disabled selected>Select City</option>
+                                    <option value="">Dhaka</option>
+                                    <option value="">Tangail</option>
+                                    <option value="">Gazipur</option>
+                                    <option value="">Barishal</option>
+                                </select>
                             </div>
                         </div>
                         <button type="button" class="signin_btn" >Update</button>
@@ -97,12 +186,41 @@
                 </div>
             </div>
         </div>
+        <div class="row mobile_view"><div class="col-md-12" style="min-height: 10px;"></div></div>
     </div>
+    <!-- -=========footer start ========-  -->
+    
+    <footer class="mobile_view">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 d-flex">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="hostlist.html" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end here  -->
       
     
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/preloader.js"></script>
+    <script src="js/navjs.js"></script>
     <script>
         function myFunction() {
             var x = document.getElementById("myInput");

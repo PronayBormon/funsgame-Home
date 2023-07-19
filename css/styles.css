@@ -1167,10 +1167,10 @@ display: none;
     background: #a273dcfa;
     color: #fff;
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f8c812+0,a783d3+100 */
-    background: #f8c812; /* Old browsers */
+    /* background: #f8c812; */ /* Old browsers */
     background: -moz-linear-gradient(left,  #f8c812 0%, #a783d3 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #f8c812 0%,#a783d3 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #f8c812 0%,#a783d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(left,  #0d6efd 0%,#a783d3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(107,92,243,1) 0%,#a783d3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8c812', endColorstr='#a783d3',GradientType=1 ); /* IE6-9 */
 }
 .rank p img{
@@ -1185,10 +1185,10 @@ display: none;
     font-size: 20px;
     color: #fff;
 }
-.rank_img{    
-    border: 15px solid #f8c812;        
-    border-radius: 50%;        
-    padding: 0px;        
+.rank_img{
+    border: 5px solid #f8c812;
+    border-radius: 50%;
+    padding: 0px;
     width: 70%;
 }
 .rank_list{
@@ -1219,6 +1219,7 @@ scrollbar-width: none;
 }
 .rank_list ul li p img{
     width: 20px;
+    margin: 0px;
 }
 .rank_list ul li p{
     margin: 0;
@@ -1285,7 +1286,7 @@ filter: drop-shadow(2px 4px 6px #894ad6a8);
         font-size: 12px;
     }
     .rank_img {
-        border: 5px solid #f8c812;
+        border: 3px solid #f8c812;
     }
 }
 /* ============================ ranking page end here ========================= */
@@ -1836,11 +1837,13 @@ color: #fff;
         top: -30px;
     }
 }
+
 @media(max-width: 376px){
     .rank_crown {
         width: 45px;
         top: -26px;
     }
+    
 }
 @media(max-width: 321px){
     .rank_crown {

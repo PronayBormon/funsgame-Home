@@ -313,16 +313,16 @@ width: 30px;
     
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background: transparent;
-    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+    background: #6657d3;
+    background-image: linear-gradient(45deg, #7565f3bf,#cfcafb4a, #c4bdfa);
     border-radius: 50px !important;
 }
 .tab_buttons ul li button{
     border-radius: 0px !important;
     margin: 0px 10px;
-    box-shadow: 7px 7px 15px #c6c5c93d, -7px -7px 20px #ccc7c700, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important;
+    /* box-shadow: 7px 7px 15px #c6c5c93d, -7px -7px 20px #ccc7c700, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important; */
     transition: .4s all ease-in-out;
-    /* background: #c7bcffb0; */
+    background: #c7bcffb0;
     color: #ffffffa1;
     padding: 5px;
     filter: drop-shadow(2px 4px 6px #00000063);
@@ -718,8 +718,9 @@ padding: 0px 5px;
 .filter_desktop .nav-link{
     color: #000000a6;
     border-radius: 50px !important;
-    background: #e1defb;
+    background: #9c9ca324;
     margin: 3px 3px;
+    box-shadow: 2px 2px 5px 0px #817b7b4f;
 }
 .reel_short{
 
@@ -773,6 +774,10 @@ margin-right: 5px;
 }
 .owl-game .owl-nav button.owl-next span {
     margin-left: auto;
+}
+.ads_bannar .col-12{
+    
+padding: 0px 5px;
 }
 
 @media(max-width:1700px){
