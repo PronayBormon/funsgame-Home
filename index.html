@@ -67,6 +67,7 @@
                 </div> 
             </div>
         </div>
+        
         <div class="row m-auto justify-content-center p-0 m-0">
             <div class="col-xl-6 col-lg-10 col-md-12 col-12 p-0 text-center">
                 <div class="video-container">   
@@ -76,52 +77,65 @@
                         
 
                         <video id="george" class="video-item" src="videos/How to Deadlift_ 5 Simple Steps.mp4" loop mute></video>
-                        <div class="gifts">
-                            <ul class="reactionWrapper">
-                                <li>
-                                    <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button>
+                        <div class="gifts " id="gifts">
+                            <div class="row">
+                                <div class="col-4 ms-auto" > <i onclick="giftClose()" class="fa-solid fa-x close_gift"></i></div>
+                            </div>
+                            <ul class="reactionWrapper  scrolling-text">
+                                <li class="scrolling-text-content">
+                                    <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button> 
+                                    <div><h6>Rose </h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>
+                                <li class="text-center">
+                                    <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>  
+                                    <div><h6>Gift Box</h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button>
+                                <li class="text-center">
+                                    <button href="#" class="btn roseOne" ><img src="images/rose.png" alt=""></button> 
+                                    <div><h6>Rose </h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>
+                                <li class="text-center">
+                                    <button href="#" class="btn giftOne" ><img src="images/gift-box.png" alt=""></button> 
+                                    <div><h6>Gift Box</h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button>
+                                <li class="text-center">
+                                    <button href="#" class="btn rose2" ><img src="images/rose.png" alt=""></button> 
+                                    <div><h6>Rose </h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>
+                                <li cclass="text-center">
+                                    <button href="#" class="btn gift2" ><img src="images/gift-box.png" alt=""></button> 
+                                    <div><h6>Gift Box</h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button>
+                                <li class="text-center">
+                                    <button href="#" class="btn rose3" ><img src="images/rose.png" alt=""></button> 
+                                    <div><h6>Rose </h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>
+                                <li class="text-center">
+                                    <button href="#" class="btn gift3" ><img src="images/gift-box.png" alt=""></button> 
+                                    <div><h6>Gift Box</h6></div>
+                                    <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
                                 </li>
-                                <li>
-                                    <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button>
-                                </li>
-                                <li>
-                                    <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>
-                                </li>
-                                <li>
-                                    <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button>
-                                </li>
-                                <li>
-                                    <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button>
-                                </li>
+                               
+                                
 
                             </ul>
+                            <div class="col-12 text-center">                    
+                                <a href="pricing.html" class="btn btn_buyD" width="100%">Buy Dimond</a>
+                            </div>
                         </div>
+
                         <!-- like share buttons start here  -->
                         <div class="buttons">
                             <ul>
                                 <li>
-                                    <a href="#"  class="btn "><i class="fa-solid fa-heart"></i><h3>30k</h3></a>
+                                    <a href="#"  class="btn love_rec"><i class="fa-solid fa-heart"></i><h3>30k</h3></a>
                                 </li>
                                 
                                     <!-- Button================= comment ====================start here  modal -->
@@ -297,61 +311,54 @@
                                 </li>                                
                                     <!-- Button================= comment ====================end  here  modal -->
                                 <li>
-                                    <a href="#" class="btn "><i class="fa-solid fa-share"></i><h3>30k</h3></a>
+                                    <a href="#" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-share"></i><h3>30k</h3></a>
+                                    
                                 </li>
                                 <li>
-                                    <a href="#" class="btn "  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-gift"></i> <h3>30k</h3></a>
-                                    <!-- gift modal  -->
-                                    <div class="modal gift_modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                    <div class="modal-content">
-                                    <div class="modal-header hhight"> 
-                                    <div>
-                                    <h6><img src="images/dimond.png" width="20px" class="m-1" alt="">333</h6>
-                                    </div>               
-                                    <div class="ms-auto">                    
-                                    <button type="button" class="btn-close gift_btn" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    </div>
-                                    <div class="modal-body">
-                                    <div class="gift_itms reactionWrapper">
-                                        <div class="text-center">
-                                            <div><a href="#"  class="btn btn_gift rose"><img src="images/rose.png" alt=""></a></div>  
-                                            <div><h6>Rose rose</h6></div>
-                                            <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
-                                        </div>
-                                        <div class="text-center">
-                                            <div><a href="#"  class="btn btn_gift"><img src="images/rose.png" alt=""></a></div>  
-                                            <div><h6>Rose rose</h6></div>
-                                            <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
-                                        </div>
-                                        <div class="text-center">
-                                            <div><a href="#"  class="btn btn_gift"><img src="images/rose.png" alt=""></a></div>  
-                                            <div><h6>Rose rose</h6></div>
-                                            <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
-                                        </div>
-                                        <div class="text-center">
-                                            <div><a href="#"  class="btn btn_gift"><img src="images/rose.png" alt=""></a></div>  
-                                            <div><h6>Rose rose</h6></div>
-                                            <div><h6>3 <img src="images/dimond.png" width="15px" alt=""></h6></div>
-                                        </div>
-                                    </div>
-                                    <div class="row m-auto" width="100%">
-                                    <div class="col-12 text-center">                    
-                                        <a href="pricing.html" class="btn btn_buyD" width="100%">Buy Dimond</a>
-                                    </div>
-                                   
-
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <!-- gift modal end  -->
+                                    <a type="button" onclick="giftshow()" class="btn " ><i class="fa-solid fa-gift"></i> <h3>30k</h3></a>
+                                    
                                 </li>
                              
                             </ul>
-                        </div>                      
+                        </div>         
+                        <!-- share popup modal  -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                      <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content " style="z-index: 9999999999;">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Share Referral link</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="content">
+                                                    <p>Share this link via</p>
+                                                    <ul class="icons">
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                                                    </ul>
+                                                    <p>Or copy link</p>
+                                                    <div class="field">
+                                                    <i class="url-icon uil uil-link"></i>
+                                                    <input type="text" id="url" readonly value="https://link.me/uerdsd">
+                                                    <button type="button" onclick="copyFunc()" id="copied">Copy</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- share modal end  -->             
                         <!-- like share buttons end here  -->
                         
                     </div>
@@ -881,6 +888,9 @@
     <script src="js/preloader.js"></script>
     <script src="js/navjs.js"></script>
     <script src="js/horizentalscroll.js"></script>
+
+
+    <!-- gift section start here  -->
     <script>
         let reactionWrapper = document.querySelector(".reactionWrapper");
     
@@ -892,9 +902,9 @@
           createEmoji.setAttribute("src", "images/rose.png");
           reactionWrapper.appendChild(createEmoji);
           createEmoji.classList.add("emoji");
-        //   setTimeout(() => {
-        //     createEmoji.remove();
-        //   }, 1000);
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
         });
     
         gift.addEventListener("click", ()=>{
@@ -902,12 +912,81 @@
           createEmoji.setAttribute("src", "images/gift-box.png");
           reactionWrapper.appendChild(createEmoji);
           createEmoji.classList.add("emoji");
-        //   setTimeout(() => {
-        //     createEmoji.remove();
-        //   }, 1000);
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
+        });
+        roseOne.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/rose.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
+        });
+    
+        giftOne.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/gift-box.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
+        });
+        rose2.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/rose.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
+        });
+    
+        gift2.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/gift-box.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
+        });
+        rose3.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/rose.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
+        });
+    
+        gift3.addEventListener("click", ()=>{
+          let createEmoji = document.createElement("img");      
+          createEmoji.setAttribute("src", "images/gift-box.png");
+          reactionWrapper.appendChild(createEmoji);
+          createEmoji.classList.add("emoji");
+          setTimeout(() => {
+            createEmoji.remove();
+          }, 1000);
         });
       </script>
     
+    <script>
+        
+        var giftContent = document.getElementById("gifts");
+        function giftshow(){
+            giftContent.style.display = "block";
+
+        }
+        function giftClose(){
+            
+            giftContent.style.display = "none";
+        }
+    </script>
 
 
   </body>
