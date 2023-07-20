@@ -968,7 +968,7 @@ padding-bottom: 20px;
 @media screen and (max-width: 576px){
     .video-item {
         width: 100vw !important;
-        height: 95vh;
+        height: 92vh;
         margin-top: 5px;
         object-fit: cover !important;
     }
