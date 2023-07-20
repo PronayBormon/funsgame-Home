@@ -853,7 +853,7 @@ color: #2f2f82;
     margin-top: 50px;
 }
 .modal-body{
-    height: 100vh;    
+    /* height: 100vh; */
     overflow: auto;
     scrollbar-width: none;
 }
