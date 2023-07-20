@@ -351,7 +351,7 @@ background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
     background: #b8b6c67d;
     padding: 0;
     padding: 0px 10px;
-    border-radius: 50px;
+    border-radius: 0px;
     color: #3f3f3f;
 }
 .content{

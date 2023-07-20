@@ -587,11 +587,11 @@ border: none;
     
 border-radius: 5px;
     
-background: #c3bcf9c9 !important;
+background: #5420edb3 !important;
 }
 .btn_confirm:hover{
     box-shadow: -2px -2px 6px rgb(237 228 251), -2px -2px 4px rgb(237 228 251 / 95%), 2px 2px 2px rgb(237 228 251), 2px 2px 4px rgb(237 228 251) !important;
-    /* background: #c9b1f4 !important; */
+    background: #702fe4 !important;
 }
 .btn_ammount:hover{
     color: #fff;

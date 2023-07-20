@@ -1772,17 +1772,17 @@ color: #fff;
   /* slider css part end herer  */
 
   .scroll{
-    height: 60vh;
+    height: 80vh;
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
 }
-/* .scrollTwo{
+.scrollTwo{
     height: 90vh;
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-} */
+}
 .scroll::-webkit-scrollbar,.scrollTwo::-webkit-scrollbar{
     display: none;
     scrollbar-width: 0;

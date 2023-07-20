@@ -492,7 +492,7 @@ background: transparent;
 
 .gt_icon{
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
     left: 0px;
     background: #6f60f3;
     border-radius: 50px;
@@ -526,6 +526,17 @@ background: transparent;
 }
 .gifts ul li{
     margin: 5px 0px;
+    text-align: center;
+}
+.gifts ul li p img{
+
+width: 14px;
+}
+.gifts ul li p{
+    
+color: #fff;
+    
+font-size: 12px;
 }
 .gifts ul{
     list-style: none;
@@ -582,6 +593,74 @@ background: transparent;
 #div1, #div2, #div3, #div4{
     padding: 0px 3px;
 }
+/* Video details part start here  */
+.bottom_content{
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+padding: 0px 5px;
+
+background: #a97fe866;
+
+height: 39px;
+
+border-bottom-left-radius: 10px;
+
+border-bottom-right-radius: 10px;
+}
+.v_details{
+
+margin: 0px 8px;
+}
+.v_details p{
+
+color: #ffffff;
+
+filter: drop-shadow(2px 4px 6px #c8c2c2d1);
+}
+.v_details p i{
+    font-size: 17px;
+}
+.v_details p img{
+    
+}
+.v_details .fa-users{
+
+/* color: #2682ff; */
+
+color: dimgray;
+}
+.v_details .fa-heart{
+
+color: #ff0803;
+}
+.v_details .fa-gift{
+
+color: #ff1493;
+}
+.v_details a{
+    padding: 0px 10px;
+    border-radius: 50px;
+    width: 100%;
+    background: #da2a47;
+    color: #fff;
+    box-shadow: 3px 3px 5px #4f4c4c75;
+    transition: .4s all ease-in-out;
+    background: rgb(185,164,241);
+    background: -moz-linear-gradient(left, rgba(185,164,241,1) 0%, rgba(107,92,243,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(185,164,241,1) 0%,rgba(107,92,243,1) 100%);
+    background: linear-gradient(to right, rgba(185,164,241,1) 0%,rgba(107,92,243,1) 100%);
+    color: #fff !important;
+}
+/* video details part end here  */
+
+
+
+
 /* responsive part start here  */
 
 @media(max-width: 1200px){
@@ -624,6 +703,14 @@ background: transparent;
     }
     .ads {
         height: 110px;
+    }
+    .v_details p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .v_details a {
+        padding: 0px 5px;
+        font-size: 10px;
     }
 
 }
@@ -758,3 +845,4 @@ background: transparent;
     position: relative;
   }
   /* slider css part end herer  */
+

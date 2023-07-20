@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- title  -->
-    <title>Referral</title>
+    <title>Card</title>
     
 
     <!-- bootstrap 5.3    -->
@@ -15,11 +15,10 @@
     
      <!-- style css  -->
      <link rel="stylesheet" href="css/preloader.css">
-     <link rel="stylesheet" href="css/refferel.css">
+     <link rel="stylesheet" href="css/deposite.css">
 
   </head>
   <body>  
-
     <!-- preloader here  -->
     <div class="loader" id="preloader">
         <div class="loader__circle"></div>
@@ -28,12 +27,11 @@
         <div class="loader__circle"></div>
         <div class="loader__circle"></div>
       </div>
-      
 
     <div class="container ">
 
         <!-- navbar  start here   -->
-        <div class="row desktop_view" style="z-index: 9999999;">
+        <div class="row ">
             <div class="nav_bar" style="z-index: 9999;">
                 <div class="row">
                     <div class="col-12">
@@ -102,112 +100,32 @@
             </div>
         </div>
         <!-- space  -->
-        <div class="desktop_view" style="height: 54px;"></div>
+        <div class="" style="height: 54px;"></div>
         <!-- navbar end here  -->
+
+
+
+        <!-- main content  -->
+        <div>
+            <h1>Make modal</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsam praesentium quas facere fugiat placeat, eaque laborum suscipit, fugit amet mollitia laudantium dolorum delectus doloribus et dolorem saepe, quis possimus.</p>
+        <button data-modal-target="#modal" class="button ">Open modal </button>
         
-        <div class="row">
-            <div class="col-md-6 m-auto">
-                <div class="refferel_contents">
-                    <!-- top nav start  -->
-                    <div class="row">
-                        <div class="col-lg-8 col-sm-12 m-auto">
-                            <div class="top_bar">
-                                <div>
-                                    <a href="#back"><i class="fa-solid fa-chevron-left"></i></a>
-                                </div>
-                                <div>
-                                    <h5>Referral </h5>
-                                </div>
-                                <div>
-                                <!-- <a href="withdrawhistory.html"><i class="fa-solid fa-file-lines"></i></a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- top nav end  -->
-                    <div class="circle_one"></div>
-                    <div class="circle_two"></div>
-                    <!-- main part start here  -->
-                    <div class="row">
-                        <div class="col-lg-8 col-sm-12 m-auto">
-                            <div class="refferel_code">
-                                <img src="images/refferal-transformed-removebg-preview.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8 col-sm-12 m-auto">
-                            <div class="code_part">
-                                
-                                <span class="tooltiptext "  id="myTooltips"></span>
-                                <ul>
-                                    <li>
-                                        <p class="text-start">Referral ID</p>
-                                        <a type="button" onclick="copyfunction()"><input type="text" class="text-end bg-transparent" style="border: none;" disabled id="myInput" value="Udne3er4Ore12"><i class="fa-regular fa-copy"></i></a>
-                                    </li>
-                                    <li>
-                                        <p>Refferl link </p>
-                                        <a type="button" onclick="accountName()" ><input type="text" class="text-end bg-transparent" style="border: none;" disabled id="myInputOne" value="https//game.me/Udne3er4Ore12"><i class="fa-regular fa-copy"></i></a>
-                                    </li>
-                                </ul>                                
-                                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn_share "> <img src="images/share-100.png" alt="">Share</a>
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-8 col-sm-12 m-auto bonus_bannar">
-                            <img src="images/bonus Bannar.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                    <!-- main part end here  -->
-                    
-                </div>
-            </div>
+        <dialog  class="modal" id="modal" width="200px" >
+            <h2>modal title</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, harum?</p>
+            <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, dignissimos debitis? Modi expedita, vel laborum unde porro odio nostrum fugiat?</p>
+            <button data-close-button class="button close-modal">Close Modal</button>
+        </dialog>
         </div>
 
-          
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-              <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content " style="z-index: 9999999999;">
-                    <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Share Referral link</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="content">
-                            <p>Share this link via</p>
-                            <ul class="icons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp"></i></a>
-                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                            </ul>
-                            <p>Or copy link</p>
-                            <div class="field">
-                            <i class="url-icon uil uil-link"></i>
-                            <input type="text" id="url" readonly value="https://link.me/uerdsd">
-                            <button type="button" onclick="copyFunc()" id="copied">Copy</button>
-                            </div>
-                        </div>
-                    </div>
+       
 
-                </div>
-                </div>
-            </div>
-        </div>
     </div>
-</div>
 
     <!-- footer part start here  -->
     <div class="col-md-12" style="min-height: 70px;"></div>
-    <footer class="mobile_view">
+    <footer class="">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 d-flex">
@@ -232,58 +150,40 @@
         </div>
     </footer>
     <!-- footer part end here  -->
-        
-    </div>
-
-
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/preloader.js"></script>
     <script src="js/navjs.js"></script>
     <script>
-        
-      let massage = document.getElementById("myTooltips");
-        // bank name 
-        function copyfunction() {
-            var copyText = document.getElementById("myInput");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(copyText.value);
-            massage.innerHTML = "Copied";
-            setTimeout(() => {
-                massage.innerHTML ="";
-            }, 2000);
+        // const modals = document.querySelectorAll('#modal');
+        const openModalButtons = document.querySelectorAll('[data-modal-target]');
+        const closeModalButtons = document.querySelectorAll('data-close-button]');
+        const overlay = document.getElementById('overlay');
+
+        openModalButtons.forEach(button => {
+            button.addEventListener('click', () =>{
+                const modal= document.querySelector(button.dataset.modalTarget)
+                openModal(modal)
+            })
+        })
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', () =>{
+                const modal= button.closest('.modals')
+                closeModal(modal)
+            })
+        })
+
+        function openModal(modal){
+            if(mdoal == null ) return
+            modal.classlist.add('active')
+            overlay.classList.add('active')
         }
-
-        // account name 
-        function accountName() {
-            var copyText = document.getElementById("myInputOne");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(copyText.value);
-            massage.innerHTML = "Copied";
-            setTimeout(() => {
-                massage.innerHTML ="";
-            }, 2000);
+        function closeModal(modal){
+            if(mdoal == null ) return
+            modal.classlist.remove('active')
+            overlay.classList.remove('active')
         }
-
-
-    </script>
-
-    <!-- copy in share button  -->
-    <script>
-        
-      let copy = document.getElementById("copied");
-        function copyFunc() {
-            var copyText = document.getElementById("url");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999);
-            navigator.clipboard.writeText(copyText.value);
-            copy.innerHTML = "Copied";
-            setTimeout(() => {
-                copy.innerHTML ="Copy";
-            }, 2000);
-        }
+    
     </script>
   </body>
 </html>
