@@ -367,6 +367,7 @@ margin: 0px 5px;
     position: relative;
     margin: auto;
     background: #000;
+    margin-top: -2px;
 }
 .video-container::-webkit-scrollbar,.video-wrapper::-webkit-scrollbar,.video-item::-webkit-scrollbar{
     display: none;
