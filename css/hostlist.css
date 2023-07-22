@@ -315,7 +315,7 @@ width: 30px;
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background: #6657d3;
     background-image: linear-gradient(45deg, #7565f3bf,#cfcafb4a, #c4bdfa);
-    border-radius: 50px !important;
+    border-radius: 30px !important;
 }
 .tab_buttons ul li button{
     border-radius: 0px !important;
@@ -324,10 +324,10 @@ width: 30px;
     transition: .4s all ease-in-out;
     background: #c7bcffb0;
     color: #ffffffa1;
-    padding: 5px;
+    padding: 5px 20px;
     filter: drop-shadow(2px 4px 6px #00000063);
     color: #00000063;
-    border-radius: 50px !important;
+    border-radius: 30px !important;
 }
 .tab_buttons ul li button:hover{
     /* box-shadow: 7px 7px 15px #8177d141, -7px -7px 20px #ff000000, inset 0px 0px 4px rgb(235 12 12 / 0%), inset -7px -7px 20px rgb(255 0 0 / 0%), 0px 0px 4px #4000ff00 !important; */
@@ -888,7 +888,7 @@ padding: 0px 5px;
     .tab_buttons ul li button {
         margin: 0px 3px;
         font-size: 13px;
-        padding: 2px;
+        padding: 2px 5px;
     }
     .model_sec {
         /* height: 170px; */
