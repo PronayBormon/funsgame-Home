@@ -350,7 +350,7 @@ margin: 0px 5px;
 /* ========================================= Reels page start here ============================== */
 
 .video-container {
-    height: 92vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     overflow: auto;
@@ -361,7 +361,7 @@ margin: 0px 5px;
 }
 
 .video-wrapper {
-    height: 92vh;
+    height: 100%;
     width: 90%;
     scroll-snap-align: start;
     position: relative;
@@ -375,7 +375,7 @@ margin: 0px 5px;
 }
 .video-item {
     width: 100%;
-    min-height: 90vh;
+    height: 100%;
     margin-top: 2px;
     object-fit: cover;
     border-left: 1px solid #717171;
@@ -1085,7 +1085,7 @@ padding: 10px 10px 0px 0px;
 @media(max-width:768px){
     
     .video-wrapper {
-        height: 92vh;
+        height: 95vh;
         width: 100%;
     }
 }
