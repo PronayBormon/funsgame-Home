@@ -26,9 +26,9 @@ videoContainer.addEventListener('scroll', autoplayVideo);
 
 
 
-// click to play video 
+// // click to play video 
 
-$('video').click(function(){
-	// Toggle Magic Here
-    this[this.paused ? 'play' : 'pause']();
-});
+// $('video').click(function(){
+// 	// Toggle Magic Here
+//     this[this.paused ? 'play' : 'pause']();
+// });
