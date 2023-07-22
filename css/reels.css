@@ -1181,3 +1181,32 @@ width: 16px;
     overflow: unset !important;
 }
 
+
+
+/* bannar section part start here  */
+
+.bannar_section{
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    padding: 10px;
+    grid-gap: 10px;
+}
+.image_box{
+ 
+}
+.bannar_section img{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /* padding: 20px; */
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0px;
+    border-radius: 10px;
+    transition: .4s all ease-in-out;
+
+}
+.bannar_section img:hover{
+    transform: scale(1.1);
+}
