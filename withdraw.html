@@ -168,25 +168,25 @@
                         <div class="mb-2">
                             <div class="row mb-3">
                                 <div class="col-2">
-                                  <button class="btn btn_ammount border-none">50</button>
+                                  <button type="button" onclick="fifty()" class="btn btn_ammount border-none">50</button>
                                 </div>
                                 <div class="col-2">
-                                  <button class="btn btn_ammount">100</button>
+                                  <button type="button" onclick="hundred()" class="btn btn_ammount">100</button>
                                 </div>
                                 <div class="col-2">
-                                  <button class="btn btn_ammount">300</button>
+                                  <button type="button" onclick="threehundred()" class="btn btn_ammount">300</button>
                                 </div>
                                 <div class="col-2">
-                                  <button class="btn btn_ammount">500</button>
+                                  <button type="button" onclick="fivehundred()" class="btn btn_ammount">500</button>
                                 </div>
                                 <div class="col-2">
-                                  <button class="btn btn_ammount">1000</button>
+                                  <button type="button" onclick="onethousand()" class="btn btn_ammount">1000</button>
                                 </div>
                                 <div class="col-2">
-                                  <button class="btn btn_ammount">All</button>
+                                  <button type="button" onclick="twoonethousand()" class="btn btn_ammount">2000</button>
                                 </div>
                             </div>
-                            <input type="text" placeholder="00.00" class="form-control">
+                            <input type="text" id="ammount" placeholder="00.00" class="form-control">
                         </div>
                         <div class="mb-2">
                             <div class="charges">
@@ -246,5 +246,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/preloader.js"></script>
     <script src="js/navjs.js"></script>
+    
+    <script>
+        // pase ammount value 
+        function fifty(){
+            var input = document.getElementById("ammount");
+            input.setAttribute("value", "50");
+        }
+        function hundred(){
+            var input = document.getElementById("ammount");
+            input.setAttribute("value", "100");
+        }
+        function threehundred(){
+            var input = document.getElementById("ammount");
+            input.setAttribute("value", "300");
+        }
+        function fivehundred(){
+            var input = document.getElementById("ammount");
+            input.setAttribute("value", "500");
+        }
+        function onethousand(){
+            var input = document.getElementById("ammount");
+            input.setAttribute("value", "1000");
+        }
+        function twoonethousand(){
+            var input = document.getElementById("ammount");
+            input.setAttribute("value", "2000");
+        }
+    </script>
   </body>
 </html>

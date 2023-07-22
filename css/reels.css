@@ -362,9 +362,11 @@ margin: 0px 5px;
 
 .video-wrapper {
     height: 95vh;
-    width: 100%;
+    width: 90%;
     scroll-snap-align: start;
     position: relative;
+    margin: auto;
+    background: #000;
 }
 .video-container::-webkit-scrollbar,.video-wrapper::-webkit-scrollbar,.video-item::-webkit-scrollbar{
     display: none;
@@ -375,12 +377,14 @@ margin: 0px 5px;
     width: 100%;
     height: 95vh;
     margin-top: 2px;
-    object-fit: contain;
+    object-fit: cover;
+    border-left: 1px solid #717171;
+    border-right: 1px solid #717171;
 }
 
 .buttons{
     position: absolute;
-    right: 5%;
+    right: 2%;
     bottom: 4%;
 }
 .buttons ul{    
@@ -403,6 +407,7 @@ margin: 0px 5px;
     font-size: 18px;
     background: #d4d2d285;
     color: #000000;
+    color: #fff;
     border-radius: 50px;
     padding: 10px;
     transition: .4s all ease-in-out;
@@ -413,13 +418,15 @@ margin: 0px 5px;
     /* color: #fff; */
     background: transparent;
     box-shadow: none;
+    filter: drop-shadow(2px 4px 6px #87878778);
+    /* color: #87878778; */
 }
 .buttons ul li a h3{
     font-size: 14px;
-
     margin-top: 5px;
-
     color: #312f2f;
+    color: #fff;
+    filter: drop-shadow(2px 4px 6px #87878778);
 }
 .buttons ul li a:active i,.buttons ul li a:focus i,.buttons ul li a:hover i{
     /* color: #df1d47; */
@@ -433,7 +440,7 @@ margin: 0px 5px;
 }
 /* modals  */
 .comments{
-    display: none;
+    display: block;
     position: fixed;
     top: 0px;
     left: 68%;
@@ -948,6 +955,115 @@ padding-bottom: 20px;
     border: navajowhite;
     }
 /* share modal part end here  */
+/* gaming part start here  */
+.cat{
+    text-align: center;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 3px;
+    background: #f5f2fb;
+    /* box-shadow: 0px 2px 3px #d0cdd5; */
+    filter: drop-shadow(3px 3px 2px #0000004d);
+}
+.cat img{
+    width: 30px;
+    filter: drop-shadow(5px 3px 2px #0000004d);
+}
+.cat h4{        
+    font-size: 10px;
+}
+.cat a{
+    text-decoration: none;
+    color: #60597b;
+    text-transform: capitalize;
+}
+.cat.active{
+    background: rgb(239,229,253);
+    background: -moz-linear-gradient(top, rgba(239,229,253,1) 0%, rgba(195,169,243,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+    background: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe5fd', endColorstr='#c3a9f3',GradientType=0 );
+}
+.cat.active a{
+    color: #fff;
+}
+/* game part  */
+.game_icon{
+    box-shadow: 3px 3px 5px 3px #0000001c;
+    margin: 0px 0px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .4s all ease-in-out;
+    /* filter: drop-shadow(3px 3px 2px #0000004d); */
+    min-height: 100%;
+}
+.game_icon a{
+    padding: 5px;
+    text-decoration: none;
+    color: #000000c7;
+    text-transform: capitalize;
+}
+.game_icon a img{
+    width: 50px;
+    transition: .4s all ease-in-out;
+    filter: drop-shadow(7px 3px 3px #da6f836e);
+    filter: drop-shadow(5px 3px 3px #0000004d);
+}
+
+img {
+    /* width: 20px; */
+}
+.game_icon a h4{        
+    font-size: 12px;        
+    margin: 0;        
+    margin-top: 5px;
+}
+.game_part .col-4{
+
+padding: 10px 10px 0px 0px;
+}
+.btn_game:active{
+    border: none;
+
+}
+.btn {
+    border: none !important;
+}
+
+.game_icon:hover img{
+    color: #fff;
+    transform: scale(1.1);
+}
+.scroll{
+    height: 90vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.scrollTwo{
+    height: 90vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.scroll::-webkit-scrollbar,.scrollTwo::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: 0;
+    scroll-behavior: smooth;
+}
+/* gaming part end here  */
+
+@media(max-width:1200px){
+    .desktop_view{
+    
+    }
+    .mobile_view{
+        display: none;
+    }
+    .popup {
+        width: 100%;
+    }
+}
 @media(max-width: 1025px) and (min-width: 1020px){
     .buttons ul li a i,.buttons ul li a h3  {
         color: #fff;
@@ -960,15 +1076,23 @@ padding-bottom: 20px;
         bottom: 5%;
     }
 }
+@media screen and ( min-width: 768px ) and ( min-height: 844px ){
+    .video-wrapper {
+        height: 95vh;
+        width: 100%;
+    }
+}
 @media(max-width:768px){
-    .popup {
+    
+    .video-wrapper {
+        height: 95vh;
         width: 100%;
     }
 }
 @media screen and (max-width: 576px){
     .video-item {
-        width: 100vw !important;
-        height: 92vh;
+        width: 100%;
+        height: 95vh;
         margin-top: 2px;
         object-fit: cover !important;
     }
@@ -1056,3 +1180,4 @@ width: 16px;
 .modal_gift .modal.fade .modal-dialog{
     overflow: unset !important;
 }
+

@@ -1771,7 +1771,7 @@ color: #fff;
   
   /* slider css part end herer  */
 
-  .scroll{
+.scroll{
     height: 80vh;
     overflow: auto;
     scroll-behavior: smooth;

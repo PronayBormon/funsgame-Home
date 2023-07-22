@@ -558,6 +558,8 @@ padding: 10px 10px;
 align-items: center;
 
 /* box-shadow: 2px 2px 5px #4f4c4c9e, -2px -3px 5px #c3c3c34f; */
+
+text-transform: capitalize;
 }
 .history_title a{
     
@@ -783,4 +785,49 @@ margin-top: 8px;
 }
 .footer_space{
     height: 65px;
+}
+
+
+.btn_find{
+    border: none;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    /* box-shadow: inset 6px 6px 10px #dfd2f7, inset -6px -6px 10px #e3d5fb4f !important; */
+    box-shadow: 2px 3px 5px 3px #d2d4f2;
+    background: #ffffff63;
+    text-decoration: none;
+    color: #00000099 !important;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.active,.btn_filter:focus,.btn_find:focus{
+    background-color: #fff;
+    color: #000;
+}
+.btn_filter:active,.btn_find:active{
+    box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+@media(max-width: 992px){
+    .btn_filter {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+}
+@media(max-width: 768px){
+    .btn_filter {
+        margin-bottom: 10px;
+    }
+    .btn_find{
+        padding: 5px 10px;
+        font-size: 8px;
+        padding: 5px;
+    }
+}
+@media(max-width: 576px){
+    .filter h5 {
+        font-size: 12px;
+    }
 }

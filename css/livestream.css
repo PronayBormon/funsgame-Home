@@ -707,7 +707,28 @@ border-top-left-radius: 10px;
 .top_content button:hover{
     color: #fff;
 }
+.title{
 
+/* background: #fff; */
+
+padding: 0px 5px;
+
+/* border-radius: 5px; */
+
+border-bottom: 1px solid #8e88886b;
+
+margin-bottom: 10px;
+}
+.title h5{
+
+font-size: 20px;
+
+/* border-bottom: 2px solid #918b8b52; */
+
+/* padding-bottom: 5px; */
+
+/* margin-bottom: 10px; */
+}
 
 
 /* responsive part start here  */
@@ -728,6 +749,13 @@ border-top-left-radius: 10px;
     .game_box {
         height: 90px;
     }
+    .title{
+
+    }
+    .title h5{
+        
+font-size: 18px;
+    }
 }
 @media(max-width: 600px){
     .game_box {
@@ -737,10 +765,22 @@ border-top-left-radius: 10px;
     .ads {
         height: 130px;
     }
+    .title{
+
+    }
+    .title h5{
+        
+    }
 }
 @media(max-width: 576px){
     .game_box {
         height: 60px;
+    }
+    .title{
+
+    }
+    .title h5{
+        
     }
 }
 @media(max-width: 426px){
@@ -761,6 +801,13 @@ border-top-left-radius: 10px;
         padding: 0px 5px;
         font-size: 10px;
     }
+    .title{
+
+    }
+    .title h5{
+        
+font-size: 14px;
+    }
 
 }
 @media(max-width:376px){
@@ -769,6 +816,12 @@ border-top-left-radius: 10px;
     }
     .video-js {
         height: 34vh;
+    }
+    .title{
+
+    }
+    .title h5{
+        
     }
 }
 @media(max-width: 321px){

@@ -634,11 +634,24 @@ padding: 0px 3px;
     border-radius: 50px;
     font-weight: 600;
 }
-.active,.btn_filter:focus{
+.btn_find{
+    border: none;
+    padding: 9px;
+    width: 100%;
+    font-size: 14px;
+    /* box-shadow: inset 6px 6px 10px #dfd2f7, inset -6px -6px 10px #e3d5fb4f !important; */
+    box-shadow: 2px 3px 5px 3px #d2d4f2;
+    background: #ffffff63;
+    text-decoration: none;
+    color: #00000099 !important;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.active,.btn_filter:focus,.btn_find:focus{
     background-color: #fff;
     color: #000;
 }
-.btn_filter:active{
+.btn_filter:active,.btn_find:active{
     box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
 }
 .filter input{
@@ -647,6 +660,7 @@ padding: 0px 3px;
     box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
     margin: 0;
     border-radius: 50px;
+    margin-left: 5px;
 }
 .filter input::placeholder{
     color: #00000093;
@@ -666,7 +680,7 @@ padding: 0px 3px;
 }
 .search input{
     border-radius: 50px;
-    padding: 5px 25px;
+    padding: 7px 25px;
     box-shadow: 5px 5px 4px #c7c7c7, -5px -5px 10px #e3d5fb21;
 }
 .tab_btns{
@@ -720,6 +734,10 @@ justify-content: center;
 align-items: center;
     
 height: 100%;
+    
+margin: 0;
+    
+margin-left: 5px;
 }
 .filter .col-5,.filter .col-6,.filter .col-2{
     padding: 0px 8px;
@@ -736,6 +754,9 @@ height: 100%;
 @media(max-width: 1200px){
     .t_link {
         margin-left: 75%;
+    }
+    .btn_find{
+
     }
 }
 @media(max-width: 1024px){
@@ -765,6 +786,7 @@ height: 100%;
     }
     .btn_filter {
         font-size: 10px;
+        margin-bottom: 10px;
     }
     
 }
@@ -781,6 +803,11 @@ height: 100%;
     }
     .btn_filter {
         margin-bottom: 10px;
+    }
+    .btn_find{
+        padding: 5px 10px;
+        font-size: 8px;
+        padding: 5px;
     }
 }
 @media(max-width: 622px){
@@ -843,6 +870,9 @@ height: 100%;
     }
     .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
         color: #fff;
+    }
+    .filter h5 {
+        font-size: 12px;
     }
 }
 @media(max-width: 426px){
