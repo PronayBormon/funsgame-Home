@@ -6,7 +6,7 @@ function autoplayVideo() {
   
   videoitems.forEach((video) => {
     const rect = video.getBoundingClientRect();
-    const isVisible = rect.top >= window.innerHeight && rect.bottom <= window.innerHeight;
+    const isVisible = rect.top >= -5 && rect.bottom <= window.innerHeight;
 
     if (isVisible && video.paused) {
       video.play();
