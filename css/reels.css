@@ -1072,8 +1072,8 @@ padding: 10px 10px 0px 0px;
     }
 }
 @media screen and (max-width: 912px){
-    .buttons{          
-        bottom: 5%;
+    .buttons{
+        bottom: 8%;
     }
 }
 @media screen and ( min-width: 768px ) and ( min-height: 844px ){
