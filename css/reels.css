@@ -350,7 +350,7 @@ margin: 0px 5px;
 /* ========================================= Reels page start here ============================== */
 
 .video-container {
-    height: 91vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     overflow: auto;
@@ -368,7 +368,7 @@ margin: 0px 5px;
     position: relative;
     margin: auto;
     background: #000;
-    margin-top: -2px;
+/*     margin-top: 2px; */
     margin: auto;
     gap: 0;
 --bs-gutter-y: 0;
@@ -1093,10 +1093,10 @@ padding: 10px 10px 0px 0px;
 }
 @media(max-width:768px){
     
-    .video-wrapper {
+    /* .video-wrapper {
         height: 92vh;
         width: 100%;
-    }
+    } */
 }
 @media screen and (max-width: 576px){
     .video-item {
