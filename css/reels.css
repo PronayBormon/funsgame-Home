@@ -1103,7 +1103,7 @@ padding: 10px 10px 0px 0px;
     .video-item {
         width: 100%;
         min-height: 90vh;
-        /* margin-top: 0px; */
+        padding-top: 3px;
         object-fit: cover !important;
     }
     .buttons ul li a i{

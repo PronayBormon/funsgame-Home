@@ -16,7 +16,18 @@ function autoplayVideo() {
       video.mute = true; // Disable sound
     }
   });
+  $('video').click(function(){
+      this[this.paused ? 'play' : 'pause']();
+  });
+  
 }
+// videoitems.addEventListener("click", () => {
+//   if(video.paused){
+//     video.play();
+//   } else{
+//     video.pause();
+//   }
+// });
 // Initial autoplay on page load
 autoplayVideo();
 
@@ -28,10 +39,10 @@ videoContainer.addEventListener('scroll', autoplayVideo);
 
 // click to play video 
 
-$('video').click(function(){
-	// Toggle Magic Here
-    this[this.paused ? 'play' : 'pause']();
-});
+// $('video').click(function(){
+// 	// Toggle Magic Here
+//     this[this.paused ? 'play' : 'pause']();
+// });
 // const videos = document.querySelectorAll('.video-container .video-wrapper video');
 
 
