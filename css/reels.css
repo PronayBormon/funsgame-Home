@@ -350,7 +350,7 @@ margin: 0px 5px;
 /* ========================================= Reels page start here ============================== */
 
 .video-container {
-    height: 92vh;
+    height: 90vh;
     /* width: 100%; */
     display: flex;
     overflow: auto;
@@ -380,8 +380,8 @@ margin: 0px 5px;
     height: 92vh;
     margin-top: -1px;
     /* object-fit: cover; */
-    /* border-left: 1px solid #717171; */
-    /* border-right: 1px solid #717171; */
+    border-left: 1px solid #717171;
+    border-right: 1px solid #717171;
     /* text-align: center; */
 }
 
