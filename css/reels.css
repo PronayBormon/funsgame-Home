@@ -350,7 +350,7 @@ margin: 0px 5px;
 /* ========================================= Reels page start here ============================== */
 
 .video-container {
-    height: 89vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     overflow: auto;
@@ -1102,7 +1102,7 @@ padding: 10px 10px 0px 0px;
     .video-item {
         width: 100%;
         min-height: 90vh;
-        margin-top: 3px;
+        margin-top: 0px;
         object-fit: cover !important;
     }
     .buttons ul li a i{
