@@ -18,6 +18,11 @@ function autoplayVideo() {
   });
   $('video').click(function(){
       this[this.paused ? 'play' : 'pause']();
+      if(video.paused){
+          video.play();
+        } else{
+          video.pause();
+        }
   });
   
 }
