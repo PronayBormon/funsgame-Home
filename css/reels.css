@@ -351,7 +351,7 @@ margin: 0px 5px;
 
 .video-container {
     height: 92vh;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     overflow: auto;
     flex-direction: column;
@@ -361,7 +361,7 @@ margin: 0px 5px;
 }
 
 .video-wrapper {
-    height: 92vh;
+    /* height: 92vh; */
     width: 100%;
     scroll-snap-align: start;
     position: relative;
@@ -378,7 +378,7 @@ margin: 0px 5px;
 .video-item {
     width: 100%;
     height: 92vh;
-    margin-top: 2px;
+    /* margin-top: 2px; */
     /* object-fit: cover; */
     border-left: 1px solid #717171;
     border-right: 1px solid #717171;
