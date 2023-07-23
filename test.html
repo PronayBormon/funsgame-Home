@@ -1,1 +1,96 @@
-<video height="600px" src="videos/reels(1).mp4" autoplay muted controls></video>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Reels Slider</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slider-container {
+  height: 100vh;
+  overflow-y: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider">
+      <video src="videos/reels(1).mp4" muted loop></video>
+      <video src="videos/reels(10).mp4" muted loop></video>
+      
+      <video src="videos/reels(2).mp4" muted loop></video>
+      <video src="videos/reels(12).mp4" muted loop></video>
+      
+      <video src="videos/reels(13).mp4" muted loop></video>
+      <video src="videos/reels(12).mp4" muted loop></video>
+      <!-- Add more videos here -->
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    $(document).ready(function() {
+  // Get all video elements
+  const videos = $('video');
+
+  // Pause all videos initially (optional)
+  videos.each(function() {
+    this.pause();
+  });
+
+  // Handle video play/pause on scroll
+  $(".slider-container").on("scroll", function() {
+    videos.each(function() {
+      if (isElementInViewport(this)) {
+        this.play();
+      } else {
+        this.pause();
+      }
+    });
+  });
+
+  // Handle video click to play/pause
+  videos.on("click", function() {
+    if (this.paused) {
+      this.play();
+    } else {
+      this.pause();
+    }
+  });
+
+  // Helper function to check if an element is in the viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+});
+
+  </script>
+</body>
+</html>
