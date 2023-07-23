@@ -1094,14 +1094,14 @@ padding: 10px 10px 0px 0px;
 @media(max-width:768px){
     
     .video-wrapper {
-        height: 95vh;
+        height: 92vh;
         width: 100%;
     }
 }
 @media screen and (max-width: 576px){
     .video-item {
         width: 100%;
-        min-height: 92vh;
+        min-height: 90vh;
         margin-top: 3px;
         object-fit: cover !important;
     }
