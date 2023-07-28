@@ -71,8 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
           video.muted == false;
         }else{
           video.muted = true;
-
-      }
+        }
 
       }
       video.paused ? video.play() : video.pause();
