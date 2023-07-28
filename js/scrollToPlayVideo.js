@@ -1,7 +1,3 @@
-const videoContainer = document.querySelector('.video-container');
-const videoitems = document.querySelectorAll('.video-item');
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const videoItems = document.querySelectorAll('.video-item');
 
@@ -14,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     entries.forEach((entry) => {
       const video = entry.target;
       if (entry.isIntersecting && video.paused) {
-        // video.muted = false; // Enable sound
+        video.muted = false; // Enable sound
         video.play();
       } else if (!entry.isIntersecting && !video.paused) {
-        // video.muted = true; // Disable sound
+        video.muted = true; // Disable sound
         video.pause();
       }
     });
@@ -32,10 +28,65 @@ document.addEventListener('DOMContentLoaded', function () {
   videoItems.forEach((video) => {
     observer.observe(video);
     video.addEventListener('click', () => {
+      // Check if it's iOS
+      const isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      if (isiOS) {
+        // Unmute on iOS when the user interacts (clicks) the video
+        video.muted = false;
+      }
       video.paused ? video.play() : video.pause();
     });
   });
+
+  // Set all videos to muted for autoplay on iOS
+  videoItems.forEach((video) => {
+    if (isiOS) {
+      video.muted = true;
+    }
+  });
 });
+
+
+
+
+// const videoContainer = document.querySelector('.video-container');
+// const videoitems = document.querySelectorAll('.video-item');
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const videoItems = document.querySelectorAll('.video-item');
+
+//   function isElementInViewport(el) {
+//     const rect = el.getBoundingClientRect();
+//     return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+//   }
+
+//   function handleIntersection(entries) {
+//     entries.forEach((entry) => {
+//       const video = entry.target;
+//       if (entry.isIntersecting && video.paused) {
+//         // video.muted = false; // Enable sound
+//         video.play();
+//       } else if (!entry.isIntersecting && !video.paused) {
+//         // video.muted = true; // Disable sound
+//         video.pause();
+//       }
+//     });
+//   }
+
+//   const observer = new IntersectionObserver(handleIntersection, {
+//     root: null,
+//     rootMargin: '0px',
+//     threshold: 0.5, // Adjust this threshold to suit your needs
+//   });
+
+//   videoItems.forEach((video) => {
+//     observer.observe(video);
+//     video.addEventListener('click', () => {
+//       video.paused ? video.play() : video.pause();
+//     });
+//   });
+// });
 
 // // Autoplay videos when they enter the viewport
 // function autoplayVideo() {
