@@ -121,10 +121,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //   }
 // });
 // Initial autoplay on page load
-autoplayVideo();
+// autoplayVideo();
 
 // Event listener for scrolling
-videoContainer.addEventListener('scroll', autoplayVideo);
+// videoContainer.addEventListener('scroll', autoplayVideo);
 
 
 
