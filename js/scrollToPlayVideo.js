@@ -1,31 +1,67 @@
 const videoContainer = document.querySelector('.video-container');
 const videoitems = document.querySelectorAll('.video-item');
 
-// Autoplay videos when they enter the viewport
-function autoplayVideo() {
-  
-  videoitems.forEach((video) => {
-    const rect = video.getBoundingClientRect();
-    const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight || 0;
 
-    if (isVisible && video.paused) {
-      video.play();
-      video.mute= false; // Enable sound
-    } else if (!isVisible && !video.paused) {
-      video.pause();
-      video.mute = true; // Disable sound
-    }
+document.addEventListener('DOMContentLoaded', function () {
+  const videoItems = document.querySelectorAll('.video-item');
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+  }
+
+  function handleIntersection(entries) {
+    entries.forEach((entry) => {
+      const video = entry.target;
+      if (entry.isIntersecting && video.paused) {
+        // video.muted = false; // Enable sound
+        video.play();
+      } else if (!entry.isIntersecting && !video.paused) {
+        // video.muted = true; // Disable sound
+        video.pause();
+      }
+    });
+  }
+
+  const observer = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5, // Adjust this threshold to suit your needs
   });
-  $('video').click(function(){
-      this[this.paused ? 'play' : 'pause']();
-      if(video.paused){
-          video.play();
-        } else{
-          video.pause();
-        }
+
+  videoItems.forEach((video) => {
+    observer.observe(video);
+    video.addEventListener('click', () => {
+      video.paused ? video.play() : video.pause();
+    });
   });
+});
+
+// // Autoplay videos when they enter the viewport
+// function autoplayVideo() {
   
-}
+//   videoitems.forEach((video) => {
+//     const rect = video.getBoundingClientRect();
+//     const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight || 0;
+
+//     if (isVisible && video.paused) {
+//       video.play();
+//       video.mute= false; // Enable sound
+//     } else if (!isVisible && !video.paused) {
+//       video.pause();
+//       video.mute = true; // Disable sound
+//     }
+//   });
+//   $('video').click(function(){
+//       this[this.paused ? 'play' : 'pause']();
+//       if(video.paused){
+//           video.play();
+//         } else{
+//           video.pause();
+//         }
+//   });
+  
+// }
 // videoitems.addEventListener("click", () => {
 //   if(video.paused){
 //     video.play();
