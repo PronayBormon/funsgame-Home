@@ -38,16 +38,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+    return rect.top = 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
   }
 
   function handleIntersection(entries) {
     entries.forEach((entry) => {
       const video = entry.target;
-      if (entry.isIntersecting && video.paused) {
+      if (entry.isIntersecting ) {
         video.muted = false; // Enable sound
         video.play();
-      } else if (!entry.isIntersecting && !video.paused) {
+      } else{
         video.muted = true; // Disable sound
         video.pause();
       }
