@@ -11,7 +11,7 @@
     height: 100px;
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: 99;
     width: 30%;
 }
 .popup.active {

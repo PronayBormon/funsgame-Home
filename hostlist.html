@@ -25,6 +25,7 @@
      <link rel="stylesheet" href="css/imagepreview.min.css">
      <link rel="stylesheet" href="css/preloader.css">
      <link rel="stylesheet" href="css/hostlist.css">
+     <link rel="stylesheet" href="css/global.css">
 
   </head>
   <body>  
@@ -123,7 +124,7 @@
 
         <!-- main content part start here  -->
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 ">
                 <!-- tabs buttons part start here  -->
                 <div class="tab_buttons">
                     <div class="row">
@@ -1203,11 +1204,61 @@
                     
                 </div>
                 <!-- tabs button part end here  -->
+                
 
 
-                <div class="tab-content model_section" id="pills-tabContent">
+                <div class="tab-content " id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-hot" role="tabpanel" aria-labelledby="pills-hot-tab">
                         <!-- hot part start here  -->
+                        <div class="tab_buttons my-2 mobile_view">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="filter_btns">
+                                        <button type="button" class="active">All</button>
+                                        <button type="button">Woman</button>
+                                        <button type="button">Man </button>
+                                        <button type="button">Couples</button>
+                                        <button type="button">Trans</button>
+                                        <button type="button" id="filter_popup">Country</button>
+                                    </div>
+                                    <div class="overlay" id="pop"></div>
+                                    <div class="country_popup"  id="country_popup" >
+                                        <div class="row mb-3">
+                                            <div class="col-6 ms-auto text-end">
+                                                <button type="button" class="close_popup" id="close_popup"  title="Close"><i class="fa-solid fa-x"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="search_option">
+                                                    <form action="">
+                                                        <input type="text " placeholder="Search the Country">
+                                                        <button type="button"  title="Search Your Country"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                    </form>
+                                                </div>
+                                                <div class="categories ">
+                                                    
+                                                    <div class="row pop_scroll">
+                                                        
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug active"><img src="images/flags/afghanistan-emoji-96.png" alt=""> <p>Afghanistan</p></button>
+                                                        </div> 
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug"><img src="images/flags/aland-islands-emoji-96.png" alt=""> <p>Aland_Island</p></button>
+                                                        </div>     
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug"><img src="images/flags/albania-96.png" alt=""> <p>Albania</p> </button>
+                                                        </div> 
+                                                            
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
@@ -2320,6 +2371,55 @@
                     </div>
                     <div class="tab-pane fade" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
                         <!-- new part start here  -->
+                        <div class="tab_buttons my-2 mobile_view">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="filter_btns">
+                                        <button type="button" class="active">All</button>
+                                        <button type="button">Woman</button>
+                                        <button type="button">Man </button>
+                                        <button type="button">Couples</button>
+                                        <button type="button">Trans</button>
+                                        <button type="button" id="filter_popup1">Country</button>
+                                    </div>
+                                    <div class="overlay" id="pop1"></div>
+                                    <div class="country_popup"  id="country_popup1" >
+                                        <div class="row mb-3">
+                                            <div class="col-6 ms-auto text-end">
+                                                <button type="button" class="close_popup" id="close_popup1"  title="Close"><i class="fa-solid fa-x"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="search_option">
+                                                    <form action="">
+                                                        <input type="text " placeholder="Search the Country">
+                                                        <button type="button"  title="Search Your Country"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                    </form>
+                                                </div>
+                                                <div class="categories ">
+                                                    
+                                                    <div class="row pop_scroll">
+                                                        
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug active"><img src="images/flags/afghanistan-emoji-96.png" alt=""> <p>Afghanistan</p></button>
+                                                        </div> 
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug"><img src="images/flags/aland-islands-emoji-96.png" alt=""> <p>Aland_Island</p></button>
+                                                        </div>     
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug"><img src="images/flags/albania-96.png" alt=""> <p>Albania</p> </button>
+                                                        </div> 
+                                                            
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
@@ -3432,6 +3532,55 @@
                     </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <!-- favorite part start here  -->
+                        <div class="tab_buttons my-2 mobile_view">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="filter_btns">
+                                        <button type="button" class="active">All</button>
+                                        <button type="button">Woman</button>
+                                        <button type="button">Man </button>
+                                        <button type="button">Couples</button>
+                                        <button type="button">Trans</button>
+                                        <button type="button" id="filter_popup2">Country</button>
+                                    </div>
+                                    <div class="overlay" id="pop2"></div>
+                                    <div class="country_popup" id="country_popup2"  >
+                                        <div class="row mb-3">
+                                            <div class="col-6 ms-auto text-end">
+                                                <button type="button" class="close_popup" id="close_popup2"  title="Close"><i class="fa-solid fa-x"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="search_option">
+                                                    <form action="">
+                                                        <input type="text " placeholder="Search the Country">
+                                                        <button type="button"  title="Search Your Country"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                                    </form>
+                                                </div>
+                                                <div class="categories ">
+                                                    
+                                                    <div class="row pop_scroll">
+                                                        
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug active"><img src="images/flags/afghanistan-emoji-96.png" alt=""> <p>Afghanistan</p></button>
+                                                        </div> 
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug"><img src="images/flags/aland-islands-emoji-96.png" alt=""> <p>Aland_Island</p></button>
+                                                        </div>     
+                                                        <div class="col-auto">
+                                                            <button class="btn_flug"><img src="images/flags/albania-96.png" alt=""> <p>Albania</p> </button>
+                                                        </div> 
+                                                            
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
@@ -4596,6 +4745,49 @@
     <script src="js/navjs.js"></script>
     <script src="js/preloader.js"></script>
     <script src="js/imagepreview.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var selector = '.filter_btns button';
+
+            $(selector).on('click', function(){
+                $(selector).removeClass('active');
+                $(this).addClass('active');
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            //popup 1
+            $("#filter_popup").click(function(){
+                $("#pop").show();
+                $("#country_popup").show();
+            });
+            $("#close_popup").click(function(){
+                $("#pop").hide();
+                $("#country_popup").hide();
+            });
+            // popup 2
+            $("#filter_popup1").click(function(){            
+                $("#pop1").show();
+                $("#country_popup1").show();
+            });
+            $("#close_popup1").click(function(){
+                $("#pop1").hide();
+                $("#country_popup1").hide();
+            });
+
+            //popup 3
+            $("#filter_popup2").click(function(){
+                $("#pop2").show();
+                $("#country_popup2").show();
+            });
+            $("#close_popup2").click(function(){            
+                $("#pop2").hide();
+                $("#country_popup2").hide();
+            });
+        });
+    </script>
+
     <script>
         $(document).ready(function(){
             $(".owl-bannar").owlCarousel({
