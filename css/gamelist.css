@@ -458,6 +458,9 @@ footer a img{
 .cat img{
     width: 30px;
     filter: drop-shadow(5px 3px 2px #0000004d);
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
 }
 .cat h4{        
     font-size: 10px;
