@@ -1216,6 +1216,7 @@ scrollbar-width: none;
 }
 .rank_list ul li h3{
     font-size: 18px;
+    margin: 0;
 }
 .rank_list ul li p img{
     width: 20px;
@@ -1229,6 +1230,7 @@ scrollbar-width: none;
     display: flex;
     padding: 10px;
     justify-content: space-between;
+    align-items: center;
     border-radius: 5px;
     margin: 10px 10px;
     background: rgb(236,226,251);

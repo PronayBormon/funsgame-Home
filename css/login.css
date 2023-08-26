@@ -475,3 +475,15 @@ transition: .4s all ease-in-out;
     }
 }
 /* =========== login page end here =========================  */
+.group .input{
+
+}
+.group i{
+    position: absolute;
+    right: 10px;
+    top: 80%;
+    transform: translate(0, -80%);
+}
+.group{
+    position: relative;
+}

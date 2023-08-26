@@ -448,7 +448,7 @@ footer a img{
 /* gaming part start here  */
 .cat{
     text-align: center;
-    margin: 10px 0px;
+    margin-bottom: 10px;
     border-radius: 5px;
     padding: 3px;
     background: #f5f2fb;
@@ -1778,7 +1778,7 @@ color: #fff;
     scrollbar-width: none;
 }
 .scrollTwo{
-    height: 90vh;
+    height: 75vh;
     overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -1820,6 +1820,47 @@ color: #fff;
     justify-content: center;
     margin-top: 5px !important;
 }
+
+
+/* game list new  */
+.game_part_new{
+    display: grid;
+    grid-template-columns: repeat(6, 12fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px 0px;
+}
+.game_pic{
+    text-align: center;
+    /* border: 1px solid #c4c4c433; */
+    padding: 0px;
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+    overflow: hidden;
+    height: 160px;
+    box-shadow: 3px 3px 10px #5a5a5a;
+}
+.game_pic a{
+    height: fit-content;
+    display: block;
+    height: 100%;
+}
+.game_pic a img{
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+    height: 100%;
+    width: 100%;
+}
+.game_pic:hover img{
+    transform: scale(1.05);
+}
+
+@media(max-width: 1200px){
+    .game_pic{
+        height: 150px;
+    }
+}
+
 @media(min-width: 992px){
     .bannar{
         height: 200px;
@@ -1831,11 +1872,20 @@ color: #fff;
     
     }
 }
+
 @media(max-width: 992px){
+    .game_part_new{
+        grid-template-columns: repeat(5, 12fr);
+    }
     .bannar{
         height: 150px;
 
     }
+    .game_pic{
+
+height: 130px;
+
+}
     .bannar img{
         height: 100%;
         width: 100%;
@@ -1846,28 +1896,53 @@ color: #fff;
 @media(max-width: 768px){
     .rank_crown {
         width: 65px;
+    }    
+    .game_part_new{
+        grid-template-columns: repeat(4, 12fr);
+        gap: 5px;
     }
+    .game_pic{
+
+height: 120px;
+
+}
 }
 @media(max-width: 576px){
     .rank_crown {
         top: -40px;
     }
+    .game_pic{
+
+height: 100px;
+
+}
 }
 @media(max-width: 426px){
     .rank_crown {
         width: 50px;
         top: -30px;
     }
+    .game_pic{
+
+height: 85px;
+
+}
 }
 @media(max-width: 376px){
     .rank_crown {
         width: 45px;
         top: -26px;
     }
+    .game_pic{
+
+    }
 }
 @media(max-width: 321px){
     .rank_crown {
         width: 35px;
         top: -23px;
+    }
+    .game_pic{
+        height: 70px;
     }
 }

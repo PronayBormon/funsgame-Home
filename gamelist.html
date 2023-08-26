@@ -203,64 +203,64 @@
     <!-- gaming part start here  -->
     <div class="container-fluid ">
         <div class="row ">
-            <div class="col-3 scrollTwo"> <!--cat part start here -->
+            <div class="col-3 scroll mt-3"> <!--cat part start here -->
                 <div class="row">
                     <div class="col-12">
-                        <div class="cat active">
+                        <div class="cat sub_cat active">
                             <a href="#">
                                 <img src="images/fire.png" alt="">
                                 <h4>Popular</h4>
                             </a>
                         </div>
-                        <div class="cat">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/chips.png" alt="">
                                 <h4>Casino</h4>
                             </a>
                         </div>
-                        <div class="cat">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/card.png" alt="">
                                 <h4>Teenpatti</h4>
                             </a>
                         </div>
-                        <div class="cat">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/jackpot.png" alt="">
                                 <h4>jackpot</h4>
                             </a>
                         </div>
-                        <div class="cat ">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/football.png" alt="">
                                 <h4>Soccer</h4>
                             </a>
                         </div>
-                        <div class="cat ">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/fire.png" alt="">
                                 <h4>Popular</h4>
                             </a>
                         </div>
-                        <div class="cat">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/chips.png" alt="">
                                 <h4>Casino</h4>
                             </a>
                         </div>
-                        <div class="cat">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/card.png" alt="">
                                 <h4>Teenpatti</h4>
                             </a>
                         </div>
-                        <div class="cat">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/jackpot.png" alt="">
                                 <h4>jackpot</h4>
                             </a>
                         </div>
-                        <div class="cat ">
+                        <div class="cat sub_cat">
                             <a href="#">
                                 <img src="images/football.png" alt="">
                                 <h4>Soccer</h4>
@@ -271,7 +271,7 @@
                 </div>
             </div> <!--cat part end here -->
             <div class="col-9 "> <!--Games part start here -->
-                <div class="row game_part">
+                <!-- <div class="row game_part">
                     <div class="col-4">
                         <div class="cat active m-0">
                             <a href="#">
@@ -296,8 +296,8 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="row game_part scroll">
+                </div> -->
+                <!-- <div class="row game_part scroll">
                     <div class="col-4">
                         <div class="game_icon">
                             <a href="games.html" class="btn btn_game">
@@ -475,6 +475,59 @@
                         </div>
                     </div>
                     
+                </div> -->
+                <div class="row mt-3 px-3" style="border-radius: 5px;">
+                    <div class="game_icon text-center py-2" style="background-image: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);">
+                        <h6 class="m-0">Teenpatti</h6>
+                    </div>
+                </div>
+                <div class="scrollTwo mt-3">
+                    <div class=" game_part_new mt-0">
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (1).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (2).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (1).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (2).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (1).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (2).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (1).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_pic">
+                            <a href="#">
+                                <img src="images/pronay (2).jpg" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -533,6 +586,13 @@
         $(".rotate").click(function () {
             $(this).toggleClass("down");
         })
+
+        $(document).ready(function(){
+            $(".sub_cat").click(function(){
+                $(".sub_cat").removeClass("active");
+                $(this).addClass("active");
+            })
+        });
     </script>
   </body>
 </html>

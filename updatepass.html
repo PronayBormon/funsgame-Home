@@ -59,14 +59,16 @@
                     <div>
                         <form action="">
                             
-                            <div>
+                            <div class="group">
                                 <label for="">New Password</label>
-                                <input type="password" placeholder="Password" id="myInput" class="form-control">
+                                <input id="password-field" type="password" class="form-control" name="password" value="">
+                                <i toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></i>
                                 
-                            </div>
-                            <div>
+                            </div>                            
+                            <div class="group">
                                 <label for="">Retype Password</label>
-                                <input type="password" placeholder="Retype password" id="myInput" class="form-control">
+                                <input id="password-fields" type="password" class="form-control" name="password" value="">
+                                <i toggle="#password-fields" class="fa fa-fw fa-eye field-icon toggle-password"></i>
                             </div>
                             <button type="button" class="signin_btn " data-bs-toggle="modal" data-bs-target="#varification">Update </button>
                         </form>
@@ -81,14 +83,15 @@
     <script src="js/capcha.js"></script>
     <script src="js/preloader.js"></script>
     <script>
-    function myFunction() {
-        var x = document.getElementById("myInput");
-        if (x.type === "password") {
-        x.type = "text";
-        } else {
-        x.type = "password";
-        }
-    }
+        $(".toggle-password").click(function() {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+            input.attr("type", "text");
+            } else {
+            input.attr("type", "password");
+            }
+        });
     </script>
 
 

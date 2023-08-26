@@ -1,0 +1,110 @@
+body{
+    /* background-image:url(../videos/coming_soon_bg.mp4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh; */
+    position: relative;
+    z-index: 0;
+}
+.bg_video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: fill;
+}
+.countDown{
+    display: flex;
+}
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countDown .container{
+
+margin: 0px 10px;
+
+background: #523939;
+
+padding: 10px 20px;
+
+color: #fff;
+
+border-radius: 5px;
+
+box-shadow: 0 0 15px #5d5d5d;
+}
+.countDown .container .a{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.countDown .container:first-child::after{
+    content: "Days";
+    font-size: 20px;
+    font-weight: 600;
+}
+.countDown .container:nth-child(2):after{
+    font-size: 20px;
+    content: "hours";
+    text-transform: capitalize;
+    after{
+    content: "hours";
+};
+    font-weight: 600;
+}
+.countDown .container:nth-child(3):after{
+    text-transform: capitalize;
+    content: "minute";
+    font-size: 20px;
+    font-weight: 600;
+}
+.countDown .container:nth-child(4):after{
+    content: "second";
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.title{
+
+text-align: center;
+
+margin-bottom: 20px;
+
+margin-top: 30px;
+}
+.title h1{
+    
+}
+.title p{
+
+}
+.return{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+@media(max-width: 426px){
+    .countDown .container .a{
+        font-size: 20px;
+    }
+    .countDown .container:nth-child(1):after,
+    .countDown .container:nth-child(2):after,
+    .countDown .container:nth-child(3):after,
+    .countDown .container:nth-child(4):after{
+        font-size: 14px;
+    }
+    .countDown .container {
+        padding: 5px 10px;
+        margin: 0px 5px;
+    }
+    .title p {
+        font-size: 12px;
+    }
+}

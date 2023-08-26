@@ -103,7 +103,7 @@
   .sidenav a {
     padding: 4px 8px 4px 10px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 14px !important;
     color: #9681EB;
     display: block;
     transition: 0.3s;
@@ -114,7 +114,7 @@
     filter: drop-shadow(2px 4px 6px #fff);
   }
   .sidenav a img{    
-    width: 20px;        
+    width: 25px !important;        
     margin-bottom: 8px;        
     margin-right: 5px;
   }
@@ -130,9 +130,178 @@
     background-image: none;
     box-shadow: none !important;
   }
-  
+  .profile_img img{
+    height: 30px !important;
+    width: 30px !important;
+    filter: drop-shadow(1px 1px #ededab);
+  }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
 /* ========================== navbar end here ==================== */
+
+
+
+@media(max-width: 426px){
+    .owl-bannar .owl-dots{
+        right: 25px !important;
+    }
+    .owl-bannar .owl-dots .owl-dot span{
+        height: 5px !important;
+        width: 5px !important;
+    }
+}
+
+/* Popup ============================== */
+.login_popup{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100vh;
+    background: #000000db;
+    z-index: 10;
+    display: none;
+}   
+.login_content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);
+}
+.user_icon{
+
+height: 100px;
+
+width: 100px;
+
+margin: auto;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+background: #7b6ee4;
+
+border-radius: 50px;
+
+box-shadow: 2px 3px 5px 3px #d2d2d2fc;
+
+box-shadow: 5px 5px 10px #f5f5f5,
+             -5px -5px 10px #ffffff;
+
+color: #fff;
+}
+.user_icon i{
+
+font-size: 50px;
+}
+.login_content form{
+
+}
+.login_content form label{
+
+font-size: 14px;
+
+margin-bottom: 5px;
+}
+.login_content form input{
+
+border-radius: 20px;
+
+box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+
+padding: 5px 20px;
+
+padding-left: 35px;
+}
+.login_content form input:focus{
+
+}
+.show_pass{
+
+position: absolute;
+
+right: 10px;
+
+top: 80%;
+
+transform: translateY(-80%);
+
+color: #000;
+}
+#save_pass{
+
+margin-right: 5px;
+
+margin-top: 10px;
+}
+.btn_login{
+
+border: none;
+
+background: transparent;
+
+width: 100%;
+
+background: #7b6ee4;
+
+color: #fff;
+
+margin-top: 20px;
+
+padding: 10px 20px;
+
+border-radius: 30px;
+}
+.input_group .fa-lock, .input_group  .fa-user{
+
+position: absolute;
+
+left: 5px;
+
+top: 90%;
+
+transform: translateY(-90%);
+
+color: #fff;
+
+background: #7b6ee4;
+
+padding: 6px;
+
+border-radius: 50px;
+
+font-size: 14px;
+}
+.input_group{
+    
+position: relative;
+    
+margin-top: 12px;
+}
+.login_content a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #000;
+}
+.btn_close{
+    background-color: transparent;
+    border: none;
+    color: #000;
+}
+.btn_close i{
+    color: #000;
+}
+.btn_close:hover i{
+    color: #8c85d8;
+}
