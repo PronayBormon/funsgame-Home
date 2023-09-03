@@ -84,9 +84,10 @@ video {
 }
 
 .ckin__player {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
   letter-spacing: 0.02em;
+  max-height: 390px;
 }
 
 .ckin__player.ckin__fullscreen {
