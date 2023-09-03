@@ -25,7 +25,7 @@
      <link rel="stylesheet" href="css/imagepreview.min.css">
      <link rel="stylesheet" href="css/preloader.css">
      <link rel="stylesheet" href="css/hostlist.css">
-     <link rel="stylesheet" href="css/global.css">
+     <link rel="stylesheet" href="css/navbar.css">
 
   </head>
   <body>  
@@ -41,7 +41,7 @@
                             <div class="head  align-items-center">
                                 <div class="row">
                                     <a href="profileinfo.html" class="text-secondary text-decoration-none">
-                                        <div class="text-start d-flex align-items-center ms-2 "><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
+                                        <div class="text-start d-flex align-items-center ms-2 profile_img"><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
                                     </a>
                                     <div>
                                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -256,56 +256,7 @@
 
                 <div class="tab-content " id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-hot" role="tabpanel" aria-labelledby="pills-hot-tab">
-                        <!-- hot part start here  -->
-                        <!-- <div class="tab_buttons my-2 mobile_view" style="top: 100px;">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="filter_btns">
-                                        <button type="button" class="active">All</button>
-                                        <button type="button">Woman</button>
-                                        <button type="button">Man </button>
-                                        <button type="button">Couples</button>
-                                        <button type="button">Trans</button>
-                                        <button type="button" id="filter_popup">Country</button>
-                                    </div>
-                                    <div class="overlay" id="pop"></div>
-                                    <div class="country_popup"  id="country_popup" >
-                                        <div class="row mb-3">
-                                            <div class="col-6 ms-auto text-end">
-                                                <button type="button" class="close_popup" id="close_popup"  title="Close"><i class="fa-solid fa-x"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="search_option">
-                                                    <form action="">
-                                                        <input type="text " placeholder="Search the Country">
-                                                        <button type="button"  title="Search Your Country"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                                    </form>
-                                                </div>
-                                                <div class="categories ">
-                                                    
-                                                    <div class="row pop_scroll">
-                                                        
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug active"><img src="images/flags/afghanistan-emoji-96.png" alt=""> <p>Afghanistan</p></button>
-                                                        </div> 
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug"><img src="images/flags/aland-islands-emoji-96.png" alt=""> <p>Aland_Island</p></button>
-                                                        </div>     
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug"><img src="images/flags/albania-96.png" alt=""> <p>Albania</p> </button>
-                                                        </div> 
-                                                            
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                       
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
@@ -449,32 +400,6 @@
                                                                                             <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
                                                                                         </td>
                                                                                     </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
                                                                                     
                                                                                 </tbody>
                                                                             </table>
@@ -496,45 +421,6 @@
                                                                         <div class="col-12 p-0">
                                                                             <table class="table">
                                                                                 <tbody>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a> 
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
                                                                                     <tr>
                                                                                         <td><button class="btn_cat active">category one</button></td>             
                                                                                         <td class="text-end"><p>Room: 123</p></td>
@@ -582,58 +468,7 @@
                                                                                             <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a> 
                                                                                         </td>
                                                                                     </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td><button class="btn_cat active">category one</button></td>             
-                                                                                        <td class="text-end"><p>Room: 123</p></td>
-                                                                                        <td class="d-flex">
-                                                                                            <a href="images/001.png" class="preview"> <img src="images/001.png" alt="gallery thumbnail" /></a>
-
-                                                                                            <a href="images/002.png" class="preview"> <img src="images/002.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/003.png" class="preview"> <img src="images/003.png" alt="gallery thumbnail" /></a>
-                                                                                            
-                                                                                            <a href="images/004.png" class="preview"> <img src="images/004.png" alt="gallery thumbnail" /></a>
-                                                                                        </td>
-                                                                                    </tr>
+                                                                                    
                                                                                     
                                                                                 </tbody>
                                                                             </table>
@@ -1115,72 +950,72 @@
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
                                                                 <img src="images/003.png" class="img-fluid" alt="">
+                                                            </a>
                                                                 <button type="button" class="btn_fav "><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
                                                                 <img src="images/004.png" class="img-fluid" alt="">
+                                                            </a>
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                     <div class="model_sec">
                                                         <a href="livestream.html">                                    
                                                             <img src="images/001.png" class="img-fluid" alt="">   
+                                                        </a>
                                                             <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                             <div class="host_name">
                                                                 <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                 <p>London Escort</p>
                                                             </div>
-                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
                                                                 <img src="images/002.png" class="img-fluid" alt="">   
+                                                            </a>
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
-                                                                <img src="images/003.png" class="img-fluid" alt="">   
+                                                                <img src="images/003.png" class="img-fluid" alt=""> 
+                                                            </a>  
                                                                 <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
                                                                 <img src="images/004.png" class="img-fluid" alt="">   
+                                                            </a>
                                                                 <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 
@@ -1331,96 +1166,96 @@
                                                         <div class="model_sec">
                                                             <a href="livestream.html">                                    
                                                                 <img src="images/001.png" class="img-fluid" alt="">  
+                                                            </a>
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
                                                                 <img src="images/002.png" class="img-fluid" alt="">  
+                                                            </a>
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
                                                                 <img src="images/003.png" class="img-fluid" alt="">  
+                                                            </a>
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
                                                                 <img src="images/004.png" class="img-fluid" alt=""> 
+                                                            </a>
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                     <div class="model_sec">
                                                         <a href="livestream.html">                                    
                                                             <img src="images/001.png" class="img-fluid" alt="">  
+                                                        </a>
                                                             <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                             <div class="host_name">
                                                                 <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                 <p>London Escort</p>
                                                             </div>
-                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">   
+                                                                <img src="images/002.png" class="img-fluid" alt="">  
+                                                            </a> 
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
                                                                 <img src="images/003.png" class="img-fluid" alt="">  
+                                                            </a>
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
-                                                                <img src="images/004.png" class="img-fluid" alt="">   
+                                                                <img src="images/004.png" class="img-fluid" alt="">  
+                                                            </a> 
                                                                 <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 
@@ -1436,56 +1271,7 @@
                         <!-- hot part end here  -->
                     </div>
                     <div class="tab-pane fade" id="pills-new" role="tabpanel" aria-labelledby="pills-new-tab">
-                        <!-- new part start here  -->
-                        <!-- <div class="tab_buttons my-2 mobile_view" style="top: 100px;">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="filter_btns">
-                                        <button type="button" class="active">All</button>
-                                        <button type="button">Woman</button>
-                                        <button type="button">Man </button>
-                                        <button type="button">Couples</button>
-                                        <button type="button">Trans</button>
-                                        <button type="button" id="filter_popup1">Country</button>
-                                    </div>
-                                    <div class="overlay" id="pop1"></div>
-                                    <div class="country_popup"  id="country_popup1" >
-                                        <div class="row mb-3">
-                                            <div class="col-6 ms-auto text-end">
-                                                <button type="button" class="close_popup" id="close_popup1"  title="Close"><i class="fa-solid fa-x"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="search_option">
-                                                    <form action="">
-                                                        <input type="text " placeholder="Search the Country">
-                                                        <button type="button"  title="Search Your Country"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                                    </form>
-                                                </div>
-                                                <div class="categories ">
-                                                    
-                                                    <div class="row pop_scroll">
-                                                        
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug active"><img src="images/flags/afghanistan-emoji-96.png" alt=""> <p>Afghanistan</p></button>
-                                                        </div> 
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug"><img src="images/flags/aland-islands-emoji-96.png" alt=""> <p>Aland_Island</p></button>
-                                                        </div>     
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug"><img src="images/flags/albania-96.png" alt=""> <p>Albania</p> </button>
-                                                        </div> 
-                                                            
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                        
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
@@ -1854,88 +1640,99 @@
                                                         <div class="model_sec">
                                                             <a href="livestream.html">                                    
                                                                 <img src="images/001.png" class="img-fluid" alt="">
-                                                                <div class="host_name">
-                                                                    <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
-                                                                    <p>London Escort</p>
-                                                                </div>
-                                                            </a>
+                                                            </a>      
+                                                            <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>                                                          
+                                                            <div class="host_name">
+                                                                <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a> </h2>
+                                                                <p>London Escort</p>
+                                                            </div>
+                                                          
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">  
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button> 
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
+                                                                
+                                                            
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
                                                                 <img src="images/003.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav "><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
                                                                 <img src="images/004.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                     <div class="model_sec">
                                                         <a href="livestream.html">                                    
-                                                            <img src="images/001.png" class="img-fluid" alt="">
+                                                            <img src="images/001.png" class="img-fluid" alt="">   
+                                                        </a>
+                                                            <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                             <div class="host_name">
                                                                 <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                 <p>London Escort</p>
                                                             </div>
-                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
-                                                                <img src="images/003.png" class="img-fluid" alt="">
+                                                                <img src="images/003.png" class="img-fluid" alt=""> 
+                                                            </a>  
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
-                                                                <img src="images/004.png" class="img-fluid" alt="">
+                                                                <img src="images/004.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 
@@ -1956,7 +1753,7 @@
                                                         <div class=" owl-carousel owl-game">
                                                             <div class="video_section">
                                                                 <a href="index.html">
-                                                                    <video class="video" >
+                                                                    <video class="video" playsline >
                                                                         <source src="videos/reels(1).mp4" type="video/mp4">
                                                                     </video>
                                                                     <h2>32k Views</h2>
@@ -2086,88 +1883,99 @@
                                                         <div class="model_sec">
                                                             <a href="livestream.html">                                    
                                                                 <img src="images/001.png" class="img-fluid" alt="">
-                                                                <div class="host_name">
-                                                                    <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
-                                                                    <p>London Escort</p>
-                                                                </div>
-                                                            </a>
+                                                            </a>      
+                                                            <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>                                                          
+                                                            <div class="host_name">
+                                                                <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a> </h2>
+                                                                <p>London Escort</p>
+                                                            </div>
+                                                          
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">  
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button> 
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
+                                                                
+                                                            
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
                                                                 <img src="images/003.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav "><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
                                                                 <img src="images/004.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                     <div class="model_sec">
                                                         <a href="livestream.html">                                    
-                                                            <img src="images/001.png" class="img-fluid" alt="">
+                                                            <img src="images/001.png" class="img-fluid" alt="">   
+                                                        </a>
+                                                            <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                             <div class="host_name">
                                                                 <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                 <p>London Escort</p>
                                                             </div>
-                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
-                                                                <img src="images/003.png" class="img-fluid" alt="">
+                                                                <img src="images/003.png" class="img-fluid" alt=""> 
+                                                            </a>  
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
-                                                                <img src="images/004.png" class="img-fluid" alt="">
+                                                                <img src="images/004.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 
@@ -2184,55 +1992,7 @@
                     </div>
                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                         <!-- favorite part start here  -->
-                        <!-- <div class="tab_buttons my-2 mobile_view" style="top: 100px;">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="filter_btns">
-                                        <button type="button" class="active">All</button>
-                                        <button type="button">Woman</button>
-                                        <button type="button">Man </button>
-                                        <button type="button">Couples</button>
-                                        <button type="button">Trans</button>
-                                        <button type="button" id="filter_popup2">Country</button>
-                                    </div>
-                                    <div class="overlay" id="pop2"></div>
-                                    <div class="country_popup" id="country_popup2"  >
-                                        <div class="row mb-3">
-                                            <div class="col-6 ms-auto text-end">
-                                                <button type="button" class="close_popup" id="close_popup2"  title="Close"><i class="fa-solid fa-x"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="search_option">
-                                                    <form action="">
-                                                        <input type="text " placeholder="Search the Country">
-                                                        <button type="button"  title="Search Your Country"><i class="fa-solid fa-magnifying-glass"></i></button>
-                                                    </form>
-                                                </div>
-                                                <div class="categories ">
-                                                    
-                                                    <div class="row pop_scroll">
-                                                        
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug active"><img src="images/flags/afghanistan-emoji-96.png" alt=""> <p>Afghanistan</p></button>
-                                                        </div> 
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug"><img src="images/flags/aland-islands-emoji-96.png" alt=""> <p>Aland_Island</p></button>
-                                                        </div>     
-                                                        <div class="col-auto">
-                                                            <button class="btn_flug"><img src="images/flags/albania-96.png" alt=""> <p>Albania</p> </button>
-                                                        </div> 
-                                                            
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                        
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
@@ -2522,88 +2282,99 @@
                                                         <div class="model_sec">
                                                             <a href="livestream.html">                                    
                                                                 <img src="images/001.png" class="img-fluid" alt="">
-                                                                <div class="host_name">
-                                                                    <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
-                                                                    <p>London Escort</p>
-                                                                </div>
-                                                            </a>
+                                                            </a>      
+                                                            <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>                                                          
+                                                            <div class="host_name">
+                                                                <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a> </h2>
+                                                                <p>London Escort</p>
+                                                            </div>
+                                                          
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">  
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button> 
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
+                                                                
+                                                            
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
                                                                 <img src="images/003.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav "><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
                                                                 <img src="images/004.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                     <div class="model_sec">
                                                         <a href="livestream.html">                                    
-                                                            <img src="images/001.png" class="img-fluid" alt="">
+                                                            <img src="images/001.png" class="img-fluid" alt="">   
+                                                        </a>
+                                                            <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                             <div class="host_name">
                                                                 <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                 <p>London Escort</p>
                                                             </div>
-                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
-                                                                <img src="images/003.png" class="img-fluid" alt="">
+                                                                <img src="images/003.png" class="img-fluid" alt=""> 
+                                                            </a>  
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
-                                                                <img src="images/004.png" class="img-fluid" alt="">
+                                                                <img src="images/004.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 
@@ -2683,88 +2454,99 @@
                                                         <div class="model_sec">
                                                             <a href="livestream.html">                                    
                                                                 <img src="images/001.png" class="img-fluid" alt="">
-                                                                <div class="host_name">
-                                                                    <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
-                                                                    <p>London Escort</p>
-                                                                </div>
-                                                            </a>
+                                                            </a>      
+                                                            <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>                                                          
+                                                            <div class="host_name">
+                                                                <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a> </h2>
+                                                                <p>London Escort</p>
+                                                            </div>
+                                                          
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">  
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button> 
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
+                                                                
+                                                            
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
                                                                 <img src="images/003.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav "><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
                                                                 <img src="images/004.png" class="img-fluid" alt="">
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                     <div class="model_sec">
                                                         <a href="livestream.html">                                    
-                                                            <img src="images/001.png" class="img-fluid" alt="">
+                                                            <img src="images/001.png" class="img-fluid" alt="">   
+                                                        </a>
+                                                            <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                             <div class="host_name">
                                                                 <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                 <p>London Escort</p>
                                                             </div>
-                                                        </a>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">      
                                                             <a href="livestream.html">                              
-                                                                <img src="images/002.png" class="img-fluid" alt="">
+                                                                <img src="images/002.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">   
                                                             <a href="livestream.html">                                 
-                                                                <img src="images/003.png" class="img-fluid" alt="">
+                                                                <img src="images/003.png" class="img-fluid" alt=""> 
+                                                            </a>  
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">  
                                                             <a href="livestream.html">                                  
-                                                                <img src="images/004.png" class="img-fluid" alt="">
+                                                                <img src="images/004.png" class="img-fluid" alt="">   
+                                                            </a>
+                                                                <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>
                                                                 <div class="host_name">
                                                                     <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
                                                                     <p>London Escort</p>
                                                                 </div>
-                                                            </a>
                                                         </div>
                                                 </div>
                                                 
@@ -2825,6 +2607,7 @@
         <div class="loader__circle"></div>
     </div>
 
+    <!-- login popup  -->
     <div class="login_popup">
         <div class="login_content">
             <div class="d-flex justify-content-end">

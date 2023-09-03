@@ -22,7 +22,7 @@
     <!-- styles css  -->
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
 
 
@@ -53,14 +53,15 @@
                             <label for="">User Name </label>
                             <input type="email" class="form-control" placeholder="User name ">
                         </div>
-                        <div>
+                        <div class="group">
                             <label for="">Password</label>
-                            <input type="password" placeholder="Enter Password"  class="form-control">
+                            <input type="password" id="password" placeholder="Enter Password"  class="form-control">
+                            <i toggle="#password" class="fa fa-fw field-icon toggle-password fa-eye"></i>
                         </div>
-                        <div>
+                        <div class="group">
                             <label for="">Retype Password</label>
-                            <input type="password" placeholder="Retype Password" id="myInput" class="form-control">
-                            <input type="checkbox" onclick="myFunction()"><label for="">Show password</label>
+                            <input id="retypepass" type="password" placeholder="Retype Password" class="form-control">
+                            <i toggle="#retypepass" class="fa fa-fw field-icon toggle-password fa-eye"></i>
                         </div>
                         
                         
@@ -100,14 +101,15 @@
     <script src="js/capcha.js"></script>
     <script src="js/preloader.js"></script>
     <script>
-        function myFunction() {
-            var x = document.getElementById("myInput");
-            if (x.type === "password") {
-            x.type = "text";
+        $(".toggle-password").click(function() {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+            input.attr("type", "text");
             } else {
-            x.type = "password";
+            input.attr("type", "password");
             }
-        }
+        });
     </script>
 
 
