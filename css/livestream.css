@@ -488,34 +488,44 @@ background: transparent;
 /* .floating icon part start here  */
 .gift_button{
     position: absolute;
-    right: 15px;
-    bottom: 20px;
     transition: .4s all ease-in-out;
 }
 
 .gt_icon{
-    position: absolute;
-    bottom: 15px;
+    position: relative;
+    bottom: 0;
     left: 0px;
-    background: #6f60f3;
+    /* background: #6f60f3; */
     border-radius: 50px;
     padding: 6px;
+    z-index: 10;
 }
 .gt_icon img{
     width: 30px;
     transition: .5s all ease-in-out;
 }
+.gifts{
+    /* margin-bottom: 40px; */
+    position: absolute;
+    z-index: 9;
+    bottom: 0px;
+    border-radius: 20px;
+    padding: 20px 0px;
+    transition: .4s all ease-in-out;
+}
 .gift_button:hover .gt_icon img{
     transform: scale(1.1);
 }
-.gifts{
-    margin-bottom: 40px;
+.gift_button:hover .gifts{    
+    background: #0000006b;
 }
+
 .gifts button{
 
 }
 .gifts ul li button{
     padding: 4px;
+    padding-bottom: 0px;
 }
 .gifts ul li button img{
     width: 30px;
@@ -523,6 +533,9 @@ background: transparent;
 }
 .gifts ul li button img:hover{
     transform: scale(1.1);
+    background: #94939399;
+    border-radius: 50px;
+    padding: 3px;
 }
 .gifts ul li input{
 
@@ -530,6 +543,7 @@ background: transparent;
 .gifts ul li{
     margin: 5px 0px;
     text-align: center;
+    margin-bottom: 8px;
 }
 .gifts ul li p img{
 
@@ -1049,4 +1063,124 @@ font-size: 14px;
 }
 .btn_fav:hover,.btn_fav.active{
     color: #ff3d00;
+}
+.player_game .modal {
+    position: absolute;
+}
+@media(max-width:1200px){
+
+   
+}
+.gifts {
+    position: absolute;
+    bottom: 6%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+.reactionWrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 12fr);
+    align-items: center;
+    /* background: #bcb4f9c7; */
+    padding: 0;
+    list-style: none;
+    padding: 2px 5px;
+    border-radius: 10px;
+    /* overflow: auto; */
+    margin-bottom: 3px;
+}
+.reactionWrapper li button img {
+    width: 40px;
+}
+.reactionWrapper li button {padding: 0;}
+.reactionWrapper li {
+    margin: 3px 8px;
+    padding: 0;
+    text-align: center;
+    min-width: 36px;
+}
+
+.emoji {
+    position: absolute;
+    top: -30%;
+    right: 15%;
+    transform: translateX(-15%);
+    width: 30px;
+    animation: moveEmoji 1s linear;
+}
+@keyframes moveEmoji {
+    0% {
+        transform: translate(0%, -100%);
+        height: 30px;
+        width: 30px;
+    }
+    10% {
+        transform: translate(-30%, -200%);
+        height: 40px;
+        width: 40px;
+    }
+    20% {
+        transform: translate(-40%, -300%);
+        height: 40px;
+        width: 40px;
+    }
+    30% {
+        transform: translate(-50%, -350%);
+        opacity: 1;
+        height: 40px;
+        width: 40px;
+    }
+    40% {
+        transform: translate(-60%, -500%);
+        /* opacity: 0; */
+        height: 40px;
+        width: 40px;
+    }
+    50% {
+        transform: translate(-60%, -600%);
+        height: 40px;
+        width: 40px;
+    }
+    60% {
+        transform: translate(-60%, -700%);
+        height: 40px;
+        width: 40px;
+    }
+    70% {
+        transform: translate(-60%, -800%);
+        height: 40px;
+        width: 40px;
+    }
+    80% {
+        transform: translate(-60%, -900%);
+        height: 40px;
+        width: 40px;
+    }
+    90% {
+        transform: translate(-60%, -1000%);
+        height: 40px;
+        width: 40px;
+    }
+    100% {
+        transform: translate(-60%, -1100%);
+        opacity: 0;
+        height: 30px;
+        width: 30px;
+    }
+}
+.modal-content {
+    background: #0000008a;
+}
+.gift_itms h6 {
+    color: #c6c2c2;
+}
+.gift_itms {
+    max-height: 100px;
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.gift_itms::-webkit-scrollbar{
+    display: none;
 }

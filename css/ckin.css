@@ -168,13 +168,17 @@ video {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+      color: #000;
+}
+.default__button{
+  color: #000 !important;
 }
 
 .default__button--big {
   background: none;
   border: 0;
   line-height: 1;
-  color: #00CF7D;
+  color: #000;
   text-align: center;
   outline: 0;
   padding: 0;
@@ -577,4 +581,7 @@ video {
 
 video::-webkit-media-controls-enclosure {
   display: none !important;
+}
+.ckin-expand{
+  color: #4f4f4fb8
 }

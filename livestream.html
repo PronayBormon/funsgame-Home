@@ -26,6 +26,7 @@
      <link rel="stylesheet" href="css/preloader.css">
      <!-- <link rel="stylesheet" href="css/player.css"> -->
      <link rel="stylesheet" href="dist/css/ckin.css">
+     <!-- <link rel="stylesheet" href="css/reels.css"> -->
      <link rel="stylesheet" href="css/livestream.css">
      <link rel="stylesheet" href="css/navbar.css">
 
@@ -117,7 +118,155 @@
         <div class="row ">
             <div class="col-xl-6">
                 <!-- press play! -->                
-                <div class="row player_game">
+                <div class="row player_game" style="position: relative;">
+                    <div class="" style="position: absolute; width: 100%; height: 100%;">
+                        <!-- gift modal  -->
+                        <div class="modal fade gift_modalss" id="gift_modal" tabindex="-1" aria-labelledby="gift_modalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header pb-2">
+                                <h1 class="modal-title fs-5" style="font-size: 14px !important; color: #fff !important;" id="gift_modalLabel"><img src="images/gift-box.png" width="15px" alt="">Gift Box </h1>
+                                <button type="button" style="color: #fff !important;" class="btn_close" data-bs-dismiss="modal" aria-label="Close"> <i class="fa-solid fa-x"></i></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="gift_itms ">
+                                        <ul class="reactionWrapper">
+                                            <li>
+                                                <button class="btn rose "  ><img src="images/giftitems/Rose.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn drink" ><img src="images/giftitems/drinks.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn sunglass" ><img src="images/giftitems/sunglass.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn iloveu" ><img src="images/giftitems/iloveu.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn cats" ><img src="images/giftitems/cat.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn highHill" ><img src="images/giftitems/highHill.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn watch" ><img src="images/giftitems/watch.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn loveInPhone" ><img src="images/giftitems/loveInPhone.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn makeupbox" ><img src="images/giftitems/makeupbox.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn creaditCard" ><img src="images/giftitems/creaditCard.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn kissOnlaptop" ><img src="images/giftitems/kissOnlaptop.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn LoveOnTablate" ><img src="images/giftitems/LoveOnTablate.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn dimondRing" ><img src="images/giftitems/DimondRing.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn ticket" ><img src="images/giftitems/vacationWithAirTicket.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn carForGift" ><img src="images/giftitems/carForGift.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+
+                                            <!-- .         -->
+                                            <li>
+                                                <button href="#" class="btn heartShape" ><img src="images/giftitems/heartShape.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn loveEyeEmoji" ><img src="images/giftitems/loveEyeEmoji.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn peachFruit" ><img src="images/giftitems/peachFruit.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn begun" ><img src="images/giftitems/begun.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn cerry" ><img src="images/giftitems/cerry.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn eyeWater" ><img src="images/giftitems/eyeWater.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn fire" ><img src="images/giftitems/fire.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn lips" ><img src="images/giftitems/lips.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn emoji4Finger" ><img src="images/giftitems/emoji4Finger.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn omg" ><img src="images/giftitems/Omg.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn tung" ><img src="images/giftitems/tung.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn back" ><img src="images/giftitems/back.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-2" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn bannanaDonut" ><img src="images/giftitems/bannanaDonut.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn 69" ><img src="images/giftitems/69.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            <li>
+                                                <button href="#" class="btn Toy" ><img src="images/giftitems/Toy.svg" alt=""></button>
+                                                <div><h6> <img src="images/dimond.png" class="me-1" width="15px" alt="">5000</h6></div>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="row m-auto" width="100%">
+                                        <div class="col-12 text-center">                    
+                                            <a href="pricing.html" class="btn btn_buyD" width="100%">Buy Dimond</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- gift modal end  -->
+                    </div>
                     <div class="col ">
                         <div class="players">
                             <!-- top content  -->
@@ -135,23 +284,7 @@
                             </div>
                             <video  src="videos/coming_soon_bg.mp4"  autoplay   data-overlay="1" data-title="Live"></video>
 
-                            <div class="gift_button wow bounceInUp">
-                                <div class="gt_icon">
-                                    <img src="images/gift-box.png" class="img-fluid" alt="">
-                                </div>
-                                <div class="gifts">
-                                    <ul class="reactionWrapper">
-                                        <li>
-                                            <button href="#" class="btn rose" ><img src="images/rose.png" alt=""></button> <br>
-                                            <p><img src="images/dimond.png" alt=""> 5</p>
-                                        </li>
-                                        <li>
-                                            <button href="#" class="btn gift" ><img src="images/gift-box.png" alt=""></button><br>
-                                            <p><img src="images/dimond.png" alt=""> 5</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                            
                             <!-- bottom option part start here  -->
                             <div class="bottom_content ">
                                 
@@ -170,11 +303,18 @@
                                     <!-- <div class="v_details">
                                         <a href="hosterprofile.html" class="btn">View Profile</a>
                                     </div> -->
-                                    <div class="v_details">
-                                        <a href="pricing.html" class="btn">Buy Dimond</a>
+                                        <div class="v_details">
+                                            <a href="pricing.html" class="btn">Buy Dimond</a>
+                                        </div>
+                                        <div class="v_details">
+                                            <p><img src="images/dimond.png" width="20px" class="img-fluid" alt=""> 8.5k</p>
                                     </div>
-                                    <div class="v_details">
-                                        <p><img src="images/dimond.png" width="20px" class="img-fluid" alt=""> 8.5k</p>
+                                <div>
+                                <div class="gift_button wow bounceInUp"  style="position: unset;">
+                                    <div class="gt_icon">
+                                        <a class="btn btn_gf_modal" onclick="gift_m()" data-bs-toggle="modal" data-bs-target="#gift_modal" ><img src="images/gift-box.png" alt=""></a>
+                                    </div>
+                                </div>
                                    </div>
                                 </div>
                             </div>
@@ -809,8 +949,476 @@
     <script src="js/preloader.js"></script>
     <!-- <script src="js/player.js"></script> -->
     <script src="js/livestreamButton.showhide.js"> </script>
+
+    <script>
+
+        $(document).ready(function(){
+            $(".reactionWrapper .rose").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/Rose.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+            $(".reactionWrapper .drink").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/drinks.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+            $(".reactionWrapper .sunglass").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/sunglass.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+
+            });
+
+
+        $(".reactionWrapper .iloveu").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/iloveu.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .cat").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/cat.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .highHill").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/highHill.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .watch").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/watch.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .loveInPhone").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/loveInPhone.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .makeupbox").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/makeupbox.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .creaditCard").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/creaditCard.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .kissOnlaptop").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/kissOnlaptop.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .LoveOnTablate").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/LoveOnTablate.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .dimondRing").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/DimondRing.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .ticket").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/vacationWithAirTicket.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .carForGift").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/carForGift.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .heartShape").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/heartShape.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .loveEyeEmoji").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/loveEyeEmoji.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .peachFruit").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: "images/giftitems/peachFruit.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .begun").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/begun.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .cerry").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/cerry.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .eyeWater").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/eyeWater.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+            $(".reactionWrapper .fire").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/fire.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+
+            });
+
+
+
+            $(".reactionWrapper .lips").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/lips.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+            $(".reactionWrapper .emoji4Finger").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/emoji4Finger.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+            $(".reactionWrapper .omg").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/omg.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+            $(".reactionWrapper .tung").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/tung.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+            $(".reactionWrapper .back").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/back.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+            $(".reactionWrapper .bannanaDonut").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/bannanaDonut.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+            $(".reactionWrapper .69").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/69.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+            $(".reactionWrapper .Toy").click(function(){
+            $("<img />",{
+                html: "P",
+                class: "emoji",
+                src: " images/giftitems/Toy.svg",
+                target: "blank"
+                
+            }).appendTo(".reactionWrapper");
+            setTimeout(function(){
+                    $(".reactionWrapper .emoji").css('display','none');
+                }, 1000);
+            
+            });
+
+
+
+
+
+
+        });
+
+    </script>
+
     
-      <script>
+      <!-- <script>
         let reactionWrapper = document.querySelector(".reactionWrapper");
     
         let rose = document.querySelector(".rose");
@@ -835,7 +1443,7 @@
             createEmoji.remove();
           }, 1000);
         });
-      </script>
+      </script> -->
           <script type="text/javascript">
             $(document).ready(function(){
                 $(".model_sec .btn_fav").click(function(){
