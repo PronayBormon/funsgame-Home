@@ -1,44 +1,23 @@
-html,
-body {
-  position: relative;
-  height: 100%;
+.swiper {
+    width: 100%;
+    max-width: 1280px;
+    height: 300px;
+    margin-top: 40px;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EEE;
+}
+.swiper-slide a{
+    height: 100%;
+    width: 100%;
+}
+.swiper-slide video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 
-swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-swiper-slide video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.mySwiper{
-    height: 400px;
-}
-.v_item{
-
-}
-.v_item video{
-
-}
