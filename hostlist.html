@@ -205,7 +205,7 @@
                                     <button class="nav-link" id="pills-new-tab" data-bs-toggle="pill" data-bs-target="#pills-new" type="button" role="tab" aria-controls="pills-new" aria-selected="false"><img src="images/new.png" alt="">New</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="images/favorite-60 (1).png" alt="">Favorite</button>
+                                    <button class="nav-link btn_fav_pop" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false"><img src="images/favorite-60 (1).png" alt="">Favorite</button>
                                 </li>
                             </ul>
                         </div>
@@ -1769,6 +1769,9 @@
                                         </div>
                                         <div class=" col-xl-9 col-md-12  col-12 scroll">
                                             <!-- contents start here  -->
+                                            <div class="alert alert-danger text-center">
+                                                You are not following any streamers yet. You can select your favorite streamers and save them to your favorites list by clicking the 'Heart Icon Follow' button.
+                                            </div>
                                             <div class="row model_section">
                                                 <div class="col-lg-3  col-md-3 col-sm-6 col-6 contents ">
                                                         <div class="model_sec">
@@ -2145,6 +2148,9 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
+            $(".btn_fav_pop").click(function(){
+                $(".login_popup").fadeIn();
+            });
             $(".model_sec .btn_fav").click(function(){
                 $(".login_popup").fadeIn();
             });

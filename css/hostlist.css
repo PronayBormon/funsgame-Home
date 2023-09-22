@@ -1185,3 +1185,8 @@ margin-top: 12px;
         max-height: 200px;
     }
 }
+@media (max-width: 400px) {
+    .video_section video {
+      max-height: 180px;
+    }
+  }
