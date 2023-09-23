@@ -1212,9 +1212,9 @@ img {
     background: #0000006f !important;
 }
 
-.page_links{
-
-/* height: 80vh; */
+.page_links{    
+    height: 80vh !important;    
+    overflow: auto !important;
 }
 .page_links a{
     font-size: 14px;
@@ -1425,3 +1425,29 @@ border-radius: 5px;
 .bottom_right img{    
     max-height: 200px;
 }   
+.page_links{
+    scrollbar-width: none;
+}
+.page_links::-webkit-scrollbar{
+    display: none;
+}
+.index_social{
+
+margin-bottom: 50px;
+
+display: flex;
+
+align-items: center;
+}
+.index_social a{
+
+width: fit-content;
+}
+.index_social img {
+    height: 40px;
+    width: 40px;
+    transition: .4s all ease-in-out;
+}
+.index_social a:hover img{
+    transform: scale(1.2);
+}

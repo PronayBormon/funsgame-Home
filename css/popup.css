@@ -11,8 +11,8 @@
     height: 100px;
     display: flex;
     flex-direction: column;
-    z-index: 99;
-    width: 30%;
+    z-index: 9;
+    width: 100%;
 }
 .popup.active {
     opacity: 1;
@@ -57,4 +57,12 @@ align-items: center;
 justify-content: center;
 
 padding: 5px 6px;
+}
+.popup{
+    display: block;
+}
+@media(max-width: 425px){
+    .popup{
+        display: block;
+    }
 }
