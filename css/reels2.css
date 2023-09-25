@@ -9,7 +9,7 @@
 }
 body {
     scrollbar-width: 0;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     background-image: linear-gradient(45deg, #7565f38a, #cfcafb4a, #c4bdfa61);
 }
 body::-webkit-scrollbar {
@@ -1227,15 +1227,15 @@ img {
     margin: 5px 0px;
     /* box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important; */
 }
-.page_links img{    
-    height: 30px;        
-    width: 30px;        
-    margin: 3px 3px;        
-    padding: 4px;        
+.page_links img{
+    height: 30px;
+    width: 30px;
+    margin: 3px 3px;
+    padding: 4px;
     filter: drop-shadow(2px 4px 6px #adadad);
 }
 .v_container{
-    height: 85vh;
+    height: 600px;
     /* background: rebeccapurple; */
     display: flex;
     justify-content: center;
@@ -1396,6 +1396,7 @@ border-radius: 5px;
 }
 .right_index{
     margin-top: 20px;
+    padding-top: 22px;
 }
 .regi_btn{    
     width: 100%;        
@@ -1418,9 +1419,7 @@ border-radius: 5px;
     font-weight: 600;
     color: #0000008a;
 }
-.premium{
-    color: gold;
-}
+
 
 .bottom_right img{    
     max-height: 200px;
@@ -1432,22 +1431,25 @@ border-radius: 5px;
     display: none;
 }
 .index_social{
-
-margin-bottom: 50px;
-
-display: flex;
-
-align-items: center;
+    margin-bottom: 50px;    
+    display: flex;    
+    align-items: center;    
+    width: 100%;    
+    overflow: auto;      
+    scrollbar-width: none;
 }
 .index_social a{
-
-width: fit-content;
+    width: fit-content;    
+    /* min-width: 40px; */
 }
 .index_social img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    min-width: 10px;
     transition: .4s all ease-in-out;
 }
 .index_social a:hover img{
     transform: scale(1.2);
+}
+.social_links img{
+    padding: 0;
 }

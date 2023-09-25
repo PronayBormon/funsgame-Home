@@ -29,13 +29,13 @@
 
   </head>
   <body style="min-height:100vh;">
-    <div class="loader" id="preloader">
+    <!-- <div class="loader" id="preloader">
         <div class="loader__circle"></div>
         <div class="loader__circle"></div>
         <div class="loader__circle"></div>
         <div class="loader__circle"></div>
         <div class="loader__circle"></div>
-    </div>
+    </div> -->
    
     <!-- Main content part start here  -->
     <div class="container-fluid p-0">
@@ -153,8 +153,11 @@
                                         <h6>Social Links </h6>
                                         <div class="index_social">
                                             <a href="https://www.facebook.com/Fansgame.online/"><img src="images/facebook-100.png" class="img-fluid" alt=""></a>
-                                            <a href="https://www.youtube.com"><img src="images/youtube-100.png" class="img-fluid" alt=""></a>
-                                            <a href="https://instagram.com"><img src="images/instagram-100.png" alt=""></a>
+                                            <a href="https://www.youtube.com/@FansGame.online"><img src="images/youtube-100.png" alt=""></a>
+                                            <a href="https://www.instagram.com/fansgame_official/"><img src="images/instagram-100.png" alt=""></a>
+                                            <a href="https://twitter.com/Fansgameonline"><img src="images/twitter-circled-100.png" alt=""></a>
+                                            <a href="https://www.pinterest.com/fansgame_official"><img src="images/pinterest-100.png" alt=""></a>
+                                            <a href="https://www.tiktok.com/@fansgame.online"><img src="images/tiktok-100.png" alt=""></a>
                                         </div>
                                         
                                     </div>
@@ -244,45 +247,53 @@
                             <h6 class="gallery_title">Vidoe Gallery</h6>
                             <div class="video_gallery">
                                 <div class="video_item">
-                                    <video muted playsinline poster="images/v_gallery/video-1_000.jpg">
-                                        <source src="videos/video-1.mp4" type="video/mp4">
-                                    </video>
-                                    <i class="fa-solid fa-play"></i>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoOne">
+                                        <video muted playsinline poster="images/v_gallery/video-1_000.jpg">
+                                            <source src="videos/video-1.mp4" type="video/mp4">
+                                        </video>
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
                                 </div>
                                 <div class="video_item">
-                                    <video muted playsinline poster="images/v_gallery/video-2_262.jpg">
-                                        <source src="videos/video-2.mp4" type="video/mp4">
-                                    </video>
-                                    <i class="fa-solid fa-play"></i>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoTwo">
+                                        <video muted playsinline poster="images/v_gallery/video-2_262.jpg">
+                                            <source src="videos/video-2.mp4" type="video/mp4">
+                                        </video>
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
                                 </div>
                                 <div class="video_item">
-                                    <video muted playsinline poster="images/v_gallery/video-3.jpg">
-                                        <source src="videos/video-3.mp4" type="video/mp4">
-                                    </video>
-                                    <i class="fa-solid fa-play"></i>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoThree">
+                                        <video muted playsinline poster="images/v_gallery/video-3.jpg">
+                                            <source src="videos/video-3.mp4" type="video/mp4">
+                                        </video>
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
                                 </div>
                                 <div class="video_item">
-                                    <video muted playsinline poster="images/v_gallery/video-4_047.jpg">
-                                        <source src="videos/video-4.mp4" type="video/mp4">
-                                    </video>
-                                    <i class="fa-solid fa-play"></i>
-                                </div>
-                                
-                                <div class="video_item">
-                                    <video muted playsinline poster="images/v_gallery/video-5.jpg">
-                                        <source src="videos/video-5.mp4" type="video/mp4">
-                                    </video>
-                                    <i class="fa-solid fa-play"></i>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoFour">
+                                        <video muted playsinline poster="images/v_gallery/video-4_047.jpg">
+                                            <source src="videos/video-4.mp4" type="video/mp4">
+                                        </video>
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
                                 </div>
                                 <div class="video_item">
-                                    <video muted playsinline poster="images/v_gallery/video-6.jpg">
-                                        <source src="videos/video-6.mp4" type="video/mp4">
-                                    </video>
-                                    <i class="fa-solid fa-play"></i>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoFive">
+                                        <video muted playsinline poster="images/v_gallery/video-5.jpg">
+                                            <source src="videos/video-5.mp4" type="video/mp4">
+                                        </video>
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
                                 </div>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Launch demo modal
-                                </button>
+                                <div class="video_item">
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoSix">
+                                        <video muted playsinline poster="images/v_gallery/video-6.jpg">
+                                            <source src="videos/video-6.mp4" type="video/mp4">
+                                        </video>
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                </div>
                                
                             </div>
                         </div>
@@ -295,22 +306,91 @@
         </div>
 
         
-
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- video one  -->
+        <div class="modal fade " id="videoOne" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
+              <div class="modal-content v_modal">
+                <div class="modal-header" style="border: none;">
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <video id="myvideo" width="100%" controls>
-                    <source src="videos/video-1.mp4" type="video/mp4">
-                  </video>
+                    <iframe width="560" allow="autoplay" height="315" src="https://www.youtube.com/embed/R8uPOsyU9RQ?si=RDLzpGNeP50_RZjK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   
                 </div>
               </div>
             </div>
+        </div>
+        <!-- video two  -->
+        <div class="modal fade " id="videoTwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content v_modal">
+                <div class="modal-header" style="border: none;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kplPEeZWsyM?si=AOjh5CJYtFFva6Qi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- video three  -->
+        <div class="modal fade " id="videoThree" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content v_modal">
+                <div class="modal-header" style="border: none;">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eRGOLBbo3Ps?si=VoNX1I8N8K6FPKtm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- video four  -->
+    <div class="modal fade " id="videoFour" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content v_modal">
+            <div class="modal-header" style="border: none;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OqV4EVHW1yU?si=zDFfSdWhben56RaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            </div>
           </div>
+        </div>
+    </div>
+     <!-- video five  -->
+     <div class="modal fade " id="videoFive" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content v_modal">
+            <div class="modal-header" style="border: none;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pc2tiMlSKTI?si=MGsZ846I91zB8q6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            </div>
+          </div>
+        </div>
+    </div> 
+    <!-- video six  -->
+    <div class="modal fade " id="videoSix" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content v_modal">
+            <div class="modal-header" style="border: none;">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fSdzuXxLSDc?si=9UPSUqcs1Sl-IGRy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              
+            </div>
+          </div>
+        </div>
+    </div>
 
 
         <!-- player popup  -->
@@ -403,15 +483,15 @@
         });
 
         $(document).ready(function(){
-            $(".video_item video").click(function(){
-                $(".player_popup").fadeIn();
-            });
-            $(".video_item i ").click(function(){
-                $(".player_popup").fadeIn();
-            });
-            $(".btn_x").click(function(){
-                $(".player_popup").fadeOut();
-            });
+            // $(".video_item video").click(function(){
+            //     $(".player_popup").fadeIn();
+            // });
+            // $(".video_item i ").click(function(){
+            //     $(".player_popup").fadeIn();
+            // });
+            // $(".btn_x").click(function(){
+            //     $(".player_popup").fadeOut();
+            // });
             // $(".player_popup").click(function(){
             //     $(".player_popup").fadeOut();
             // });
