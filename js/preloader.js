@@ -27,11 +27,11 @@
 //    });
 
 
-$(document).ready(function($) {
-    const Body = $('.loaders');
-    Body.addClass('loaded');
+// $(document).ready(function($) {
+//     const Body = $('.loaders');
+//     Body.addClass('loaded');
       
-});
+// });
 // $(window).on("load" , function() {
 //     $('loaders').fadeOut();
 //     $('loaders').addClass('loaded');
@@ -40,3 +40,9 @@ $(document).ready(function($) {
 // $("body").load(function(){
 //     $('loaders').addClass('loaded');
 // }); 
+function preloader(){
+    document.getElementById("loaders").style.display = "none";
+ }//preloader
+ 
+ //remove/comment this one to check the website in loading state
+ window.onload = preloader;
