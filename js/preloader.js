@@ -42,7 +42,7 @@
 // }); 
 function preloader(){
     document.getElementById("loaders").style.display = "none";
- }//preloader
- 
- //remove/comment this one to check the website in loading state
+    document.getElementById("body").style.display = "block";
+ }
+
  window.onload = preloader;
