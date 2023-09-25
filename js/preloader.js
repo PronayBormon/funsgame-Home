@@ -1,8 +1,8 @@
-var loader = document.getElementById("loaders");
+// var loader = document.getElementById("loaders");
 
-window.addEventListener("load", function(){
-    loader.style.display = "none";
-})
+// window.addEventListener("load", function(){
+//     loader.style.display = "none";
+// })
 
 // $(document).ready(function(){
     // $(window).load(function(){
@@ -27,11 +27,16 @@ window.addEventListener("load", function(){
 //    });
 
 
-// $(document).ready(function($) {
-//     const Body = $('.loaders');
-//     Body.addClass('loaded');
-// });
-// $(window).load(function() {
+$(document).ready(function($) {
+    const Body = $('.loaders');
+    Body.addClass('loaded');
+      
+});
+// $(window).on("load" , function() {
 //     $('loaders').fadeOut();
 //     $('loaders').addClass('loaded');
 // });
+
+// $("body").load(function(){
+//     $('loaders').addClass('loaded');
+// }); 
