@@ -1,8 +1,8 @@
-// var loader = document.getElementById("preloader");
+var loader = document.getElementById("loaders");
 
-//         window.addEventListener("load", function(){
-//             loader.style.display = "none";
-//         })
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
 
 // $(document).ready(function(){
     // $(window).load(function(){
@@ -27,10 +27,10 @@
 //    });
 
 
-$(document).ready(function($) {
-    const Body = $('.loaders');
-    Body.addClass('loaded');
-});
+// $(document).ready(function($) {
+//     const Body = $('.loaders');
+//     Body.addClass('loaded');
+// });
 // $(window).load(function() {
 //     $('loaders').fadeOut();
 //     $('loaders').addClass('loaded');
