@@ -1,0 +1,624 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stars</title>
+    <!-- bootstrap5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- fontsawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- styles css  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/reels2.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+  </head>
+  <body style="min-height:100vh;">
+
+    <!-- preloader  -->
+   <div class="loaders" id="loaders">
+        <div class="load_div">
+            <img src="images/loadtrans.gif" class="img-fluid" loading="lazy" alt="">
+        </div>
+   </div>
+
+    <!-- Main content part start here  -->
+    <div class="container-fluid ">
+        <!-- navbar  start here   -->
+        <div class="row ">
+            <div class="nav_bar" style="z-index: 9999;background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);">
+                <div class="row">
+                    <div class="col-12">
+                        <!-- nav for desktop view  -->
+                        <div id="mySidenav" class="sidenav">
+                            <div class="head  align-items-center">
+                                <div class="row">
+                                    <a href="profileinfo.html" class="text-secondary text-decoration-none">
+                                        <div class="text-start d-flex align-items-center ms-2 profile_img"><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
+                                    </a>
+                                    <div>
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
+                                    <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="body">
+                                <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                                <a href="livestream.html"><img src="images/live-streaming.png" alt="">Stream</a>
+                                <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
+                                <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
+                                <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
+                                <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                                <a href="affiliate.html"><img src="images/affiliate-60.png" alt="">Affiliate</a>
+                                <a href="deposite.html"><img src="images/money-bag-green60.png" alt="">Deposite</a>                                    
+                                <a href="withdraw.html"><img src="images/cash_in.png" alt="">withdraw</a>
+                                <!-- <a href="profile.html"><img src="images/user.png" alt="">Profile</a> -->
+                                <a href="login.html"><img src="images/user.png" alt="">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class=" nav_profile">           
+                            <!-- <div class="logo_fg">
+                                <a href="#" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                    <img src="images/fav_logo.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>                  -->
+                            <!-- settings button  -->
+                            <div class="ms-auto text-end ">
+                                
+                                <a class="nav-link"   onclick="openNav()">
+                                    <div class="grid_dots">
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div><div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>   
+                                        </div>                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" style="height: 50px;"></div>
+        <!-- navbar end here  -->
+
+
+
+        <!-- main part start here  -->
+
+        <!-- <div class="row">
+            <div class="col-md-12"> -->
+                <div class="top_gallery">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="logo_fg">
+                                <div>
+                                    <a href="#" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                        <img src="images/fav_logo.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h5>Fansgame</h5>
+                                    <p>Online Games</p>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-md-8">
+                            <div class="search_filter">
+                                <form action="" method="">
+                                    <div class="_search">
+                                        <input type="text" placeholder="Search Star" class="input_search form-control">
+                                        <button type="button" class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="filter_bar desktop_part">
+
+                    <div class="f_box">
+                        <h5>Boobs</h5>
+                        <div class="d-flex"><input type="radio" checked name="boobs" id="all"><label for="all">All</label></div>
+                        <div class="d-flex"><input type="radio" name="boobs" id="natural"><label for="natural">Natural</label></div>
+                        <div class="d-flex"><input type="radio" name="boobs" id="fake"><label for="fake">Fake</label></div>
+                    </div>
+                    <div class="f_box">
+                        <h5>Eye</h5>
+                        <select name="" id="" class="form-control">
+                            <option value="all" selected>ALL</option>
+                            <option value="">Black</option>
+                            <option value="">Blue</option>
+                            <option value="">Brown</option>
+                            <option value="">Green</option>
+                            <option value="">Gray</option>
+                            <option value="">Hazel</option>
+                        </select>
+                    </div>
+                    <div class="f_box">
+                        <h5>Hair</h5>
+                        <div class="d-flex"><input type="radio" checked name="hair" id="allh"><label for="allh">All</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Auburn"><label for="Auburn">Auburn</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Black"><label for="Black">Black</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Blone"><label for="Blone">Blone</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Brown"><label for="Brown">Brown</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Brunette"><label for="Brunette">Brunette</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Fair"><label for="Fair">Fair</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Hazel"><label for="Hazel">Hazel</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="Red"><label for="Red">Red</label></div>
+                        <div class="d-flex"><input type="radio" name="hair" id="fake"><label for="fake">Readhead</label></div>
+                    </div>
+
+                    <div class="f_box">
+                        <h5>Nationality</h5>
+                        <select name="" id="">
+                            <option value="">All</option>
+                            <option value="">Northern California</option>
+                            <option value=""> Alabama, United States</option>
+                            <option value="">Albania</option>
+                            <option value="">Algeria</option>
+                            <option value="">Amarillo, TX</option>
+                            <option value="">American</option>
+                            <option value="">American Samoa</option>
+                            <option value="">Angola</option>
+                            <option value="">Argentina</option>
+                            <option value="">Arizona</option>
+                            <option value="">Arizona, United States</option>
+                            <option value="">Armenia</option>
+                            <option value="">Athens, Greece</option>
+                            <option value="">Australia</option>
+                            <option value="">Austria</option>
+                            <option value="">Bahamas</option>
+                            <option value="">Bangkok, Thailand</option>
+                            <option value="">Bangladesh</option>
+                            <option value="">Barbados</option>
+                            <option value="">Belarus</option>
+                            <option value="">Belgium</option>
+                            <option value="">Bermuda</option>
+                            <option value="">Bolivia</option>
+                            <option value="">Bosnia and Herzegovina</option>
+                            <option value="">Brazil</option>
+                        </select>
+                    </div>
+                    <div class="f_box">
+                        <h5>Ethinicity</h5>
+                        <select name="" id="">
+                            <option value="">All</option>
+                            <option value="">American</option>
+                            <option value="">Asian</option>
+                            <option value="">Black</option>
+                            <option value="">Caucasian</option>
+                            <option value="">Latin</option>
+                            <option value="">Latina</option>
+                            <option value="">Middle Easrern</option>
+                            <option value="">Mixed</option>
+                            <option value="">White</option>
+                        </select>
+                    </div>
+                    
+                    <div class="f_box">
+                        <h5>Cup size</h5>
+                        <select name="" id="" class="form-control">
+                            <option value="all" selected>ALL</option>
+                            <option value="">AA</option>
+                            <option value="">A</option>
+                            <option value="">B</option>
+                            <option value="">c</option>
+                            <option value="">D</option>
+                            <option value="">DD</option>
+                            <option value="">DDD</option>
+                            <option value="">E</option>
+                            <option value="">EE</option>
+                            <option value="">EEE</option>
+                            <option value="">F</option>
+                            <option value="">FF</option>
+                            <option value="">G</option>
+                            <option value="">GG</option>
+                            <option value="">H</option>
+                            <option value="">HH</option>
+                            <option value="">I</option>
+                            <option value="">II</option>
+                            <option value="">J</option>
+                            <option value="">JJ</option>
+                            <option value="">K</option>
+                            <option value="">KK</option>
+                            <option value="">L</option>
+                            <option value="">LL</option>
+                        </select>
+                    </div>
+                    <div class="f_box">
+                        <h5>Age </h5>
+                        <input type="range" name="age" id="age" min="18" max="99" value="18" >
+                        <input type="number" name="age" id="age" min="18" max="99" value="18" class="form-control" >
+                    </div>
+                    <div class="f_box">
+                        <h5>Waist </h5>
+                        <input type="range" name="waist" id="waist" min="18" max="80" value="18" >
+                        <input type="number" name="waist" id="waist" min="18" max="80" value="18" class="form-control" >
+                    </div>
+                    <div class="f_box">
+                        <h5>Weight </h5>
+                        <input type="range" name="weight" id="weight" min="50" max="600" value="65" >
+                        <input type="number" name="weight" id="weight" min="50" max="600" value="65" class="form-control" >
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top_bar_filters">
+                            <div class="d-flex align-items-center">
+                                <button type="button" class="btn_filter mobile_part me-2"  data-bs-toggle="modal" data-bs-target="#filter"><i class="fa-solid fa-sliders"></i></button>
+                                <label for="">Short By: </label>
+                                <select name="" id="">
+                                    <option value="">Newest</option>
+                                    <option value="">By Name</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="star_list">
+                    
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(1).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(2).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(3).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(4).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(5).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(6).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(7).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(8).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(9).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(10).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_profile">
+                            <img src="images/stars/star(11).jpg" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Alura Jenson <img src="images/varify badge.png" class="img-fluid" alt=""></h6>
+                                <p>Age: 46 | Tits: 36I</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ 
+    </div>
+
+
+
+    <!-- -=========footer start ========-  -->
+    <div class="container">
+    <div class="row ">
+        <div class="col-12">
+            <div class="footer_space">
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 d-flex">
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="hostlist.html" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                    <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                    <!-- <a href="logout.html" class="text-center"><img src="images/logout-60.png" class="img-fluid" alt=""><br><p>Logout</p></a> -->
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!-- footer part end here  -->
+
+
+
+
+
+
+
+    <!-- filter modal -->
+  <div class="modal fade " id="filter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal_filter">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: transparent;">
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background-color: #fff;">
+            <div class="filter_bar" style="background-color: transparent;">
+
+                <div class="f_box">
+                    <h5>Boobs</h5>
+                    <div class="d-flex"><input type="radio" checked name="boobs" id="all"><label for="all">All</label></div>
+                    <div class="d-flex"><input type="radio" name="boobs" id="natural"><label for="natural">Natural</label></div>
+                    <div class="d-flex"><input type="radio" name="boobs" id="fake"><label for="fake">Fake</label></div>
+                </div>
+                <div class="f_box">
+                    <h5>Eye</h5>
+                    <select name="" id="" class="form-control">
+                        <option value="all" selected>ALL</option>
+                        <option value="">Black</option>
+                        <option value="">Blue</option>
+                        <option value="">Brown</option>
+                        <option value="">Green</option>
+                        <option value="">Gray</option>
+                        <option value="">Hazel</option>
+                    </select>
+                </div>
+                <div class="f_box">
+                    <h5"">Hair</h5>
+                    <div class="d-flex"><input type="radio" checked name="hair" id="allh"><label for="allh">All</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Auburn"><label for="Auburn">Auburn</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Black"><label for="Black">Black</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Blone"><label for="Blone">Blone</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Brown"><label for="Brown">Brown</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Brunette"><label for="Brunette">Brunette</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Fair"><label for="Fair">Fair</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Hazel"><label for="Hazel">Hazel</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="Red"><label for="Red">Red</label></div>
+                    <div class="d-flex"><input type="radio" name="hair" id="fake"><label for="fake">Readhead</label></div>
+                </div>
+        
+                <div class="f_box">
+                    <h5>Nationality</h5>
+                    <select name="" id="">
+                        <option value="">All</option>
+                        <option value="">Northern California</option>
+                        <option value=""> Alabama, United States</option>
+                        <option value="">Albania</option>
+                        <option value="">Algeria</option>
+                        <option value="">Amarillo, TX</option>
+                        <option value="">American</option>
+                        <option value="">American Samoa</option>
+                        <option value="">Angola</option>
+                        <option value="">Argentina</option>
+                        <option value="">Arizona</option>
+                        <option value="">Arizona, United States</option>
+                        <option value="">Armenia</option>
+                        <option value="">Athens, Greece</option>
+                        <option value="">Australia</option>
+                        <option value="">Austria</option>
+                        <option value="">Bahamas</option>
+                        <option value="">Bangkok, Thailand</option>
+                        <option value="">Bangladesh</option>
+                        <option value="">Barbados</option>
+                        <option value="">Belarus</option>
+                        <option value="">Belgium</option>
+                        <option value="">Bermuda</option>
+                        <option value="">Bolivia</option>
+                        <option value="">Bosnia and Herzegovina</option>
+                        <option value="">Brazil</option>
+                    </select>
+                </div>
+                <div class="f_box">
+                    <h5>Ethinicity</h5>
+                    <select name="" id="">
+                        <option value="">All</option>
+                        <option value="">American</option>
+                        <option value="">Asian</option>
+                        <option value="">Black</option>
+                        <option value="">Caucasian</option>
+                        <option value="">Latin</option>
+                        <option value="">Latina</option>
+                        <option value="">Middle Easrern</option>
+                        <option value="">Mixed</option>
+                        <option value="">White</option>
+                    </select>
+                </div>
+                
+                <div class="f_box">
+                    <h5>Cup size</h5>
+                    <select name="" id="" class="form-control">
+                        <option value="all" selected>ALL</option>
+                        <option value="">AA</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">c</option>
+                        <option value="">D</option>
+                        <option value="">DD</option>
+                        <option value="">DDD</option>
+                        <option value="">E</option>
+                        <option value="">EE</option>
+                        <option value="">EEE</option>
+                        <option value="">F</option>
+                        <option value="">FF</option>
+                        <option value="">G</option>
+                        <option value="">GG</option>
+                        <option value="">H</option>
+                        <option value="">HH</option>
+                        <option value="">I</option>
+                        <option value="">II</option>
+                        <option value="">J</option>
+                        <option value="">JJ</option>
+                        <option value="">K</option>
+                        <option value="">KK</option>
+                        <option value="">L</option>
+                        <option value="">LL</option>
+                    </select>
+                </div>
+                <div class="f_box">
+                    <h5>Age </h5>
+                    <input type="range" name="age" id="age" min="18" max="99" value="18" >
+                    <input type="number" name="age" id="age" min="18" max="99" value="18" class="form-control" >
+                </div>
+                <div class="f_box">
+                    <h5>Waist </h5>
+                    <input type="range" name="waist" id="waist" min="18" max="80" value="18" >
+                    <input type="number" name="waist" id="waist" min="18" max="80" value="18" class="form-control" >
+                </div>
+                <div class="f_box">
+                    <h5>Weight </h5>
+                    <input type="range" name="weight" id="weight" min="50" max="600" value="65" >
+                    <input type="number" name="weight" id="weight" min="50" max="600" value="65" class="form-control" >
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer" style="background-color: transparent;">
+          <button type="button" class="sub_btn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/navjs.js"></script>
+
+    <!-- range control -->
+    <script>            
+        $(document).ready(function () {
+
+            $("[type='range']").add("[type='number']").change(function () {
+                var id = $(this).attr("id");
+                var rangeVal = $(this).val();
+
+                if ($(this).attr("type") == "range") {
+                    $("[type='number']#" + id).val(rangeVal);
+                }
+
+                else if ($(this).attr("type") == "number") {
+                    $("[type='range']#" + id).val(rangeVal);
+                }
+            });
+
+        });
+
+    </script>
+
+
+
+  </body>
+</html>

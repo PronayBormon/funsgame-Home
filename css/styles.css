@@ -235,6 +235,20 @@ footer a img{
         display: block;
     }
 }
+.mobile_part{
+    display: none;
+}
+.desktop_part{
+    display: block;
+}
+@media(max-width: 768px){
+    .mobile_part{
+        display: block;
+    }
+    .desktop_part{
+        display: none;    
+    }
+}
 /* navbar end here ======  */
 
 
@@ -1852,4 +1866,303 @@ color: #fff;
         width: 35px;
         top: -23px;
     }
+}
+
+
+/* image gallery page start here  */
+.top_gallery{
+
+
+}
+.g_logo{
+
+}
+.g_logo img{
+
+max-width: 150px;
+}
+.search_filter{
+    /* height: 100%; */
+    margin: 10px 0px;
+}
+._search{
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+position: relative;
+
+margin-top: 30px;
+}
+.input_search{
+
+}
+.input_search{
+
+width: 100%;
+}
+.btn_search{
+
+position: absolute;
+
+right: 0px;
+
+background: transparent;
+
+border: none;
+
+padding: 5px 20px;
+
+color: #4b38e3;
+
+top: 50%;
+
+transform: translateY(-50%);
+}
+.btn_search i{
+
+}
+.filter_bar{
+
+background: #ffffff9e;
+
+padding: 20px;
+
+border-radius: 10px;
+
+margin-bottom: 34px;
+
+/* padding-right: 0; */
+
+box-shadow: 3px 3px 5px 3px #bbbbbbc7;
+}
+.filter_bar h5{
+
+font-size: 16px;
+
+border-bottom: 1px solid #adadad;
+
+padding: 10px;
+
+padding-bottom: 10px;
+
+/* margin-top: 20px; */
+
+width: 100%;
+
+background: #c5bef780;
+}
+.filter_bar input[type="range"]{
+
+width: 100%;
+}
+.filter_bar input{
+
+border-radius: 3px;
+}
+.filter_bar label{
+
+margin-left: 10px;
+
+font-size: 14px;
+
+color: #000000ba;
+}
+
+.filter_bar input:focus{
+
+}
+.filter_bar input[type="radio"]{
+
+margin: 8px 0px;
+}
+.filter_bar select{
+
+width: 100%;
+
+border-radius: 0;
+
+margin: 3px 0px;
+
+border-color: #a59be3;
+
+padding: 5px 10px;
+}
+.filter_bar option{
+
+}
+.star_list{
+
+/* background: #fff; */
+
+padding: 20px 0px;
+
+/* margin-top: 20px; */
+
+border-radius: 10px;
+
+display: grid;
+
+grid-template-columns: repeat(5,12fr);
+
+grid-template-rows: auto;
+
+gap: 10px;
+
+padding-top: 0;
+}
+.star_content{
+    background: #f0eeff;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 3px #beb0b094;
+    position: relative;
+} 
+.star_content a{
+    text-decoration: none;
+}
+.star_content img{
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.star_content a::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0;
+    height: 0%;
+    width: 0%;
+    background-color: #00000029;
+    border-radius: 5px;
+    transition: .4s all ease-in-out;
+}
+.star_content a:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.star_txt{
+    margin-top: 10px;
+    padding: 0px 5px;
+}
+.star_txt p{
+
+font-size: 12px;
+
+margin-bottom: 10px;
+
+color: #000000d4;
+}
+.star_txt h6{
+    font-size: 14px;
+    display: flex;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 0;
+    color: #000;
+}
+.star_txt img{
+    width: 18px;
+    min-width: 15px !important;
+    margin-left: 5px;
+    height: auto !important;
+}
+.top_bar_filters{
+
+display: flex;
+
+justify-content: end;
+
+align-items: center;
+
+padding: 10px;
+
+background: #eae8fd;
+
+box-shadow: 0 0 10px #adadadc2;
+
+margin-bottom: 10px;
+
+border-radius: 10px;
+}
+.top_bar_filters label{
+
+}
+.top_bar_filters select{
+
+padding: 3px 10px;
+
+margin-left: 10px;
+
+background: transparent;
+
+border-radius: 3px;
+
+border: 1px solid #adadad70;
+}
+.top_bar_filters option{
+    
+}
+.top_bar_filters select:focus{
+    border: 1px solid #adadad;
+    outline: 0;
+}
+.f_box{
+    margin-bottom: 10px;
+}
+.modal .filter_bar{
+    box-shadow: none;
+    padding: 0;
+}
+.modal-dialog-scrollable.modal_filter{
+    min-height: 85vh;
+}
+.submit_btn{
+
+}
+.btn_filter{
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+/* image gallery page end herer  */
+
+
+@media(max-width: 992px){
+    .star_list {
+        grid-template-columns: repeat(3,12fr);
+    }
+}
+@media(max-width: 576px){
+    .star_content img {
+        height: 150px;
+    }
+    .star_txt h6 {
+        font-size: 11px;
+    }
+    .star_txt p {
+        font-size: 10px;
+    }
+}
+@media(max-width: 425px){
+    
+}
+@media(max-width: 375px){
+    .star_list {
+        grid-template-columns: repeat(2,12fr);
+    }
+}
+.sub_btn{
+    border: 1px solid #adadad;
+    background-color: transparent;
+    padding: 3px 10px;
+    border-radius: 3px;
+    box-shadow: 2px 3px 5px 3px #adadad;
 }
