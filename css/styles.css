@@ -1927,7 +1927,7 @@ transform: translateY(-50%);
 }
 .filter_bar{
 
-background: #ffffff9e;
+/* background: #ffffff9e; */
 
 padding: 20px;
 
@@ -1937,7 +1937,7 @@ margin-bottom: 34px;
 
 /* padding-right: 0; */
 
-box-shadow: 3px 3px 5px 3px #bbbbbbc7;
+/* box-shadow: 3px 3px 5px 3px #bbbbbbc7; */
 }
 .filter_bar h5{
 
@@ -1954,6 +1954,8 @@ padding-bottom: 10px;
 width: 100%;
 
 background: #c5bef780;
+
+color: #000;
 }
 .filter_bar input[type="range"]{
 
@@ -2562,5 +2564,59 @@ color: #000;
         width: 100% !important;
         object-fit: contain;
     }
+}
+.page_next{
+
+position: fixed;
+
+top: 45%;
+
+right: 10px;
+
+transform: translateY(-45%);
+}
+.page_next button{
+
+background: #000000a8;
+
+height: 40px;
+
+width: 40px;
+
+color: #fff;
+
+border: none;
+
+border-radius: 3px;
+}
+.page_next button i{
+
+}
+.page_prev{
+
+position: fixed;
+
+top: 45%;
+
+left: 10px;
+
+transform: translateY(-45%);
+}
+.page_prev button{
+
+background: #000000a8;
+
+height: 40px;
+
+width: 40px;
+
+color: #fff;
+
+border: none;
+
+border-radius: 3px;
+}
+.page_prev button i{
+    
 }
 /* star profile page end here  */
