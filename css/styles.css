@@ -2192,3 +2192,208 @@ button:focus{
     border-radius: 3px;
     box-shadow: 2px 3px 5px 3px #d3d1d13d;
 }
+
+
+/* star profile page start here  */
+
+
+.star_profile_section{
+
+padding: 30px 0px;
+
+margin-top: 10px;
+
+box-shadow: 0 0 20px #8e8b8b9c;
+
+background-image: linear-gradient(45deg, #7565f354,#cfcafb4a, #c4bdfa61);
+
+border-radius: 10px;
+}
+.top_star_profile{
+
+display: flex;
+
+justify-content: start;
+
+align-items: flex-end;
+
+width: 100%;
+}
+.top_star_profile img{
+
+width: 200px;
+
+height: 200px;
+
+border-radius: 50%;
+
+border: 3px solid #fff;
+
+margin-right: 20px;
+
+box-shadow: 0 0 10px #adadad;
+}
+.top_star_profile h4{
+
+font-size: 18px;
+
+font-weight: 600;
+}
+.top_star_profile h4 span{
+
+color: #7666eb;
+}
+.top_star_profile h6{
+    
+display: flex;
+    
+justify-content: space-between;
+    
+font-size: 13px;
+}
+.rank_txt{
+    padding: 4px;
+}
+
+.profile_img_gallery{
+
+margin-top: 10px;
+
+background: linear-gradient(45deg, #7565f354,#cfcafb4a, #c4bdfa61);
+
+border-radius: 10px;
+
+box-shadow: 0 0 20px #b5b0b0cc;
+
+padding: 20px 0px;
+}
+.profile_star_details{
+
+padding: 0px;
+}
+.profile_star_details h4{
+
+font-size: 18px;
+
+padding-bottom: 10px;
+
+border-bottom: 1px solid #adadad;
+}
+.profile_star_details ul li{
+
+display: flex;
+
+width: 100%;
+
+justify-content: space-between;
+
+margin: 10px 0px;
+
+font-size: 14px;
+
+color: #5e5e5e;
+}
+.profile_star_details ul{
+
+list-style: none;
+
+padding: 0;
+
+margin-top: 20px;
+}
+.profile_star_gallery{
+
+}
+.profile_star_gallery h4{
+
+font-size: 18px;
+
+padding-bottom: 10px;
+
+border-bottom: 1px solid #adadad;
+}
+.pro_img_gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 12fr);
+    grid-template-rows: auto;
+    height: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+.img_box{
+
+height: auto;
+
+box-shadow: 0 0 10px #cccbcbe3;
+
+border-radius: 5px;
+}
+.img_box img{
+    
+height: 100%;
+    
+width: 100%;
+    
+object-fit: cover;
+    
+border-radius: 5px;
+    
+cursor: pointer;
+}
+
+.main_d{
+    
+font-weight: 500;
+    
+color: #000;
+}
+@media(max-width: 992px){
+    .top_star_profile img {
+        width: 150px;
+        height: 150px;
+    }
+    .pro_img_gallery {
+        gap: 8px;
+    }
+}
+@media(max-width: 768px){
+    .profile_star_details ul li {
+        font-size: 12px;
+    }
+    .profile_star_details h4,.profile_star_gallery h4 {
+        font-size: 14px;
+    }
+
+
+}
+@media(max-width: 576px){
+    .top_star_profile img {
+        width: 120px;
+        height: 120px;
+    }
+    .top_star_profile h4 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .rank_txt {
+        padding: 4px;
+        text-align: center;
+        font-size: 12px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* star profile page end here  */
