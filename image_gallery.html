@@ -26,7 +26,7 @@
 
 
   </head>
-  <body style="min-height:100vh;">
+  <body style="min-height:100vh;" class="body">
 
     <!-- preloader  -->
    <div class="loaders" id="loaders">
@@ -40,6 +40,7 @@
         <!-- navbar  start here   -->
         <div class="row ">
             <div class="nav_bar" style="z-index: 9999;background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);">
+                
                 <div class="row">
                     <div class="col-12">
                         <!-- nav for desktop view  -->
@@ -80,11 +81,17 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <div class=" nav_profile">           
-                            <!-- <div class="logo_fg">
-                                <a href="#" style="text-decoration: none;"  class="text-dark bg-transparent">
-                                    <img src="images/fav_logo.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>                  -->
+                            <div class="logo_fg">
+                                <div>
+                                    <a href="#" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                        <img src="images/fav_logo.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h5>Fansgame</h5>
+                                    <p>Online Games</p>
+                                </div>
+                            </div> 
                             <!-- settings button  -->
                             <div class="ms-auto text-end ">
                                 
@@ -116,34 +123,52 @@
 
         <div class="top_gallery">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="logo_fg">
-                        <div>
-                            <a href="#" style="text-decoration: none;"  class="text-dark bg-transparent">
-                                <img src="images/fav_logo.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div>
-                            <h5>Fansgame</h5>
-                            <p>Online Games</p>
-                        </div>
-                    </div> 
+                <div class="col-md-3">
+                    
                 </div>
-                <div class="col-md-8">
-                    <div class="search_filter">
+                <div class="col-md-9">
+                    <div class="search_filter desktop_part">
                         <form action="" method="">
                             <div class="_search">
                                 <input type="text" placeholder="Search Porn Star" class="input_search form-control">
                                 <button type="button" class="btn_search"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </div>
                         </form>
-                    </div>
+                    </div>    
+                    <div class="mobile_part mt-2">
+                        <div class="top_bar_filters " style="position: relative;">
+                            <form style="width: 100%;">
+                                <div class=" d-flex align-items-center">
+                                    <input type="text" placeholder="Search Porn Star" class="input_search form-control">
+                                    <button type="submit" class="btn btn-dark ms-1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </form>
+                            <button type="button" class="btn_filter  me-2"  data-bs-toggle="modal" data-bs-target="#filter"><i class="fa-solid fa-sliders"></i></button>
+                            <!-- <button type="button" class="btn_filter m_search" ><i class="fa-solid fa-magnifying-glass"></i></button> -->
+                            <!-- search modal part start here  -->
+                            <div class="search_modal">
+                                <div class="row">
+                                    <div class="col-6 ms-auto text-end "><button type="button" class="btn_filter s_close"><i class="fa-solid fa-x"></i></button></div>
+                                </div>
+                                <div class="">
+                                    <form >
+                                        <div class="mt-2 d-flex align-items-center">
+                                            <input type="text" placeholder="Search Porn Star" class="input_search form-control">
+                                            <button type="submit" class="btn btn-dark"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                    </form>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>                        
+                    
+                    
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="filter_bar desktop_part">
 
                     <div class="f_box">
@@ -274,12 +299,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="row">
+            <div class="col-md-9">
+                <!-- <div class="row">
                     <div class="col-md-12">
                         <div class="top_bar_filters">
                             <div class="d-flex align-items-center">
-                                <button type="button" class="btn_filter mobile_part me-2"  data-bs-toggle="modal" data-bs-target="#filter"><i class="fa-solid fa-sliders"></i></button>
+                               
                                 <label for="">Short By: </label>
                                 <select name="" id="">
                                     <option value="">Newest</option>
@@ -289,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="star_list">
                     
                     <div class="star_content">
@@ -395,7 +420,7 @@
                     <div class="col-md-6 m-auto">
                       <div class="ms-auto text-center">
                           <a href="#" class="btn_filters">Prv</a>
-                          <a href="#" class="btn_filters">1</a>
+                          <a href="#" class="btn_filters active">1</a>
                           <a href="#" class="btn_filters">2</a>
                           <a href="#" class="btn_filters">3</a>
                           <a href="#" class="btn_filters">4</a>
@@ -484,7 +509,7 @@
                     </select>
                 </div>
                 <div class="f_box">
-                    <h5"">Hair</h5>
+                    <h5>Hair</h5>
                     <div class="d-flex"><input type="radio" checked name="hair" id="allh"><label for="allh">All</label></div>
                     <div class="d-flex"><input type="radio" name="hair" id="Auburn"><label for="Auburn">Auburn</label></div>
                     <div class="d-flex"><input type="radio" name="hair" id="Black"><label for="Black">Black</label></div>
@@ -599,8 +624,8 @@
       </div>
     </div>
   </div>
-
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/preloader.js"></script>
@@ -622,6 +647,18 @@
                     $("[type='range']#" + id).val(rangeVal);
                 }
             });
+
+            // search button 
+            $(".m_search").on("click",function(){
+                $(".search_modal").fadeIn();
+            });
+            $(".s_close").click(function(){
+                $(".search_modal").fadeOut();
+            })
+            
+
+        
+                
 
         });
 

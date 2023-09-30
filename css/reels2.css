@@ -1287,23 +1287,23 @@ img {
 
 }
 .logo_fg img{
-    height: 55px;
-    width: 55px;
+    height: 45px;
+    width: 45px;
     border-radius: 50px;
     box-shadow: 0 0 20px #adadad;
     margin-right: 10px;
     box-shadow: 7px 7px 15px rgba(55, 84, 170, .15), -7px -7px 20px rgb(222 209 249 / 0%), inset 0px 0px 4px rgba(255, 255, 255, .2), inset 7px 7px 15px rgba(55, 84, 170, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgb(199 183 247) !important;
     padding: 2px;
 }
-.logo_fg h5{    
-    text-transform: uppercase;        
-    font-size: 20px;        
-    margin: 0;        
+.logo_fg h5{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
     filter: drop-shadow(2px 4px 6px #adadad);
 }
-.logo_fg p{    
+.logo_fg p{
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
 }
 .game_slide{
     display: flex;
