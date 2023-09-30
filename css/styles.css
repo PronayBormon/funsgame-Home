@@ -2250,12 +2250,13 @@ color: #7666eb;
     
 display: flex;
     
-justify-content: space-between;
+/* justify-content: space-between; */
     
 font-size: 13px;
 }
 .rank_txt{
     padding: 4px;
+    margin-right: 10px;
 }
 
 .profile_img_gallery{
@@ -2636,4 +2637,10 @@ border-radius: 3px;
 }
 .search_modal.visible{
     display: block;
+}
+.page_prv button{
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    color: #1818c8;
 }
