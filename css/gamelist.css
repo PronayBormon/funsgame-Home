@@ -1022,10 +1022,10 @@ color: #fff !important;
 }
 /* modal end  */
 .modal-content {
-    /* background: rgb(236,226,251); */
+    background: rgb(236,226,251);
     background: -moz-linear-gradient(left, rgba(236,226,251,1) 0%, rgba(255,255,255,1) 100%);
-    /* background: -webkit-linear-gradient(left, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); */
-    /* background: linear-gradient(to right, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%); */
+    background: -webkit-linear-gradient(left, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(236,226,251,1) 0%,rgba(255,255,255,1) 100%) !important;
 }
 .btn_comment{
     font-size: 10px;
@@ -1339,7 +1339,7 @@ filter: drop-shadow(2px 4px 6px #894ad6a8);
   vertical-align: inherit !important;
   }
   
-  div.modal-footer, div.modal-body, div.modal-header{background-color: #d9d9d9de;color: white;width: 100%;}
+  div.modal-footer, div.modal-body, div.modal-header{background-color: #d9d9d900;/* color: white; */width: 100%;}
   
   .preview{
   position: absolute;
@@ -1949,5 +1949,194 @@ height: 60px;
     }
     .game_pic{
         height: 55px;
+    }
+}
+.btn_buy{
+    background: #dd2b8d;
+    color: #fff;
+    transition: .4s all ease-in-out;
+}
+.btn_buy:hover{
+    background: #b52574;    
+    color: #fff;
+}
+.modal_onload p{
+
+font-size: 14px;
+
+padding: 0 10px;
+
+text-align: center;
+}
+.modal_onload{
+
+}
+.modal_onload p strong{
+
+font-size: 20px;
+
+color: orange;
+}
+.modal_onload img{
+
+width: 17px;
+
+margin-right: 5px;
+}
+.modal.modal_onload{
+
+}
+
+
+/* spin css  */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+button:focus,
+input:focus{
+  outline: none;
+  box-shadow: none;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*------------------  */
+.wheel-spin-box {
+    position: relative;
+    display: inline-block;
+}
+#spinwheel {
+    position: relative;
+    width: 220px;
+    margin: auto;
+}
+.wheeldotsround {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.wheeldotsround{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.wheeldotsround .wheeldots{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+}
+.wheeldotsround .wheeldots:nth-child(2n+1){
+    background: #fff;
+}
+
+.wheeldotsround .wheeldots.active-dots{
+    background: #ff8400;
+}
+.wheeldotsround .wheeldots.active-dots:nth-child(2n+1){
+    background: #2660a4;
+}
+
+.wheeldotsround .wheeldots:nth-child(1){
+    left: calc(50% - 4px);
+    top: 3px;
+}
+.wheeldotsround .wheeldots:nth-child(2){
+    right: 25%;
+    top: 7%;
+}
+.wheeldotsround .wheeldots:nth-child(3){
+    right: 7%;
+    top: 25%;
+}
+.wheeldotsround .wheeldots:nth-child(4){
+    right: 3px;
+    top: 50%;
+}
+.wheeldotsround .wheeldots:nth-child(5){
+    right: 8.2%;
+    bottom: 23%;
+}
+.wheeldotsround .wheeldots:nth-child(6){
+    right: 25%;
+    bottom: 7%;
+}
+
+.wheeldotsround .wheeldots:nth-child(7){
+    left: calc(50% - 4px);
+    bottom: 3px;
+}
+.wheeldotsround .wheeldots:nth-child(8){
+    left: 25%;
+    bottom: 7%;
+}
+.wheeldotsround .wheeldots:nth-child(9){
+    left: 8.2%;
+    bottom: 23%;
+}
+.wheeldotsround .wheeldots:nth-child(10){
+    left: 3px;
+    top: 50%;
+}
+.wheeldotsround .wheeldots:nth-child(11){
+    left: 7%;
+    top: 25%;
+}
+.wheeldotsround .wheeldots:nth-child(12){
+    left: 25%;
+    top: 7%;
+}
+
+#spinwheel{
+    position: relative;
+    width: 220px;
+    margin: auto;
+}
+#spinwheel svg{
+    width: 100%;
+    height: 100%;
+    border: 15px solid #ccb3f1;
+    border-radius: 50%;
+    background: #bd9dee;
+}
+.chartholder{
+
+}
+
+.wheel-spin-box .chartholder .slice path{
+  fill: #2c00e67a;
+}
+.wheel-spin-box .chartholder .slice:nth-child(2n+1) path{
+    fill: #ffae06;
+}
+.wheel-spin-arrow {
+    position: relative;
+    margin-top: -35px;
+    text-align: center;
+    z-index: 1;
+}
+.wheel-spin-arrow svg {
+    max-width: 65px;
+}
+.spin-click-button {
+    background-color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 15px;
+}
+
+@media (max-width: 479.98px){
+    #spinwheel {
+        width: 270px;
     }
 }

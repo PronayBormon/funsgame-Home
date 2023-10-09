@@ -147,8 +147,7 @@ var iconExpand = '<i class="fa-solid fa-expand"></i>';
 var iconCompress = '<i class="fa-solid fa-compress"></i>';
 
 players.forEach(function (player) {
-    var video = document.getElementById("video_test");
-    // const video = document.getElementById("video_test");
+    var video = player.querySelector('video');
 
     var skin = attachSkin(video.dataset.ckin);
     player.classList.add(skin);

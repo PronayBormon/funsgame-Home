@@ -1,0 +1,434 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stars</title>
+    <!-- bootstrap5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- fontsawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- styles css  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/reels2.css">
+    <!-- <link rel="stylesheet" href="css/v-gallery.css"> -->
+    <link rel="stylesheet" href="css/hostlist.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+  </head>
+  <body style="min-height:100vh;" class="body">
+
+    <!-- preloader  -->
+   <div class="loaders" id="loaders">
+        <div class="load_div">
+            <img src="images/loadtrans.gif" class="img-fluid" loading="lazy" alt="">
+        </div>
+   </div>
+
+    <!-- Main content part start here  -->
+    <div class="container-fluid ">
+        <!-- navbar  start here   -->
+        <div class="row ">
+            <div class="nav_bar" style="z-index: 9999;background-image: linear-gradient(45deg, #7565f38a,#cfcafb4a, #c4bdfa61);">
+                
+                <div class="row">
+                    <div class="col-12">
+                        <!-- nav for desktop view  -->
+                        <div id="mySidenav" class="sidenav">
+                            <div class="head  align-items-center">
+                                <div class="row">
+                                    <a href="profileinfo.html" class="text-secondary text-decoration-none">
+                                        <div class="text-start d-flex align-items-center ms-2 profile_img"><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
+                                    </a>
+                                    <div>
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
+                                    <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="body">
+                                <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                                <a href="livestream.html"><img src="images/live-streaming.png" alt="">Stream</a>
+                                <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
+                                <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
+                                <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
+                                <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                                <a href="affiliate.html"><img src="images/affiliate-60.png" alt="">Affiliate</a>
+                                <a href="deposite.html"><img src="images/money-bag-green60.png" alt="">Deposite</a>                                    
+                                <a href="withdraw.html"><img src="images/cash_in.png" alt="">withdraw</a>
+                                <!-- <a href="profile.html"><img src="images/user.png" alt="">Profile</a> -->
+                                <a href="login.html"><img src="images/user.png" alt="">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class=" nav_profile">           
+                            <div class="logo_fg">
+                                <div>
+                                    <a href="index.html" style="text-decoration: none;"  class="text-dark bg-transparent">
+                                        <img src="images/fav_logo.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h5>Fansgame</h5>
+                                    <p>Online Games</p>
+                                </div>
+                            </div> 
+                            <!-- settings button  -->
+                            <div class="ms-auto text-end ">
+                                
+                                <a class="nav-link"   onclick="openNav()">
+                                    <div class="grid_dots">
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div><div class="dots">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <div class="dots">
+                                            <span></span><span></span><span></span>   
+                                        </div>                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="" style="height: 50px;"></div>
+        <!-- navbar end here  -->
+
+
+
+        <!-- main part start here  -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="player_star mt-3">
+                    <!-- <video  playsinline webkit-playsinline  poster="" > -->
+                        <!-- <video poster=""  data-overlay="1" data-title="" height="100%">
+                            <source src="https://video.xxxa.net/movies/newsensations9ae.mp4" >
+                            <p>This video can't play in your player</p>
+                        </video> -->
+
+                        <video
+                                id="my-video"
+                                class="video-js"
+                                controls
+                                preload="auto"
+                                width="640"
+                                height="264"
+                                data-setup="{}" >
+                                <source src="videos/no_live.mp4" type="video/mp4" />                        
+                            </video>
+                        
+                    <!-- </video> -->
+                </div>
+            </div>
+            <div class="col-md-6 desktop_part">
+                <div class="v_bannar">
+                    <img src="images/adsbannar_2.webp" class="img-fluid" loading="lazy" alt="">
+                </div>
+                <div class="premium_games star_slider">
+                    <h5>Free Games</h5>
+                    <div class="game_slide owl-carousel">
+                        <div class="game_content">
+                            <a href="#">
+                                <img src="images/fire.png" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_content">
+                            <a href="#">
+                                <img src="images/chips.png" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_content">
+                            <a href="#">
+                                <img src="images/card.png" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_content">
+                            <a href="#">
+                                <img src="images/jackpot.png" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_content">
+                            <a href="#">
+                                <img src="images/football.png" loading="lazy" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <p>Note: Play free games and collect Dimond</p>
+                </div>
+
+                <!-- models start here  -->
+                <!-- <div class="premium_games">
+                    <h5>Models</h5>
+                    <div class=" model_section game_slide owl-carousel">
+                        <div class=" contents ">
+                                <div class="model_sec">
+                                    <a href="livestream.html">                                    
+                                        <img src="images/001.png" class="img-fluid" alt="">
+                                    </a>      
+                                    <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button>                                                          
+                                    <div class="host_name">
+                                        <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a> </h2>
+                                        <p>London Escort</p>
+                                    </div>
+                                  
+                                </div>
+                        </div>
+                        <div class="contents ">
+                                <div class="model_sec">      
+                                    <a href="livestream.html">                              
+                                        <img src="images/002.png" class="img-fluid" alt="">  
+                                    </a>
+                                        <button type="button" class="btn_fav"><i class="fa-solid fa-heart"></i></button> 
+                                        <div class="host_name">
+                                            <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
+                                            <p>London Escort</p>
+                                        </div>
+                                        
+                                    
+                                </div>
+                        </div>
+                        <div class="contents ">
+                                <div class="model_sec">   
+                                    <a href="livestream.html">                                 
+                                        <img src="images/003.png" class="img-fluid" alt="">
+                                    </a>
+                                        <button type="button" class="btn_fav "><i class="fa-solid fa-heart"></i></button>
+                                        <div class="host_name">
+                                            <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
+                                            <p>London Escort</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="contents ">
+                                <div class="model_sec">  
+                                    <a href="livestream.html">                                  
+                                        <img src="images/004.png" class="img-fluid" alt="">
+                                    </a>
+                                        <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
+                                        <div class="host_name">
+                                            <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
+                                            <p>London Escort</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="contents ">
+                            <div class="model_sec">
+                                <a href="livestream.html">                                    
+                                    <img src="images/001.png" class="img-fluid" alt="">   
+                                </a>
+                                    <button type="button" class="btn_fav active"><i class="fa-solid fa-heart"></i></button>
+                                    <div class="host_name">
+                                        <h2><a href="hosterprofile.html" style="text-decoration: none;display: flex; color: #fff;">Rose Gilbert, 23 <span class="bg-success"></span></a></h2>
+                                        <p>London Escort</p>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+               
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page_title">
+                            <h6>Similar Videos</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="star_video">
+                    
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(4).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(4).jpg" class="img-fluid" loading="lazy" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(4).jpg" loading="lazy" class="img-fluid" alt="">                            
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(4).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(5).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">                                
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(6).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(7).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(8).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(9).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(10).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="star_content">
+                        <a href="star_player.html">
+                            <img src="images/stars/star(11).jpg" loading="lazy" class="img-fluid" alt="">
+                            <div class="star_txt">
+                                <h6>Cute babe Jenny Manson gets her asshole filled up hardcore</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -=========footer start ========-  -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-12">
+                <div class="footer_space">
+                </div>
+            </div>
+            </div>
+        </div>
+        <footer class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 d-flex">
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                    </div>                
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="image_gallery.html" class="text-center"><img src="images/porn.png" class="img-fluid" alt=""><br><p>Star's</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="hostlist.html" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
+                        <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                        <!-- <a href="logout.html" class="text-center"><img src="images/logout-60.png" class="img-fluid" alt=""><br><p>Logout</p></a> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        </footer>
+        <!-- footer part end here  -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/navjs.js"></script>
+    <!-- <script src="js/v-gallery.js"></script> -->
+    <script src="js/player.js"></script>
+    <script>
+        $('.game_slide').owlCarousel({
+            loop:true,
+            margin:5,
+            items:4,
+            nav: true,
+            dots:false,
+            responsiveClass:true,
+            responsive:{
+                
+                992:{
+                    items:4,
+                    nav:true,
+                    loop:false
+                }
+            }
+            
+        });
+    </script>
+
+
+  </body>
+</html>

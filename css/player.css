@@ -457,6 +457,7 @@
   width: 100%;
   height: 388px;
   margin-bottom: 0px;
+  min-height: 150px;
 }
 .video-js:-moz-full-screen {
   position: absolute;
@@ -468,6 +469,7 @@
 
 .video-js[tabindex="-1"] {
   outline: none;
+  height: 100%;
 }
 
 .video-js *,

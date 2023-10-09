@@ -153,12 +153,12 @@ video {
   background: none;
   border: 0;
   line-height: 1;
-  color: #00CF7D;
+  color: #a19bec;
   outline: 0;
   padding: 0;
   cursor: pointer;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   display: -ms-flexbox;
   display: flex;
   max-width: 50px;
@@ -174,7 +174,7 @@ video {
   background: none;
   border: 0;
   line-height: 1;
-  color: #00CF7D;
+  color: #a19bec;
   text-align: center;
   outline: 0;
   padding: 0;
@@ -185,11 +185,11 @@ video {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%) scale(1);
-      transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   font-size: 64px;
   transition: all .2s;
   -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 .default__slider {
@@ -259,11 +259,11 @@ video {
 
 .default .progress__filled {
   width: 0%;
-  background: #00CF7D;
+  background: #a19bec;
   -ms-flex: 0;
-      flex: 0;
+  flex: 0;
   -ms-flex-preferred-size: 0%;
-      flex-basis: 0%;
+  flex-basis: 0%;
   border-radius: 4px;
 }
 
@@ -561,7 +561,7 @@ video {
 
 .compact .progress__filled {
   width: 0%;
-  background: #00CF7D;
+  background: #a19bec;
   -ms-flex: 0;
       flex: 0;
   -ms-flex-preferred-size: 0%;
@@ -577,4 +577,10 @@ video {
 
 video::-webkit-media-controls-enclosure {
   display: none !important;
+}
+.player_star .volume {
+  position: unset !important;
+  transform: none !important;
+  color: #a19bec !important;
+  font-size: 21px;
 }

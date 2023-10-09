@@ -378,30 +378,26 @@ background: #6e37de7a;
 
 color: #fff;
 }
-.content ul{
-}
-.field{
-   
-    
-}
+.content ul{padding: 0;}
+.field{width: fit-content;border: 1px solid;text-align: center;margin: auto;padding: 3px 10px;border-radius: 20px;box-shadow: 2px 2px 3px rgba(55, 84, 170, .15), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(55, 84, 170, .15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;border: navajowhite;}
 .field input,.field input:focus{
     outline: 0;
-
-border-radius: 50px;
-
-padding: 5px 10px;
-
-border: 1px solid #ba9fef;
+    border-radius: 50px;
+    padding: 5px 10px;
+    border: 1px solid #ba9fef;
+    border: none;
+    font-size: 12px;
+    background: transparent;
 }
 .field button{
-
-padding: 5px 10px;
-
-border-radius: 50px;
-
-background: #ba9fef;
-
-color: #fff;
-
-border: navajowhite;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background: #ba9fef;
+    color: #fff;
+    border: none;
+    background: transparent;
+    color: #ba9fef;
+    border: none;
+    padding: 0;
+    margin: 0;
 }

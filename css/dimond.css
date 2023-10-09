@@ -499,17 +499,25 @@ margin: 0;
 }
 .buy_modal .modal-body p img{
 
-width: 15px;
+width: 18px;
 
-margin: 10px 0px;
+margin: 10px 2px;
 }
 .buy_modal .modal-body p{
 
-font-size: 16px;
+font-size: 20px;
 
 margin: 0;
 
-font-weight: 400;
+font-weight: 600;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+text-align: center;
 }
 .buy_modal .modal-body h3{
 
