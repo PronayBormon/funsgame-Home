@@ -718,6 +718,7 @@ box-shadow: 5px 5px 10px #bebebe73, -5px -5px 10px #d0cbfb;
     margin: 0;
     padding: 3px 5px;
     border-radius: 50px;
+    padding: 5px 15px;
 }
 .filter input::placeholder{
     color: #00000093;

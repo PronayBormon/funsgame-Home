@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Game List </title>
     <!-- bootstrap5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- google fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- owl carousel css  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -18,40 +21,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- styles css  -->
-     <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/gamelist.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/navbar.css">
 
 
 
-  </head>
-  <body >
+</head>
+
+<body>
 
 
     <!-- onload popup  -->
     <!-- Button trigger modal -->
 
-  
-  <!-- Modal -->
-  <div class="modal modal_onload fade" id="onloadpopup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <!-- Modal -->
+    <div class="modal modal_onload fade" id="onloadpopup" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <p>Play free games and get <img src="images/dimond.png" loading="lazy" width="20px" alt=""> for
+                        watching live videos of your favorite models. </p>
+                    <p>Or instantly can buy <img src="images/dimond.png" loading="lazy" width="20px" alt="">Dimond upto
+                        <strong>50%</strong> Discount</p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Play Game </button>
+                    <a href="pricing.html" type="button" class="btn btn_buy">Buy Now</a>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Play free games and get <img src="images/dimond.png" loading="lazy" width="20px" alt=""> for watching live videos of your favorite models. </p>
-          <p>Or instantly can buy <img src="images/dimond.png" loading="lazy" width="20px" alt="">Dimond upto <strong>50%</strong> Discount</p>
-        </div>  
-        <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Play Game </button>
-            <a href="pricing.html" type="button" class="btn btn_buy">Buy Now</a>
-          </div>
-      </div>
     </div>
-  </div>
 
 
 
@@ -65,8 +72,8 @@
         <div class="load_div">
             <img src="images/loadtrans.gif" class="img-fluid" loading="lazy" alt="">
         </div>
-      </div>
-      
+    </div>
+
     <!-- navbar  start here   -->
     <div class="row ">
         <div class="nav_bar" style="z-index: 9999;">
@@ -77,28 +84,35 @@
                         <div class="head  align-items-center">
                             <div class="row">
                                 <a href="profileinfo.html" class="text-secondary text-decoration-none">
-                                    <div class="text-start d-flex align-items-center ms-2 profile_img"><img src="images/profile-female.jpg" class="rounded-circle" width="40px" height="35px" alt=""><p class="m-0 ms-1">user123</p></div>
+                                    <div class="text-start d-flex align-items-center ms-2 profile_img"><img
+                                            src="images/profile-female.jpg" class="rounded-circle" width="40px"
+                                            height="35px" alt="">
+                                        <p class="m-0 ms-1">user123</p>
+                                    </div>
                                 </a>
                                 <div>
                                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt=""> 5000</a></div>
-                                <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt=""> 5000</a></div>
+                                <div class="col-6"><a href="pricing.html"><img src="images/dimond.png" width="" alt="">
+                                        5000</a></div>
+                                <div class="col-6"><a href="deposite.html"><img src="images/dollar.png" width="" alt="">
+                                        5000</a></div>
                             </div>
-                            
+
                         </div>
 
                         <div class="body">
-                            <a href="index.html"><img src="images/reels-60.png"  alt=""> Reels</a>
+                            <a href="index.html"><img src="images/reels-60.png" alt=""> Reels</a>
                             <a href="livestream.html"><img src="images/live-streaming.png" alt="">Stream</a>
                             <a href="ranking.html"><img src="images/trophy.png" alt="">Ranking</a>
                             <a href="gamelist.html"><img src="images/casino (1).png" alt="">Games</a>
                             <a href="wallet.html"><img src="images/wallet.png" alt="">Wallet</a>
-                            <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png" alt="">Reffer</a>
+                            <a href="referal.html"><img src="images/refferal-transformed-removebg-preview.png"
+                                    alt="">Reffer</a>
                             <a href="affiliate.html"><img src="images/affiliate-60.png" alt="">Affiliate</a>
-                            <a href="deposite.html"><img src="images/money-bag-green60.png" alt="">Deposite</a>                                    
+                            <a href="deposite.html"><img src="images/money-bag-green60.png" alt="">Deposite</a>
                             <a href="withdraw.html"><img src="images/cash_in.png" alt="">withdraw</a>
                             <!-- <a href="profile.html"><img src="images/user.png" alt="">Profile</a> -->
                             <a href="login.html"><img src="images/user.png" alt="">Login</a>
@@ -109,25 +123,32 @@
 
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <div class=" nav_profile">           
-                            <div class="me-auto">
-                            <a href="index.html" style="text-decoration: none;"  class="text-dark bg-transparent">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </a>
-                            </div>                 
+                    <div class=" nav_profile">
+                        <div class="logo_fg">
+                            <div>
+                                <a href="#" style="text-decoration: none;" class="text-dark bg-transparent">
+                                    <img src="images/fav_logo.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <h5>Fansgame</h5>
+                                <p>Online Games</p>
+                            </div>
+                        </div>
                         <!-- settings button  -->
                         <div class="ms-auto text-end ">
-                            
-                            <a class="nav-link"   onclick="openNav()">
+
+                            <a class="nav-link" onclick="openNav()">
                                 <div class="grid_dots">
                                     <div class="dots">
                                         <span></span><span></span><span></span>
-                                    </div><div class="dots">
+                                    </div>
+                                    <div class="dots">
                                         <span></span><span></span><span></span>
                                     </div>
                                     <div class="dots">
-                                        <span></span><span></span><span></span>   
-                                    </div>                                        
+                                        <span></span><span></span><span></span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -157,17 +178,21 @@
         </div>
     </div>
     <!-- bannar part end here  -->
-    <button type="button" class="btn btn-primary btn_mess" data-bs-toggle="modal" data-bs-target="#onloadpopup">
-        Show Popup 
+    <button type="button" class="btn btn-primary btn_mess d-none" data-bs-toggle="modal" data-bs-target="#onloadpopup">
+        Show Popup
     </button>
 
     <!-- sound part start here  -->
     <div class="container-fluid">
         <div class="sound">
             <div class="volume">
-                <i class="fa-solid fa-volume-high"></i></div>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
             <div>
-                <p><marquee behavior="scroll"  scrollamount="5" direction="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, neque! </marquee></p>
+                <p>
+                    <marquee behavior="scroll" scrollamount="5" direction="left">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Unde, neque! </marquee>
+                </p>
             </div>
             <div>
                 <a href="#" class=""><i class="fa-solid fa-list"></i>Lorem</a>
@@ -177,65 +202,69 @@
     <!-- sound part end here  -->
 
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" >
-      <div class="modal-content"  >
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            
-            <div class="container mt-3">
-              <div class="row">
-                
-                <div class="col-md-12 text-center">
-                  <div class="wheel-spin-box">
-                    <div id="spinwheel">
-                        <div class="wheeldotsround">
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
-                            <div class="wheeldots"></div>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container mt-3">
+                        <div class="row">
+
+                            <div class="col-md-12 text-center">
+                                <div class="wheel-spin-box">
+                                    <div id="spinwheel">
+                                        <div class="wheeldotsround">
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                            <div class="wheeldots"></div>
+                                        </div>
+                                    </div>
+                                    <div id="spin-arrow" class="wheel-spin-arrow">
+                                        <svg width="83" height="74" viewBox="0 0 83 74" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M32.9489 5.12466C33.8289 3.59888 35.0943 2.3319 36.618 1.45104C38.1417 0.570174 39.8701 0.106445 41.6294 0.106445C43.3888 0.106445 45.1171 0.570174 46.6409 1.45104C48.1646 2.3319 49.43 3.59888 50.31 5.12466L80.9178 58.1922C81.7993 59.7185 82.264 61.4504 82.265 63.2137C82.2659 64.9769 81.8032 66.7094 80.9234 68.2366C80.0435 69.7639 78.7776 71.0322 77.2529 71.9139C75.7282 72.7955 73.9986 73.2595 72.238 73.2591H11.0223C9.26269 73.259 7.53405 72.7951 6.01016 71.9139C4.48627 71.0327 3.22083 69.7653 2.34102 68.2391C1.46121 66.7128 0.998036 64.9815 0.998047 63.2192C0.998058 61.4569 1.46125 59.7256 2.34108 58.1994L32.9489 5.12466Z"
+                                                fill="#2F911E" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12 text-center mb-4">
+                                <button id="spin" class="spin-click-button">Spin the Wheel</button>
+                            </div>
                         </div>
                     </div>
-                    <div id="spin-arrow" class="wheel-spin-arrow">
-                        <svg width="83" height="74" viewBox="0 0 83 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M32.9489 5.12466C33.8289 3.59888 35.0943 2.3319 36.618 1.45104C38.1417 0.570174 39.8701 0.106445 41.6294 0.106445C43.3888 0.106445 45.1171 0.570174 46.6409 1.45104C48.1646 2.3319 49.43 3.59888 50.31 5.12466L80.9178 58.1922C81.7993 59.7185 82.264 61.4504 82.265 63.2137C82.2659 64.9769 81.8032 66.7094 80.9234 68.2366C80.0435 69.7639 78.7776 71.0322 77.2529 71.9139C75.7282 72.7955 73.9986 73.2595 72.238 73.2591H11.0223C9.26269 73.259 7.53405 72.7951 6.01016 71.9139C4.48627 71.0327 3.22083 69.7653 2.34102 68.2391C1.46121 66.7128 0.998036 64.9815 0.998047 63.2192C0.998058 61.4569 1.46125 59.7256 2.34108 58.1994L32.9489 5.12466Z" fill="#2F911E"/>
-                        </svg>
-                                                                    </div>
-                                                                </div>
-                
-                </div>
-                <div class="col-md-12 text-center mb-4">
-                    <button id="spin" class="spin-click-button">Spin the Wheel</button>
-                </div>
-             </div>
-            </div>
 
 
-        </div>
-        <!-- <div class="modal-footer">
+                </div>
+                <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Understood</button>
         </div> -->
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 
 
 
@@ -256,42 +285,42 @@
                     </div>
                 </div>
                 <!-- <div class="col-8"> -->
-                    <div class="col-8 d-flex justify-content-center align-items-center">    
-                        <div class="s_width">
-                            <a href="deposite.html"  style="text-decoration: none;">
-                                <div class="option op_withdraw">
-                                    <img src="images/money-bag-green60.png" alt="">
-                                    <h3>Deposite</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="s_width">
-                            <a href="withdraw.html" style="text-decoration: none;">
-                                <div class="option op_reward">                                
-                                    <img src="images/cash_in.png" alt="">
-                                    <h3>width</h3>
-                                </div> 
-                            </a>                       
-                        </div>
-                        <div class="s_width">
-                            <a href="referal.html" class=" " style="text-decoration: none;">
-                                <div class="option op_refer">
-                                    <img src="images/gift-box.png" alt="">
-                                    <h3>Refer</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="s_width" >
-                            <a href="pricing.html" style="text-decoration: none;">
-                                <div class="option op_mail">
-                                    <img src="images/dimond.png"  alt="">
-                                    <h3>Dimond</h3>
-                                </div>
-                            </a>
-                        </div>
-                                    <!-- </div> -->
-                                <!-- </div> -->
+                <div class="col-8 d-flex justify-content-center align-items-center">
+                    <div class="s_width">
+                        <a href="deposite.html" style="text-decoration: none;">
+                            <div class="option op_withdraw">
+                                <img src="images/money-bag-green60.png" alt="">
+                                <h3>Deposite</h3>
+                            </div>
+                        </a>
                     </div>
+                    <div class="s_width">
+                        <a href="withdraw.html" style="text-decoration: none;">
+                            <div class="option op_reward">
+                                <img src="images/cash_in.png" alt="">
+                                <h3>width</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="s_width">
+                        <a href="referal.html" class=" " style="text-decoration: none;">
+                            <div class="option op_refer">
+                                <img src="images/gift-box.png" alt="">
+                                <h3>Refer</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="s_width">
+                        <a href="pricing.html" style="text-decoration: none;">
+                            <div class="option op_mail">
+                                <img src="images/dimond.png" alt="">
+                                <h3>Dimond</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
 
                 <!-- </div> -->
             </div>
@@ -365,88 +394,100 @@
                                 <h4>Soccer</h4>
                             </a>
                         </div>
-                        
+
                     </div>
                 </div>
             </div> <!--cat part end here -->
-            <div class="col-9 "> 
+            <div class="col-9 ">
                 <!--Games part start here -->
-                
+
                 <div class="row mt-3 px-3" style="border-radius: 5px;">
-                    <div class="game_icon text-center py-2" style="background-image: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);">
+                    <div class="game_icon text-center py-2"
+                        style="background-image: linear-gradient(to bottom, rgba(239,229,253,1) 0%,rgba(195,169,243,1) 100%);">
                         <h6 class="m-0">Teenpatti</h6>
                     </div>
                 </div>
                 <div class="scrollTwo mt-3">
                     <div class=" game_part_new mt-0">
                         <div class="game_pic">
-                            <a href="#">
+                            <a href="games.html" class="btn_fav_pop">
                                 <img src="images/Joker_Poker.png" loading="lazy" class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
+                            <a href="games.html" class="btn_fav_pop">
                                 <img src="images/baccarat_512.jpg" loading="lazy" class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/gaming guide web_BACCARAT 580.jpg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/gaming guide web_BACCARAT 580.jpg" loading="lazy" class="img-fluid"
+                                    alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/baccarat/baccarat(1).jpg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/baccarat/baccarat(1).jpg" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/baccarat/baccarat(2).jpg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/baccarat/baccarat(2).jpg" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/baccarat/baccarat(3).jpg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/baccarat/baccarat(3).jpg" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/baccarat/baccarat(4).jpg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/baccarat/baccarat(4).jpg" loading="lazy"
+                                    class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="game_pic" class="btn_fav_pop">
+                            <a href="games.html">
+                                <img src="images/game icon/original/bingo/bingo(1).jpeg" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/bingo/bingo(1).jpeg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/baccarat/baccarat(1).png" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/baccarat/baccarat(1).png" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/bingo/bingo(2).jpg" loading="lazy" class="img-fluid"
+                                    alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/bingo/bingo(2).jpg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/blackjack/blackjack(1).svg" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/blackjack/blackjack(1).svg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/blackjack/blackjack(1).jpg" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
                         <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/blackjack/blackjack(1).jpg" loading="lazy" class="img-fluid" alt="">
+                            <a href="games.html" class="btn_fav_pop">
+                                <img src="images/game icon/original/blackjack/blackjack(2).jpg" loading="lazy"
+                                    class="img-fluid" alt="">
                             </a>
                         </div>
-                        <div class="game_pic">
-                            <a href="#">
-                                <img src="images/game icon/original/blackjack/blackjack(2).jpg" loading="lazy" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        
-                        
-                        
+
+
+
                     </div>
                 </div>
             </div>
@@ -454,53 +495,118 @@
     </div>
     <!-- gaming part end here  -->
 
-        <!-- -=========footer start ========-  -->
-    <div class="container"><div class="row "><div class="col-md-12" style="height: 70px;"></div></div></div>
+    <!-- -=========footer start ========-  -->
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12" style="height: 70px;"></div>
+        </div>
+    </div>
     <footer class="">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 d-flex">
                     <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                        <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid" alt=""><br><p>Reels</p></a>
+                        <a href="index.html" class="text-center"><img src="images/reels-60.png" class="img-fluid"
+                                alt=""><br>
+                            <p>Reels</p>
+                        </a>
                     </div>
                     <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                        <a href="hostlist.html" class="text-center"><img src="images/live-streaming.png" class="img-fluid" alt=""><br><p>stream</p></a>
+                        <a href="hostlist.html" class="text-center"><img src="images/live-streaming.png"
+                                class="img-fluid" alt=""><br>
+                            <p>stream</p>
+                        </a>
                     </div>
                     <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                        <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid" alt=""><br><p>Rank</p></a>
+                        <a href="ranking.html" class="text-center"><img src="images/trophy.png" class="img-fluid"
+                                alt=""><br>
+                            <p>Rank</p>
+                        </a>
                     </div>
                     <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                        <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid" alt=""><br><p>Games</p></a>
+                        <a href="gamelist.html" class="text-center"><img src="images/casino (1).png" class="img-fluid"
+                                alt=""><br>
+                            <p>Games</p>
+                        </a>
                     </div>
                     <div class="d-flex justify-content-center align-items-center" style="width: 20%;">
-                        <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid" alt=""><br><p>User</p></a>
+                        <a href="profile.html" class="text-center"><img src="images/user.png" class="img-fluid"
+                                alt=""><br>
+                            <p>User</p>
+                        </a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </footer>
     <!-- footer part end here  -->
-    
-       
-    
+
+    <!-- login popup  -->
+    <div class="login_popup">
+        <div class="login_content">
+            <div class="d-flex justify-content-end">
+                <button class="btn_close"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="user_icon">
+                <i class="fa-solid fa-user "></i>
+            </div>
+            <form action="" method="">
+                <div class="input_group">
+                    <label for="User_name">User Name</label>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="User_name" placeholder="" class="form-control">
+                </div>
+                <div class="input_group">
+                    <label for="User_name">Password</label>
+                    <i class="fa-solid  fa-lock"></i>
+                    <input toggle="#id" type="password" placeholder="" class="form-control">
+                    <i id="id" class="fa-solid show_pass fa-eye"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <input type="checkbox" id="save_pass"><label for="save_pass">Remember Pasword</label>
+                    </div>
+                </div>
+                <button type="button" class="btn_login">Login</button>
+                <div class="text-center mt-2"> <a href="forgetpass.html">Forget Password?</a></div>
+                <div class="text-center"> <a href="register.html">Don't have account? Sign Up</a></div>
+
+            </form>
+        </div>
+    </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/navjs.js"></script>
     <script src="js/preloader.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $(".btn_mess").click();
             $(".owl-bannar").owlCarousel({
-                items:1,
-                loop:true,
-                autoplay:true,
-                autoplayTimeout:2000,
-                autoplayHoverPause:true
+                items: 1,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true
             });
+
+            $(".btn_fav_pop").click(function () {
+                $(".login_popup").fadeIn();
+            });
+            $(".model_sec .btn_fav").click(function () {
+                $(".login_popup").fadeIn();
+            });
+            $(".login_popup .btn_close").click(function () {
+                $(".login_popup").fadeOut();
+            });
+
         });
     </script>
     <script>
@@ -508,50 +614,50 @@
             $(this).toggleClass("down");
         })
 
-        $(document).ready(function(){
-            $(".sub_cat").click(function(){
+        $(document).ready(function () {
+            $(".sub_cat").click(function () {
                 $(".sub_cat").removeClass("active");
                 $(this).addClass("active");
             })
         });
     </script>
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <script>
         // -----wheel-spin-js------
-        var padding = {top:0, right:0, bottom:0, left:0},
+        var padding = { top: 0, right: 0, bottom: 0, left: 0 },
             w = 400 - padding.left - padding.right,
-            h = 400 - padding.top  - padding.bottom,
-            r = Math.min(w, h)/2,
+            h = 400 - padding.top - padding.bottom,
+            r = Math.min(w, h) / 2,
             rotation = 0,
             oldrotation = 0,
             picked = 100000,
             oldpick = [],
             color = d3.scale.category20();//category20c()
-            //randomNumbers = getRandomNumbers();
-        
+        //randomNumbers = getRandomNumbers();
+
         var data = [
-                    {"label":"0x", "value":1, "xp":"you Lost 0x"},
-                    {"label":"5x", "value":1, "xp":"you Win 2x"},
-                    {"label":"0x", "value":1, "xp":"you Lost 0x"},
-                    {"label":"7x", "value":1, "xp":"you Win 2x"},
-                    {"label":"0x", "value":1, "xp":"you Lost 0x"},
-                    {"label":"9x", "value":1, "xp":"you Win 2x"}
+            { "label": "0x", "value": 1, "xp": "you Lost 0x" },
+            { "label": "5x", "value": 1, "xp": "you Win 2x" },
+            { "label": "0x", "value": 1, "xp": "you Lost 0x" },
+            { "label": "7x", "value": 1, "xp": "you Win 2x" },
+            { "label": "0x", "value": 1, "xp": "you Lost 0x" },
+            { "label": "9x", "value": 1, "xp": "you Win 2x" }
         ];
         var svg = d3.select('#spinwheel')
             .append("svg")
-			.data([data])
-			.attr("xmlns",  "http://www.w3.org/2000/svg")
-			.attr('viewBox', '0 0 '+w+' '+w+'')
-            .attr("width",  w)
-			.attr("height", h + padding.top + padding.bottom);
+            .data([data])
+            .attr("xmlns", "http://www.w3.org/2000/svg")
+            .attr('viewBox', '0 0 ' + w + ' ' + w + '')
+            .attr("width", w)
+            .attr("height", h + padding.top + padding.bottom);
         var container = svg.append("g")
             .attr("class", "chartholder")
-            .attr("transform", "translate(" + (w/2 + padding.left) + "," + (h/2 + padding.top) + ")");
+            .attr("transform", "translate(" + (w / 2 + padding.left) + "," + (h / 2 + padding.top) + ")");
         var vis = container.append("g");
-            
-		var pie = d3.layout.pie().sort(null).value(function(d){return 1;});
+
+        var pie = d3.layout.pie().sort(null).value(function (d) { return 1; });
         // declare an arc generator function
         var arc = d3.svg.arc().outerRadius(r);
         // select paths, use arc generator to draw
@@ -560,67 +666,67 @@
             .enter()
             .append("g")
             .attr("class", "slice");
-            
-        	arcs.append("path")
-            .attr("fill", function(d, i){ return color(i); })
+
+        arcs.append("path")
+            .attr("fill", function (d, i) { return color(i); })
             .attr("d", function (d) { return arc(d); });
-        	// add the text
-       		arcs.append("text").attr("transform", function(d){
-                d.innerRadius = 0;
-                d.outerRadius = r;
-                d.angle = (d.startAngle + d.endAngle)/2;
-                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius - 60) +")";
-            }).attr('font-size', '20').attr('fill', '#ffffff')
+        // add the text
+        arcs.append("text").attr("transform", function (d) {
+            d.innerRadius = 0;
+            d.outerRadius = r;
+            d.angle = (d.startAngle + d.endAngle) / 2;
+            return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius - 60) + ")";
+        }).attr('font-size', '20').attr('fill', '#ffffff')
             .attr("text-anchor", "end")
-            .text( function(d, i) {
+            .text(function (d, i) {
                 return data[i].label;
             });
-		$('#spin').on("click", spin);
-		function spin(d){
-            
+        $('#spin').on("click", spin);
+        function spin(d) {
+
             $('#spin').on("click", null);
             //all slices have been seen, all done
             //console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
-            if(oldpick.length == data.length){
+            if (oldpick.length == data.length) {
                 console.log("done");
                 $('#spin').on("click", null);
                 return;
             }
-            var  ps       = 360/data.length,
-                 pieslice = Math.round(1440/data.length),
-				 rng      = Math.floor((Math.random() * 1440) + 360);
-                
+            var ps = 360 / data.length,
+                pieslice = Math.round(1440 / data.length),
+                rng = Math.floor((Math.random() * 1440) + 360);
+
             rotation = (Math.round(rng / ps) * ps);
-			//console.log(rotation);
-			
-			picked = Math.round(data.length - (rotation % 360)/ps) + 2;
-			
-			picked = picked >= data.length ? (picked % data.length) : picked;
-            if(oldpick.indexOf(picked) !== -1){
+            //console.log(rotation);
+
+            picked = Math.round(data.length - (rotation % 360) / ps) + 2;
+
+            picked = picked >= data.length ? (picked % data.length) : picked;
+            if (oldpick.indexOf(picked) !== -1) {
                 d3.select(this).call(spin);
                 return;
             } else {
                 oldpick.push(picked);
             }
-			rotation += 90 - Math.round(ps/1);
-			var interval = setInterval(function () {
-				$('.wheeldots').addClass('active-dots');
-				setTimeout(function () { 
-					$('.wheeldots').removeClass('active-dots');
-			 	}, 100);
-			});
+            rotation += 90 - Math.round(ps / 1);
+            var interval = setInterval(function () {
+                $('.wheeldots').addClass('active-dots');
+                setTimeout(function () {
+                    $('.wheeldots').removeClass('active-dots');
+                }, 100);
+            });
             vis.transition()
                 .duration(3000)
                 .attrTween("transform", rotTween)
-                .each("end", function(){
-					clearInterval(interval);
+                .each("end", function () {
+                    clearInterval(interval);
                     //mark question as seen
                     d3.select(".slice:nth-child(" + (picked + 1) + ") path")
                     //populate question
                     d3.select("#question h1").text(data[picked].question);
-					oldrotation = rotation;
-					alert(data[picked].xp);
-                
+                    oldrotation = rotation;
+                    alert(data[picked].xp);
+
                     //container.on("click", spin);
                 });
         }
@@ -635,7 +741,7 @@
             .attr("cx", 0)
             .attr("cy", 0)
             .attr("r", 30)
-            .style({"fill":"#ffffff"});
+            .style({ "fill": "#ffffff" });
         //spin text
         // container.append("text")
         //     .attr("x", 0)
@@ -643,25 +749,25 @@
         //     .attr("text-anchor", "middle")
         //     .text("SPIN")
         //     .style({"font-weight":"bold", "font-size":"30px"});
-        
-        
+
+
         function rotTween(to) {
-          var i = d3.interpolate(oldrotation % 360, rotation);
-          return function(t) {
-            return "rotate(" + i(t) + ")";
-          };
+            var i = d3.interpolate(oldrotation % 360, rotation);
+            return function (t) {
+                return "rotate(" + i(t) + ")";
+            };
         }
-        
-        
-        function getRandomNumbers(){
+
+
+        function getRandomNumbers() {
             var array = new Uint16Array(1000);
             var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
-            if(window.hasOwnProperty("crypto") && typeof window.crypto.getRandomValues === "function"){
+            if (window.hasOwnProperty("crypto") && typeof window.crypto.getRandomValues === "function") {
                 window.crypto.getRandomValues(array);
                 console.log("works");
             } else {
                 //no support for crypto, get crappy random numbers
-                for(var i=0; i < 1000; i++){
+                for (var i = 0; i < 1000; i++) {
                     array[i] = Math.floor(Math.random() * 100000) + 1;
                 }
             }
@@ -670,5 +776,6 @@
 
 
     </script>
-  </body>
+</body>
+
 </html>
